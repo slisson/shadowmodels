@@ -91,6 +91,9 @@
         <reference id="1382135219952452158" name="label" index="3NZdqm" />
         <child id="1382135219952452156" name="transformation" index="3NZdqk" />
       </concept>
+      <concept id="2573073122887437731" name="de.q60.mps.shadowmodel.structure.CopyMacro" flags="ng" index="1XuIBW">
+        <child id="2573073122887437734" name="sourceQuery" index="1XuIBT" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -643,12 +646,13 @@
                     <ref role="02LMe" to="tpee:fHeOMHZ" resolve="ParenthesizedExpression" />
                     <node concept="027rt" id="I$iOOfILa2" role="02LM9">
                       <ref role="027rv" to="tpee:fHeOMI0" resolve="expression" />
-                      <node concept="027og" id="I$iOOfILa6" role="027rp">
-                        <ref role="02LMe" to="tpee:fzclF81" resolve="BooleanConstant" />
-                        <node concept="027oh" id="I$iOOfILa9" role="02LM9">
-                          <ref role="027oj" to="tpee:fzclF82" resolve="value" />
-                          <node concept="Xl_RD" id="I$iOOfILad" role="027of">
-                            <property role="Xl_RC" value="true" />
+                      <node concept="1XuIBW" id="2ePp5XuRI1B" role="027rp">
+                        <node concept="2OqwBi" id="2ePp5XuRIvT" role="1XuIBT">
+                          <node concept="2155sH" id="2ePp5XuRIoO" role="2Oq$k0">
+                            <ref role="2155sG" node="I$iOOfIJU6" resolve="t" />
+                          </node>
+                          <node concept="3TrEf2" id="2ePp5XuRIHX" role="2OqNvi">
+                            <ref role="3Tt5mk" to="yb34:6ndA7L_L174" resolve="guard" />
                           </node>
                         </node>
                       </node>
