@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.demolang/de.q60.mps.shadowmodel.demolang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel/de.q60.mps.shadowmodel.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.runtime/de.q60.mps.shadowmodel.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.sandbox/de.q60.mps.shadowmodel.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
