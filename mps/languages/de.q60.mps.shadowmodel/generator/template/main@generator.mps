@@ -178,11 +178,16 @@
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
+      <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
       </concept>
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
+      <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
+        <child id="1194989344771" name="alternativeConsequence" index="UU_$l" />
+        <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
+      </concept>
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
@@ -380,7 +385,7 @@
               </node>
               <node concept="2ShNRf" id="4EhVFrZ0V7q" role="37wK5m">
                 <node concept="1pGfFk" id="4EhVFrZ0VpS" role="2ShVmc">
-                  <ref role="37wK5l" to="6tkd:5gTrVpGtRyf" resolve="TransformationSolution" />
+                  <ref role="37wK5l" to="6tkd:5gTrVpGtwuR" resolve="TransformationSolution" />
                   <node concept="2ShNRf" id="4EhVFrZ0W3I" role="37wK5m">
                     <node concept="1pGfFk" id="4EhVFrZ0Wqw" role="2ShVmc">
                       <ref role="37wK5l" to="l6bp:5gTrVpGjFod" resolve="SConceptAdapter" />
@@ -420,6 +425,26 @@
                             </node>
                           </node>
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbT" id="2UwmfNuYBax" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                    <node concept="1W57fq" id="2UwmfNuYCbz" role="lGtFl">
+                      <node concept="3IZrLx" id="2UwmfNuYCb_" role="3IZSJc">
+                        <node concept="3clFbS" id="2UwmfNuYCbB" role="2VODD2">
+                          <node concept="3clFbF" id="2UwmfNuYCNl" role="3cqZAp">
+                            <node concept="2OqwBi" id="2UwmfNuYD27" role="3clFbG">
+                              <node concept="30H73N" id="2UwmfNuYCNk" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="2UwmfNuYEqD" role="2OqNvi">
+                                <ref role="3TsBF5" to="oyp0:2UwmfNuY5hS" resolve="applicableToSubconcepts" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="gft3U" id="2UwmfNuYE$A" role="UU_$l">
+                        <node concept="3clFbT" id="2UwmfNuYFcm" role="gfFT$" />
                       </node>
                     </node>
                   </node>

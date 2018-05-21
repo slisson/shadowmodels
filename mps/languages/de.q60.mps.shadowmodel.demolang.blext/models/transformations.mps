@@ -40,6 +40,7 @@
         <child id="7335687028107145383" name="content" index="02uzr" />
       </concept>
       <concept id="7335687028107144742" name="de.q60.mps.shadowmodel.structure.TransformationImplementation" flags="ng" index="02vpq">
+        <property id="3359783165114209400" name="applicableToSubconcepts" index="3Km0M4" />
         <reference id="5373338300159359234" name="interface" index="2OrxuO" />
         <child id="7335687028107245068" name="output" index="026TK" />
         <child id="7335687028107163827" name="input" index="02i3f" />
@@ -137,6 +138,7 @@
     </node>
     <node concept="2OrE70" id="6QszampOJXG" role="02uzr" />
     <node concept="02vpq" id="6QszampOJQJ" role="02uzr">
+      <property role="3Km0M4" value="true" />
       <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
       <node concept="026TG" id="6QszampOJRq" role="026TK">
         <node concept="3KhI9p" id="2UwmfNuTYAG" role="026TJ">
@@ -149,202 +151,6 @@
         </node>
       </node>
     </node>
-    <node concept="02vpq" id="2UwmfNuTDdc" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuTDdd" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuTYAK" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuTDdg" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuTDhY" role="02i2B">
-          <ref role="02i3$" to="tpee:fz12cDA" resolve="ClassConcept" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXiA7" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXiA8" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXiA9" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXiAa" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXiES" role="02i2B">
-          <ref role="02i3$" to="tpee:1hodSy9TH5A" resolve="PlaceholderMember" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXj21" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXj22" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXj23" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXj24" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXj6Z" role="02i2B">
-          <ref role="02i3$" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXj77" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXj78" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXj79" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXj7a" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXjc2" role="02i2B">
-          <ref role="02i3$" to="tpee:fzclF8l" resolve="Statement" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXjca" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXjcb" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXjcc" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXjcd" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXjha" role="02i2B">
-          <ref role="02i3$" to="tpee:fzcpWvK" resolve="LocalVariableDeclarationStatement" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXjhx" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXjhy" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXjhz" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXjh$" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXjmA" role="02i2B">
-          <ref role="02i3$" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXkYb" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXkYc" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXkYd" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXkYe" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXl3q" role="02i2B">
-          <ref role="02i3$" to="tpee:f_0OyhT" resolve="IntegerType" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXmVV" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXmVW" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXmVX" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXmVY" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXn1u" role="02i2B">
-          <ref role="02i3$" to="tpee:fzcqZ_H" resolve="VoidType" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXlaC" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXlaD" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXlaE" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXlaF" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXlfW" role="02i2B">
-          <ref role="02i3$" to="tpee:fzcmrck" resolve="IntegerConstant" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXlg4" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXlg5" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXlg6" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXlg7" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXllt" role="02i2B">
-          <ref role="02i3$" to="tpee:fJeOSZf" resolve="GreaterThanExpression" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXlu8" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXlu9" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXlua" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXlub" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXlzA" role="02i2B">
-          <ref role="02i3$" to="tpee:hFuNrjK" resolve="PostfixIncrementExpression" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXlzI" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXlzJ" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXlzK" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXlzL" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXlDh" role="02i2B">
-          <ref role="02i3$" to="tpee:fzclF8j" resolve="ExpressionStatement" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXnD7" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXnD8" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXnD9" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXnDa" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXnIJ" role="02i2B">
-          <ref role="02i3$" to="tpee:fzclF80" resolve="StatementList" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXooj" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXook" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXool" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXoom" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXou0" role="02i2B">
-          <ref role="02i3$" to="tpee:gFTm1ZL" resolve="PublicVisibility" />
-        </node>
-      </node>
-    </node>
-    <node concept="02vpq" id="2UwmfNuXpay" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="2UwmfNuXpaz" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuXpa$" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
-        </node>
-      </node>
-      <node concept="02i3K" id="2UwmfNuXpa_" role="02i3f">
-        <node concept="02i3D" id="2UwmfNuXpgk" role="02i2B">
-          <ref role="02i3$" to="tpee:fz7vLUo" resolve="VariableReference" />
-        </node>
-      </node>
-    </node>
-    <node concept="2OrE70" id="6QszampKRmj" role="02uzr" />
     <node concept="2OrE70" id="6QszampNGZ4" role="02uzr" />
   </node>
 </model>
