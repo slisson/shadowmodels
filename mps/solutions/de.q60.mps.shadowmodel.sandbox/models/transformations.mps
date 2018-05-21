@@ -63,7 +63,6 @@
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
-      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -1017,7 +1016,6 @@
                         <ref role="3cqZAo" node="4EhVFrZebDz" resolve="input" />
                       </node>
                     </node>
-                    <node concept="10Nm6u" id="4EhVFrZfIFv" role="37wK5m" />
                     <node concept="Xl_RD" id="4EhVFrZfIPF" role="37wK5m">
                       <property role="Xl_RC" value="de.q60.mps.shadowmodel.demolang.transformations.StatemachineToJava.sm2java" />
                     </node>
@@ -1250,201 +1248,6 @@
     </node>
     <node concept="2tJIrI" id="4EhVFrZebJZ" role="jymVt" />
     <node concept="3Tm1VV" id="4EhVFrZebK0" role="1B3o_S" />
-  </node>
-  <node concept="312cEu" id="4EhVFrZeyxO">
-    <property role="TrG5h" value="StatemachinesTransformation" />
-    <node concept="2tJIrI" id="4EhVFrZeyxP" role="jymVt" />
-    <node concept="2YIFZL" id="4EhVFrZeyxQ" role="jymVt">
-      <property role="TrG5h" value="transform" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3clFbS" id="4EhVFrZeyxR" role="3clF47">
-        <node concept="3cpWs8" id="4EhVFrZeyxS" role="3cqZAp">
-          <node concept="3cpWsn" id="4EhVFrZeyxT" role="3cpWs9">
-            <property role="TrG5h" value="outputModel" />
-            <node concept="H_c77" id="4EhVFrZeyxU" role="1tU5fm" />
-            <node concept="BaHAS" id="4EhVFrZeyxV" role="33vP2m">
-              <property role="BaHAW" value="de.q60.mps.shadowmodel.sandbox.statemachines.output" />
-              <property role="BaGAP" value="" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4EhVFrZeyxW" role="3cqZAp">
-          <node concept="2OqwBi" id="4EhVFrZeyxX" role="3clFbG">
-            <node concept="2OqwBi" id="4EhVFrZeyxY" role="2Oq$k0">
-              <node concept="37vLTw" id="4EhVFrZeyxZ" role="2Oq$k0">
-                <ref role="3cqZAo" node="4EhVFrZeyxT" resolve="outputModel" />
-              </node>
-              <node concept="2RRcyG" id="4EhVFrZeyy0" role="2OqNvi" />
-            </node>
-            <node concept="2es0OD" id="4EhVFrZeyy1" role="2OqNvi">
-              <node concept="1bVj0M" id="4EhVFrZeyy2" role="23t8la">
-                <node concept="3clFbS" id="4EhVFrZeyy3" role="1bW5cS">
-                  <node concept="3clFbF" id="4EhVFrZeyy4" role="3cqZAp">
-                    <node concept="2OqwBi" id="4EhVFrZeyy5" role="3clFbG">
-                      <node concept="37vLTw" id="4EhVFrZeyy6" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4EhVFrZeyy8" resolve="it" />
-                      </node>
-                      <node concept="3YRAZt" id="4EhVFrZeyy7" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="Rh6nW" id="4EhVFrZeyy8" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="4EhVFrZeyy9" role="1tU5fm" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4EhVFrZeyya" role="3cqZAp" />
-        <node concept="3cpWs8" id="4EhVFrZeyyb" role="3cqZAp">
-          <node concept="3cpWsn" id="4EhVFrZeyyc" role="3cpWs9">
-            <property role="TrG5h" value="updater" />
-            <node concept="3uibUv" id="4EhVFrZeyyd" role="1tU5fm">
-              <ref role="3uigEE" to="6tkd:5gTrVpGiJ3S" resolve="Updater" />
-            </node>
-            <node concept="2ShNRf" id="4EhVFrZeyye" role="33vP2m">
-              <node concept="1pGfFk" id="4EhVFrZeyyf" role="2ShVmc">
-                <ref role="37wK5l" to="6tkd:5gTrVpGmaY5" resolve="Updater" />
-                <node concept="2ShNRf" id="4EhVFrZeQ13" role="37wK5m">
-                  <node concept="1pGfFk" id="4EhVFrZeQ14" role="2ShVmc">
-                    <ref role="37wK5l" to="6tkd:4EhVFrZct2g" resolve="DescriptorTransformationRuleProvider" />
-                    <node concept="2ShNRf" id="4EhVFrZeQ15" role="37wK5m">
-                      <node concept="2i4dXS" id="4EhVFrZeQ16" role="2ShVmc">
-                        <node concept="3uibUv" id="4EhVFrZeQ17" role="HW$YZ">
-                          <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
-                        </node>
-                        <node concept="pHN19" id="4EhVFrZeQ18" role="HW$Y0">
-                          <node concept="PFCIn" id="4EhVFrZeQ19" role="2V$M_3">
-                            <node concept="20RdaH" id="4EhVFrZeQ1a" role="PFCIW">
-                              <property role="20Rdg5" value="ebb56408-a287-44ca-ab2d-1b6ee6850446" />
-                              <property role="20Rdg7" value="de.q60.mps.shadowmodel.demolang" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="4EhVFrZeyyi" role="3cqZAp">
-          <node concept="3cpWsn" id="4EhVFrZeyyj" role="3cpWs9">
-            <property role="TrG5h" value="output" />
-            <node concept="A3Dl8" id="4EhVFrZeyyk" role="1tU5fm">
-              <node concept="3uibUv" id="4EhVFrZeyyl" role="A3Ik2">
-                <ref role="3uigEE" to="6tkd:5gTrVpGiHIH" resolve="INode" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="4EhVFrZeyym" role="33vP2m">
-              <node concept="37vLTw" id="4EhVFrZeyyn" role="2Oq$k0">
-                <ref role="3cqZAo" node="4EhVFrZeyyc" resolve="updater" />
-              </node>
-              <node concept="liA8E" id="4EhVFrZeyyo" role="2OqNvi">
-                <ref role="37wK5l" to="6tkd:5gTrVpG_uHA" resolve="update" />
-                <node concept="2ShNRf" id="4EhVFrZeyyp" role="37wK5m">
-                  <node concept="1pGfFk" id="4EhVFrZeyyq" role="2ShVmc">
-                    <ref role="37wK5l" to="6tkd:5gTrVpGlvtK" resolve="TransformationProblem" />
-                    <node concept="2YIFZM" id="4EhVFrZjufQ" role="37wK5m">
-                      <ref role="37wK5l" to="l6bp:5gTrVpGyMwR" resolve="wrap" />
-                      <ref role="1Pybhc" to="l6bp:5gTrVpGjuLg" resolve="SNodeToNodeAdapter" />
-                      <node concept="3B5_sB" id="4EhVFrZeyyt" role="37wK5m">
-                        <ref role="3B5MYn" to="oopu:6ndA7L_L0Q_" resolve="Sm1" />
-                      </node>
-                    </node>
-                    <node concept="10Nm6u" id="4EhVFrZeFPZ" role="37wK5m" />
-                    <node concept="Xl_RD" id="4EhVFrZfBPF" role="37wK5m">
-                      <property role="Xl_RC" value="de.q60.mps.shadowmodel.demolang.transformations.StatemachineToJava.sm2java" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="4EhVFrZeyyu" role="3cqZAp">
-          <node concept="3cpWsn" id="4EhVFrZeyyv" role="3cpWs9">
-            <property role="TrG5h" value="builder" />
-            <node concept="3uibUv" id="4EhVFrZeyyw" role="1tU5fm">
-              <ref role="3uigEE" to="l6bp:5gTrVpGqvI1" resolve="SNodeBuilder" />
-            </node>
-            <node concept="2ShNRf" id="4EhVFrZeyyx" role="33vP2m">
-              <node concept="HV5vD" id="4EhVFrZeyyy" role="2ShVmc">
-                <ref role="HV5vE" to="l6bp:5gTrVpGqvI1" resolve="SNodeBuilder" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="4EhVFrZeyyz" role="3cqZAp">
-          <node concept="3cpWsn" id="4EhVFrZeyy$" role="3cpWs9">
-            <property role="TrG5h" value="outputSNodes" />
-            <node concept="A3Dl8" id="4EhVFrZeyy_" role="1tU5fm">
-              <node concept="3uibUv" id="4EhVFrZeyyA" role="A3Ik2">
-                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="4EhVFrZeyyB" role="33vP2m">
-              <node concept="37vLTw" id="4EhVFrZeyyC" role="2Oq$k0">
-                <ref role="3cqZAo" node="4EhVFrZeyyj" resolve="output" />
-              </node>
-              <node concept="3$u5V9" id="4EhVFrZeyyD" role="2OqNvi">
-                <node concept="1bVj0M" id="4EhVFrZeyyE" role="23t8la">
-                  <node concept="3clFbS" id="4EhVFrZeyyF" role="1bW5cS">
-                    <node concept="3clFbF" id="4EhVFrZeyyG" role="3cqZAp">
-                      <node concept="2OqwBi" id="4EhVFrZeyyH" role="3clFbG">
-                        <node concept="37vLTw" id="4EhVFrZeyyI" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4EhVFrZeyyv" resolve="builder" />
-                        </node>
-                        <node concept="liA8E" id="4EhVFrZeyyJ" role="2OqNvi">
-                          <ref role="37wK5l" to="l6bp:5gTrVpGqvIW" resolve="build" />
-                          <node concept="37vLTw" id="4EhVFrZeyyK" role="37wK5m">
-                            <ref role="3cqZAo" node="4EhVFrZeyyL" resolve="it" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Rh6nW" id="4EhVFrZeyyL" role="1bW2Oz">
-                    <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="4EhVFrZeyyM" role="1tU5fm" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4EhVFrZeyyN" role="3cqZAp" />
-        <node concept="2Gpval" id="4EhVFrZeyyO" role="3cqZAp">
-          <node concept="2GrKxI" id="4EhVFrZeyyP" role="2Gsz3X">
-            <property role="TrG5h" value="root" />
-          </node>
-          <node concept="37vLTw" id="4EhVFrZeyyQ" role="2GsD0m">
-            <ref role="3cqZAo" node="4EhVFrZeyy$" resolve="outputSNodes" />
-          </node>
-          <node concept="3clFbS" id="4EhVFrZeyyR" role="2LFqv$">
-            <node concept="3clFbF" id="4EhVFrZeyyS" role="3cqZAp">
-              <node concept="2OqwBi" id="4EhVFrZeyyT" role="3clFbG">
-                <node concept="37vLTw" id="4EhVFrZeyyU" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4EhVFrZeyxT" resolve="outputModel" />
-                </node>
-                <node concept="3BYIHo" id="4EhVFrZeyyV" role="2OqNvi">
-                  <node concept="2GrUjf" id="4EhVFrZeyyW" role="3BYIHq">
-                    <ref role="2Gs0qQ" node="4EhVFrZeyyP" resolve="root" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3cqZAl" id="4EhVFrZeyyX" role="3clF45" />
-      <node concept="3Tm1VV" id="4EhVFrZeyyY" role="1B3o_S" />
-    </node>
-    <node concept="2tJIrI" id="4EhVFrZeyyZ" role="jymVt" />
-    <node concept="3Tm1VV" id="4EhVFrZeyz0" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="2UwmfNuT606">
     <property role="TrG5h" value="IncrementalBLExtTransformation" />
@@ -2221,7 +2024,6 @@
                         <ref role="3cqZAo" node="2UwmfNuT608" resolve="input" />
                       </node>
                     </node>
-                    <node concept="10Nm6u" id="2UwmfNuT65a" role="37wK5m" />
                     <node concept="Xl_RD" id="2UwmfNuT65b" role="37wK5m">
                       <property role="Xl_RC" value="de.q60.mps.shadowmodel.demolang.blext.transformations.desugar.desugar" />
                     </node>

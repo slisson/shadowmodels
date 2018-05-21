@@ -17,6 +17,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
     </language>
     <language id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel">
       <concept id="7335687028107245072" name="de.q60.mps.shadowmodel.structure.TransformationOutput" flags="ng" index="026TG">
@@ -25,6 +28,10 @@
       <concept id="7335687028107243116" name="de.q60.mps.shadowmodel.structure.NodeBuilder" flags="ng" index="027og">
         <reference id="7335687028107281650" name="concept" index="02LMe" />
         <child id="7335687028107281653" name="content" index="02LM9" />
+      </concept>
+      <concept id="7335687028107243117" name="de.q60.mps.shadowmodel.structure.PropertyBuilder" flags="ng" index="027oh">
+        <reference id="7335687028107243119" name="property" index="027oj" />
+        <child id="7335687028107243123" name="value" index="027of" />
       </concept>
       <concept id="7335687028107243169" name="de.q60.mps.shadowmodel.structure.ChildBuilder" flags="ng" index="027rt">
         <reference id="7335687028107243171" name="link" index="027rv" />
@@ -50,6 +57,9 @@
         <child id="9170566427534794950" name="parameterValues" index="214sll" />
       </concept>
       <concept id="9170566427534812277" name="de.q60.mps.shadowmodel.structure.ContextNodeExpression" flags="ng" index="214o7A" />
+      <concept id="9170566427534439102" name="de.q60.mps.shadowmodel.structure.ParameterReference" flags="ng" index="2155sH">
+        <reference id="9170566427534439103" name="decl" index="2155sG" />
+      </concept>
       <concept id="5373338300159315830" name="de.q60.mps.shadowmodel.structure.EmptyLine" flags="ng" index="2OrE70" />
       <concept id="5373338300159268355" name="de.q60.mps.shadowmodel.structure.TransformationInterface" flags="ng" index="2OrRyP">
         <child id="5373338300159268358" name="input" index="2OrRyK" />
@@ -57,6 +67,15 @@
       </concept>
       <concept id="3359783165113055909" name="de.q60.mps.shadowmodel.structure.ApplyRecursively" flags="ng" index="3KhI9p">
         <reference id="3359783165113055912" name="transformation" index="3KhI9k" />
+      </concept>
+      <concept id="3359783165116356100" name="de.q60.mps.shadowmodel.structure.CopyWithModifications" flags="ng" index="3LIkVS">
+        <child id="3359783165116356103" name="modifications" index="3LIkVV" />
+      </concept>
+      <concept id="7898342489378223555" name="de.q60.mps.shadowmodel.structure.Contribution" flags="ng" index="3OnZ_A">
+        <child id="3359783165116659273" name="impl" index="3LJuUP" />
+      </concept>
+      <concept id="2573073122887437731" name="de.q60.mps.shadowmodel.structure.CopyMacro" flags="ng" index="1XuIBW">
+        <child id="2573073122887437734" name="sourceQuery" index="1XuIBT" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -86,7 +105,22 @@
         </node>
       </node>
     </node>
+    <node concept="02vpq" id="6QszampOJQJ" role="02uzr">
+      <property role="3Km0M4" value="true" />
+      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
+      <node concept="026TG" id="6QszampOJRq" role="026TK">
+        <node concept="3KhI9p" id="2UwmfNuTYAG" role="026TJ">
+          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
+        </node>
+      </node>
+      <node concept="02i3K" id="6QszampOJRa" role="02i3f">
+        <node concept="02i3D" id="6QszampOJRi" role="02i2B">
+          <ref role="02i3$" to="tpck:gw2VY9q" resolve="BaseConcept" />
+        </node>
+      </node>
+    </node>
     <node concept="2OrE70" id="6QszampKRkj" role="02uzr" />
+    <node concept="2OrE70" id="2UwmfNv65M0" role="02uzr" />
     <node concept="02vpq" id="6QszampKRlh" role="02uzr">
       <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
       <node concept="02i3K" id="6QszampKRlr" role="02i3f">
@@ -137,21 +171,44 @@
       </node>
     </node>
     <node concept="2OrE70" id="6QszampOJXG" role="02uzr" />
-    <node concept="02vpq" id="6QszampOJQJ" role="02uzr">
-      <property role="3Km0M4" value="true" />
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
-      <node concept="026TG" id="6QszampOJRq" role="026TK">
-        <node concept="3KhI9p" id="2UwmfNuTYAG" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
+    <node concept="2OrE70" id="6QszampNGZ4" role="02uzr" />
+    <node concept="2OrE70" id="2UwmfNv6h0y" role="02uzr" />
+    <node concept="3OnZ_A" id="2UwmfNv7RdM" role="02uzr">
+      <node concept="02vpq" id="2UwmfNv7Ri$" role="3LJuUP">
+        <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
+        <node concept="026TG" id="2UwmfNv7Ri_" role="026TK">
+          <node concept="3LIkVS" id="2UwmfNv7RiA" role="026TJ">
+            <node concept="2155sH" id="2UwmfNv7RiB" role="1XuIBT">
+              <ref role="2155sG" node="2UwmfNv7RiI" />
+            </node>
+            <node concept="027rt" id="2UwmfNv7RiC" role="3LIkVV">
+              <ref role="027rv" to="tpee:4EqhHTp4Mw3" resolve="member" />
+              <node concept="027og" id="2UwmfNv7RiD" role="027rp">
+                <ref role="02LMe" to="tpee:fz12cDC" resolve="FieldDeclaration" />
+                <node concept="027oh" id="2UwmfNv7RiE" role="02LM9">
+                  <ref role="027oj" to="tpck:h0TrG11" resolve="name" />
+                  <node concept="Xl_RD" id="2UwmfNv7RiF" role="027of">
+                    <property role="Xl_RC" value="contribution" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
-      </node>
-      <node concept="02i3K" id="6QszampOJRa" role="02i3f">
-        <node concept="02i3D" id="6QszampOJRi" role="02i2B">
-          <ref role="02i3$" to="tpck:gw2VY9q" resolve="BaseConcept" />
+        <node concept="02i3K" id="2UwmfNv7RiG" role="02i3f">
+          <node concept="02i3D" id="2UwmfNv7RiH" role="02i2B">
+            <ref role="02i3$" to="tpee:fz12cDA" resolve="ClassConcept" />
+          </node>
+        </node>
+        <node concept="02i3K" id="2UwmfNv7RiI" role="02i3f">
+          <node concept="02i3D" id="2UwmfNv7RiJ" role="02i2B">
+            <ref role="02i3$" to="tpee:fz12cDA" resolve="ClassConcept" />
+          </node>
         </node>
       </node>
     </node>
-    <node concept="2OrE70" id="6QszampNGZ4" role="02uzr" />
+    <node concept="2OrE70" id="2UwmfNv65pv" role="02uzr" />
+    <node concept="2OrE70" id="2UwmfNv65l0" role="02uzr" />
   </node>
 </model>
 
