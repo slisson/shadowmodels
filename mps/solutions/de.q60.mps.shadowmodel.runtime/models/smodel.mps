@@ -48,10 +48,14 @@
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
@@ -69,6 +73,7 @@
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -5057,6 +5062,115 @@
       <node concept="2AHcQZ" id="2ePp5XuOPYt" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="6QszampPsLi">
+    <property role="TrG5h" value="CopySNodeToTransformationResult" />
+    <node concept="3clFbW" id="6QszampPuRF" role="jymVt">
+      <node concept="3cqZAl" id="6QszampPuRG" role="3clF45" />
+      <node concept="3Tm1VV" id="6QszampPuRH" role="1B3o_S" />
+      <node concept="3clFbS" id="6QszampPuRJ" role="3clF47">
+        <node concept="XkiVB" id="6QszampPuRL" role="3cqZAp">
+          <ref role="37wK5l" to="6tkd:2ePp5XuQHok" resolve="CopyNodeToTransformationResult" />
+          <node concept="37vLTw" id="6QszampPuRP" role="37wK5m">
+            <ref role="3cqZAo" node="6QszampPuRM" resolve="context" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6QszampPuRM" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="6QszampPuRO" role="1tU5fm">
+          <ref role="3uigEE" to="6tkd:4EhVFrZ9nZd" resolve="IBuilderContext" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6QszampPv6f" role="jymVt" />
+    <node concept="3clFb_" id="6QszampPoEQ" role="jymVt">
+      <property role="TrG5h" value="copy" />
+      <node concept="37vLTG" id="6QszampPoER" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3uibUv" id="2UwmfNuS4dC" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6QszampPoET" role="3clF45" />
+      <node concept="3Tm1VV" id="6QszampPoEU" role="1B3o_S" />
+      <node concept="3clFbS" id="6QszampPoEV" role="3clF47">
+        <node concept="3clFbF" id="6QszampPsHS" role="3cqZAp">
+          <node concept="1rXfSq" id="6QszampPsHR" role="3clFbG">
+            <ref role="37wK5l" to="6tkd:2ePp5XuOJkd" resolve="copy" />
+            <node concept="2YIFZM" id="2ePp5XuRMGN" role="37wK5m">
+              <ref role="1Pybhc" node="5gTrVpGjuLg" resolve="SNodeToNodeAdapter" />
+              <ref role="37wK5l" node="5gTrVpGyMwR" resolve="wrap" />
+              <node concept="37vLTw" id="6QszampPsEu" role="37wK5m">
+                <ref role="3cqZAo" node="6QszampPoER" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="6QszampPsLj" role="1B3o_S" />
+    <node concept="3uibUv" id="6QszampPsLK" role="1zkMxy">
+      <ref role="3uigEE" to="6tkd:2ePp5XuOJj0" resolve="CopyNodeToTransformationResult" />
+    </node>
+  </node>
+  <node concept="312cEu" id="2UwmfNuV2A1">
+    <property role="TrG5h" value="CopySNodeAndApplyTransformationRecursively" />
+    <node concept="3clFbW" id="2UwmfNuV2A2" role="jymVt">
+      <node concept="3cqZAl" id="2UwmfNuV2A3" role="3clF45" />
+      <node concept="3Tm1VV" id="2UwmfNuV2A4" role="1B3o_S" />
+      <node concept="3clFbS" id="2UwmfNuV2A5" role="3clF47">
+        <node concept="XkiVB" id="2UwmfNuV2A6" role="3cqZAp">
+          <ref role="37wK5l" to="6tkd:2UwmfNuUNB8" resolve="CopyNodeAndApplyTransformationRecursively" />
+          <node concept="37vLTw" id="2UwmfNuV2A7" role="37wK5m">
+            <ref role="3cqZAo" node="2UwmfNuV2A8" resolve="context" />
+          </node>
+          <node concept="37vLTw" id="2UwmfNuV38r" role="37wK5m">
+            <ref role="3cqZAo" node="2UwmfNuV2Ym" resolve="transformationId" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="2UwmfNuV2A8" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="2UwmfNuV2A9" role="1tU5fm">
+          <ref role="3uigEE" to="6tkd:4EhVFrZ9nZd" resolve="IBuilderContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2UwmfNuV2Ym" role="3clF46">
+        <property role="TrG5h" value="transformationId" />
+        <node concept="17QB3L" id="2UwmfNuV31r" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2UwmfNuV2Aa" role="jymVt" />
+    <node concept="3clFb_" id="2UwmfNuV2Ab" role="jymVt">
+      <property role="TrG5h" value="copy" />
+      <node concept="37vLTG" id="2UwmfNuV2Ac" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3uibUv" id="2UwmfNuV2Ad" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="2UwmfNuV2Ae" role="3clF45" />
+      <node concept="3Tm1VV" id="2UwmfNuV2Af" role="1B3o_S" />
+      <node concept="3clFbS" id="2UwmfNuV2Ag" role="3clF47">
+        <node concept="3clFbF" id="2UwmfNuV2Ah" role="3cqZAp">
+          <node concept="1rXfSq" id="2UwmfNuV2Ai" role="3clFbG">
+            <ref role="37wK5l" to="6tkd:2ePp5XuOJkd" resolve="copy" />
+            <node concept="2YIFZM" id="2UwmfNuV2Aj" role="37wK5m">
+              <ref role="1Pybhc" node="5gTrVpGjuLg" resolve="SNodeToNodeAdapter" />
+              <ref role="37wK5l" node="5gTrVpGyMwR" resolve="wrap" />
+              <node concept="37vLTw" id="2UwmfNuV2Ak" role="37wK5m">
+                <ref role="3cqZAo" node="2UwmfNuV2Ac" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="2UwmfNuV2Al" role="1B3o_S" />
+    <node concept="3uibUv" id="2UwmfNuV2TE" role="1zkMxy">
+      <ref role="3uigEE" to="6tkd:2UwmfNuUN_0" resolve="CopyNodeAndApplyTransformationRecursively" />
     </node>
   </node>
 </model>
