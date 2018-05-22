@@ -976,9 +976,42 @@
                 <node concept="2OqwBi" id="2UwmfNv6Rbu" role="37vLTx">
                   <node concept="2ShNRf" id="2UwmfNv6Rbv" role="2Oq$k0">
                     <node concept="1pGfFk" id="2UwmfNv6Rbw" role="2ShVmc">
-                      <ref role="37wK5l" to="l6bp:6QszampPuRF" resolve="CopySNodeToTransformationResult" />
+                      <ref role="37wK5l" to="l6bp:2UwmfNuV2A2" resolve="CopySNodeAndApplyTransformationRecursively" />
                       <node concept="37vLTw" id="2UwmfNv6Rbx" role="37wK5m">
                         <ref role="3cqZAo" node="2UwmfNv6GTN" resolve="context" />
+                      </node>
+                      <node concept="Xl_RD" id="45rECHPDpqa" role="37wK5m">
+                        <property role="Xl_RC" value="id" />
+                        <node concept="17Uvod" id="45rECHPDpFR" role="lGtFl">
+                          <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                          <property role="2qtEX9" value="value" />
+                          <node concept="3zFVjK" id="45rECHPDpFS" role="3zH0cK">
+                            <node concept="3clFbS" id="45rECHPDpFT" role="2VODD2">
+                              <node concept="3clFbF" id="45rECHPDrkB" role="3cqZAp">
+                                <node concept="2OqwBi" id="45rECHPDtEo" role="3clFbG">
+                                  <node concept="2OqwBi" id="45rECHPDsJG" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="45rECHPDr$2" role="2Oq$k0">
+                                      <node concept="30H73N" id="45rECHPDrkA" role="2Oq$k0" />
+                                      <node concept="2Xjw5R" id="45rECHPDs7t" role="2OqNvi">
+                                        <node concept="1xMEDy" id="45rECHPDs7v" role="1xVPHs">
+                                          <node concept="chp4Y" id="45rECHPDsim" role="ri$Ld">
+                                            <ref role="cht4Q" to="oyp0:6ndA7L_L6SA" resolve="TransformationImplementation" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="45rECHPDt9p" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="oyp0:4EhVFrYZZ$2" resolve="interface" />
+                                    </node>
+                                  </node>
+                                  <node concept="2qgKlT" id="45rECHPDuhS" role="2OqNvi">
+                                    <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
