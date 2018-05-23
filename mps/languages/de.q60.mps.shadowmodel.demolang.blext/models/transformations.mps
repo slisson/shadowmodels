@@ -20,6 +20,11 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
     </language>
     <language id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel">
       <concept id="7335687028107245072" name="de.q60.mps.shadowmodel.structure.TransformationOutput" flags="ng" index="026TG">
@@ -79,14 +84,23 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
   <node concept="02vhO" id="6QszampKRkd">
@@ -171,8 +185,39 @@
       </node>
     </node>
     <node concept="2OrE70" id="6QszampOJXG" role="02uzr" />
-    <node concept="2OrE70" id="6QszampNGZ4" role="02uzr" />
+    <node concept="02vpq" id="Vl1zEEonTr" role="02uzr">
+      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
+      <node concept="026TG" id="Vl1zEEonTs" role="026TK">
+        <node concept="3LIkVS" id="Vl1zEEonTt" role="026TJ">
+          <node concept="2155sH" id="Vl1zEEonTu" role="1XuIBT">
+            <ref role="2155sG" node="Vl1zEEonT_" />
+          </node>
+          <node concept="027oh" id="Vl1zEEonTv" role="3LIkVV">
+            <ref role="027oj" to="tpck:h0TrG11" resolve="name" />
+            <node concept="3cpWs3" id="Vl1zEEonTw" role="027of">
+              <node concept="2OqwBi" id="Vl1zEEonTx" role="3uHU7B">
+                <node concept="2155sH" id="Vl1zEEonTy" role="2Oq$k0">
+                  <ref role="2155sG" node="Vl1zEEonT_" />
+                </node>
+                <node concept="3TrcHB" id="Vl1zEEonTz" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="Vl1zEEonT$" role="3uHU7w">
+                <property role="Xl_RC" value="_out" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="02i3K" id="Vl1zEEonT_" role="02i3f">
+        <node concept="02i3D" id="Vl1zEEoo8f" role="02i2B">
+          <ref role="02i3$" to="tpee:fz12cDA" resolve="ClassConcept" />
+        </node>
+      </node>
+    </node>
     <node concept="2OrE70" id="2UwmfNv6h0y" role="02uzr" />
+    <node concept="2OrE70" id="Vl1zEEonOl" role="02uzr" />
     <node concept="3OnZ_A" id="2UwmfNv7RdM" role="02uzr">
       <node concept="02vpq" id="2UwmfNv7Ri$" role="3LJuUP">
         <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
@@ -187,8 +232,33 @@
                 <ref role="02LMe" to="tpee:fz12cDC" resolve="FieldDeclaration" />
                 <node concept="027oh" id="2UwmfNv7RiE" role="02LM9">
                   <ref role="027oj" to="tpck:h0TrG11" resolve="name" />
-                  <node concept="Xl_RD" id="2UwmfNv7RiF" role="027of">
-                    <property role="Xl_RC" value="contribution" />
+                  <node concept="3cpWs3" id="Vl1zEEkmaW" role="027of">
+                    <node concept="2OqwBi" id="Vl1zEEkpPY" role="3uHU7w">
+                      <node concept="2OqwBi" id="Vl1zEEkmyz" role="2Oq$k0">
+                        <node concept="2155sH" id="Vl1zEEkmb3" role="2Oq$k0">
+                          <ref role="2155sG" node="2UwmfNv7RiI" />
+                        </node>
+                        <node concept="3Tsc0h" id="Vl1zEEknCt" role="2OqNvi">
+                          <ref role="3TtcxE" to="tpee:4EqhHTp4Mw3" resolve="member" />
+                        </node>
+                      </node>
+                      <node concept="34oBXx" id="Vl1zEEksCe" role="2OqNvi" />
+                    </node>
+                    <node concept="Xl_RD" id="2UwmfNv7RiF" role="3uHU7B">
+                      <property role="Xl_RC" value="contribution" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="027rt" id="Vl1zEEkvuo" role="02LM9">
+                  <ref role="027rv" to="tpee:4VkOLwjf83e" resolve="type" />
+                  <node concept="027og" id="Vl1zEEkvu_" role="027rp">
+                    <ref role="02LMe" to="tpee:fzcqZ_H" resolve="VoidType" />
+                  </node>
+                </node>
+                <node concept="027rt" id="Vl1zEEkvuO" role="02LM9">
+                  <ref role="027rv" to="tpee:h9B3oxE" resolve="visibility" />
+                  <node concept="027og" id="Vl1zEEkvv3" role="027rp">
+                    <ref role="02LMe" to="tpee:gFTm6Wc" resolve="PrivateVisibility" />
                   </node>
                 </node>
               </node>
