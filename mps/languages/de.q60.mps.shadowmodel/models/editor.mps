@@ -163,6 +163,21 @@
   <node concept="24kQdi" id="6ndA7L_La3o">
     <ref role="1XX52x" to="oyp0:6ndA7L_L6SA" resolve="TransformationImplementation" />
     <node concept="3EZMnI" id="6ndA7L_La3q" role="2wV5jI">
+      <node concept="3F0ifn" id="Vl1zEEz7$y" role="3EZMnx">
+        <property role="3F0ifm" value="contribute" />
+        <node concept="pkWqt" id="Vl1zEEz7Lk" role="pqm2j">
+          <node concept="3clFbS" id="Vl1zEEz7Ll" role="2VODD2">
+            <node concept="3clFbF" id="Vl1zEEz9nG" role="3cqZAp">
+              <node concept="2OqwBi" id="Vl1zEEz9Au" role="3clFbG">
+                <node concept="pncrf" id="Vl1zEEz9nF" role="2Oq$k0" />
+                <node concept="3TrcHB" id="Vl1zEEzahA" role="2OqNvi">
+                  <ref role="3TsBF5" to="oyp0:Vl1zEEz7n_" resolve="contribution" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="PMmxH" id="4EhVFrYZIHO" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
@@ -295,6 +310,18 @@
         </node>
         <node concept="3F0A7n" id="2UwmfNuY5uI" role="3EZMnx">
           <ref role="1NtTu8" to="oyp0:2UwmfNuY5hS" resolve="applicableToSubconcepts" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="Vl1zEEzayD" role="3EZMnx">
+        <node concept="2iRfu4" id="Vl1zEEzayE" role="2iSdaV" />
+        <node concept="VPM3Z" id="Vl1zEEzayF" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="Vl1zEEzayG" role="3EZMnx">
+          <property role="3F0ifm" value="contribution" />
+        </node>
+        <node concept="3F0A7n" id="Vl1zEEzayH" role="3EZMnx">
+          <ref role="1NtTu8" to="oyp0:Vl1zEEz7n_" resolve="contribution" />
         </node>
       </node>
     </node>
