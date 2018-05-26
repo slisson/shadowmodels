@@ -233,6 +233,14 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+    </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
@@ -5123,13 +5131,13 @@
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
       <node concept="3clFbS" id="4EhVFrZ3ArZ" role="3clF47">
-        <node concept="YS8fn" id="4EhVFrZ5eHo" role="3cqZAp">
-          <node concept="2ShNRf" id="4EhVFrZ5eHp" role="YScLw">
-            <node concept="1pGfFk" id="4EhVFrZ5eHq" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
-              <node concept="Xl_RD" id="4EhVFrZ5eHr" role="37wK5m">
-                <property role="Xl_RC" value="Not implemented" />
-              </node>
+        <node concept="3clFbF" id="6MWmLBF9yIu" role="3cqZAp">
+          <node concept="2OqwBi" id="6MWmLBF9yOC" role="3clFbG">
+            <node concept="37vLTw" id="6MWmLBF9yIt" role="2Oq$k0">
+              <ref role="3cqZAo" node="4EhVFrZ3AlB" resolve="node" />
+            </node>
+            <node concept="liA8E" id="6MWmLBF9$7D" role="2OqNvi">
+              <ref role="37wK5l" to="6tkd:5gTrVpGjNFp" resolve="getRoleInParent" />
             </node>
           </node>
         </node>
@@ -7149,12 +7157,21 @@
             </node>
           </node>
           <node concept="3clFbS" id="5m02zYhGHV6" role="2LFqv$">
-            <node concept="3clFbF" id="5m02zYhGKiZ" role="3cqZAp">
-              <node concept="1rXfSq" id="5m02zYhGKiY" role="3clFbG">
-                <ref role="37wK5l" node="ncHX0OSY2s" resolve="stop" />
-                <node concept="2GrUjf" id="5m02zYhGKlf" role="37wK5m">
-                  <ref role="2Gs0qQ" node="5m02zYhGHV4" resolve="repo" />
+            <node concept="1QHqEK" id="6MWmLBFa0aP" role="3cqZAp">
+              <node concept="1QHqEC" id="6MWmLBFa0aR" role="1QHqEI">
+                <node concept="3clFbS" id="6MWmLBFa0aT" role="1bW5cS">
+                  <node concept="3clFbF" id="5m02zYhGKiZ" role="3cqZAp">
+                    <node concept="1rXfSq" id="5m02zYhGKiY" role="3clFbG">
+                      <ref role="37wK5l" node="ncHX0OSY2s" resolve="stop" />
+                      <node concept="2GrUjf" id="5m02zYhGKlf" role="37wK5m">
+                        <ref role="2Gs0qQ" node="5m02zYhGHV4" resolve="repo" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
+              </node>
+              <node concept="2GrUjf" id="6MWmLBFa1gK" role="ukAjM">
+                <ref role="2Gs0qQ" node="5m02zYhGHV4" resolve="repo" />
               </node>
             </node>
           </node>
@@ -7986,14 +8003,9 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="3clFbS" id="7NatPTM618H" role="3clF47">
-        <node concept="YS8fn" id="7NatPTM618I" role="3cqZAp">
-          <node concept="2ShNRf" id="7NatPTM618J" role="YScLw">
-            <node concept="1pGfFk" id="7NatPTM618K" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
-              <node concept="Xl_RD" id="7NatPTM618L" role="37wK5m">
-                <property role="Xl_RC" value="Not implemented" />
-              </node>
-            </node>
+        <node concept="3clFbF" id="42zqTR3sIxx" role="3cqZAp">
+          <node concept="3clFbT" id="42zqTR3sIxw" role="3clFbG">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
