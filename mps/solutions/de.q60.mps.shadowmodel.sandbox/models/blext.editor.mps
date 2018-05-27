@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="bp4t" ref="r:c375a18d-71ae-4a50-a794-bc6969ddf849(de.q60.mps.shadowmodel.demolang.blext.transformations)" />
+    <import index="dz5s" ref="r:951be862-6bd0-40ab-adba-98d9c2a1b650(de.q60.mps.shadowmodel.demolang.editor.transformations)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -83,6 +84,10 @@
         <reference id="8992130853522508125" name="transformation" index="eK7S3" />
         <child id="8992130853522508077" name="input" index="eK7TN" />
       </concept>
+      <concept id="4196887567284754241" name="de.q60.mps.shadowmodel.demolang.editor.structure.RenderNode" flags="ng" index="2ov810">
+        <reference id="4196887567284754242" name="input" index="2ov813" />
+        <reference id="4196887567284765292" name="transformation" index="2ovllH" />
+      </concept>
     </language>
   </registry>
   <node concept="eK7T6" id="7NatPTM3OKL">
@@ -97,10 +102,10 @@
           <node concept="3cpWs8" id="4dnJ3mx5i4x" role="3cqZAp">
             <node concept="3cpWsn" id="4dnJ3mx5i4$" role="3cpWs9">
               <property role="TrG5h" value="x" />
-              <node concept="10Oyi0" id="4dnJ3mx5i4v" role="1tU5fm" />
               <node concept="3cmrfG" id="Vl1zEEo_nv" role="33vP2m">
                 <property role="3cmrfH" value="0" />
               </node>
+              <node concept="10Oyi0" id="4dnJ3mx5i4v" role="1tU5fm" />
             </node>
           </node>
           <node concept="3Oj_Fp" id="4dnJ3mx5i3s" role="3cqZAp">
@@ -149,6 +154,20 @@
       </node>
       <node concept="3Tm1VV" id="6QszampKyCT" role="1B3o_S" />
     </node>
+  </node>
+  <node concept="312cEu" id="3CYlK6yhEyH">
+    <property role="TrG5h" value="ClassToRender" />
+    <node concept="3clFb_" id="3CYlK6yhEz9" role="jymVt">
+      <property role="TrG5h" value="f" />
+      <node concept="3cqZAl" id="3CYlK6yhEzb" role="3clF45" />
+      <node concept="3Tm1VV" id="3CYlK6yhEzc" role="1B3o_S" />
+      <node concept="3clFbS" id="3CYlK6yhEzd" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="3CYlK6yhEyI" role="1B3o_S" />
+  </node>
+  <node concept="2ov810" id="3CYlK6yhUwk">
+    <ref role="2ov813" node="3CYlK6yhEyH" resolve="ClassToRender" />
+    <ref role="2ovllH" to="dz5s:3CYlK6yhOug" resolve="render" />
   </node>
 </model>
 
