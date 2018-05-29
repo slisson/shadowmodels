@@ -1190,6 +1190,24 @@
           </node>
         </node>
       </node>
+      <node concept="312cEg" id="3ECE8iPEukH" role="jymVt">
+        <property role="TrG5h" value="propertyWriteHandlers" />
+        <node concept="3Tm6S6" id="3ECE8iPEukI" role="1B3o_S" />
+        <node concept="3rvAFt" id="3ECE8iPEukJ" role="1tU5fm">
+          <node concept="17QB3L" id="3ECE8iPEukK" role="3rvQeY" />
+          <node concept="3uibUv" id="3ECE8iPEHu7" role="3rvSg0">
+            <ref role="3uigEE" node="3ECE8iPEwi6" resolve="IPropertyWriteHandler" />
+          </node>
+        </node>
+        <node concept="2ShNRf" id="3ECE8iPEukM" role="33vP2m">
+          <node concept="3rGOSV" id="3ECE8iPEukN" role="2ShVmc">
+            <node concept="17QB3L" id="3ECE8iPEukO" role="3rHrn6" />
+            <node concept="3uibUv" id="3ECE8iPEH_6" role="3rHtpV">
+              <ref role="3uigEE" node="3ECE8iPEwi6" resolve="IPropertyWriteHandler" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="312cEg" id="5gTrVpGiJMx" role="jymVt">
         <property role="TrG5h" value="referenceTargets" />
         <node concept="3Tm6S6" id="5gTrVpGiJMy" role="1B3o_S" />
@@ -2046,6 +2064,63 @@
         </node>
       </node>
       <node concept="2tJIrI" id="5gTrVpGnlck" role="jymVt" />
+      <node concept="3clFb_" id="3ECE8iPEJuS" role="jymVt">
+        <property role="TrG5h" value="setPropertyWriteHandler" />
+        <node concept="37vLTG" id="3ECE8iPEQPI" role="3clF46">
+          <property role="TrG5h" value="role" />
+          <node concept="17QB3L" id="3ECE8iPESAn" role="1tU5fm" />
+        </node>
+        <node concept="37vLTG" id="3ECE8iPESIk" role="3clF46">
+          <property role="TrG5h" value="handler" />
+          <node concept="3uibUv" id="3ECE8iPEUuO" role="1tU5fm">
+            <ref role="3uigEE" node="3ECE8iPEwi6" resolve="IPropertyWriteHandler" />
+          </node>
+        </node>
+        <node concept="3cqZAl" id="3ECE8iPEJuU" role="3clF45" />
+        <node concept="3Tm1VV" id="3ECE8iPEJuV" role="1B3o_S" />
+        <node concept="3clFbS" id="3ECE8iPEJuW" role="3clF47">
+          <node concept="3clFbF" id="3ECE8iPEQjn" role="3cqZAp">
+            <node concept="37vLTI" id="3ECE8iPEUKT" role="3clFbG">
+              <node concept="37vLTw" id="3ECE8iPEV6u" role="37vLTx">
+                <ref role="3cqZAo" node="3ECE8iPESIk" resolve="handler" />
+              </node>
+              <node concept="3EllGN" id="3ECE8iPEQIw" role="37vLTJ">
+                <node concept="37vLTw" id="3ECE8iPEUZ8" role="3ElVtu">
+                  <ref role="3cqZAo" node="3ECE8iPEQPI" resolve="role" />
+                </node>
+                <node concept="37vLTw" id="3ECE8iPEQjm" role="3ElQJh">
+                  <ref role="3cqZAo" node="3ECE8iPEukH" resolve="propertyWriteHandlers" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="3ECE8iPEV9K" role="jymVt" />
+      <node concept="3clFb_" id="3ECE8iPEX2i" role="jymVt">
+        <property role="TrG5h" value="getPropertyWriteHandler" />
+        <node concept="37vLTG" id="3ECE8iPF5Sm" role="3clF46">
+          <property role="TrG5h" value="role" />
+          <node concept="17QB3L" id="3ECE8iPF7Ak" role="1tU5fm" />
+        </node>
+        <node concept="3uibUv" id="3ECE8iPFblp" role="3clF45">
+          <ref role="3uigEE" node="3ECE8iPEwi6" resolve="IPropertyWriteHandler" />
+        </node>
+        <node concept="3Tm1VV" id="3ECE8iPEX2l" role="1B3o_S" />
+        <node concept="3clFbS" id="3ECE8iPEX2m" role="3clF47">
+          <node concept="3clFbF" id="3ECE8iPFda8" role="3cqZAp">
+            <node concept="3EllGN" id="3ECE8iPFdDw" role="3clFbG">
+              <node concept="37vLTw" id="3ECE8iPFdMn" role="3ElVtu">
+                <ref role="3cqZAo" node="3ECE8iPF5Sm" resolve="role" />
+              </node>
+              <node concept="37vLTw" id="3ECE8iPFda7" role="3ElQJh">
+                <ref role="3cqZAo" node="3ECE8iPEukH" resolve="propertyWriteHandlers" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="3ECE8iPEHI0" role="jymVt" />
       <node concept="3clFb_" id="5gTrVpGnlP4" role="jymVt">
         <property role="TrG5h" value="toNode" />
         <node concept="37vLTG" id="5gTrVpGnFGt" role="3clF46">
@@ -11602,6 +11677,35 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="3ECE8iPFlrT" role="3cqZAp">
+              <node concept="2OqwBi" id="3ECE8iPFl$1" role="3clFbG">
+                <node concept="37vLTw" id="3ECE8iPFlrR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2ePp5XuPdA5" resolve="copy" />
+                </node>
+                <node concept="liA8E" id="3ECE8iPFlMa" role="2OqNvi">
+                  <ref role="37wK5l" node="3ECE8iPEJuS" resolve="setPropertyWriteHandler" />
+                  <node concept="2OqwBi" id="3ECE8iPFlWU" role="37wK5m">
+                    <node concept="2GrUjf" id="3ECE8iPFlP3" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="2ePp5XuPdML" resolve="property" />
+                    </node>
+                    <node concept="liA8E" id="3ECE8iPFmiV" role="2OqNvi">
+                      <ref role="37wK5l" node="2ePp5XuOLmt" resolve="getName" />
+                    </node>
+                  </node>
+                  <node concept="2ShNRf" id="3ECE8iPFmDW" role="37wK5m">
+                    <node concept="1pGfFk" id="3ECE8iPFq9e" role="2ShVmc">
+                      <ref role="37wK5l" node="3ECE8iPFnU9" resolve="SimplePropertyWriteHandler" />
+                      <node concept="37vLTw" id="3ECE8iPFqi3" role="37wK5m">
+                        <ref role="3cqZAo" node="2ePp5XuPfsA" resolve="source" />
+                      </node>
+                      <node concept="2GrUjf" id="3ECE8iPFq_9" role="37wK5m">
+                        <ref role="2Gs0qQ" node="2ePp5XuPdML" resolve="property" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="2ePp5XuPdNe" role="3cqZAp" />
@@ -14048,10 +14152,65 @@
       <node concept="3cqZAl" id="42zqTR3lMOK" role="3clF45" />
       <node concept="3Tm1VV" id="42zqTR3lMOL" role="1B3o_S" />
       <node concept="3clFbS" id="42zqTR3lMOM" role="3clF47">
-        <node concept="YS8fn" id="42zqTR3lMON" role="3cqZAp">
-          <node concept="2ShNRf" id="42zqTR3lMOO" role="YScLw">
-            <node concept="1pGfFk" id="42zqTR3lMOP" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+        <node concept="3cpWs8" id="3ECE8iPFfCR" role="3cqZAp">
+          <node concept="3cpWsn" id="3ECE8iPFfCS" role="3cpWs9">
+            <property role="TrG5h" value="handler" />
+            <node concept="3uibUv" id="3ECE8iPFfCO" role="1tU5fm">
+              <ref role="3uigEE" node="3ECE8iPEwi6" resolve="IPropertyWriteHandler" />
+            </node>
+            <node concept="2OqwBi" id="3ECE8iPFfCT" role="33vP2m">
+              <node concept="1rXfSq" id="3ECE8iPFfCU" role="2Oq$k0">
+                <ref role="37wK5l" node="42zqTR3mau$" resolve="getElement" />
+              </node>
+              <node concept="liA8E" id="3ECE8iPFfCV" role="2OqNvi">
+                <ref role="37wK5l" node="3ECE8iPEX2i" resolve="getPropertyWriteHandler" />
+                <node concept="37vLTw" id="3ECE8iPFfCW" role="37wK5m">
+                  <ref role="3cqZAo" node="42zqTR3lMOG" resolve="role" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3ECE8iPFg2B" role="3cqZAp">
+          <node concept="3clFbS" id="3ECE8iPFg2D" role="3clFbx">
+            <node concept="YS8fn" id="3ECE8iPFgqD" role="3cqZAp">
+              <node concept="2ShNRf" id="3ECE8iPFgtl" role="YScLw">
+                <node concept="1pGfFk" id="3ECE8iPFh2n" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="3cpWs3" id="3ECE8iPFiyx" role="37wK5m">
+                    <node concept="Xl_RD" id="3ECE8iPFi_a" role="3uHU7w">
+                      <property role="Xl_RC" value="'" />
+                    </node>
+                    <node concept="3cpWs3" id="3ECE8iPFhFT" role="3uHU7B">
+                      <node concept="Xl_RD" id="3ECE8iPFh6_" role="3uHU7B">
+                        <property role="Xl_RC" value="No write handler specified for property '" />
+                      </node>
+                      <node concept="37vLTw" id="3ECE8iPFhKx" role="3uHU7w">
+                        <ref role="3cqZAo" node="42zqTR3lMOG" resolve="role" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="3ECE8iPFgi7" role="3clFbw">
+            <node concept="10Nm6u" id="3ECE8iPFgn7" role="3uHU7w" />
+            <node concept="37vLTw" id="3ECE8iPFg6p" role="3uHU7B">
+              <ref role="3cqZAo" node="3ECE8iPFfCS" resolve="handler" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3ECE8iPFjkL" role="3cqZAp">
+          <node concept="2OqwBi" id="3ECE8iPFjul" role="3clFbG">
+            <node concept="37vLTw" id="3ECE8iPFjkJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="3ECE8iPFfCS" resolve="handler" />
+            </node>
+            <node concept="liA8E" id="3ECE8iPFjF8" role="2OqNvi">
+              <ref role="37wK5l" node="3ECE8iPEGO5" resolve="write" />
+              <node concept="37vLTw" id="3ECE8iPFjJr" role="37wK5m">
+                <ref role="3cqZAo" node="42zqTR3lMOI" resolve="value" />
+              </node>
             </node>
           </node>
         </node>
@@ -14378,6 +14537,118 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="42zqTR3qhtX" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="3HP615" id="3ECE8iPEwi6">
+    <property role="TrG5h" value="IPropertyWriteHandler" />
+    <node concept="3clFb_" id="3ECE8iPEGO5" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="write" />
+      <node concept="37vLTG" id="3ECE8iPEGPE" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="17QB3L" id="3ECE8iPEGQd" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="3ECE8iPEGO7" role="3clF45" />
+      <node concept="3Tm1VV" id="3ECE8iPEGO8" role="1B3o_S" />
+      <node concept="3clFbS" id="3ECE8iPEGO9" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="3ECE8iPEwi7" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="3ECE8iPFnoX">
+    <property role="TrG5h" value="SimplePropertyWriteHandler" />
+    <node concept="312cEg" id="3ECE8iPFnDe" role="jymVt">
+      <property role="TrG5h" value="node" />
+      <node concept="3Tm6S6" id="3ECE8iPFnDf" role="1B3o_S" />
+      <node concept="3uibUv" id="3ECE8iPFnDT" role="1tU5fm">
+        <ref role="3uigEE" node="5gTrVpGiHIH" resolve="INode" />
+      </node>
+    </node>
+    <node concept="312cEg" id="3ECE8iPFnSB" role="jymVt">
+      <property role="TrG5h" value="property" />
+      <node concept="3Tm6S6" id="3ECE8iPFnSC" role="1B3o_S" />
+      <node concept="3uibUv" id="3ECE8iPFnTH" role="1tU5fm">
+        <ref role="3uigEE" node="2ePp5XuOLlW" resolve="IProperty" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3ECE8iPFnpI" role="jymVt" />
+    <node concept="3Tm1VV" id="3ECE8iPFnoY" role="1B3o_S" />
+    <node concept="3uibUv" id="3ECE8iPFnpx" role="EKbjA">
+      <ref role="3uigEE" node="3ECE8iPEwi6" resolve="IPropertyWriteHandler" />
+    </node>
+    <node concept="3clFbW" id="3ECE8iPFnU9" role="jymVt">
+      <node concept="3cqZAl" id="3ECE8iPFnUa" role="3clF45" />
+      <node concept="3Tm1VV" id="3ECE8iPFnUb" role="1B3o_S" />
+      <node concept="3clFbS" id="3ECE8iPFnUd" role="3clF47">
+        <node concept="3clFbF" id="3ECE8iPFnUh" role="3cqZAp">
+          <node concept="37vLTI" id="3ECE8iPFnUj" role="3clFbG">
+            <node concept="37vLTw" id="3ECE8iPFnUn" role="37vLTJ">
+              <ref role="3cqZAo" node="3ECE8iPFnDe" resolve="node" />
+            </node>
+            <node concept="37vLTw" id="3ECE8iPFnUo" role="37vLTx">
+              <ref role="3cqZAo" node="3ECE8iPFnUg" resolve="node1" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3ECE8iPFnUr" role="3cqZAp">
+          <node concept="37vLTI" id="3ECE8iPFnUt" role="3clFbG">
+            <node concept="37vLTw" id="3ECE8iPFnUx" role="37vLTJ">
+              <ref role="3cqZAo" node="3ECE8iPFnSB" resolve="property" />
+            </node>
+            <node concept="37vLTw" id="3ECE8iPFnUy" role="37vLTx">
+              <ref role="3cqZAo" node="3ECE8iPFnUq" resolve="property1" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3ECE8iPFnUg" role="3clF46">
+        <property role="TrG5h" value="node1" />
+        <node concept="3uibUv" id="3ECE8iPFnUf" role="1tU5fm">
+          <ref role="3uigEE" node="5gTrVpGiHIH" resolve="INode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3ECE8iPFnUq" role="3clF46">
+        <property role="TrG5h" value="property1" />
+        <node concept="3uibUv" id="3ECE8iPFnUp" role="1tU5fm">
+          <ref role="3uigEE" node="2ePp5XuOLlW" resolve="IProperty" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3ECE8iPFnXz" role="jymVt" />
+    <node concept="3clFb_" id="3ECE8iPFo0J" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="write" />
+      <node concept="37vLTG" id="3ECE8iPFo0K" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="17QB3L" id="3ECE8iPFo0L" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="3ECE8iPFo0M" role="3clF45" />
+      <node concept="3Tm1VV" id="3ECE8iPFo0N" role="1B3o_S" />
+      <node concept="3clFbS" id="3ECE8iPFo0P" role="3clF47">
+        <node concept="3clFbF" id="3ECE8iPFoas" role="3cqZAp">
+          <node concept="2OqwBi" id="3ECE8iPFog$" role="3clFbG">
+            <node concept="37vLTw" id="3ECE8iPFoar" role="2Oq$k0">
+              <ref role="3cqZAo" node="3ECE8iPFnDe" resolve="node" />
+            </node>
+            <node concept="liA8E" id="3ECE8iPFouI" role="2OqNvi">
+              <ref role="37wK5l" node="5gTrVpGiTEM" resolve="setPropertyValue" />
+              <node concept="2OqwBi" id="3ECE8iPFoLU" role="37wK5m">
+                <node concept="37vLTw" id="3ECE8iPFo$z" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3ECE8iPFnSB" resolve="property" />
+                </node>
+                <node concept="liA8E" id="3ECE8iPFp57" role="2OqNvi">
+                  <ref role="37wK5l" node="2ePp5XuOLmt" resolve="getName" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3ECE8iPFpgg" role="37wK5m">
+                <ref role="3cqZAo" node="3ECE8iPFo0K" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3ECE8iPFo0Q" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
