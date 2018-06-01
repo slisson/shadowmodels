@@ -3727,7 +3727,7 @@
     </node>
     <node concept="3clFb_" id="2ePp5XuOLFS" role="jymVt">
       <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="getReferenceLink" />
+      <property role="TrG5h" value="getReferenceLinks" />
       <node concept="A3Dl8" id="2ePp5XuOLFT" role="3clF45">
         <node concept="3uibUv" id="2ePp5XuOLHX" role="A3Ik2">
           <ref role="3uigEE" node="2ePp5XuOLqY" resolve="IReferenceLink" />
@@ -12011,7 +12011,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2ePp5XuPj27" role="2OqNvi">
-              <ref role="37wK5l" node="2ePp5XuOLFS" resolve="getReferenceLink" />
+              <ref role="37wK5l" node="2ePp5XuOLFS" resolve="getReferenceLinks" />
             </node>
           </node>
           <node concept="3clFbS" id="2ePp5XuPhNn" role="2LFqv$">
