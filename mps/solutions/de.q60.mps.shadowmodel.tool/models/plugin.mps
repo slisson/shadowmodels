@@ -23,6 +23,7 @@
     <import index="l6bp" ref="r:97875f9c-321e-405e-a344-6d3deab2bdba(de.q60.mps.shadowmodel.runtime.smodel)" />
     <import index="nvd4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.repository(MPS.OpenAPI/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
   </imports>
@@ -53,6 +54,10 @@
       </concept>
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
+      <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
+        <reference id="1217252646389" name="key" index="1DUlNI" />
+      </concept>
+      <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
       <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
@@ -242,6 +247,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -286,7 +292,9 @@
       <property role="TrG5h" value="setInputNode" />
       <node concept="37vLTG" id="3mqZV9TTn_S" role="3clF46">
         <property role="TrG5h" value="node" />
-        <node concept="3Tqbb2" id="3mqZV9TTnKY" role="1tU5fm" />
+        <node concept="3uibUv" id="qmkA5fUBLA" role="1tU5fm">
+          <ref role="3uigEE" to="6tkd:5gTrVpGiHIH" resolve="INode" />
+        </node>
       </node>
       <node concept="3cqZAl" id="3mqZV9TTn$d" role="3clF45" />
       <node concept="3clFbS" id="3mqZV9TTn6d" role="3clF47">
@@ -488,7 +496,9 @@
     <node concept="312cEg" id="3mqZV9TOXfH" role="jymVt">
       <property role="TrG5h" value="nodeToTransform" />
       <node concept="3Tm6S6" id="3mqZV9TOXfI" role="1B3o_S" />
-      <node concept="3Tqbb2" id="3mqZV9TOY$K" role="1tU5fm" />
+      <node concept="3uibUv" id="qmkA5fUFGm" role="1tU5fm">
+        <ref role="3uigEE" to="6tkd:5gTrVpGiHIH" resolve="INode" />
+      </node>
     </node>
     <node concept="312cEg" id="3mqZV9TQmdw" role="jymVt">
       <property role="TrG5h" value="changeCollector" />
@@ -1009,7 +1019,9 @@
       <property role="TrG5h" value="setInputNode" />
       <node concept="37vLTG" id="3mqZV9TTyX1" role="3clF46">
         <property role="TrG5h" value="node" />
-        <node concept="3Tqbb2" id="3mqZV9TT_Hw" role="1tU5fm" />
+        <node concept="3uibUv" id="qmkA5fUFcI" role="1tU5fm">
+          <ref role="3uigEE" to="6tkd:5gTrVpGiHIH" resolve="INode" />
+        </node>
       </node>
       <node concept="3cqZAl" id="3mqZV9TTqF8" role="3clF45" />
       <node concept="3Tm1VV" id="3mqZV9TTqF9" role="1B3o_S" />
@@ -1630,12 +1642,8 @@
                       <node concept="2ShNRf" id="3mqZV9TTX9U" role="37wK5m">
                         <node concept="1pGfFk" id="3mqZV9TTX9V" role="2ShVmc">
                           <ref role="37wK5l" to="6tkd:5gTrVpGlvtK" resolve="TransformationProblem" />
-                          <node concept="2YIFZM" id="3mqZV9TTX9W" role="37wK5m">
-                            <ref role="1Pybhc" to="l6bp:5gTrVpGjuLg" resolve="SNodeToNodeAdapter" />
-                            <ref role="37wK5l" to="l6bp:5gTrVpGyMwR" resolve="wrap" />
-                            <node concept="37vLTw" id="3mqZV9TTX9X" role="37wK5m">
-                              <ref role="3cqZAo" node="3mqZV9TOXfH" resolve="nodeToTransform" />
-                            </node>
+                          <node concept="37vLTw" id="qmkA5fUH55" role="37wK5m">
+                            <ref role="3cqZAo" node="3mqZV9TOXfH" resolve="nodeToTransform" />
                           </node>
                           <node concept="37vLTw" id="3mqZV9TTX9Y" role="37wK5m">
                             <ref role="3cqZAo" node="3mqZV9TRYee" resolve="id" />
@@ -1723,10 +1731,14 @@
             </node>
             <node concept="2XshWL" id="3mqZV9TTRqq" role="2OqNvi">
               <ref role="2WH_rO" node="3mqZV9TTn6b" resolve="setInputNode" />
-              <node concept="2OqwBi" id="3mqZV9TTRsx" role="2XxRq1">
-                <node concept="2WthIp" id="3mqZV9TTRs$" role="2Oq$k0" />
-                <node concept="3gHZIF" id="3mqZV9TTRsA" role="2OqNvi">
-                  <ref role="2WH_rO" node="3mqZV9TTbSt" resolve="node" />
+              <node concept="2YIFZM" id="qmkA5fUJtC" role="2XxRq1">
+                <ref role="1Pybhc" to="l6bp:5gTrVpGjuLg" resolve="SNodeToNodeAdapter" />
+                <ref role="37wK5l" to="l6bp:5gTrVpGyMwR" resolve="wrap" />
+                <node concept="2OqwBi" id="3mqZV9TTRsx" role="37wK5m">
+                  <node concept="2WthIp" id="3mqZV9TTRs$" role="2Oq$k0" />
+                  <node concept="3gHZIF" id="3mqZV9TTRsA" role="2OqNvi">
+                    <ref role="2WH_rO" node="3mqZV9TTbSt" resolve="node" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1739,6 +1751,91 @@
       <node concept="3Tm6S6" id="3mqZV9TTbSu" role="1B3o_S" />
       <node concept="1oajcY" id="3mqZV9TTbSv" role="1oa70y" />
       <node concept="3Tqbb2" id="3mqZV9TTbHA" role="1tU5fm" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="qmkA5fU3_y">
+    <property role="TrG5h" value="TransformModel" />
+    <property role="2uzpH1" value="Transform Model" />
+    <node concept="tnohg" id="qmkA5fU3_z" role="tncku">
+      <node concept="3clFbS" id="qmkA5fU3_$" role="2VODD2">
+        <node concept="3clFbF" id="qmkA5fU3__" role="3cqZAp">
+          <node concept="2OqwBi" id="qmkA5fU3_A" role="3clFbG">
+            <node concept="2OqwBi" id="qmkA5fU3_B" role="2Oq$k0">
+              <node concept="2OqwBi" id="qmkA5fU3_C" role="2Oq$k0">
+                <node concept="tl45R" id="qmkA5fU3_D" role="2Oq$k0" />
+                <node concept="liA8E" id="qmkA5fU3_E" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~AnActionEvent.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                </node>
+              </node>
+              <node concept="LR4U6" id="qmkA5fU3_F" role="2OqNvi">
+                <ref role="LR4U5" node="3mqZV9TK0VT" resolve="TransformationViewerTool" />
+              </node>
+            </node>
+            <node concept="2XshWL" id="qmkA5fU3_G" role="2OqNvi">
+              <ref role="2WH_rO" node="3mqZV9TTn6b" resolve="setInputNode" />
+              <node concept="2ShNRf" id="qmkA5fUHpU" role="2XxRq1">
+                <node concept="1pGfFk" id="qmkA5fUJdl" role="2ShVmc">
+                  <ref role="37wK5l" to="l6bp:qmkA5fOXr4" resolve="SModelAsNode" />
+                  <node concept="2OqwBi" id="qmkA5fUAPq" role="37wK5m">
+                    <node concept="2WthIp" id="qmkA5fUAPt" role="2Oq$k0" />
+                    <node concept="3gHZIF" id="qmkA5fUAPv" role="2OqNvi">
+                      <ref role="2WH_rO" node="qmkA5fUAx$" resolve="model" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S4$dB" id="qmkA5fUAx$" role="1NuT2Z">
+      <property role="TrG5h" value="model" />
+      <node concept="3Tm6S6" id="qmkA5fUAx_" role="1B3o_S" />
+      <node concept="1oajcY" id="qmkA5fUAxA" role="1oa70y" />
+      <node concept="H_c77" id="qmkA5fU3Dm" role="1tU5fm" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="qmkA5fUJzw">
+    <property role="TrG5h" value="TransformModule" />
+    <property role="2uzpH1" value="Transform Module" />
+    <node concept="tnohg" id="qmkA5fUJzx" role="tncku">
+      <node concept="3clFbS" id="qmkA5fUJzy" role="2VODD2">
+        <node concept="3clFbF" id="qmkA5fUJzz" role="3cqZAp">
+          <node concept="2OqwBi" id="qmkA5fUJz$" role="3clFbG">
+            <node concept="2OqwBi" id="qmkA5fUJz_" role="2Oq$k0">
+              <node concept="2OqwBi" id="qmkA5fUJzA" role="2Oq$k0">
+                <node concept="tl45R" id="qmkA5fUJzB" role="2Oq$k0" />
+                <node concept="liA8E" id="qmkA5fUJzC" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~AnActionEvent.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                </node>
+              </node>
+              <node concept="LR4U6" id="qmkA5fUJzD" role="2OqNvi">
+                <ref role="LR4U5" node="3mqZV9TK0VT" resolve="TransformationViewerTool" />
+              </node>
+            </node>
+            <node concept="2XshWL" id="qmkA5fUJzE" role="2OqNvi">
+              <ref role="2WH_rO" node="3mqZV9TTn6b" resolve="setInputNode" />
+              <node concept="2ShNRf" id="qmkA5fUJzF" role="2XxRq1">
+                <node concept="1pGfFk" id="qmkA5fUJzG" role="2ShVmc">
+                  <ref role="37wK5l" to="l6bp:qmkA5fOXYb" resolve="SModuleAsNode" />
+                  <node concept="2OqwBi" id="qmkA5fUJzH" role="37wK5m">
+                    <node concept="2WthIp" id="qmkA5fUJzI" role="2Oq$k0" />
+                    <node concept="1DTwFV" id="qmkA5fUKF_" role="2OqNvi">
+                      <ref role="2WH_rO" node="qmkA5fUKoo" resolve="module" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="qmkA5fUKoo" role="1NuT2Z">
+      <property role="TrG5h" value="module" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULE" resolve="MODULE" />
+      <node concept="1oajcY" id="qmkA5fUKop" role="1oa70y" />
     </node>
   </node>
 </model>
