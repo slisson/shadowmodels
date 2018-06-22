@@ -4332,12 +4332,27 @@
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
       <node concept="3clFbS" id="4EhVFrZ3Ank" role="3clF47">
-        <node concept="YS8fn" id="4EhVFrZ5eFC" role="3cqZAp">
-          <node concept="2ShNRf" id="4EhVFrZ5eFD" role="YScLw">
-            <node concept="1pGfFk" id="4EhVFrZ5eFE" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
-              <node concept="Xl_RD" id="4EhVFrZ5eFF" role="37wK5m">
-                <property role="Xl_RC" value="Not implemented" />
+        <node concept="3cpWs8" id="2U$60wnbmfA" role="3cqZAp">
+          <node concept="3cpWsn" id="2U$60wnbmfB" role="3cpWs9">
+            <property role="TrG5h" value="name" />
+            <node concept="17QB3L" id="2U$60wnbnJ4" role="1tU5fm" />
+            <node concept="1rXfSq" id="2U$60wnbmfC" role="33vP2m">
+              <ref role="37wK5l" node="4EhVFrZ3Ano" resolve="getName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2U$60wnbl5y" role="3cqZAp">
+          <node concept="3K4zz7" id="2U$60wnbpH0" role="3clFbG">
+            <node concept="37vLTw" id="2U$60wnbpJ1" role="3K4E3e">
+              <ref role="3cqZAo" node="2U$60wnbmfB" resolve="name" />
+            </node>
+            <node concept="1rXfSq" id="2U$60wnbpMk" role="3K4GZi">
+              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+            </node>
+            <node concept="3y3z36" id="2U$60wnbpDm" role="3K4Cdx">
+              <node concept="10Nm6u" id="2U$60wnbpF7" role="3uHU7w" />
+              <node concept="37vLTw" id="2U$60wnbmfD" role="3uHU7B">
+                <ref role="3cqZAo" node="2U$60wnbmfB" resolve="name" />
               </node>
             </node>
           </node>
