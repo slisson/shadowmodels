@@ -4307,12 +4307,15 @@
         </node>
       </node>
       <node concept="3clFbS" id="4EhVFrZ3Anc" role="3clF47">
-        <node concept="YS8fn" id="4EhVFrZ5eF$" role="3cqZAp">
-          <node concept="2ShNRf" id="4EhVFrZ5eF_" role="YScLw">
-            <node concept="1pGfFk" id="4EhVFrZ5eFA" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
-              <node concept="Xl_RD" id="4EhVFrZ5eFB" role="37wK5m">
-                <property role="Xl_RC" value="Not implemented" />
+        <node concept="3clFbF" id="1apE37RmX0p" role="3cqZAp">
+          <node concept="2OqwBi" id="1apE37RmYt$" role="3clFbG">
+            <node concept="1rXfSq" id="1apE37RmX0n" role="2Oq$k0">
+              <ref role="37wK5l" node="4EhVFrZ3AmW" resolve="getConcept" />
+            </node>
+            <node concept="liA8E" id="1apE37RmZXZ" role="2OqNvi">
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isSubConceptOf" />
+              <node concept="37vLTw" id="1apE37Rn01B" role="37wK5m">
+                <ref role="3cqZAo" node="4EhVFrZ3An9" resolve="concept" />
               </node>
             </node>
           </node>
