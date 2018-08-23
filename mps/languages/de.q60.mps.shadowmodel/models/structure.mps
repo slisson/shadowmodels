@@ -486,6 +486,9 @@
     <node concept="PrWs8" id="4EhVFrZoNdE" role="PzmwI">
       <ref role="PrY4T" node="6ndA7L_LuUC" resolve="INodeSpec" />
     </node>
+    <node concept="PrWs8" id="1apE37RqhPd" role="PzmwI">
+      <ref role="PrY4T" node="7X4ppfYlui3" resolve="IContextNodeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1cIlazwMtn_">
     <property role="EcuMT" value="1382135219951883749" />
