@@ -18,6 +18,7 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="6ysr" ref="r:a73fc1f5-45e8-4482-83d8-21741e260fa8(de.q60.mps.shadowmodel.editor.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
     <import index="ej6i" ref="r:6496ea12-c64c-456b-91b7-9e7f80ac2f9c(de.q60.mps.shadowmodel.editor.behavior)" implicit="true" />
   </imports>
@@ -172,6 +173,10 @@
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
+      <concept id="1235573135402" name="jetbrains.mps.baseLanguage.collections.structure.SingletonSequenceCreator" flags="nn" index="2HTt$P">
+        <child id="1235573175711" name="elementType" index="2HTBi0" />
+        <child id="1235573187520" name="singletonValue" index="2HTEbv" />
+      </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
     </language>
   </registry>
@@ -249,14 +254,21 @@
                         <ref role="37wK5l" to="6tkd:5gTrVpG_uHA" resolve="update" />
                         <node concept="2ShNRf" id="7NatPTM2Yqt" role="37wK5m">
                           <node concept="1pGfFk" id="7NatPTM2Yqu" role="2ShVmc">
-                            <ref role="37wK5l" to="6tkd:5gTrVpGlvtK" resolve="TransformationProblem" />
-                            <node concept="2YIFZM" id="7NatPTM2Yqv" role="37wK5m">
-                              <ref role="37wK5l" to="l6bp:5gTrVpGyMwR" resolve="wrap" />
-                              <ref role="1Pybhc" to="l6bp:5gTrVpGjuLg" resolve="SNodeToNodeAdapter" />
-                              <node concept="2OqwBi" id="7NatPTM2Yqw" role="37wK5m">
-                                <node concept="pncrf" id="7NatPTM2Yqx" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="7NatPTM2Yqy" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="hnll:7NatPTM2w$H" resolve="input" />
+                            <ref role="37wK5l" to="6tkd:5yVaV$3$fjx" resolve="TransformationProblem" />
+                            <node concept="2ShNRf" id="5yVaV$3GR0v" role="37wK5m">
+                              <node concept="2HTt$P" id="5yVaV$3GR0t" role="2ShVmc">
+                                <node concept="3uibUv" id="5yVaV$3GR0u" role="2HTBi0">
+                                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                                </node>
+                                <node concept="2YIFZM" id="7NatPTM2Yqv" role="2HTEbv">
+                                  <ref role="37wK5l" to="l6bp:5gTrVpGyMwR" resolve="wrap" />
+                                  <ref role="1Pybhc" to="l6bp:5gTrVpGjuLg" resolve="SNodeToNodeAdapter" />
+                                  <node concept="2OqwBi" id="7NatPTM2Yqw" role="37wK5m">
+                                    <node concept="pncrf" id="7NatPTM2Yqx" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="7NatPTM2Yqy" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="hnll:7NatPTM2w$H" resolve="input" />
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -473,14 +485,21 @@
                         <ref role="37wK5l" to="6tkd:5gTrVpG_uHA" resolve="update" />
                         <node concept="2ShNRf" id="3CYlK6ygJ0v" role="37wK5m">
                           <node concept="1pGfFk" id="3CYlK6ygJ0w" role="2ShVmc">
-                            <ref role="37wK5l" to="6tkd:5gTrVpGlvtK" resolve="TransformationProblem" />
-                            <node concept="2YIFZM" id="3CYlK6ygJ0x" role="37wK5m">
-                              <ref role="1Pybhc" to="l6bp:5gTrVpGjuLg" resolve="SNodeToNodeAdapter" />
-                              <ref role="37wK5l" to="l6bp:5gTrVpGyMwR" resolve="wrap" />
-                              <node concept="2OqwBi" id="3CYlK6ygJ0y" role="37wK5m">
-                                <node concept="pncrf" id="3CYlK6ygJ0z" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="3CYlK6ygJ0$" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="hnll:3CYlK6ygHt2" resolve="input" />
+                            <ref role="37wK5l" to="6tkd:5yVaV$3$fjx" resolve="TransformationProblem" />
+                            <node concept="2ShNRf" id="5yVaV$3GWNj" role="37wK5m">
+                              <node concept="2HTt$P" id="5yVaV$3GWNh" role="2ShVmc">
+                                <node concept="3uibUv" id="5yVaV$3GWNi" role="2HTBi0">
+                                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                                </node>
+                                <node concept="2YIFZM" id="3CYlK6ygJ0x" role="2HTEbv">
+                                  <ref role="1Pybhc" to="l6bp:5gTrVpGjuLg" resolve="SNodeToNodeAdapter" />
+                                  <ref role="37wK5l" to="l6bp:5gTrVpGyMwR" resolve="wrap" />
+                                  <node concept="2OqwBi" id="3CYlK6ygJ0y" role="37wK5m">
+                                    <node concept="pncrf" id="3CYlK6ygJ0z" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="3CYlK6ygJ0$" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="hnll:3CYlK6ygHt2" resolve="input" />
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
