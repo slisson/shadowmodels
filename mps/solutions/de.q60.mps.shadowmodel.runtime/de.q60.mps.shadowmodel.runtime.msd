@@ -14,7 +14,7 @@
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">0bf7bc3b-b11d-42e4-b160-93d72af96397(de.q60.mps.shadowmodel.runtimelang)</dependency>
     <dependency reexport="false">134ef213-c518-42b0-b12c-c109aa13d320(collections_trove.runtime)</dependency>
-    <dependency reexport="false">18463265-6d45-4514-82f1-cf7eb1222492(de.itemis.mps.polymorphicfunctions.runtime)</dependency>
+    <dependency reexport="true">18463265-6d45-4514-82f1-cf7eb1222492(de.itemis.mps.polymorphicfunctions.runtime)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="6" />

@@ -49,11 +49,15 @@
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+      </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
+      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -1037,6 +1041,36 @@
       <node concept="3F0ifn" id="2UwmfNv6hoM" role="3EZMnx">
         <property role="3F0ifm" value="}" />
         <node concept="pVoyu" id="2UwmfNv6hp9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3p36aQ" id="4FwMpYIttx2">
+    <ref role="aqKnT" to="oyp0:4FwMpYIttwr" resolve="ShadowmodelNodeType" />
+  </node>
+  <node concept="24kQdi" id="35N923AhCKB">
+    <ref role="1XX52x" to="oyp0:4FwMpYIttwr" resolve="ShadowmodelNodeType" />
+    <node concept="3EZMnI" id="35N923AhCKD" role="2wV5jI">
+      <node concept="3F0ifn" id="35N923AhCKT" role="3EZMnx">
+        <property role="3F0ifm" value="shadowmodelNode&lt;" />
+        <node concept="11LMrY" id="35N923AhE5Q" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="35N923AhCKG" role="2iSdaV" />
+      <node concept="1iCGBv" id="35N923AhCL8" role="3EZMnx">
+        <ref role="1NtTu8" to="oyp0:4FwMpYIttws" resolve="concept" />
+        <node concept="1sVBvm" id="35N923AhCLa" role="1sWHZn">
+          <node concept="3F0A7n" id="35N923AhCL$" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="35N923AhCLZ" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="35N923AhE5V" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
