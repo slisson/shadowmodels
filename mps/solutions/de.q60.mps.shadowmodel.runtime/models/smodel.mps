@@ -4413,7 +4413,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="4EhVFrZ3AnC" role="3clF46">
-        <property role="TrG5h" value="node" />
+        <property role="TrG5h" value="child" />
         <node concept="3uibUv" id="4EhVFrZ3AnD" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
         </node>
@@ -4422,12 +4422,33 @@
         </node>
       </node>
       <node concept="3clFbS" id="4EhVFrZ3AnF" role="3clF47">
-        <node concept="YS8fn" id="4EhVFrZ5eFK" role="3cqZAp">
-          <node concept="2ShNRf" id="4EhVFrZ5eFL" role="YScLw">
-            <node concept="1pGfFk" id="4EhVFrZ5eFM" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
-              <node concept="Xl_RD" id="4EhVFrZ5eFN" role="37wK5m">
-                <property role="Xl_RC" value="Not implemented" />
+        <node concept="3clFbF" id="35N923AyOUf" role="3cqZAp">
+          <node concept="2OqwBi" id="35N923AyRpR" role="3clFbG">
+            <node concept="2OqwBi" id="35N923AyPnh" role="2Oq$k0">
+              <node concept="Xjq3P" id="35N923AyOUd" role="2Oq$k0" />
+              <node concept="2OwXpG" id="35N923AyPPR" role="2OqNvi">
+                <ref role="2Oxat5" node="4EhVFrZ3AlB" resolve="node" />
+              </node>
+            </node>
+            <node concept="liA8E" id="35N923AySPg" role="2OqNvi">
+              <ref role="37wK5l" to="6tkd:5gTrVpGiU4A" resolve="addChild" />
+              <node concept="2OqwBi" id="35N923AyTgR" role="37wK5m">
+                <node concept="37vLTw" id="35N923AySZb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4EhVFrZ3An_" resolve="link" />
+                </node>
+                <node concept="liA8E" id="35N923AyV1Q" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                </node>
+              </node>
+              <node concept="3cmrfG" id="35N923AyVqa" role="37wK5m">
+                <property role="3cmrfH" value="-1" />
+              </node>
+              <node concept="2YIFZM" id="35N923AyWjy" role="37wK5m">
+                <ref role="1Pybhc" node="5gTrVpGjuLg" resolve="SNodeToNodeAdapter" />
+                <ref role="37wK5l" node="5gTrVpGyMwR" resolve="wrap" />
+                <node concept="37vLTw" id="35N923AyWAP" role="37wK5m">
+                  <ref role="3cqZAo" node="4EhVFrZ3AnC" resolve="child" />
+                </node>
               </node>
             </node>
           </node>
@@ -16669,8 +16690,12 @@
               <node concept="2YIFZM" id="30TKBrMe33c" role="2Oq$k0">
                 <ref role="1Pybhc" node="5gTrVpGjuLg" resolve="SNodeToNodeAdapter" />
                 <ref role="37wK5l" node="5gTrVpGyMwR" resolve="wrap" />
-                <node concept="37vLTw" id="30TKBrMe33d" role="37wK5m">
-                  <ref role="3cqZAo" node="30TKBrMe33o" resolve="parent" />
+                <node concept="2YIFZM" id="35N923Atfrr" role="37wK5m">
+                  <ref role="37wK5l" node="3ECE8iPOQCm" resolve="unwrap" />
+                  <ref role="1Pybhc" node="kHIbzAYu9G" resolve="ANode" />
+                  <node concept="37vLTw" id="35N923Atfy9" role="37wK5m">
+                    <ref role="3cqZAo" node="30TKBrMe33o" resolve="parent" />
+                  </node>
                 </node>
               </node>
               <node concept="liA8E" id="30TKBrMe33e" role="2OqNvi">
@@ -16694,6 +16719,26 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="35N923A$lmU" role="3cqZAp">
+          <node concept="3clFbS" id="35N923A$lmW" role="3clFbx">
+            <node concept="YS8fn" id="35N923A$lNs" role="3cqZAp">
+              <node concept="2ShNRf" id="35N923A$lOK" role="YScLw">
+                <node concept="1pGfFk" id="35N923A$mlQ" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="35N923A$mpB" role="37wK5m">
+                    <property role="Xl_RC" value="addNewChild has to return the created child node" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="35N923A$lEO" role="3clFbw">
+            <node concept="10Nm6u" id="35N923A$lMu" role="3uHU7w" />
+            <node concept="37vLTw" id="35N923A$lu1" role="3uHU7B">
+              <ref role="3cqZAo" node="30TKBrMe339" resolve="newChild" />
             </node>
           </node>
         </node>

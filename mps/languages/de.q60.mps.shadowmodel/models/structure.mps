@@ -253,6 +253,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6ndA7L_LuUC" resolve="INodeSpec" />
     </node>
+    <node concept="1TJgyj" id="35N923AuMBx" role="1TKVEi">
+      <property role="IQ2ns" value="3563231453904579041" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="createHandler" />
+      <ref role="20lvS9" node="35N923AuHGf" resolve="ChildCreateHandler" />
+    </node>
     <node concept="1TJgyj" id="6ndA7L_LuUz" role="1TKVEi">
       <property role="IQ2ns" value="7335687028107243171" />
       <property role="20lmBu" value="reference" />
@@ -761,6 +767,9 @@
     <property role="3GE5qa" value="builder" />
     <property role="TrG5h" value="PropertyWriteHandler" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+    <node concept="PrWs8" id="35N923ApTqs" role="PzmwI">
+      <ref role="PrY4T" node="35N923ApTor" resolve="IWriteHandler" />
+    </node>
   </node>
   <node concept="1TIwiD" id="TB2rf$dAhM">
     <property role="EcuMT" value="1037808907364754546" />
@@ -783,6 +792,44 @@
     <node concept="t5JxF" id="4FwMpYIttx3" role="lGtFl">
       <property role="t5JxN" value="For generator internal use only" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="35N923ApTor">
+    <property role="EcuMT" value="3563231453903296027" />
+    <property role="3GE5qa" value="builder" />
+    <property role="TrG5h" value="IWriteHandler" />
+  </node>
+  <node concept="1TIwiD" id="35N923AtW$y">
+    <property role="EcuMT" value="3563231453904357666" />
+    <property role="3GE5qa" value="builder" />
+    <property role="TrG5h" value="NullNode" />
+    <property role="34LRSv" value="null" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="35N923AtW$S" role="PzmwI">
+      <ref role="PrY4T" node="6ndA7L_LuUC" resolve="INodeSpec" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="35N923AuHGf">
+    <property role="EcuMT" value="3563231453904558863" />
+    <property role="3GE5qa" value="builder" />
+    <property role="TrG5h" value="ChildCreateHandler" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+    <node concept="PrWs8" id="35N923AzFOE" role="PzmwI">
+      <ref role="PrY4T" node="35N923ApTor" resolve="IWriteHandler" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="35N923AuHJh">
+    <property role="EcuMT" value="3563231453904559057" />
+    <property role="3GE5qa" value="builder" />
+    <property role="TrG5h" value="ChildCreateHandler_concept" />
+    <property role="34LRSv" value="concept" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="35N923AuHK$">
+    <property role="EcuMT" value="3563231453904559140" />
+    <property role="3GE5qa" value="builder" />
+    <property role="TrG5h" value="ChildCreateHandler_index" />
+    <property role="34LRSv" value="index" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>
 
