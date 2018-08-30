@@ -1238,6 +1238,24 @@
           </node>
         </node>
       </node>
+      <node concept="312cEg" id="6AmKQHn71YL" role="jymVt">
+        <property role="TrG5h" value="referenceWriteHandlers" />
+        <node concept="3Tm6S6" id="6AmKQHn71YM" role="1B3o_S" />
+        <node concept="3rvAFt" id="6AmKQHn71YN" role="1tU5fm">
+          <node concept="17QB3L" id="6AmKQHn71YO" role="3rvQeY" />
+          <node concept="3uibUv" id="6AmKQHn74n3" role="3rvSg0">
+            <ref role="3uigEE" node="6AmKQHn710N" resolve="IReferenceWriteHandler" />
+          </node>
+        </node>
+        <node concept="2ShNRf" id="6AmKQHn71YQ" role="33vP2m">
+          <node concept="3rGOSV" id="6AmKQHn71YR" role="2ShVmc">
+            <node concept="17QB3L" id="6AmKQHn71YS" role="3rHrn6" />
+            <node concept="3uibUv" id="6AmKQHn74uk" role="3rHtpV">
+              <ref role="3uigEE" node="6AmKQHn710N" resolve="IReferenceWriteHandler" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="312cEg" id="3ECE8iPJyC9" role="jymVt">
         <property role="TrG5h" value="childAddHandlers" />
         <node concept="3Tm6S6" id="3ECE8iPJyCa" role="1B3o_S" />
@@ -2162,6 +2180,63 @@
         </node>
       </node>
       <node concept="2tJIrI" id="3ECE8iPEHI0" role="jymVt" />
+      <node concept="3clFb_" id="6AmKQHn74wY" role="jymVt">
+        <property role="TrG5h" value="setReferenceWriteHandler" />
+        <node concept="37vLTG" id="6AmKQHn74wZ" role="3clF46">
+          <property role="TrG5h" value="role" />
+          <node concept="17QB3L" id="6AmKQHn74x0" role="1tU5fm" />
+        </node>
+        <node concept="37vLTG" id="6AmKQHn74x1" role="3clF46">
+          <property role="TrG5h" value="handler" />
+          <node concept="3uibUv" id="6AmKQHn799r" role="1tU5fm">
+            <ref role="3uigEE" node="6AmKQHn710N" resolve="IReferenceWriteHandler" />
+          </node>
+        </node>
+        <node concept="3cqZAl" id="6AmKQHn74x3" role="3clF45" />
+        <node concept="3Tm1VV" id="6AmKQHn74x4" role="1B3o_S" />
+        <node concept="3clFbS" id="6AmKQHn74x5" role="3clF47">
+          <node concept="3clFbF" id="6AmKQHn74x6" role="3cqZAp">
+            <node concept="37vLTI" id="6AmKQHn74x7" role="3clFbG">
+              <node concept="37vLTw" id="6AmKQHn74x8" role="37vLTx">
+                <ref role="3cqZAo" node="6AmKQHn74x1" resolve="handler" />
+              </node>
+              <node concept="3EllGN" id="6AmKQHn74x9" role="37vLTJ">
+                <node concept="37vLTw" id="6AmKQHn74xa" role="3ElVtu">
+                  <ref role="3cqZAo" node="6AmKQHn74wZ" resolve="role" />
+                </node>
+                <node concept="37vLTw" id="6AmKQHn79uB" role="3ElQJh">
+                  <ref role="3cqZAo" node="6AmKQHn71YL" resolve="referenceWriteHandlers" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="6AmKQHn74wX" role="jymVt" />
+      <node concept="3clFb_" id="6AmKQHn74wN" role="jymVt">
+        <property role="TrG5h" value="getReferenceWriteHandler" />
+        <node concept="37vLTG" id="6AmKQHn74wO" role="3clF46">
+          <property role="TrG5h" value="role" />
+          <node concept="17QB3L" id="6AmKQHn74wP" role="1tU5fm" />
+        </node>
+        <node concept="3uibUv" id="6AmKQHn7bKv" role="3clF45">
+          <ref role="3uigEE" node="6AmKQHn710N" resolve="IReferenceWriteHandler" />
+        </node>
+        <node concept="3Tm1VV" id="6AmKQHn74wR" role="1B3o_S" />
+        <node concept="3clFbS" id="6AmKQHn74wS" role="3clF47">
+          <node concept="3clFbF" id="6AmKQHn74wT" role="3cqZAp">
+            <node concept="3EllGN" id="6AmKQHn74wU" role="3clFbG">
+              <node concept="37vLTw" id="6AmKQHn74wV" role="3ElVtu">
+                <ref role="3cqZAo" node="6AmKQHn74wO" resolve="role" />
+              </node>
+              <node concept="37vLTw" id="6AmKQHn7dUg" role="3ElQJh">
+                <ref role="3cqZAo" node="6AmKQHn71YL" resolve="referenceWriteHandlers" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="6AmKQHn74wM" role="jymVt" />
       <node concept="3clFb_" id="3ECE8iPJKbH" role="jymVt">
         <property role="TrG5h" value="setChildAddHandler" />
         <node concept="37vLTG" id="3ECE8iPJKbI" role="3clF46">
@@ -13443,13 +13518,94 @@
       <node concept="3cqZAl" id="42zqTR3lMOn" role="3clF45" />
       <node concept="3Tm1VV" id="42zqTR3lMOo" role="1B3o_S" />
       <node concept="3clFbS" id="42zqTR3lMOp" role="3clF47">
-        <node concept="1X3_iC" id="35N923ADJ4$" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="YS8fn" id="42zqTR3lMOq" role="8Wnug">
-            <node concept="2ShNRf" id="42zqTR3lMOr" role="YScLw">
-              <node concept="1pGfFk" id="42zqTR3lMOs" role="2ShVmc">
-                <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+        <node concept="3cpWs8" id="6AmKQHn7eVq" role="3cqZAp">
+          <node concept="3cpWsn" id="6AmKQHn7eVr" role="3cpWs9">
+            <property role="TrG5h" value="handler" />
+            <node concept="3uibUv" id="6AmKQHn7fNU" role="1tU5fm">
+              <ref role="3uigEE" node="6AmKQHn710N" resolve="IReferenceWriteHandler" />
+            </node>
+            <node concept="2OqwBi" id="6AmKQHn7eVt" role="33vP2m">
+              <node concept="1rXfSq" id="6AmKQHn7eVu" role="2Oq$k0">
+                <ref role="37wK5l" node="42zqTR3mau$" resolve="getElement" />
+              </node>
+              <node concept="liA8E" id="6AmKQHn7eVv" role="2OqNvi">
+                <ref role="37wK5l" node="6AmKQHn74wN" resolve="getReferenceWriteHandler" />
+                <node concept="37vLTw" id="6AmKQHn7eVw" role="37wK5m">
+                  <ref role="3cqZAo" node="42zqTR3lMOj" resolve="role" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6AmKQHn7eVx" role="3cqZAp">
+          <node concept="3clFbS" id="6AmKQHn7eVy" role="3clFbx">
+            <node concept="3clFbJ" id="6AmKQHn7eVz" role="3cqZAp">
+              <property role="TyiWK" value="true" />
+              <property role="TyiWL" value="false" />
+              <node concept="3clFbS" id="6AmKQHn7eV$" role="3clFbx">
+                <node concept="YS8fn" id="6AmKQHn7eV_" role="3cqZAp">
+                  <node concept="2ShNRf" id="6AmKQHn7eVA" role="YScLw">
+                    <node concept="1pGfFk" id="6AmKQHn7eVB" role="2ShVmc">
+                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                      <node concept="3cpWs3" id="6AmKQHn7eVC" role="37wK5m">
+                        <node concept="Xl_RD" id="6AmKQHn7eVD" role="3uHU7w">
+                          <property role="Xl_RC" value="'" />
+                        </node>
+                        <node concept="3cpWs3" id="6AmKQHn7eVE" role="3uHU7B">
+                          <node concept="Xl_RD" id="6AmKQHn7eVF" role="3uHU7B">
+                            <property role="Xl_RC" value="No write handler specified for reference '" />
+                          </node>
+                          <node concept="37vLTw" id="6AmKQHn7eVG" role="3uHU7w">
+                            <ref role="3cqZAo" node="42zqTR3lMOj" resolve="role" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="17QLQc" id="6AmKQHn7eVH" role="3clFbw">
+                <node concept="1rXfSq" id="6AmKQHn7eVI" role="3uHU7B">
+                  <ref role="37wK5l" node="42zqTR3lMNM" resolve="getReferenceTarget" />
+                  <node concept="37vLTw" id="6AmKQHn7eVJ" role="37wK5m">
+                    <ref role="3cqZAo" node="42zqTR3lMOj" resolve="role" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6AmKQHn7ghg" role="3uHU7w">
+                  <ref role="3cqZAo" node="42zqTR3lMOl" resolve="target" />
+                </node>
+              </node>
+              <node concept="9aQIb" id="6AmKQHn7eVL" role="9aQIa">
+                <node concept="3clFbS" id="6AmKQHn7eVM" role="9aQI4">
+                  <node concept="3SKdUt" id="6AmKQHn7eVN" role="3cqZAp">
+                    <node concept="3SKdUq" id="6AmKQHn7eVO" role="3SKWNk">
+                      <property role="3SKdUp" value="No handler required for references that never change" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="6AmKQHn7eVP" role="3clFbw">
+            <node concept="10Nm6u" id="6AmKQHn7eVQ" role="3uHU7w" />
+            <node concept="37vLTw" id="6AmKQHn7eVR" role="3uHU7B">
+              <ref role="3cqZAo" node="6AmKQHn7eVr" resolve="handler" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="6AmKQHn7eVS" role="9aQIa">
+            <node concept="3clFbS" id="6AmKQHn7eVT" role="9aQI4">
+              <node concept="3clFbF" id="6AmKQHn7eVU" role="3cqZAp">
+                <node concept="2OqwBi" id="6AmKQHn7eVV" role="3clFbG">
+                  <node concept="37vLTw" id="6AmKQHn7eVW" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6AmKQHn7eVr" resolve="handler" />
+                  </node>
+                  <node concept="liA8E" id="6AmKQHn7eVX" role="2OqNvi">
+                    <ref role="37wK5l" node="6AmKQHn7134" resolve="write" />
+                    <node concept="37vLTw" id="6AmKQHn7iJv" role="37wK5m">
+                      <ref role="3cqZAo" node="42zqTR3lMOl" resolve="target" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -14492,6 +14648,23 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+  </node>
+  <node concept="3HP615" id="6AmKQHn710N">
+    <property role="TrG5h" value="IReferenceWriteHandler" />
+    <node concept="3clFb_" id="6AmKQHn7134" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="write" />
+      <node concept="37vLTG" id="6AmKQHn717a" role="3clF46">
+        <property role="TrG5h" value="target" />
+        <node concept="3uibUv" id="6AmKQHn718V" role="1tU5fm">
+          <ref role="3uigEE" node="5gTrVpGiHIH" resolve="INode" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6AmKQHn7136" role="3clF45" />
+      <node concept="3Tm1VV" id="6AmKQHn7137" role="1B3o_S" />
+      <node concept="3clFbS" id="6AmKQHn7138" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="6AmKQHn710O" role="1B3o_S" />
   </node>
 </model>
 
