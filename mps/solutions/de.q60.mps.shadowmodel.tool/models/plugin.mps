@@ -29,7 +29,7 @@
     <import index="od2j" ref="r:19d224b8-fac8-4b19-ae42-e7b119858f3b(de.itemis.mps.polymorphicfunctions.runtime)" />
     <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="hm90" ref="r:61d96d59-75af-4854-9d37-c81762926dfe(de.q60.mps.shadowmodel.behavior)" implicit="true" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
@@ -1277,8 +1277,8 @@
                                   <node concept="37vLTw" id="5yVaV$3KbK3" role="2Oq$k0">
                                     <ref role="3cqZAo" node="5yVaV$3Kas3" resolve="it" />
                                   </node>
-                                  <node concept="2qgKlT" id="5yVaV$3Ke6C" role="2OqNvi">
-                                    <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
+                                  <node concept="2qgKlT" id="2trP305guJV" role="2OqNvi">
+                                    <ref role="37wK5l" to="hm90:4xbFfZa$uSg" resolve="getId" />
                                   </node>
                                 </node>
                               </node>
