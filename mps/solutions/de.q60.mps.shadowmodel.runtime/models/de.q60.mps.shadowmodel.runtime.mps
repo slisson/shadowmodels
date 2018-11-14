@@ -13493,9 +13493,13 @@
             </node>
             <node concept="liA8E" id="42zqTR3pSQG" role="2OqNvi">
               <ref role="37wK5l" node="5gTrVpGnlP4" resolve="toNode" />
-              <node concept="10M0yZ" id="2U$60wna0Tt" role="37wK5m">
-                <ref role="3cqZAo" node="2U$60wn9M2C" resolve="UNKNOWN" />
-                <ref role="1PxDUh" node="2U$60wn9GX6" resolve="ContainmentData" />
+              <node concept="2YIFZM" id="2trP305jCe_" role="37wK5m">
+                <ref role="37wK5l" node="2trP305gIlT" resolve="unknown" />
+                <ref role="1Pybhc" node="2U$60wn9GX6" resolve="ContainmentData" />
+                <node concept="Xjq3P" id="2trP305jCpF" role="37wK5m" />
+                <node concept="37vLTw" id="2trP305jCuz" role="37wK5m">
+                  <ref role="3cqZAo" node="42zqTR3lMNN" resolve="role" />
+                </node>
               </node>
             </node>
           </node>
@@ -14402,6 +14406,128 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2U$60wn9JaH" role="jymVt" />
+    <node concept="2YIFZL" id="2trP305gIlT" role="jymVt">
+      <property role="TrG5h" value="unknown" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="2trP305gIlU" role="3clF46">
+        <property role="TrG5h" value="sourceNode" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="2trP305gIlV" role="1tU5fm">
+          <ref role="3uigEE" node="5gTrVpGiHIH" resolve="INode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2trP305gIlW" role="3clF46">
+        <property role="TrG5h" value="role" />
+        <property role="3TUv4t" value="true" />
+        <node concept="17QB3L" id="2trP305gIlX" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="2trP305gIlY" role="3clF47">
+        <node concept="3clFbF" id="2trP305gJt7" role="3cqZAp">
+          <node concept="2ShNRf" id="2trP305gJt9" role="3clFbG">
+            <node concept="YeOm9" id="2trP305gJta" role="2ShVmc">
+              <node concept="1Y3b0j" id="2trP305gJtb" role="YeSDq">
+                <property role="2bfB8j" value="true" />
+                <ref role="1Y3XeK" node="2U$60wn9GX6" resolve="ContainmentData" />
+                <ref role="37wK5l" node="2U$60wn9H3h" resolve="ContainmentData" />
+                <node concept="3Tm1VV" id="2trP305gJtc" role="1B3o_S" />
+                <node concept="10Nm6u" id="2trP305gJtd" role="37wK5m" />
+                <node concept="10Nm6u" id="2trP305gJte" role="37wK5m" />
+                <node concept="3clFb_" id="2trP305gJtf" role="jymVt">
+                  <property role="TrG5h" value="getParent" />
+                  <property role="1EzhhJ" value="false" />
+                  <node concept="3uibUv" id="2trP305gJtg" role="3clF45">
+                    <ref role="3uigEE" node="5gTrVpGiHIH" resolve="INode" />
+                  </node>
+                  <node concept="3Tm1VV" id="2trP305gJth" role="1B3o_S" />
+                  <node concept="3clFbS" id="2trP305gJti" role="3clF47">
+                    <node concept="YS8fn" id="2trP305gJtj" role="3cqZAp">
+                      <node concept="2ShNRf" id="2trP305gJtk" role="YScLw">
+                        <node concept="1pGfFk" id="2trP305gJtl" role="2ShVmc">
+                          <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+                          <node concept="3cpWs3" id="2trP305htOz" role="37wK5m">
+                            <node concept="37vLTw" id="2trP305gWvc" role="3uHU7w">
+                              <ref role="3cqZAo" node="2trP305gIlW" resolve="role" />
+                            </node>
+                            <node concept="3cpWs3" id="2trP305huI$" role="3uHU7B">
+                              <node concept="Xl_RD" id="2trP305huKx" role="3uHU7w">
+                                <property role="Xl_RC" value="." />
+                              </node>
+                              <node concept="3cpWs3" id="2trP305gWt7" role="3uHU7B">
+                                <node concept="Xl_RD" id="2trP305gJtm" role="3uHU7B">
+                                  <property role="Xl_RC" value="Querying the parent of a reference target is not supported. " />
+                                </node>
+                                <node concept="2OqwBi" id="2trP305humn" role="3uHU7w">
+                                  <node concept="37vLTw" id="2trP305hu7x" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="2trP305gIlU" resolve="sourceNode" />
+                                  </node>
+                                  <node concept="liA8E" id="2trP305huvU" role="2OqNvi">
+                                    <ref role="37wK5l" node="5gTrVpGjdrb" resolve="getConcept" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2AHcQZ" id="2trP305gJtn" role="2AJF6D">
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                  </node>
+                </node>
+                <node concept="3clFb_" id="2trP305gJto" role="jymVt">
+                  <property role="TrG5h" value="getRoleInParent" />
+                  <property role="1EzhhJ" value="false" />
+                  <node concept="17QB3L" id="2trP305gJtp" role="3clF45" />
+                  <node concept="3Tm1VV" id="2trP305gJtq" role="1B3o_S" />
+                  <node concept="3clFbS" id="2trP305gJtr" role="3clF47">
+                    <node concept="YS8fn" id="2trP305gJts" role="3cqZAp">
+                      <node concept="2ShNRf" id="2trP305gJtt" role="YScLw">
+                        <node concept="1pGfFk" id="2trP305gJtu" role="2ShVmc">
+                          <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+                          <node concept="3cpWs3" id="2trP305gXd9" role="37wK5m">
+                            <node concept="37vLTw" id="2trP305gXfe" role="3uHU7w">
+                              <ref role="3cqZAo" node="2trP305gIlW" resolve="role" />
+                            </node>
+                            <node concept="3cpWs3" id="2trP305hw8v" role="3uHU7B">
+                              <node concept="Xl_RD" id="2trP305hwas" role="3uHU7w">
+                                <property role="Xl_RC" value="." />
+                              </node>
+                              <node concept="3cpWs3" id="2trP305hvjW" role="3uHU7B">
+                                <node concept="Xl_RD" id="2trP305gJtv" role="3uHU7B">
+                                  <property role="Xl_RC" value="Querying the parent of a reference target is not supported. " />
+                                </node>
+                                <node concept="2OqwBi" id="2trP305hvE7" role="3uHU7w">
+                                  <node concept="37vLTw" id="2trP305hvr8" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="2trP305gIlU" resolve="sourceNode" />
+                                  </node>
+                                  <node concept="liA8E" id="2trP305hvTI" role="2OqNvi">
+                                    <ref role="37wK5l" node="5gTrVpGjdrb" resolve="getConcept" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2AHcQZ" id="2trP305gJtw" role="2AJF6D">
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="2trP305gIm4" role="3clF45">
+        <ref role="3uigEE" node="2U$60wn9GX6" resolve="ContainmentData" />
+      </node>
+      <node concept="3Tm1VV" id="2trP305gIm5" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2trP305gIbg" role="jymVt" />
     <node concept="2YIFZL" id="2U$60wn9Ivo" role="jymVt">
       <property role="TrG5h" value="create" />
       <property role="DiZV1" value="false" />
