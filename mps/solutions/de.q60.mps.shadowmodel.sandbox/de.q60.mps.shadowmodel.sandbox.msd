@@ -14,7 +14,7 @@
     <dependency reexport="false">ebb56408-a287-44ca-ab2d-1b6ee6850446(de.q60.mps.shadowmodel.demolang)</dependency>
     <dependency reexport="false">bbb5f4e2-794a-4b91-bd27-caf7d437ac9e(de.q60.mps.shadowmodel.demolang.blext)</dependency>
     <dependency reexport="false">fc86eb59-1aa6-4c55-87af-07be910a1eb2(de.q60.mps.shadowmodel.demolang.editor)</dependency>
-    <dependency reexport="false">18463265-6d45-4514-82f1-cf7eb1222492(de.itemis.mps.polymorphicfunctions.runtime)</dependency>
+    <dependency reexport="false">18463265-6d45-4514-82f1-cf7eb1222492(de.q60.mps.polymorphicfunctions.runtime)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:66825d3a-38b0-4346-8da1-1f85e007e4ed:de.q60.mps.delta.unification.test.entities" version="0" />
@@ -44,7 +44,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="18463265-6d45-4514-82f1-cf7eb1222492(de.itemis.mps.polymorphicfunctions.runtime)" version="0" />
+    <module reference="18463265-6d45-4514-82f1-cf7eb1222492(de.q60.mps.polymorphicfunctions.runtime)" version="0" />
     <module reference="ebb56408-a287-44ca-ab2d-1b6ee6850446(de.q60.mps.shadowmodel.demolang)" version="0" />
     <module reference="bbb5f4e2-794a-4b91-bd27-caf7d437ac9e(de.q60.mps.shadowmodel.demolang.blext)" version="0" />
     <module reference="fc86eb59-1aa6-4c55-87af-07be910a1eb2(de.q60.mps.shadowmodel.demolang.editor)" version="0" />

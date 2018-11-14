@@ -20,7 +20,7 @@
     <import index="74qa" ref="r:534ee68e-5c6c-411b-bb4b-1cd0477349f7(de.q60.mps.shadowmodel.sandbox.statemachines)" />
     <import index="oopu" ref="r:81664df9-72fb-4ecd-9de7-5793fe444285(de.q60.mps.shadowmodel.sandbox.statemachines.input)" />
     <import index="nmkq" ref="r:3ca714ce-0b72-4160-89a8-acfcddee0d58(de.q60.mps.shadowmodel.sandbox.blext.input)" />
-    <import index="od2j" ref="r:19d224b8-fac8-4b19-ae42-e7b119858f3b(de.itemis.mps.polymorphicfunctions.runtime)" />
+    <import index="od2j" ref="r:19d224b8-fac8-4b19-ae42-e7b119858f3b(de.q60.mps.polymorphicfunctions.runtime)" />
     <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
   </imports>
