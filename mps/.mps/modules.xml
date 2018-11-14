@@ -2,12 +2,16 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.polymorphicfunctions.sandboxlang/de.itemis.mps.polymorphicfunctions.sandboxlang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.polymorphicfunctions/de.itemis.mps.polymorphicfunctions.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.demolang.blext/de.q60.mps.shadowmodel.demolang.blext.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.demolang.editor/de.q60.mps.shadowmodel.demolang.editor.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.demolang/de.q60.mps.shadowmodel.demolang.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.editor/de.q60.mps.shadowmodel.editor.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.runtimelang/de.q60.mps.shadowmodel.runtimelang.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel/de.q60.mps.shadowmodel.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.polymorphicfunctions.runtime/de.itemis.mps.polymorphicfunctions.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.polymorphicfunctions.sandbox/de.itemis.mps.polymorphicfunctions.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.runtime/de.q60.mps.shadowmodel.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.sandbox/de.q60.mps.shadowmodel.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.tool/de.q60.mps.shadowmodel.tool.msd" folder="" />
