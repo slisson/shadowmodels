@@ -31,9 +31,14 @@
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="hm90" ref="r:61d96d59-75af-4854-9d37-c81762926dfe(de.q60.mps.shadowmodel.behavior)" implicit="true" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
+    <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1204908117386" name="jetbrains.mps.lang.plugin.structure.Separator" flags="ng" index="2a7GMi" />
+      <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
+        <child id="1207145201301" name="reference" index="ftvYc" />
+      </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
@@ -44,6 +49,17 @@
       </concept>
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
+      <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="1204991940915" name="caption" index="2f7twF" />
+        <child id="1204991552650" name="modifier" index="2f5YQi" />
+        <child id="1207145245948" name="contents" index="ftER_" />
+      </concept>
+      <concept id="1203088046679" name="jetbrains.mps.lang.plugin.structure.ActionInstance" flags="ng" index="tCFHf">
+        <reference id="1203088061055" name="action" index="tCJdB" />
+      </concept>
+      <concept id="1203092361741" name="jetbrains.mps.lang.plugin.structure.ModificationStatement" flags="lg" index="tT9cl">
+        <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
+      </concept>
       <concept id="1213888653896" name="jetbrains.mps.lang.plugin.structure.InitBlock" flags="in" index="2xpIHi" />
       <concept id="1213888677711" name="jetbrains.mps.lang.plugin.structure.DisposeBlock" flags="in" index="2xpOpl" />
       <concept id="1213888797251" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_Project" flags="nn" index="2xqhHp" />
@@ -641,7 +657,7 @@
                               <ref role="3cqZAo" node="3PvZBOP72rM" resolve="list" />
                             </node>
                             <node concept="1rXfSq" id="3PvZBOP7yV0" role="37wK5m">
-                              <ref role="37wK5l" node="3PvZBOP75XD" resolve="abbriviate" />
+                              <ref role="37wK5l" node="3PvZBOP75XD" resolve="abbreviate" />
                               <node concept="1eOMI4" id="3PvZBOP72Uv" role="37wK5m">
                                 <node concept="10QFUN" id="3PvZBOP72Uu" role="1eOMHV">
                                   <node concept="37vLTw" id="3PvZBOP72Ut" role="10QFUP">
@@ -668,7 +684,7 @@
                       </node>
                     </node>
                     <node concept="3clFb_" id="3PvZBOP75XD" role="jymVt">
-                      <property role="TrG5h" value="abbriviate" />
+                      <property role="TrG5h" value="abbreviate" />
                       <node concept="37vLTG" id="3PvZBOP77QB" role="3clF46">
                         <property role="TrG5h" value="longText" />
                         <node concept="17QB3L" id="3PvZBOP78yp" role="1tU5fm" />
@@ -1882,6 +1898,26 @@
       <property role="TrG5h" value="module" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULE" resolve="MODULE" />
       <node concept="1oajcY" id="qmkA5fUKop" role="1oa70y" />
+    </node>
+  </node>
+  <node concept="tC5Ba" id="4ZkYAL4bCEo">
+    <property role="TrG5h" value="transformationGroup" />
+    <property role="2f7twF" value="Transformation" />
+    <node concept="ftmFs" id="4ZkYAL4bCEP" role="ftER_">
+      <node concept="2a7GMi" id="4ZkYAL4bKIP" role="ftvYc" />
+      <node concept="tCFHf" id="4ZkYAL4bCES" role="ftvYc">
+        <ref role="tCJdB" node="qmkA5fU3_y" resolve="TransformModel" />
+      </node>
+      <node concept="tCFHf" id="4ZkYAL4bCEX" role="ftvYc">
+        <ref role="tCJdB" node="qmkA5fUJzw" resolve="TransformModule" />
+      </node>
+      <node concept="tCFHf" id="4ZkYAL4bCF5" role="ftvYc">
+        <ref role="tCJdB" node="3mqZV9TSXzS" resolve="TransformNode" />
+      </node>
+      <node concept="2a7GMi" id="4ZkYAL4bKIV" role="ftvYc" />
+    </node>
+    <node concept="tT9cl" id="4ZkYAL4bCFa" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:hyf4LYI" resolve="Tools" />
     </node>
   </node>
 </model>
