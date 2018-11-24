@@ -125,6 +125,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -150,6 +151,7 @@
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -472,6 +474,15 @@
   </node>
   <node concept="312cEu" id="3mqZV9TK6YK">
     <property role="TrG5h" value="TransformationViewer" />
+    <node concept="Wx3nA" id="4ZkYAL4cN1h" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="execLabel" />
+      <node concept="3Tm6S6" id="4ZkYAL4cN1e" role="1B3o_S" />
+      <node concept="17QB3L" id="4ZkYAL4cN1f" role="1tU5fm" />
+      <node concept="Xl_RD" id="4ZkYAL4cN1g" role="33vP2m">
+        <property role="Xl_RC" value="Execute Transformation" />
+      </node>
+    </node>
     <node concept="312cEg" id="3mqZV9TLBON" role="jymVt">
       <property role="TrG5h" value="ideaProject" />
       <node concept="3Tm6S6" id="3mqZV9TLBOO" role="1B3o_S" />
@@ -765,7 +776,7 @@
               <node concept="1pGfFk" id="3mqZV9TMy5f" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                 <node concept="Xl_RD" id="3mqZV9TMOk0" role="37wK5m">
-                  <property role="Xl_RC" value="Init" />
+                  <property role="Xl_RC" value="Init Transformations" />
                 </node>
               </node>
             </node>
@@ -810,13 +821,26 @@
             <node concept="2ShNRf" id="3mqZV9TP953" role="37vLTx">
               <node concept="1pGfFk" id="3mqZV9TP8vM" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
-                <node concept="Xl_RD" id="3mqZV9TP9_H" role="37wK5m">
-                  <property role="Xl_RC" value="Transform" />
+                <node concept="37vLTw" id="4ZkYAL4cN1j" role="37wK5m">
+                  <ref role="3cqZAo" node="4ZkYAL4cN1h" resolve="execLabel" />
                 </node>
               </node>
             </node>
             <node concept="37vLTw" id="3mqZV9TP5YG" role="37vLTJ">
               <ref role="3cqZAo" node="3mqZV9TP2TS" resolve="cmdTransform" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4ZkYAL4crjn" role="3cqZAp">
+          <node concept="2OqwBi" id="4ZkYAL4ctjX" role="3clFbG">
+            <node concept="37vLTw" id="4ZkYAL4crjl" role="2Oq$k0">
+              <ref role="3cqZAo" node="3mqZV9TP2TS" resolve="cmdTransform" />
+            </node>
+            <node concept="liA8E" id="4ZkYAL4cvud" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setEnabled(boolean):void" resolve="setEnabled" />
+              <node concept="3clFbT" id="4ZkYAL4cwfV" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
             </node>
           </node>
         </node>
@@ -1068,6 +1092,47 @@
             </node>
             <node concept="37vLTw" id="3mqZV9TTAYC" role="37vLTJ">
               <ref role="3cqZAo" node="3mqZV9TOXfH" resolve="nodeToTransform" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4ZkYAL4c$Hi" role="3cqZAp">
+          <node concept="2OqwBi" id="4ZkYAL4c_MW" role="3clFbG">
+            <node concept="37vLTw" id="4ZkYAL4c$Hg" role="2Oq$k0">
+              <ref role="3cqZAo" node="3mqZV9TP2TS" resolve="cmdTransform" />
+            </node>
+            <node concept="liA8E" id="4ZkYAL4cCjI" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setEnabled(boolean):void" resolve="setEnabled" />
+              <node concept="3clFbT" id="4ZkYAL4cCKr" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4ZkYAL4cR8J" role="3cqZAp">
+          <node concept="2OqwBi" id="4ZkYAL4cSeU" role="3clFbG">
+            <node concept="37vLTw" id="4ZkYAL4cR8H" role="2Oq$k0">
+              <ref role="3cqZAo" node="3mqZV9TP2TS" resolve="cmdTransform" />
+            </node>
+            <node concept="liA8E" id="4ZkYAL4cTy9" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setLabel(java.lang.String):void" resolve="setLabel" />
+              <node concept="3cpWs3" id="4ZkYAL4cY1t" role="37wK5m">
+                <node concept="2OqwBi" id="4ZkYAL4cYGw" role="3uHU7w">
+                  <node concept="37vLTw" id="4ZkYAL4cYuj" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3mqZV9TTyX1" resolve="node" />
+                  </node>
+                  <node concept="liA8E" id="4ZkYAL4cZJH" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="4ZkYAL4cW6j" role="3uHU7B">
+                  <node concept="37vLTw" id="4ZkYAL4cUKR" role="3uHU7B">
+                    <ref role="3cqZAo" node="4ZkYAL4cN1h" resolve="execLabel" />
+                  </node>
+                  <node concept="Xl_RD" id="4ZkYAL4cWz0" role="3uHU7w">
+                    <property role="Xl_RC" value=" on " />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
