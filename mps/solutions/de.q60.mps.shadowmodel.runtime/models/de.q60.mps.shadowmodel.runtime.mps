@@ -3534,24 +3534,34 @@
       </node>
       <node concept="3Tm1VV" id="5gTrVpGmcZN" role="1B3o_S" />
       <node concept="3clFbS" id="5gTrVpGmcZO" role="3clF47">
-        <node concept="3clFbF" id="Vl1zEEmxmW" role="3cqZAp">
-          <node concept="1rXfSq" id="Vl1zEEmxmV" role="3clFbG">
-            <ref role="37wK5l" node="Vl1zEEmuT0" resolve="update" />
-            <node concept="2ShNRf" id="Vl1zEEmxrZ" role="37wK5m">
-              <node concept="2HTt$P" id="Vl1zEEmxPA" role="2ShVmc">
-                <node concept="3uibUv" id="Vl1zEEmxT_" role="2HTBi0">
-                  <ref role="3uigEE" node="5gTrVpGiXy3" resolve="TransformationProblem" />
-                </node>
-                <node concept="37vLTw" id="Vl1zEEmy0y" role="2HTEbv">
-                  <ref role="3cqZAo" node="5gTrVpGmd2A" resolve="problem" />
-                </node>
-              </node>
-            </node>
-            <node concept="37vLTw" id="Vl1zEEmycu" role="37wK5m">
+        <node concept="3clFbF" id="3a1lGlwVD_x" role="3cqZAp">
+          <node concept="1rXfSq" id="3a1lGlwVD_v" role="3clFbG">
+            <ref role="37wK5l" node="6Zl5h8Psf$8" resolve="invalidate" />
+            <node concept="37vLTw" id="3a1lGlwVDFA" role="37wK5m">
               <ref role="3cqZAo" node="5gTrVpG_rZy" resolve="changes" />
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="Vl1zEEmxmW" role="3cqZAp">
+          <node concept="1rXfSq" id="Vl1zEEmxmV" role="3clFbG">
+            <ref role="37wK5l" node="5gTrVpG_uHA" resolve="update" />
+            <node concept="37vLTw" id="3a1lGlwVFrx" role="37wK5m">
+              <ref role="3cqZAo" node="5gTrVpGmd2A" resolve="problem" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="3a1lGlwVDKM" role="lGtFl">
+        <node concept="TZ5HI" id="3a1lGlwVDKN" role="3nqlJM">
+          <node concept="TZ5HA" id="3a1lGlwVDKO" role="3HnX3l">
+            <node concept="1dT_AC" id="3a1lGlwVF8p" role="1dT_Ay">
+              <property role="1dT_AB" value=" Call invalidate as soon as possible and don't collect changes" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3a1lGlwVDKP" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
     <node concept="2tJIrI" id="Vl1zEEmvM$" role="jymVt" />
@@ -3563,17 +3573,6 @@
           <node concept="3uibUv" id="Vl1zEEmuT3" role="A3Ik2">
             <ref role="3uigEE" node="5gTrVpGiXy3" resolve="TransformationProblem" />
           </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="Vl1zEEmuT4" role="3clF46">
-        <property role="TrG5h" value="changes" />
-        <node concept="2hMVRd" id="Vl1zEEmuT5" role="1tU5fm">
-          <node concept="3uibUv" id="Vl1zEEmuT6" role="2hN53Y">
-            <ref role="3uigEE" node="5gTrVpGx$gB" resolve="DependencyKey" />
-          </node>
-        </node>
-        <node concept="2AHcQZ" id="Vl1zEEmuT7" role="2AJF6D">
-          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
         </node>
       </node>
       <node concept="A3Dl8" id="Vl1zEEmuT8" role="3clF45">
@@ -3696,11 +3695,17 @@
       <node concept="3clFbS" id="5gTrVpG_uHK" role="3clF47">
         <node concept="3clFbF" id="5gTrVpG_v$r" role="3cqZAp">
           <node concept="1rXfSq" id="5gTrVpG_v$q" role="3clFbG">
-            <ref role="37wK5l" node="5gTrVpGmcZK" resolve="update" />
-            <node concept="37vLTw" id="5gTrVpG_vBV" role="37wK5m">
-              <ref role="3cqZAo" node="5gTrVpG_uHB" resolve="problem" />
+            <ref role="37wK5l" node="Vl1zEEmuT0" resolve="update" />
+            <node concept="2ShNRf" id="3a1lGlwVFcz" role="37wK5m">
+              <node concept="2HTt$P" id="3a1lGlwVFc$" role="2ShVmc">
+                <node concept="3uibUv" id="3a1lGlwVFc_" role="2HTBi0">
+                  <ref role="3uigEE" node="5gTrVpGiXy3" resolve="TransformationProblem" />
+                </node>
+                <node concept="37vLTw" id="3a1lGlwVFcA" role="2HTEbv">
+                  <ref role="3cqZAo" node="5gTrVpG_uHB" resolve="problem" />
+                </node>
+              </node>
             </node>
-            <node concept="10Nm6u" id="5gTrVpG_vG2" role="37wK5m" />
           </node>
         </node>
       </node>
@@ -3820,20 +3825,45 @@
         </node>
         <node concept="2Gpval" id="6Zl5h8PsvpK" role="3cqZAp">
           <node concept="2GrKxI" id="6Zl5h8PsvpM" role="2Gsz3X">
-            <property role="TrG5h" value="problem" />
+            <property role="TrG5h" value="problem_" />
           </node>
           <node concept="37vLTw" id="6Zl5h8Pszcr" role="2GsD0m">
             <ref role="3cqZAo" node="6Zl5h8PsxZM" resolve="problems" />
           </node>
           <node concept="3clFbS" id="6Zl5h8PsvpQ" role="2LFqv$">
+            <node concept="3cpWs8" id="3a1lGlwX6vM" role="3cqZAp">
+              <node concept="3cpWsn" id="3a1lGlwX6vN" role="3cpWs9">
+                <property role="TrG5h" value="problem" />
+                <node concept="3uibUv" id="3a1lGlwX6vL" role="1tU5fm">
+                  <ref role="3uigEE" node="5gTrVpGiXy3" resolve="TransformationProblem" />
+                </node>
+                <node concept="1rXfSq" id="3a1lGlwX6vO" role="33vP2m">
+                  <ref role="37wK5l" node="6Zl5h8Progh" resolve="removeTracker" />
+                  <node concept="2GrUjf" id="3a1lGlwX6vP" role="37wK5m">
+                    <ref role="2Gs0qQ" node="6Zl5h8PsvpM" resolve="problem_" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2xdQw9" id="3a1lGlwWiZX" role="3cqZAp">
+              <property role="2xdLsb" value="debug" />
+              <node concept="3cpWs3" id="3a1lGlwWju6" role="9lYJi">
+                <node concept="37vLTw" id="3a1lGlwX7j3" role="3uHU7w">
+                  <ref role="3cqZAo" node="3a1lGlwX6vN" resolve="problem" />
+                </node>
+                <node concept="Xl_RD" id="3a1lGlwWiZZ" role="3uHU7B">
+                  <property role="Xl_RC" value="Invalidate " />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="6Zl5h8Pt6rU" role="3cqZAp">
               <node concept="2OqwBi" id="6Zl5h8Pt6VK" role="3clFbG">
                 <node concept="37vLTw" id="6Zl5h8Pt6rS" role="2Oq$k0">
                   <ref role="3cqZAo" node="6Zl5h8Pro53" resolve="transformationResults" />
                 </node>
                 <node concept="kI3uX" id="6Zl5h8Pt7xt" role="2OqNvi">
-                  <node concept="2GrUjf" id="6Zl5h8Pt7Bh" role="kIiFs">
-                    <ref role="2Gs0qQ" node="6Zl5h8PsvpM" resolve="problem" />
+                  <node concept="37vLTw" id="3a1lGlwX7Aw" role="kIiFs">
+                    <ref role="3cqZAo" node="3a1lGlwX6vN" resolve="problem" />
                   </node>
                 </node>
               </node>
@@ -4145,6 +4175,22 @@
                         <node concept="3cqZAl" id="6Zl5h8Proc4" role="3clF45" />
                         <node concept="3Tm1VV" id="6Zl5h8Proc5" role="1B3o_S" />
                         <node concept="3clFbS" id="6Zl5h8Proc6" role="3clF47">
+                          <node concept="3clFbF" id="3a1lGlwV51l" role="3cqZAp">
+                            <node concept="2OqwBi" id="3a1lGlwV5mO" role="3clFbG">
+                              <node concept="37vLTw" id="3a1lGlwV51j" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6Zl5h8PrFZx" resolve="dependencies" />
+                              </node>
+                              <node concept="liA8E" id="3a1lGlwV677" role="2OqNvi">
+                                <ref role="37wK5l" to="3o3z:~Multimap.put(java.lang.Object,java.lang.Object):boolean" resolve="put" />
+                                <node concept="37vLTw" id="3a1lGlwV6s5" role="37wK5m">
+                                  <ref role="3cqZAo" node="6Zl5h8Proc2" resolve="dep" />
+                                </node>
+                                <node concept="37vLTw" id="3a1lGlwV7_i" role="37wK5m">
+                                  <ref role="3cqZAo" node="6Zl5h8ProbG" resolve="problem" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3clFbF" id="6Zl5h8Proc7" role="3cqZAp">
                             <node concept="2OqwBi" id="6Zl5h8Proc8" role="3clFbG">
                               <node concept="37vLTw" id="6Zl5h8Proc9" role="2Oq$k0">
