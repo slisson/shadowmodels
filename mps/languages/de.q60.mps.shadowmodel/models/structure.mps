@@ -528,6 +528,7 @@
     <property role="EcuMT" value="1382135219951883751" />
     <property role="3GE5qa" value="fragments" />
     <property role="TrG5h" value="NamedFragmentDefinition" />
+    <property role="34LRSv" value="fragment" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1cIlazwMweA" role="1TKVEi">
       <property role="IQ2ns" value="1382135219951895462" />

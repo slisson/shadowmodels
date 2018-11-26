@@ -47,6 +47,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+    <dependency reexport="false">ebb56408-a287-44ca-ab2d-1b6ee6850446(de.q60.mps.shadowmodel.demolang)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:94b64715-a263-4c36-a138-8da14705ffa7:de.q60.mps.shadowmodel" version="0" />
