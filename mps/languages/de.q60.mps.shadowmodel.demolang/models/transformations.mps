@@ -45,7 +45,7 @@
         <reference id="7335687028107243182" name="link" index="027ri" />
         <child id="7335687028107243185" name="target" index="027rd" />
       </concept>
-      <concept id="7335687028107163797" name="de.q60.mps.shadowmodel.structure.ConceptType" flags="ng" index="02i3D">
+      <concept id="7335687028107163797" name="de.q60.mps.shadowmodel.structure.ConceptType" flags="ig" index="02i3D">
         <reference id="7335687028107163800" name="concept" index="02i3$" />
       </concept>
       <concept id="7335687028107163788" name="de.q60.mps.shadowmodel.structure.TransformationParameter" flags="ng" index="02i3K">
@@ -66,6 +66,17 @@
       <concept id="9170566427534812277" name="de.q60.mps.shadowmodel.structure.ContextNodeExpression" flags="ng" index="214o7A" />
       <concept id="9170566427534439102" name="de.q60.mps.shadowmodel.structure.ParameterReference" flags="ng" index="2155sH">
         <reference id="9170566427534439103" name="decl" index="2155sG" />
+      </concept>
+      <concept id="9155712576881703759" name="de.q60.mps.shadowmodel.structure.ParentRelationRule" flags="ng" index="t$THr">
+        <child id="9155712576881731412" name="parent" index="t$Kt0" />
+        <child id="9155712576881731411" name="child" index="t$Kt7" />
+        <child id="9155712576881985422" name="variables" index="tFMuq" />
+      </concept>
+      <concept id="9155712576882073679" name="de.q60.mps.shadowmodel.structure.ParentRelationVariableReference" flags="ng" index="tF$1r">
+        <reference id="9155712576882073690" name="decl" index="tF$1e" />
+      </concept>
+      <concept id="9155712576881985420" name="de.q60.mps.shadowmodel.structure.ParentRelationVariableDeclaration" flags="ng" index="tFMuo">
+        <child id="9155712576883119794" name="type" index="tJBqA" />
       </concept>
       <concept id="5373338300158985562" name="de.q60.mps.shadowmodel.structure.Label" flags="ng" index="2OqUJG">
         <child id="5373338300158985572" name="node" index="2OqUJi" />
@@ -1141,7 +1152,121 @@
         </node>
       </node>
     </node>
-    <node concept="2OrE70" id="1cIlazwNMCk" role="02uzr" />
+    <node concept="2OrE70" id="7WfC1hy_DFf" role="02uzr" />
+    <node concept="2OrE70" id="7WfC1hy_DQS" role="02uzr" />
+    <node concept="t$THr" id="7WfC1hyC83m" role="02uzr">
+      <node concept="tFMuo" id="7WfC1hyCVCD" role="tFMuq">
+        <property role="TrG5h" value="sm" />
+        <node concept="02i3D" id="7WfC1hyHALm" role="tJBqA">
+          <ref role="02i3$" to="yb34:6ndA7L_L0uE" resolve="Statemachine" />
+        </node>
+      </node>
+      <node concept="214gnc" id="7WfC1hyC83o" role="t$Kt7">
+        <ref role="2P$kNQ" node="1cIlazwNMr7" resolve="stateEnumClass" />
+        <node concept="tF$1r" id="7WfC1hyDgL2" role="214sll">
+          <ref role="tF$1e" node="7WfC1hyCVCD" resolve="sm" />
+        </node>
+      </node>
+      <node concept="214gnc" id="7WfC1hyC83q" role="t$Kt0">
+        <ref role="2P$kNQ" node="4EhVFrYZOVI" resolve="sm2java" />
+        <node concept="tF$1r" id="7WfC1hyDgL6" role="214sll">
+          <ref role="tF$1e" node="7WfC1hyCVCD" resolve="sm" />
+        </node>
+      </node>
+    </node>
+    <node concept="t$THr" id="7WfC1hyDIfn" role="02uzr">
+      <node concept="tFMuo" id="7WfC1hyDIfo" role="tFMuq">
+        <property role="TrG5h" value="sm" />
+        <node concept="02i3D" id="7WfC1hyHAL$" role="tJBqA">
+          <ref role="02i3$" to="yb34:6ndA7L_L0uE" resolve="Statemachine" />
+        </node>
+      </node>
+      <node concept="214gnc" id="7WfC1hyDIfp" role="t$Kt7">
+        <ref role="2P$kNQ" node="1cIlazwNMC_" resolve="eventsEnumClass" />
+        <node concept="tF$1r" id="7WfC1hyDIfq" role="214sll">
+          <ref role="tF$1e" node="7WfC1hyDIfo" resolve="sm" />
+        </node>
+      </node>
+      <node concept="214gnc" id="7WfC1hyDIfr" role="t$Kt0">
+        <ref role="2P$kNQ" node="4EhVFrYZOVI" resolve="sm2java" />
+        <node concept="tF$1r" id="7WfC1hyDIfs" role="214sll">
+          <ref role="tF$1e" node="7WfC1hyDIfo" resolve="sm" />
+        </node>
+      </node>
+    </node>
+    <node concept="t$THr" id="7WfC1hyXDNC" role="02uzr">
+      <node concept="tFMuo" id="7WfC1hyXDUu" role="tFMuq">
+        <property role="TrG5h" value="sm" />
+        <node concept="02i3D" id="7WfC1hyXDU$" role="tJBqA">
+          <ref role="02i3$" to="yb34:6ndA7L_L0uE" resolve="Statemachine" />
+        </node>
+      </node>
+      <node concept="214gnc" id="7WfC1hyXDNE" role="t$Kt7">
+        <ref role="2P$kNQ" node="4EhVFrYZOVI" resolve="sm2java" />
+        <node concept="tF$1r" id="7WfC1hyXDUF" role="214sll">
+          <ref role="tF$1e" node="7WfC1hyXDUu" resolve="sm" />
+        </node>
+      </node>
+    </node>
+    <node concept="t$THr" id="7WfC1hyXHSc" role="02uzr">
+      <node concept="tFMuo" id="7WfC1hyXHSd" role="tFMuq">
+        <property role="TrG5h" value="state" />
+        <node concept="02i3D" id="7WfC1hyXI01" role="tJBqA">
+          <ref role="02i3$" to="yb34:6ndA7L_L0uH" resolve="State" />
+        </node>
+      </node>
+      <node concept="214gnc" id="7WfC1hyXHSf" role="t$Kt7">
+        <ref role="2P$kNQ" node="4EhVFrZ0a6M" resolve="enumConst" />
+        <node concept="tF$1r" id="7WfC1hyXHSg" role="214sll">
+          <ref role="tF$1e" node="7WfC1hyXHSd" resolve="state" />
+        </node>
+      </node>
+      <node concept="214gnc" id="7WfC1hyXI0C" role="t$Kt0">
+        <ref role="2P$kNQ" node="1cIlazwNMr7" resolve="stateEnumClass" />
+        <node concept="2OqwBi" id="7WfC1hyXIb5" role="214sll">
+          <node concept="tF$1r" id="7WfC1hyXI0D" role="2Oq$k0">
+            <ref role="tF$1e" node="7WfC1hyXHSd" resolve="state" />
+          </node>
+          <node concept="2Xjw5R" id="7WfC1hyXIHm" role="2OqNvi">
+            <node concept="1xMEDy" id="7WfC1hyXIHo" role="1xVPHs">
+              <node concept="chp4Y" id="7WfC1hyXIJv" role="ri$Ld">
+                <ref role="cht4Q" to="yb34:6ndA7L_L0uE" resolve="Statemachine" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="t$THr" id="7WfC1hyY83c" role="02uzr">
+      <node concept="tFMuo" id="7WfC1hyY83d" role="tFMuq">
+        <property role="TrG5h" value="event" />
+        <node concept="02i3D" id="7WfC1hyY8ch" role="tJBqA">
+          <ref role="02i3$" to="yb34:6ndA7L_L0uJ" resolve="Event" />
+        </node>
+      </node>
+      <node concept="214gnc" id="7WfC1hyY83f" role="t$Kt7">
+        <ref role="2P$kNQ" node="4EhVFrZ0a6M" resolve="enumConst" />
+        <node concept="tF$1r" id="7WfC1hyY83g" role="214sll">
+          <ref role="tF$1e" node="7WfC1hyY83d" resolve="event" />
+        </node>
+      </node>
+      <node concept="214gnc" id="7WfC1hyY83h" role="t$Kt0">
+        <ref role="2P$kNQ" node="1cIlazwNMC_" resolve="eventsEnumClass" />
+        <node concept="2OqwBi" id="7WfC1hyY83i" role="214sll">
+          <node concept="tF$1r" id="7WfC1hyY83j" role="2Oq$k0">
+            <ref role="tF$1e" node="7WfC1hyY83d" resolve="event" />
+          </node>
+          <node concept="2Xjw5R" id="7WfC1hyY83k" role="2OqNvi">
+            <node concept="1xMEDy" id="7WfC1hyY83l" role="1xVPHs">
+              <node concept="chp4Y" id="7WfC1hyY83m" role="ri$Ld">
+                <ref role="cht4Q" to="yb34:6ndA7L_L0uE" resolve="Statemachine" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2OrE70" id="7WfC1hy_DQU" role="02uzr" />
   </node>
 </model>
 

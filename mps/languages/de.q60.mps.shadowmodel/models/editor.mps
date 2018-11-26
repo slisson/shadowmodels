@@ -20,6 +20,7 @@
       </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
@@ -455,7 +456,7 @@
         <node concept="3XFhqQ" id="4ZkYAL42R9g" role="3EZMnx" />
         <node concept="3F2HdR" id="6ndA7L_LpLB" role="3EZMnx">
           <ref role="1NtTu8" to="oyp0:6ndA7L_L72B" resolve="content" />
-          <node concept="2EHx9g" id="4ZkYAL42R9w" role="2czzBx" />
+          <node concept="2iRkQZ" id="7WfC1hyBw5b" role="2czzBx" />
           <node concept="4$FPG" id="4EhVFrYZOXT" role="4_6I_">
             <node concept="3clFbS" id="4EhVFrYZOXU" role="2VODD2">
               <node concept="3clFbF" id="4EhVFrYZP1g" role="3cqZAp">
@@ -1251,6 +1252,69 @@
   </node>
   <node concept="3p36aQ" id="7WfC1hyAj80">
     <ref role="aqKnT" to="oyp0:6ndA7L_L9od" resolve="ContextFlagDeclaration" />
+  </node>
+  <node concept="24kQdi" id="7WfC1hyBatB">
+    <property role="3GE5qa" value="parentRelation" />
+    <ref role="1XX52x" to="oyp0:7WfC1hyB3Hf" resolve="ParentRelationRule" />
+    <node concept="3EZMnI" id="7WfC1hyBatD" role="2wV5jI">
+      <node concept="3F0ifn" id="7WfC1hyBatH" role="3EZMnx">
+        <property role="3F0ifm" value="parent of" />
+      </node>
+      <node concept="3F1sOY" id="7WfC1hyBatK" role="3EZMnx">
+        <ref role="1NtTu8" to="oyp0:7WfC1hyBatj" resolve="child" />
+      </node>
+      <node concept="3F0ifn" id="7WfC1hyBatN" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="7WfC1hyBNWF" role="3EZMnx">
+        <property role="1$x2rV" value="null" />
+        <ref role="1NtTu8" to="oyp0:7WfC1hyBatk" resolve="parent" />
+      </node>
+      <node concept="l2Vlx" id="7WfC1hyBatG" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="7WfC1hyC8uf" role="6VMZX">
+      <node concept="l2Vlx" id="7WfC1hyC8ug" role="2iSdaV" />
+      <node concept="3F0ifn" id="7WfC1hyC8uh" role="3EZMnx">
+        <property role="3F0ifm" value="variables:" />
+      </node>
+      <node concept="3F2HdR" id="7WfC1hyC8uj" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="oyp0:7WfC1hyC8ue" resolve="variables" />
+        <node concept="l2Vlx" id="7WfC1hyC8ul" role="2czzBx" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7WfC1hyCu1o">
+    <property role="3GE5qa" value="parentRelation" />
+    <ref role="1XX52x" to="oyp0:7WfC1hyCu1f" resolve="ParentRelationVariableReference" />
+    <node concept="1iCGBv" id="7WfC1hyCu1r" role="2wV5jI">
+      <ref role="1NtTu8" to="oyp0:7WfC1hyCu1q" resolve="decl" />
+      <node concept="1sVBvm" id="7WfC1hyCu1t" role="1sWHZn">
+        <node concept="3F0A7n" id="7WfC1hyCu1z" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7WfC1hyCVCM">
+    <property role="3GE5qa" value="parentRelation" />
+    <ref role="1XX52x" to="oyp0:7WfC1hyC8uc" resolve="ParentRelationVariableDeclaration" />
+    <node concept="3EZMnI" id="7WfC1hyGtqN" role="2wV5jI">
+      <node concept="2iRfu4" id="7WfC1hyGtqO" role="2iSdaV" />
+      <node concept="3F0A7n" id="7WfC1hyCVCQ" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="7WfC1hyGtqQ" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="7WfC1hyGtqV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7WfC1hyGtqT" role="3EZMnx">
+        <ref role="1NtTu8" to="oyp0:7WfC1hyGtqM" resolve="type" />
+      </node>
+    </node>
   </node>
 </model>
 
