@@ -895,5 +895,99 @@
       <ref role="20lvS9" node="7WfC1hyC8uc" resolve="ParentRelationVariableDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="_UxhR7cOUp">
+    <property role="EcuMT" value="683004656442625689" />
+    <property role="TrG5h" value="Fold" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="fold" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="_UxhR7cOUq" role="1TKVEi">
+      <property role="IQ2ns" value="683004656442625690" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="input" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="_UxhR7cOUA" role="1TKVEi">
+      <property role="IQ2ns" value="683004656442625702" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="seed" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6ndA7L_LuUC" resolve="INodeSpec" />
+    </node>
+    <node concept="1TJgyj" id="_UxhR7cOUD" role="1TKVEi">
+      <property role="IQ2ns" value="683004656442625705" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6ndA7L_LuUC" resolve="INodeSpec" />
+    </node>
+    <node concept="PrWs8" id="_UxhR7cOUM" role="PzmwI">
+      <ref role="PrY4T" node="6ndA7L_LuUC" resolve="INodeSpec" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="_UxhR7cOUH">
+    <property role="EcuMT" value="683004656442625709" />
+    <property role="3GE5qa" value="fold" />
+    <property role="TrG5h" value="FoldL" />
+    <property role="34LRSv" value="foldL" />
+    <ref role="1TJDcQ" node="_UxhR7cOUp" resolve="Fold" />
+  </node>
+  <node concept="1TIwiD" id="_UxhR7cOUI">
+    <property role="EcuMT" value="683004656442625710" />
+    <property role="3GE5qa" value="fold" />
+    <property role="TrG5h" value="FoldR" />
+    <property role="34LRSv" value="foldR" />
+    <ref role="1TJDcQ" node="_UxhR7cOUp" resolve="Fold" />
+  </node>
+  <node concept="1TIwiD" id="_UxhR7cOUJ">
+    <property role="EcuMT" value="683004656442625711" />
+    <property role="3GE5qa" value="fold" />
+    <property role="TrG5h" value="Unfold" />
+    <property role="34LRSv" value="unfold" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="_UxhR7cOUO" role="1TKVEi">
+      <property role="IQ2ns" value="683004656442625716" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="input" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="_UxhR7cOUQ" role="1TKVEi">
+      <property role="IQ2ns" value="683004656442625718" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tail" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="_UxhR7cOUT" role="1TKVEi">
+      <property role="IQ2ns" value="683004656442625721" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="head" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6ndA7L_LuUC" resolve="INodeSpec" />
+    </node>
+    <node concept="PrWs8" id="_UxhR7cOUK" role="PzmwI">
+      <ref role="PrY4T" node="6ndA7L_LuUC" resolve="INodeSpec" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="_UxhR7dPQ$">
+    <property role="EcuMT" value="683004656442891684" />
+    <property role="3GE5qa" value="fold" />
+    <property role="TrG5h" value="FoldElementVariable" />
+    <property role="34LRSv" value="it" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="_UxhR7ewpI">
+    <property role="EcuMT" value="683004656443065966" />
+    <property role="3GE5qa" value="fold" />
+    <property role="TrG5h" value="FoldAccumulator" />
+    <property role="34LRSv" value="acc" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="_UxhR7eyMt" role="PzmwI">
+      <ref role="PrY4T" node="6ndA7L_LuUC" resolve="INodeSpec" />
+    </node>
+  </node>
 </model>
 

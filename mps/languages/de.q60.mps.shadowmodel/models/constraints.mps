@@ -75,10 +75,13 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
+      <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
@@ -96,6 +99,7 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -395,6 +399,54 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="_UxhR7erB3">
+    <property role="3GE5qa" value="fold" />
+    <ref role="1M2myG" to="oyp0:_UxhR7dPQ$" resolve="FoldElementVariable" />
+    <node concept="9S07l" id="_UxhR7erB4" role="9Vyp8">
+      <node concept="3clFbS" id="_UxhR7erB5" role="2VODD2">
+        <node concept="3clFbF" id="_UxhR7erIo" role="3cqZAp">
+          <node concept="2OqwBi" id="_UxhR7ettH" role="3clFbG">
+            <node concept="2OqwBi" id="_UxhR7erZN" role="2Oq$k0">
+              <node concept="nLn13" id="_UxhR7erIn" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="_UxhR7esPb" role="2OqNvi">
+                <node concept="1xMEDy" id="_UxhR7esPd" role="1xVPHs">
+                  <node concept="chp4Y" id="_UxhR7et0c" role="ri$Ld">
+                    <ref role="cht4Q" to="oyp0:_UxhR7cOUp" resolve="Fold" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="_UxhR7etbM" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="_UxhR7etUF" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="_UxhR7ewpV">
+    <property role="3GE5qa" value="fold" />
+    <ref role="1M2myG" to="oyp0:_UxhR7ewpI" resolve="FoldAccumulator" />
+    <node concept="9S07l" id="_UxhR7ewpW" role="9Vyp8">
+      <node concept="3clFbS" id="_UxhR7ewpX" role="2VODD2">
+        <node concept="3clFbF" id="_UxhR7ewxg" role="3cqZAp">
+          <node concept="2OqwBi" id="_UxhR7exQU" role="3clFbG">
+            <node concept="2OqwBi" id="_UxhR7ewL4" role="2Oq$k0">
+              <node concept="nLn13" id="_UxhR7ewxf" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="_UxhR7ex51" role="2OqNvi">
+                <node concept="1xMEDy" id="_UxhR7ex53" role="1xVPHs">
+                  <node concept="chp4Y" id="_UxhR7exfV" role="ri$Ld">
+                    <ref role="cht4Q" to="oyp0:_UxhR7cOUp" resolve="Fold" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="_UxhR7exz4" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="_UxhR7eyjS" role="2OqNvi" />
           </node>
         </node>
       </node>
