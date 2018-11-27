@@ -14,6 +14,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="od2j" ref="r:19d224b8-fac8-4b19-ae42-e7b119858f3b(de.q60.mps.polymorphicfunctions.runtime)" />
     <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1407,6 +1408,25 @@
               <node concept="10Nm6u" id="42zqTR3iVjP" role="3uHU7w" />
               <node concept="37vLTw" id="42zqTR3iUHt" role="3uHU7B">
                 <ref role="3cqZAo" node="42zqTR3hY7w" resolve="id" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="_UxhR7tN4D" role="3cqZAp">
+            <node concept="2OqwBi" id="_UxhR7tN4A" role="3clFbG">
+              <node concept="10M0yZ" id="_UxhR7tN4B" role="2Oq$k0">
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="_UxhR7tN4C" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="3cpWs3" id="_UxhR7tNOe" role="37wK5m">
+                  <node concept="37vLTw" id="_UxhR7tNSn" role="3uHU7w">
+                    <ref role="3cqZAo" node="42zqTR3hY7w" resolve="id" />
+                  </node>
+                  <node concept="Xl_RD" id="_UxhR7tNsG" role="3uHU7B">
+                    <property role="Xl_RC" value="ID: " />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
