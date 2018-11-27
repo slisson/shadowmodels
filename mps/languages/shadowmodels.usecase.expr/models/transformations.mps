@@ -7,12 +7,16 @@
   </languages>
   <imports>
     <import index="nup6" ref="r:1539980b-b231-4c7d-8cde-acae8ba318f2(shadowmodels.usecase.expr.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
     </language>
     <language id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel">
@@ -22,6 +26,10 @@
       <concept id="7335687028107243116" name="de.q60.mps.shadowmodel.structure.NodeBuilder" flags="ng" index="027og">
         <reference id="7335687028107281650" name="concept" index="02LMe" />
         <child id="7335687028107281653" name="content" index="02LM9" />
+      </concept>
+      <concept id="7335687028107243117" name="de.q60.mps.shadowmodel.structure.PropertyBuilder" flags="ng" index="027oh">
+        <reference id="7335687028107243119" name="property" index="027oj" />
+        <child id="7335687028107243123" name="value" index="027of" />
       </concept>
       <concept id="7335687028107243169" name="de.q60.mps.shadowmodel.structure.ChildBuilder" flags="ng" index="027rt">
         <reference id="7335687028107243171" name="link" index="027rv" />
@@ -64,7 +72,6 @@
       </concept>
       <concept id="683004656442625710" name="de.q60.mps.shadowmodel.structure.FoldR" flags="ng" index="3eisIN" />
       <concept id="683004656442891684" name="de.q60.mps.shadowmodel.structure.FoldElementVariable" flags="ng" index="3ejtyT" />
-      <concept id="3563231453904357666" name="de.q60.mps.shadowmodel.structure.NullNode" flags="ng" index="3n1eO2" />
       <concept id="2573073122887437731" name="de.q60.mps.shadowmodel.structure.CopyMacro" flags="ng" index="1XuIBW">
         <child id="2573073122887437734" name="sourceQuery" index="1XuIBT" />
       </concept>
@@ -120,6 +127,15 @@
       </node>
       <node concept="026TG" id="_UxhR7dlNY" role="026TK">
         <node concept="3eisIN" id="_UxhR7dlWD" role="026TJ">
+          <node concept="027og" id="B8a55UiTia" role="3eisIV">
+            <ref role="02LMe" to="nup6:2frx7BFaCJ8" resolve="PlaceHolderExpr" />
+            <node concept="027oh" id="B8a55UiToV" role="02LM9">
+              <ref role="027oj" to="tpck:h0TrG11" resolve="name" />
+              <node concept="Xl_RD" id="B8a55UiTp1" role="027of">
+                <property role="Xl_RC" value="0" />
+              </node>
+            </node>
+          </node>
           <node concept="2OqwBi" id="_UxhR7dm67" role="3eisI7">
             <node concept="2155sH" id="_UxhR7dlXD" role="2Oq$k0">
               <ref role="2155sG" node="_UxhR7dlNW" resolve="alt" />
@@ -128,7 +144,6 @@
               <ref role="3TtcxE" to="nup6:2frx7BFbKnx" resolve="cases" />
             </node>
           </node>
-          <node concept="3n1eO2" id="_UxhR7dmj3" role="3eisIV" />
           <node concept="027og" id="_UxhR7dPQ2" role="3eisIO">
             <ref role="02LMe" to="nup6:2frx7BFaCIG" resolve="IfExpr" />
             <node concept="027rt" id="_UxhR7dPQ7" role="02LM9">
