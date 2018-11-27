@@ -944,8 +944,9 @@
   <node concept="1TIwiD" id="_UxhR7cOUJ">
     <property role="EcuMT" value="683004656442625711" />
     <property role="3GE5qa" value="fold" />
-    <property role="TrG5h" value="UnfoldR" />
-    <property role="34LRSv" value="unfoldR" />
+    <property role="TrG5h" value="Unfold" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="_UxhR7cOUO" role="1TKVEi">
       <property role="IQ2ns" value="683004656442625716" />
@@ -995,6 +996,20 @@
     <property role="TrG5h" value="UnfoldElementVariable" />
     <property role="34LRSv" value="it" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="_UxhR7nzIO">
+    <property role="EcuMT" value="683004656445438900" />
+    <property role="3GE5qa" value="fold" />
+    <property role="TrG5h" value="UnfoldR" />
+    <property role="34LRSv" value="unfoldR" />
+    <ref role="1TJDcQ" node="_UxhR7cOUJ" resolve="Unfold" />
+  </node>
+  <node concept="1TIwiD" id="_UxhR7nzIP">
+    <property role="EcuMT" value="683004656445438901" />
+    <property role="3GE5qa" value="fold" />
+    <property role="TrG5h" value="UnfoldL" />
+    <property role="34LRSv" value="unfoldL" />
+    <ref role="1TJDcQ" node="_UxhR7cOUJ" resolve="Unfold" />
   </node>
 </model>
 
