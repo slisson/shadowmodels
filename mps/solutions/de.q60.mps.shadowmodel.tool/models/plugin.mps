@@ -28,6 +28,7 @@
     <import index="oyp0" ref="r:ff4bc8f2-4e53-41b7-a27c-792a5dcc86cb(de.q60.mps.shadowmodel.structure)" />
     <import index="od2j" ref="r:19d224b8-fac8-4b19-ae42-e7b119858f3b(de.q60.mps.polymorphicfunctions.runtime)" />
     <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
+    <import index="ee18" ref="r:ae5491dd-13f2-4540-8a18-9d4eafbb865f(de.q60.mps.shadowmodel.runtime.incremental)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="hm90" ref="r:61d96d59-75af-4854-9d37-c81762926dfe(de.q60.mps.shadowmodel.behavior)" implicit="true" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
@@ -1735,7 +1736,7 @@
                               <node concept="37vLTG" id="B8a55UJBY2" role="3clF46">
                                 <property role="TrG5h" value="change" />
                                 <node concept="3uibUv" id="B8a55UJBY3" role="1tU5fm">
-                                  <ref role="3uigEE" to="6tkd:5gTrVpGx$gB" resolve="DependencyKey" />
+                                  <ref role="3uigEE" to="ee18:5gTrVpGx$gB" resolve="DependencyKey" />
                                 </node>
                               </node>
                               <node concept="3cqZAl" id="B8a55UJBY4" role="3clF45" />
@@ -1751,7 +1752,7 @@
                                       <node concept="2ShNRf" id="B8a55UJGrv" role="37wK5m">
                                         <node concept="2HTt$P" id="B8a55UJZYh" role="2ShVmc">
                                           <node concept="3uibUv" id="B8a55UK0yv" role="2HTBi0">
-                                            <ref role="3uigEE" to="6tkd:5gTrVpGx$gB" resolve="DependencyKey" />
+                                            <ref role="3uigEE" to="ee18:5gTrVpGx$gB" resolve="DependencyKey" />
                                           </node>
                                           <node concept="37vLTw" id="B8a55UK1hj" role="2HTEbv">
                                             <ref role="3cqZAo" node="B8a55UJBY2" resolve="change" />
