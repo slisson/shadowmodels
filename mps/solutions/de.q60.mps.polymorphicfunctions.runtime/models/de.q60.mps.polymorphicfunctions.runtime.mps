@@ -290,6 +290,9 @@
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
+      <concept id="1224414427926" name="jetbrains.mps.baseLanguage.collections.structure.SequenceCreator" flags="nn" index="kMnCb">
+        <child id="1224414456414" name="elementType" index="kMuH3" />
+      </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -460,6 +463,27 @@
   </node>
   <node concept="312cEu" id="3jJoUQ6Yq4x">
     <property role="TrG5h" value="ParameterList" />
+    <node concept="Wx3nA" id="q2F95_CKyF" role="jymVt">
+      <property role="TrG5h" value="EMPTY" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="q2F95_CJTW" role="1tU5fm">
+        <ref role="3uigEE" node="3jJoUQ6Yq4x" resolve="ParameterList" />
+      </node>
+      <node concept="3Tm1VV" id="q2F95_CL31" role="1B3o_S" />
+      <node concept="2ShNRf" id="q2F95_CK5_" role="33vP2m">
+        <node concept="1pGfFk" id="q2F95_CK4Q" role="2ShVmc">
+          <ref role="37wK5l" node="TB2rf$n2KR" resolve="ParameterList" />
+          <node concept="2ShNRf" id="q2F95_CK9E" role="37wK5m">
+            <node concept="kMnCb" id="q2F95_CKr7" role="2ShVmc">
+              <node concept="3uibUv" id="q2F95_CKuF" role="kMuH3">
+                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="q2F95_CHdr" role="jymVt" />
     <node concept="312cEg" id="3jJoUQ6Yq6P" role="jymVt">
       <property role="TrG5h" value="myParameterValues" />
       <node concept="3Tm6S6" id="3jJoUQ6Yq6Q" role="1B3o_S" />

@@ -4182,6 +4182,37 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="q2F95_EMVa" role="3cqZAp" />
+        <node concept="3SKdUt" id="q2F95_EN4p" role="3cqZAp">
+          <node concept="3SKdUq" id="q2F95_EN4r" role="3SKWNk">
+            <property role="3SKdUp" value="Ensure types can be calculated for this node" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="q2F95_ELun" role="3cqZAp">
+          <node concept="2OqwBi" id="q2F95_EFdw" role="3clFbG">
+            <node concept="1eOMI4" id="q2F95_EDM5" role="2Oq$k0">
+              <node concept="10QFUN" id="q2F95_EBg4" role="1eOMHV">
+                <node concept="1rXfSq" id="q2F95_EBg3" role="10QFUP">
+                  <ref role="37wK5l" node="4EhVFrZ3Amy" resolve="getModel" />
+                </node>
+                <node concept="3uibUv" id="q2F95_ECtV" role="10QFUM">
+                  <ref role="3uigEE" node="7NatPTM4OrL" resolve="DummySModel" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="q2F95_EGQ2" role="2OqNvi">
+              <ref role="37wK5l" node="7NatPTM5WTQ" resolve="addLanguage" />
+              <node concept="2OqwBi" id="q2F95_EIsY" role="37wK5m">
+                <node concept="1rXfSq" id="q2F95_EGWI" role="2Oq$k0">
+                  <ref role="37wK5l" node="4EhVFrZ3AmW" resolve="getConcept" />
+                </node>
+                <node concept="liA8E" id="q2F95_EK3H" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="4EhVFrZ5iKo" role="3clF46">
         <property role="TrG5h" value="node1" />
@@ -6691,14 +6722,10 @@
         </node>
       </node>
       <node concept="3clFbS" id="4EhVFrZ3ArN" role="3clF47">
-        <node concept="YS8fn" id="4EhVFrZ5eHk" role="3cqZAp">
-          <node concept="2ShNRf" id="4EhVFrZ5eHl" role="YScLw">
-            <node concept="1pGfFk" id="4EhVFrZ5eHm" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
-              <node concept="Xl_RD" id="4EhVFrZ5eHn" role="37wK5m">
-                <property role="Xl_RC" value="Not implemented" />
-              </node>
-            </node>
+        <node concept="3clFbF" id="q2F95_GB2Y" role="3cqZAp">
+          <node concept="2YIFZM" id="q2F95_H13F" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~Collections.emptyList():java.util.List" resolve="emptyList" />
+            <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
           </node>
         </node>
       </node>
@@ -9673,6 +9700,22 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="q2F95__$f3" role="jymVt">
+      <property role="TrG5h" value="importedLanguages" />
+      <node concept="3Tm6S6" id="q2F95__$f4" role="1B3o_S" />
+      <node concept="2hMVRd" id="q2F95__Aa7" role="1tU5fm">
+        <node concept="3uibUv" id="q2F95__AVB" role="2hN53Y">
+          <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="q2F95__F$c" role="33vP2m">
+        <node concept="2i4dXS" id="q2F95__EM9" role="2ShVmc">
+          <node concept="3uibUv" id="q2F95__EMa" role="HW$YZ">
+            <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="75046mm5f2K" role="jymVt" />
     <node concept="3Tm1VV" id="7NatPTM4OrM" role="1B3o_S" />
     <node concept="3uibUv" id="7NatPTM4Osr" role="EKbjA">
@@ -10580,10 +10623,9 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="3clFbS" id="7NatPTM619I" role="3clF47">
-        <node concept="3clFbF" id="75046mm8PBK" role="3cqZAp">
-          <node concept="2YIFZM" id="75046mm8PD7" role="3clFbG">
-            <ref role="37wK5l" to="33ny:~Collections.emptyList():java.util.List" resolve="emptyList" />
-            <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+        <node concept="3clFbF" id="q2F95__Gsx" role="3cqZAp">
+          <node concept="37vLTw" id="q2F95__Gsw" role="3clFbG">
+            <ref role="3cqZAo" node="q2F95__$f3" resolve="importedLanguages" />
           </node>
         </node>
       </node>
@@ -10640,12 +10682,14 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="3clFbS" id="7NatPTM619S" role="3clF47">
-        <node concept="YS8fn" id="7NatPTM619T" role="3cqZAp">
-          <node concept="2ShNRf" id="7NatPTM619U" role="YScLw">
-            <node concept="1pGfFk" id="7NatPTM619V" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
-              <node concept="Xl_RD" id="7NatPTM619W" role="37wK5m">
-                <property role="Xl_RC" value="Not implemented" />
+        <node concept="3clFbF" id="q2F95__Hwl" role="3cqZAp">
+          <node concept="2OqwBi" id="q2F95__IVv" role="3clFbG">
+            <node concept="37vLTw" id="q2F95__Hwk" role="2Oq$k0">
+              <ref role="3cqZAo" node="q2F95__$f3" resolve="importedLanguages" />
+            </node>
+            <node concept="TSZUe" id="q2F95__KGV" role="2OqNvi">
+              <node concept="37vLTw" id="q2F95__L11" role="25WWJ7">
+                <ref role="3cqZAo" node="7NatPTM5WTU" resolve="language" />
               </node>
             </node>
           </node>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/de.q60.mps.shadowmodel.devkit/de.q60.mps.shadowmodel.devkit.devkit" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.polymorphicfunctions.sandboxlang/de.q60.mps.polymorphicfunctions.sandboxlang.mpl" folder="demolang" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.polymorphicfunctions/de.q60.mps.polymorphicfunctions.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.demolang.blext/de.q60.mps.shadowmodel.demolang.blext.mpl" folder="demolang" />
@@ -13,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/languages/shadowmodels.usecase.expr/shadowmodels.usecase.expr.mpl" folder="usecases" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.polymorphicfunctions.runtime/de.q60.mps.polymorphicfunctions.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.polymorphicfunctions.sandbox/de.q60.mps.polymorphicfunctions.sandbox.msd" folder="sandbox" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.genplan/de.q60.mps.shadowmodel.genplan.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.runtime/de.q60.mps.shadowmodel.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.sandbox/de.q60.mps.shadowmodel.sandbox.msd" folder="sandbox" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.tool/de.q60.mps.shadowmodel.tool.msd" folder="core" />
