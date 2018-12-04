@@ -24,6 +24,7 @@
         <child id="1700528364959226185" name="content" index="3khUj0" />
       </concept>
       <concept id="1700528364959224885" name="de.q60.mps.polymorphicfunctions.structure.PolymorphicFunctionDeclaration" flags="ng" index="3khUAW">
+        <property id="6393752169615662762" name="multiple" index="1rq3kj" />
         <child id="1700528364959690262" name="returnBaseType" index="3kv9ev" />
       </concept>
     </language>
@@ -37,6 +38,7 @@
     <property role="TrG5h" value="TransformationModuleMetaFunctions" />
     <node concept="3khUAW" id="q2F95_Andn" role="3khUj0">
       <property role="TrG5h" value="getOutputLanguages" />
+      <property role="1rq3kj" value="true" />
       <node concept="A3Dl8" id="q2F95_Andz" role="3kv9ev">
         <node concept="3uibUv" id="q2F95_AnfB" role="A3Ik2">
           <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
