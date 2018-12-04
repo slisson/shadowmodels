@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:1d515eb3-4574-4003-95ad-9150a9c1623c(de.q60.mps.shadowmodel.polyfun)">
+<model ref="r:1d515eb3-4574-4003-95ad-9150a9c1623c(de.q60.mps.shadowmodel.transformation.polyfun)">
   <persistence version="9" />
   <languages>
     <use id="bc963c22-d419-49b6-8543-ea411eb9d3a1" name="de.q60.mps.polymorphicfunctions" version="0" />

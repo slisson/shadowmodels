@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="de.q60.mps.shadowmodel.devkit" uuid="a2812d5e-a72e-4739-ab3f-d01ec647c5de">
-  <exported-language name="94b64715-a263-4c36-a138-8da14705ffa7(de.q60.mps.shadowmodel)" />
+  <exported-language name="94b64715-a263-4c36-a138-8da14705ffa7(de.q60.mps.shadowmodel.transformation)" />
   <exported-solutions>
     <exported-solution>f5997610-4d27-40a3-872c-d06cf404755b(de.q60.mps.shadowmodel.genplan)</exported-solution>
   </exported-solutions>

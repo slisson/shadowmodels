@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9386410a-9bfc-4734-bd77-6b4623a0ab93(de.q60.mps.shadowmodel.plugin)">
+<model ref="r:9386410a-9bfc-4734-bd77-6b4623a0ab93(de.q60.mps.shadowmodel.transformation.plugin)">
   <persistence version="9" />
   <languages>
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="2" />
