@@ -9,6 +9,7 @@
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.demolang.editor/de.q60.mps.shadowmodel.demolang.editor.mpl" folder="demolang" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.demolang/de.q60.mps.shadowmodel.demolang.mpl" folder="demolang" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.editor/de.q60.mps.shadowmodel.editor.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.repository/de.q60.mps.shadowmodel.repository.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.runtimelang/de.q60.mps.shadowmodel.runtimelang.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.transformation/de.q60.mps.shadowmodel.transformation.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/shadowmodels.usecase.expr/shadowmodels.usecase.expr.mpl" folder="usecases" />

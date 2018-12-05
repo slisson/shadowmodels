@@ -1011,5 +1011,24 @@
     <property role="34LRSv" value="unfoldL" />
     <ref role="1TJDcQ" node="_UxhR7cOUJ" resolve="Unfold" />
   </node>
+  <node concept="1TIwiD" id="7YhLqbpcbGP">
+    <property role="EcuMT" value="9192345617659116341" />
+    <property role="TrG5h" value="RepositoryModule" />
+    <property role="34LRSv" value="repository module" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7YhLqbpcbGT" role="1TKVEi">
+      <property role="IQ2ns" value="9192345617659116345" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="module" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6ndA7L_LuUC" resolve="INodeSpec" />
+    </node>
+    <node concept="PrWs8" id="7YhLqbpcbGQ" role="PzmwI">
+      <ref role="PrY4T" node="6ndA7L_L6S_" resolve="ITransformationsModuleContent" />
+    </node>
+    <node concept="PrWs8" id="7YhLqbpf7QI" role="PzmwI">
+      <ref role="PrY4T" node="7X4ppfYlui3" resolve="IContextNodeProvider" />
+    </node>
+  </node>
 </model>
 
