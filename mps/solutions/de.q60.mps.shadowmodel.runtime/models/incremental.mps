@@ -66,7 +66,6 @@
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
-      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -107,8 +106,6 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
-        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
-        <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -316,37 +313,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4OBfrz$z_AR" role="jymVt" />
-    <node concept="Wx3nA" id="4OBfrz$A3e9" role="jymVt">
-      <property role="TrG5h" value="INSTANCE" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="4OBfrz$A39_" role="1tU5fm">
-        <ref role="3uigEE" node="4OBfrz$xLo1" resolve="IncrementalEngine" />
-      </node>
-      <node concept="3Tm6S6" id="4OBfrz$A1vi" role="1B3o_S" />
-      <node concept="2ShNRf" id="4OBfrz$A3dC" role="33vP2m">
-        <node concept="1pGfFk" id="4OBfrz$A3cN" role="2ShVmc">
-          <ref role="37wK5l" node="4OBfrz$xMo4" resolve="IncrementalEngine" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="4OBfrz$A56r" role="jymVt" />
-    <node concept="2YIFZL" id="4OBfrz$AiQx" role="jymVt">
-      <property role="TrG5h" value="getInstance" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3clFbS" id="4OBfrz$A8ts" role="3clF47">
-        <node concept="3clFbF" id="4OBfrz$AiQ5" role="3cqZAp">
-          <node concept="37vLTw" id="4OBfrz$AiQ4" role="3clFbG">
-            <ref role="3cqZAo" node="4OBfrz$A3e9" resolve="INSTANCE" />
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="4OBfrz$AhhW" role="3clF45">
-        <ref role="3uigEE" node="4OBfrz$xLo1" resolve="IncrementalEngine" />
-      </node>
-      <node concept="3Tm1VV" id="4OBfrz$A8tr" role="1B3o_S" />
-    </node>
-    <node concept="2tJIrI" id="4OBfrz$_ZPR" role="jymVt" />
     <node concept="312cEg" id="4OBfrz$xMnw" role="jymVt">
       <property role="TrG5h" value="dependencies" />
       <node concept="3Tm6S6" id="4OBfrz$xMnx" role="1B3o_S" />
