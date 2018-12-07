@@ -43,6 +43,12 @@
     <property role="TrG5h" value="Statemachine" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3jGmESsG9h4" role="1TKVEi">
+      <property role="IQ2ns" value="3813522688328111172" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="extends" />
+      <ref role="20lvS9" node="6ndA7L_L0uE" resolve="Statemachine" />
+    </node>
     <node concept="1TJgyj" id="6ndA7L_L0uP" role="1TKVEi">
       <property role="IQ2ns" value="7335687028107118517" />
       <property role="20lmBu" value="aggregation" />

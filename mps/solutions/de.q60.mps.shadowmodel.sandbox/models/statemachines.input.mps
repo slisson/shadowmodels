@@ -16,6 +16,7 @@
       </concept>
       <concept id="7335687028107118511" name="de.q60.mps.shadowmodel.demolang.structure.Event" flags="ng" index="02pZj" />
       <concept id="7335687028107118506" name="de.q60.mps.shadowmodel.demolang.structure.Statemachine" flags="ng" index="02pZm">
+        <reference id="3813522688328111172" name="extends" index="CncVE" />
         <child id="7335687028107119098" name="states" index="02p66" />
         <child id="7335687028107118517" name="events" index="02pZ9" />
       </concept>
@@ -28,6 +29,7 @@
   </registry>
   <node concept="02pZm" id="6ndA7L_L0Q_">
     <property role="TrG5h" value="Sm1" />
+    <ref role="CncVE" node="3jGmESsHqOk" resolve="Sm2" />
     <node concept="02pZj" id="6ndA7L_L0QA" role="02pZ9">
       <property role="TrG5h" value="forward" />
     </node>
@@ -81,6 +83,12 @@
         <ref role="02oBg" node="6ndA7L_L0QJ" resolve="s1" />
         <ref role="02oBk" node="6ndA7L_L0QF" resolve="reset" />
       </node>
+    </node>
+  </node>
+  <node concept="02pZm" id="3jGmESsHqOk">
+    <property role="TrG5h" value="Sm2" />
+    <node concept="02pZh" id="3jGmESsIcmd" role="02p66">
+      <property role="TrG5h" value="Initial" />
     </node>
   </node>
 </model>
