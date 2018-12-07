@@ -1499,16 +1499,48 @@
       <node concept="3cqZAl" id="3SvKIiMhoG" role="3clF45" />
       <node concept="3Tm1VV" id="3SvKIiMhoH" role="1B3o_S" />
       <node concept="3clFbS" id="3SvKIiMhoI" role="3clF47">
-        <node concept="3clFbF" id="3SvKIiMNrr" role="3cqZAp">
-          <node concept="2OqwBi" id="3SvKIiMO61" role="3clFbG">
-            <node concept="37vLTw" id="3SvKIiMNrq" role="2Oq$k0">
-              <ref role="3cqZAo" node="3SvKIiMgWm" resolve="listeners" />
+        <node concept="3cpWs8" id="5zf425kuQJI" role="3cqZAp">
+          <node concept="3cpWsn" id="5zf425kuQJJ" role="3cpWs9">
+            <property role="TrG5h" value="newListeners" />
+            <node concept="3uibUv" id="5zf425kuQJK" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
+              <node concept="3uibUv" id="5zf425kuQJL" role="11_B2D">
+                <ref role="3uigEE" node="3SvKIiMan$" resolve="IDependencyListener" />
+              </node>
             </node>
-            <node concept="liA8E" id="3SvKIiMPlL" role="2OqNvi">
+            <node concept="2ShNRf" id="5zf425kuQJM" role="33vP2m">
+              <node concept="1pGfFk" id="5zf425kuQJN" role="2ShVmc">
+                <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;(java.util.Collection)" resolve="ArrayList" />
+                <node concept="37vLTw" id="5zf425kuQJO" role="37wK5m">
+                  <ref role="3cqZAo" node="3SvKIiMgWm" resolve="listeners" />
+                </node>
+                <node concept="3uibUv" id="5zf425kuQJP" role="1pMfVU">
+                  <ref role="3uigEE" node="3SvKIiMan$" resolve="IDependencyListener" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5zf425kuQJQ" role="3cqZAp">
+          <node concept="2OqwBi" id="5zf425kuQJR" role="3clFbG">
+            <node concept="37vLTw" id="5zf425kuQJS" role="2Oq$k0">
+              <ref role="3cqZAo" node="5zf425kuQJJ" resolve="newListeners" />
+            </node>
+            <node concept="liA8E" id="5zf425kuTWr" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
-              <node concept="37vLTw" id="3SvKIiMPFU" role="37wK5m">
+              <node concept="37vLTw" id="5zf425kuVnA" role="37wK5m">
                 <ref role="3cqZAo" node="3SvKIiMh_M" resolve="l" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5zf425kuQJV" role="3cqZAp">
+          <node concept="37vLTI" id="5zf425kuQJW" role="3clFbG">
+            <node concept="37vLTw" id="5zf425kuQJX" role="37vLTx">
+              <ref role="3cqZAo" node="5zf425kuQJJ" resolve="newListeners" />
+            </node>
+            <node concept="37vLTw" id="5zf425kuQJY" role="37vLTJ">
+              <ref role="3cqZAo" node="3SvKIiMgWm" resolve="listeners" />
             </node>
           </node>
         </node>
@@ -1526,16 +1558,48 @@
       <node concept="3cqZAl" id="3SvKIiMk3S" role="3clF45" />
       <node concept="3Tm1VV" id="3SvKIiMk3T" role="1B3o_S" />
       <node concept="3clFbS" id="3SvKIiMk3U" role="3clF47">
-        <node concept="3clFbF" id="3SvKIiMQ58" role="3cqZAp">
-          <node concept="2OqwBi" id="3SvKIiMQH7" role="3clFbG">
-            <node concept="37vLTw" id="3SvKIiMQ57" role="2Oq$k0">
-              <ref role="3cqZAo" node="3SvKIiMgWm" resolve="listeners" />
+        <node concept="3cpWs8" id="5zf425kuClh" role="3cqZAp">
+          <node concept="3cpWsn" id="5zf425kuCli" role="3cpWs9">
+            <property role="TrG5h" value="newListeners" />
+            <node concept="3uibUv" id="5zf425kuE6g" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
+              <node concept="3uibUv" id="5zf425kuF_S" role="11_B2D">
+                <ref role="3uigEE" node="3SvKIiMan$" resolve="IDependencyListener" />
+              </node>
             </node>
-            <node concept="liA8E" id="3SvKIiMRWR" role="2OqNvi">
+            <node concept="2ShNRf" id="5zf425kuGQ3" role="33vP2m">
+              <node concept="1pGfFk" id="5zf425kuHU8" role="2ShVmc">
+                <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;(java.util.Collection)" resolve="ArrayList" />
+                <node concept="37vLTw" id="5zf425kuJOW" role="37wK5m">
+                  <ref role="3cqZAo" node="3SvKIiMgWm" resolve="listeners" />
+                </node>
+                <node concept="3uibUv" id="5zf425kuQdJ" role="1pMfVU">
+                  <ref role="3uigEE" node="3SvKIiMan$" resolve="IDependencyListener" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5zf425kuClp" role="3cqZAp">
+          <node concept="2OqwBi" id="5zf425kuClq" role="3clFbG">
+            <node concept="37vLTw" id="5zf425kuClr" role="2Oq$k0">
+              <ref role="3cqZAo" node="5zf425kuCli" resolve="newListeners" />
+            </node>
+            <node concept="liA8E" id="5zf425kuMDm" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~List.remove(java.lang.Object):boolean" resolve="remove" />
-              <node concept="37vLTw" id="3SvKIiMSkn" role="37wK5m">
+              <node concept="37vLTw" id="5zf425kuO3p" role="37wK5m">
                 <ref role="3cqZAo" node="3SvKIiMk3Q" resolve="l" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5zf425kuClu" role="3cqZAp">
+          <node concept="37vLTI" id="5zf425kuClv" role="3clFbG">
+            <node concept="37vLTw" id="5zf425kuClw" role="37vLTx">
+              <ref role="3cqZAo" node="5zf425kuCli" resolve="newListeners" />
+            </node>
+            <node concept="37vLTw" id="5zf425kuClx" role="37vLTJ">
+              <ref role="3cqZAo" node="3SvKIiMgWm" resolve="listeners" />
             </node>
           </node>
         </node>
