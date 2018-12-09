@@ -179,6 +179,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1073063089578" name="jetbrains.mps.baseLanguage.structure.SuperMethodCall" flags="nn" index="3nyPlj" />
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
@@ -710,6 +711,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="3vsFnFV6eJQ" role="jymVt" />
     <node concept="312cEg" id="6AlUJyrx6h8" role="jymVt">
       <property role="TrG5h" value="repositoryListener" />
       <node concept="3Tm6S6" id="6AlUJyrx6h9" role="1B3o_S" />
@@ -757,6 +759,19 @@
               <node concept="3clFbS" id="6AlUJyrxacz" role="3clF47">
                 <node concept="3clFbJ" id="6AlUJyrxIWx" role="3cqZAp">
                   <node concept="3clFbS" id="6AlUJyrxIWz" role="3clFbx">
+                    <node concept="3clFbF" id="3vsFnFV68ph" role="3cqZAp">
+                      <node concept="2OqwBi" id="3vsFnFV68uO" role="3clFbG">
+                        <node concept="37vLTw" id="3vsFnFV68pf" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6AlUJyrxacw" resolve="m" />
+                        </node>
+                        <node concept="liA8E" id="3vsFnFV68Kb" role="2OqNvi">
+                          <ref role="37wK5l" to="lui2:~SModule.addModuleListener(org.jetbrains.mps.openapi.module.SModuleListener):void" resolve="addModuleListener" />
+                          <node concept="37vLTw" id="3vsFnFV69gb" role="37wK5m">
+                            <ref role="3cqZAo" node="3vsFnFV62C7" resolve="moduleListener" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3clFbF" id="6AlUJyrxuGG" role="3cqZAp">
                       <node concept="1rXfSq" id="6AlUJyrxuGF" role="3clFbG">
                         <ref role="37wK5l" node="6AlUJyrxrXK" resolve="queueUpdate" />
@@ -851,6 +866,95 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="3vsFnFV62C7" role="jymVt">
+      <property role="TrG5h" value="moduleListener" />
+      <node concept="3Tm6S6" id="3vsFnFV62C8" role="1B3o_S" />
+      <node concept="3uibUv" id="3vsFnFV65d_" role="1tU5fm">
+        <ref role="3uigEE" to="lui2:~SModuleListener" resolve="SModuleListener" />
+      </node>
+      <node concept="2ShNRf" id="3vsFnFV65jq" role="33vP2m">
+        <node concept="YeOm9" id="3vsFnFV66fV" role="2ShVmc">
+          <node concept="1Y3b0j" id="3vsFnFV66fY" role="YeSDq">
+            <property role="2bfB8j" value="true" />
+            <ref role="1Y3XeK" to="lui2:~SModuleListenerBase" resolve="SModuleListenerBase" />
+            <ref role="37wK5l" to="lui2:~SModuleListenerBase.&lt;init&gt;()" resolve="SModuleListenerBase" />
+            <node concept="3Tm1VV" id="3vsFnFV66fZ" role="1B3o_S" />
+            <node concept="3clFb_" id="3vsFnFV66mo" role="jymVt">
+              <property role="1EzhhJ" value="false" />
+              <property role="TrG5h" value="modelAdded" />
+              <property role="DiZV1" value="false" />
+              <property role="od$2w" value="false" />
+              <node concept="3Tm1VV" id="3vsFnFV66mp" role="1B3o_S" />
+              <node concept="3cqZAl" id="3vsFnFV66mr" role="3clF45" />
+              <node concept="37vLTG" id="3vsFnFV66ms" role="3clF46">
+                <property role="TrG5h" value="module" />
+                <node concept="3uibUv" id="3vsFnFV66mt" role="1tU5fm">
+                  <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                </node>
+              </node>
+              <node concept="37vLTG" id="3vsFnFV66mu" role="3clF46">
+                <property role="TrG5h" value="model" />
+                <node concept="3uibUv" id="3vsFnFV66mv" role="1tU5fm">
+                  <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="3vsFnFV66mx" role="3clF47">
+                <node concept="3clFbF" id="3vsFnFV66mA" role="3cqZAp">
+                  <node concept="3nyPlj" id="3vsFnFV66m_" role="3clFbG">
+                    <ref role="37wK5l" to="lui2:~SModuleListenerBase.modelAdded(org.jetbrains.mps.openapi.module.SModule,org.jetbrains.mps.openapi.model.SModel):void" resolve="modelAdded" />
+                    <node concept="37vLTw" id="3vsFnFV66mz" role="37wK5m">
+                      <ref role="3cqZAo" node="3vsFnFV66ms" resolve="module" />
+                    </node>
+                    <node concept="37vLTw" id="3vsFnFV66m$" role="37wK5m">
+                      <ref role="3cqZAo" node="3vsFnFV66mu" resolve="model" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2AHcQZ" id="3vsFnFV66my" role="2AJF6D">
+                <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+              </node>
+            </node>
+            <node concept="3clFb_" id="3vsFnFV66mB" role="jymVt">
+              <property role="1EzhhJ" value="false" />
+              <property role="TrG5h" value="modelRemoved" />
+              <property role="DiZV1" value="false" />
+              <property role="od$2w" value="false" />
+              <node concept="3Tm1VV" id="3vsFnFV66mC" role="1B3o_S" />
+              <node concept="3cqZAl" id="3vsFnFV66mE" role="3clF45" />
+              <node concept="37vLTG" id="3vsFnFV66mF" role="3clF46">
+                <property role="TrG5h" value="module" />
+                <node concept="3uibUv" id="3vsFnFV66mG" role="1tU5fm">
+                  <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                </node>
+              </node>
+              <node concept="37vLTG" id="3vsFnFV66mH" role="3clF46">
+                <property role="TrG5h" value="ref" />
+                <node concept="3uibUv" id="3vsFnFV66mI" role="1tU5fm">
+                  <ref role="3uigEE" to="mhbf:~SModelReference" resolve="SModelReference" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="3vsFnFV66mK" role="3clF47">
+                <node concept="3clFbF" id="3vsFnFV66mP" role="3cqZAp">
+                  <node concept="3nyPlj" id="3vsFnFV66mO" role="3clFbG">
+                    <ref role="37wK5l" to="lui2:~SModuleListenerBase.modelRemoved(org.jetbrains.mps.openapi.module.SModule,org.jetbrains.mps.openapi.model.SModelReference):void" resolve="modelRemoved" />
+                    <node concept="37vLTw" id="3vsFnFV66mM" role="37wK5m">
+                      <ref role="3cqZAo" node="3vsFnFV66mF" resolve="module" />
+                    </node>
+                    <node concept="37vLTw" id="3vsFnFV66mN" role="37wK5m">
+                      <ref role="3cqZAo" node="3vsFnFV66mH" resolve="ref" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2AHcQZ" id="3vsFnFV66mL" role="2AJF6D">
+                <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
               </node>
             </node>
           </node>
