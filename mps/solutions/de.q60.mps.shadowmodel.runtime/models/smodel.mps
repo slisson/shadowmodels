@@ -20189,14 +20189,19 @@
           <ref role="3uigEE" node="4QZGLsLEOdM" resolve="ShadowModel" />
         </node>
       </node>
-      <node concept="2ShNRf" id="3vsFnFV0qEd" role="33vP2m">
-        <node concept="3rGOSV" id="3vsFnFV0qst" role="2ShVmc">
-          <node concept="3uibUv" id="3vsFnFV0qsu" role="3rHrn6">
-            <ref role="3uigEE" to="6tkd:5gTrVpGiHIH" resolve="INode" />
+      <node concept="2OqwBi" id="5tQmAwPS0ch" role="33vP2m">
+        <node concept="2OqwBi" id="5tQmAwPRZ43" role="2Oq$k0">
+          <node concept="2ShNRf" id="3vsFnFV0qEd" role="2Oq$k0">
+            <node concept="1pGfFk" id="5tQmAwPRYyA" role="2ShVmc">
+              <ref role="37wK5l" to="3o3z:~MapMaker.&lt;init&gt;()" resolve="MapMaker" />
+            </node>
           </node>
-          <node concept="3uibUv" id="3vsFnFV0qsv" role="3rHtpV">
-            <ref role="3uigEE" node="4QZGLsLEOdM" resolve="ShadowModel" />
+          <node concept="liA8E" id="5tQmAwPRZDQ" role="2OqNvi">
+            <ref role="37wK5l" to="3o3z:~MapMaker.weakValues():com.google.common.collect.MapMaker" resolve="weakValues" />
           </node>
+        </node>
+        <node concept="liA8E" id="5tQmAwPS0Pq" role="2OqNvi">
+          <ref role="37wK5l" to="3o3z:~MapMaker.makeMap():java.util.concurrent.ConcurrentMap" resolve="makeMap" />
         </node>
       </node>
     </node>
@@ -20211,14 +20216,19 @@
           <ref role="3uigEE" node="115Xaa43tZI" resolve="ShadowModule" />
         </node>
       </node>
-      <node concept="2ShNRf" id="3vsFnFV0rVz" role="33vP2m">
-        <node concept="3rGOSV" id="3vsFnFV0rPs" role="2ShVmc">
-          <node concept="3uibUv" id="3vsFnFV0rPt" role="3rHrn6">
-            <ref role="3uigEE" to="6tkd:5gTrVpGiHIH" resolve="INode" />
+      <node concept="2OqwBi" id="5tQmAwPS1j$" role="33vP2m">
+        <node concept="2OqwBi" id="5tQmAwPS1j_" role="2Oq$k0">
+          <node concept="2ShNRf" id="5tQmAwPS1jA" role="2Oq$k0">
+            <node concept="1pGfFk" id="5tQmAwPS1jB" role="2ShVmc">
+              <ref role="37wK5l" to="3o3z:~MapMaker.&lt;init&gt;()" resolve="MapMaker" />
+            </node>
           </node>
-          <node concept="3uibUv" id="3vsFnFV0rPu" role="3rHtpV">
-            <ref role="3uigEE" node="115Xaa43tZI" resolve="ShadowModule" />
+          <node concept="liA8E" id="5tQmAwPS1jC" role="2OqNvi">
+            <ref role="37wK5l" to="3o3z:~MapMaker.weakValues():com.google.common.collect.MapMaker" resolve="weakValues" />
           </node>
+        </node>
+        <node concept="liA8E" id="5tQmAwPS1jD" role="2OqNvi">
+          <ref role="37wK5l" to="3o3z:~MapMaker.makeMap():java.util.concurrent.ConcurrentMap" resolve="makeMap" />
         </node>
       </node>
     </node>
