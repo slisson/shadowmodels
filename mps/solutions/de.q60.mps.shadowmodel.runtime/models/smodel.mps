@@ -21981,9 +21981,7 @@
       </node>
       <node concept="3clFbS" id="115Xaa43u0$" role="3clF47">
         <node concept="3cpWs6" id="115Xaa43u0_" role="3cqZAp">
-          <node concept="3clFbT" id="115Xaa43u0A" role="3cqZAk">
-            <property role="3clFbU" value="true" />
-          </node>
+          <node concept="3clFbT" id="115Xaa43u0A" role="3cqZAk" />
         </node>
       </node>
       <node concept="3Tm1VV" id="115Xaa43u0B" role="1B3o_S" />
@@ -22360,22 +22358,28 @@
     <node concept="312cEg" id="4ZED3xnXLwS" role="jymVt">
       <property role="TrG5h" value="input2output" />
       <node concept="3Tm6S6" id="4ZED3xnXLwT" role="1B3o_S" />
-      <node concept="3rvAFt" id="4ZED3xnXL_t" role="1tU5fm">
-        <node concept="3uibUv" id="4ZED3xnXLBK" role="3rvQeY">
+      <node concept="3uibUv" id="5tQmAwPQHIR" role="1tU5fm">
+        <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+        <node concept="3uibUv" id="5tQmAwPQJCM" role="11_B2D">
           <ref role="3uigEE" to="6tkd:5gTrVpGiHIH" resolve="INode" />
         </node>
-        <node concept="3uibUv" id="4ZED3xnXLFM" role="3rvSg0">
+        <node concept="3uibUv" id="5tQmAwPQLxZ" role="11_B2D">
           <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
         </node>
       </node>
-      <node concept="2ShNRf" id="7kQU9sgwDUZ" role="33vP2m">
-        <node concept="3rGOSV" id="7kQU9sgwDs$" role="2ShVmc">
-          <node concept="3uibUv" id="7kQU9sgwDs_" role="3rHrn6">
-            <ref role="3uigEE" to="6tkd:5gTrVpGiHIH" resolve="INode" />
+      <node concept="2OqwBi" id="5tQmAwPQQSp" role="33vP2m">
+        <node concept="2OqwBi" id="5tQmAwPQOVw" role="2Oq$k0">
+          <node concept="2ShNRf" id="5tQmAwPQMwI" role="2Oq$k0">
+            <node concept="1pGfFk" id="5tQmAwPQNWQ" role="2ShVmc">
+              <ref role="37wK5l" to="3o3z:~MapMaker.&lt;init&gt;()" resolve="MapMaker" />
+            </node>
           </node>
-          <node concept="3uibUv" id="7kQU9sgwDsA" role="3rHtpV">
-            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+          <node concept="liA8E" id="5tQmAwPQPT7" role="2OqNvi">
+            <ref role="37wK5l" to="3o3z:~MapMaker.weakValues():com.google.common.collect.MapMaker" resolve="weakValues" />
           </node>
+        </node>
+        <node concept="liA8E" id="5tQmAwPQRYy" role="2OqNvi">
+          <ref role="37wK5l" to="3o3z:~MapMaker.makeMap():java.util.concurrent.ConcurrentMap" resolve="makeMap" />
         </node>
       </node>
     </node>
@@ -22397,12 +22401,6 @@
       </node>
       <node concept="3Tm1VV" id="3jGmESsGwgY" role="1B3o_S" />
       <node concept="3clFbS" id="3jGmESsGwgZ" role="3clF47">
-        <node concept="3SKdUt" id="3vsFnFULau7" role="3cqZAp">
-          <node concept="3SKdUq" id="3vsFnFULau9" role="3SKWNk">
-            <property role="3SKdUp" value="TODO collect garbage (nodes removed from the input)" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="3vsFnFUL9Lq" role="3cqZAp" />
         <node concept="3clFbJ" id="3vsFnFUFiYe" role="3cqZAp">
           <node concept="3clFbS" id="3vsFnFUFiYg" role="3clFbx">
             <node concept="3cpWs6" id="3vsFnFUFkyn" role="3cqZAp">
@@ -22437,12 +22435,15 @@
             <node concept="3uibUv" id="3jGmESsGwh7" role="1tU5fm">
               <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
             </node>
-            <node concept="3EllGN" id="3jGmESsGwh8" role="33vP2m">
-              <node concept="37vLTw" id="3jGmESsGwh9" role="3ElVtu">
-                <ref role="3cqZAo" node="3jGmESsGwgV" resolve="input_" />
-              </node>
-              <node concept="37vLTw" id="3jGmESsGwha" role="3ElQJh">
+            <node concept="2OqwBi" id="5tQmAwPQVB0" role="33vP2m">
+              <node concept="37vLTw" id="3jGmESsGwha" role="2Oq$k0">
                 <ref role="3cqZAo" node="4ZED3xnXLwS" resolve="input2output" />
+              </node>
+              <node concept="liA8E" id="5tQmAwPQW$1" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <node concept="37vLTw" id="5tQmAwPQXjp" role="37wK5m">
+                  <ref role="3cqZAo" node="3jGmESsGwgV" resolve="input_" />
+                </node>
               </node>
             </node>
           </node>
@@ -22476,17 +22477,18 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="3jGmESsGwhp" role="3cqZAp">
-              <node concept="37vLTI" id="3jGmESsGwhq" role="3clFbG">
-                <node concept="37vLTw" id="3jGmESsGwhr" role="37vLTx">
-                  <ref role="3cqZAo" node="3jGmESsGwh6" resolve="output" />
+            <node concept="3clFbF" id="5tQmAwPQYpB" role="3cqZAp">
+              <node concept="2OqwBi" id="5tQmAwPQYVi" role="3clFbG">
+                <node concept="37vLTw" id="5tQmAwPQYp_" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4ZED3xnXLwS" resolve="input2output" />
                 </node>
-                <node concept="3EllGN" id="3jGmESsGwhs" role="37vLTJ">
-                  <node concept="37vLTw" id="3jGmESsGwht" role="3ElVtu">
+                <node concept="liA8E" id="5tQmAwPQZ_$" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                  <node concept="37vLTw" id="5tQmAwPR06U" role="37wK5m">
                     <ref role="3cqZAo" node="3jGmESsGwgV" resolve="input_" />
                   </node>
-                  <node concept="37vLTw" id="3jGmESsGwhu" role="3ElQJh">
-                    <ref role="3cqZAo" node="4ZED3xnXLwS" resolve="input2output" />
+                  <node concept="37vLTw" id="5tQmAwPR0WA" role="37wK5m">
+                    <ref role="3cqZAo" node="3jGmESsGwh6" resolve="output" />
                   </node>
                 </node>
               </node>
@@ -22988,12 +22990,15 @@
                                 <node concept="37vLTw" id="3vsFnFUH987" role="37vLTJ">
                                   <ref role="3cqZAo" node="3vsFnFUH97S" resolve="outputChild" />
                                 </node>
-                                <node concept="3EllGN" id="3vsFnFUH988" role="37vLTx">
-                                  <node concept="37vLTw" id="3vsFnFUH989" role="3ElVtu">
-                                    <ref role="3cqZAo" node="3vsFnFUH97N" resolve="inputChild" />
-                                  </node>
-                                  <node concept="37vLTw" id="3vsFnFUH98a" role="3ElQJh">
+                                <node concept="2OqwBi" id="5tQmAwPR2yY" role="37vLTx">
+                                  <node concept="37vLTw" id="3vsFnFUH98a" role="2Oq$k0">
                                     <ref role="3cqZAo" node="4ZED3xnXLwS" resolve="input2output" />
+                                  </node>
+                                  <node concept="liA8E" id="5tQmAwPR3EA" role="2OqNvi">
+                                    <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                                    <node concept="37vLTw" id="5tQmAwPR4xZ" role="37wK5m">
+                                      <ref role="3cqZAo" node="3vsFnFUH97N" resolve="inputChild" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>

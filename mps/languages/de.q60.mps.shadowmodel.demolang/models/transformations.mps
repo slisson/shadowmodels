@@ -290,6 +290,30 @@
               </node>
             </node>
           </node>
+          <node concept="027rt" id="5tQmAwPOG8w" role="02LM9">
+            <ref role="027rv" to="tpee:4EqhHTp4Mw3" resolve="member" />
+            <node concept="027og" id="5tQmAwPOGgA" role="027rp">
+              <ref role="02LMe" to="tpee:fz12cDC" resolve="FieldDeclaration" />
+              <node concept="027oh" id="5tQmAwPOGh1" role="02LM9">
+                <ref role="027oj" to="tpck:h0TrG11" resolve="name" />
+                <node concept="Xl_RD" id="5tQmAwPOGhd" role="027of">
+                  <property role="Xl_RC" value="a" />
+                </node>
+              </node>
+              <node concept="027rt" id="5tQmAwPOGh_" role="02LM9">
+                <ref role="027rv" to="tpee:4VkOLwjf83e" resolve="type" />
+                <node concept="027og" id="5tQmAwPOGhS" role="027rp">
+                  <ref role="02LMe" to="tpee:f_0OyhT" resolve="IntegerType" />
+                </node>
+              </node>
+              <node concept="027rt" id="5tQmAwPOGio" role="02LM9">
+                <ref role="027rv" to="tpee:fz3vP1I" resolve="initializer" />
+                <node concept="027og" id="5tQmAwPOGiN" role="027rp">
+                  <ref role="02LMe" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="027rt" id="7X4ppfYl3pX" role="02LM9">
             <ref role="027rv" to="tpee:4EqhHTp4Mw3" resolve="member" />
             <node concept="027og" id="7X4ppfYl3qc" role="027rp">
