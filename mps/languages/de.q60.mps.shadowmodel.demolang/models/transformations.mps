@@ -86,6 +86,7 @@
         <reference id="5373338300159359234" name="interface" index="2OrxuO" />
         <child id="7335687028107245068" name="output" index="026TK" />
         <child id="7335687028107163827" name="input" index="02i3f" />
+        <child id="8156066107234763314" name="condition" index="vpezr" />
       </concept>
       <concept id="9170566427534778463" name="de.q60.mps.shadowmodel.transformation.structure.TransformationCall" flags="ng" index="214gnc">
         <reference id="5373338300159402560" name="transformation" index="2P$kNQ" />
@@ -490,34 +491,10 @@
               <ref role="02LMe" to="tpee:fzclF80" resolve="StatementList" />
               <node concept="027rt" id="1cIlazwNNCQ" role="02LM9">
                 <ref role="027rv" to="tpee:fzcqZ_x" resolve="statement" />
-                <node concept="3MbsX0" id="I$iOOfIBoP" role="027rp">
-                  <node concept="2OqwBi" id="I$iOOfIH4c" role="3MbsX3">
-                    <node concept="2OqwBi" id="I$iOOfIDqA" role="2Oq$k0">
-                      <node concept="2OqwBi" id="I$iOOfIBwG" role="2Oq$k0">
-                        <node concept="2155sH" id="I$iOOfIBoZ" role="2Oq$k0">
-                          <ref role="2155sG" node="w3aulkbdJF" resolve="s" />
-                        </node>
-                        <node concept="3Tsc0h" id="I$iOOfIBT4" role="2OqNvi">
-                          <ref role="3TtcxE" to="yb34:6ndA7L_L0uR" resolve="transitions" />
-                        </node>
-                      </node>
-                      <node concept="13MTOL" id="I$iOOfIF9J" role="2OqNvi">
-                        <ref role="13MTZf" to="yb34:6ndA7L_L174" resolve="guard" />
-                      </node>
-                    </node>
-                    <node concept="1v1jN8" id="I$iOOfIHSD" role="2OqNvi" />
-                  </node>
-                  <node concept="214gnc" id="I$iOOfIHSL" role="3MbsX5">
-                    <ref role="2P$kNQ" node="I$iOOfI$dw" resolve="transitionsAsSwitch" />
-                    <node concept="2155sH" id="I$iOOfIHSO" role="214sll">
-                      <ref role="2155sG" node="w3aulkbdJF" resolve="s" />
-                    </node>
-                  </node>
-                  <node concept="214gnc" id="I$iOOfIUi8" role="3MbsXo">
-                    <ref role="2P$kNQ" node="I$iOOfII2j" resolve="transitionsAsIf" />
-                    <node concept="2155sH" id="I$iOOfIUib" role="214sll">
-                      <ref role="2155sG" node="w3aulkbdJF" resolve="s" />
-                    </node>
+                <node concept="214gnc" id="I$iOOfIHSL" role="027rp">
+                  <ref role="2P$kNQ" node="I$iOOfI$dw" resolve="transitions" />
+                  <node concept="2155sH" id="I$iOOfIHSO" role="214sll">
+                    <ref role="2155sG" node="w3aulkbdJF" resolve="s" />
                   </node>
                 </node>
               </node>
@@ -540,7 +517,7 @@
     </node>
     <node concept="2OrE70" id="1cIlazwNNlL" role="02uzr" />
     <node concept="2OrRyP" id="I$iOOfI$dw" role="02uzr">
-      <property role="TrG5h" value="transitionsAsSwitch" />
+      <property role="TrG5h" value="transitions" />
       <node concept="02i3K" id="I$iOOfI$ia" role="2OrRyY">
         <node concept="02i3D" id="I$iOOfI$in" role="02i2B">
           <ref role="02i3$" to="tpee:fzclF8l" resolve="Statement" />
@@ -554,7 +531,7 @@
       </node>
     </node>
     <node concept="02vpq" id="I$iOOfI$n9" role="02uzr">
-      <ref role="2OrxuO" node="I$iOOfI$dw" resolve="transitionsAsSwitch" />
+      <ref role="2OrxuO" node="I$iOOfI$dw" resolve="transitions" />
       <node concept="026TG" id="I$iOOfI$so" role="026TK">
         <node concept="027og" id="I$iOOfI$ss" role="026TJ">
           <ref role="02LMe" to="tpee:gVKaCLE" resolve="SwitchStatement" />
@@ -610,23 +587,24 @@
           <ref role="02i3$" to="yb34:6ndA7L_L0uH" resolve="State" />
         </node>
       </node>
+      <node concept="2OqwBi" id="74KaI_IlF9K" role="vpezr">
+        <node concept="2OqwBi" id="74KaI_IlF9L" role="2Oq$k0">
+          <node concept="2OqwBi" id="74KaI_IlF9M" role="2Oq$k0">
+            <node concept="214o7A" id="74KaI_IlFmU" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="74KaI_IlF9O" role="2OqNvi">
+              <ref role="3TtcxE" to="yb34:6ndA7L_L0uR" resolve="transitions" />
+            </node>
+          </node>
+          <node concept="13MTOL" id="74KaI_IlF9P" role="2OqNvi">
+            <ref role="13MTZf" to="yb34:6ndA7L_L174" resolve="guard" />
+          </node>
+        </node>
+        <node concept="1v1jN8" id="74KaI_IlF9Q" role="2OqNvi" />
+      </node>
     </node>
     <node concept="2OrE70" id="I$iOOfI$iF" role="02uzr" />
-    <node concept="2OrRyP" id="I$iOOfII2j" role="02uzr">
-      <property role="TrG5h" value="transitionsAsIf" />
-      <node concept="02i3K" id="I$iOOfII7i" role="2OrRyY">
-        <node concept="02i3D" id="I$iOOfII7q" role="02i2B">
-          <ref role="02i3$" to="tpee:fzclF8l" resolve="Statement" />
-        </node>
-      </node>
-      <node concept="02i3K" id="I$iOOfII72" role="2OrRyK">
-        <node concept="02i3D" id="I$iOOfII7a" role="02i2B">
-          <ref role="02i3$" to="yb34:6ndA7L_L0uH" resolve="State" />
-        </node>
-      </node>
-    </node>
     <node concept="02vpq" id="I$iOOfIIcl" role="02uzr">
-      <ref role="2OrxuO" node="I$iOOfII2j" resolve="transitionsAsIf" />
+      <ref role="2OrxuO" node="I$iOOfI$dw" resolve="transitions" />
       <node concept="026TG" id="I$iOOfIIhT" role="026TK">
         <node concept="027og" id="I$iOOfIIhX" role="026TJ">
           <ref role="02LMe" to="tpee:fzclF8n" resolve="IfStatement" />
@@ -672,6 +650,22 @@
         <node concept="02i3D" id="I$iOOfIIhG" role="02i2B">
           <ref role="02i3$" to="yb34:6ndA7L_L0uH" resolve="State" />
         </node>
+      </node>
+      <node concept="2OqwBi" id="74KaI_Imt7H" role="vpezr">
+        <node concept="2OqwBi" id="74KaI_Imt7I" role="2Oq$k0">
+          <node concept="2OqwBi" id="74KaI_Imt7J" role="2Oq$k0">
+            <node concept="2155sH" id="74KaI_InSgR" role="2Oq$k0">
+              <ref role="2155sG" node="I$iOOfIIh$" resolve="s" />
+            </node>
+            <node concept="3Tsc0h" id="74KaI_Imt7L" role="2OqNvi">
+              <ref role="3TtcxE" to="yb34:6ndA7L_L0uR" resolve="transitions" />
+            </node>
+          </node>
+          <node concept="13MTOL" id="74KaI_Imt7M" role="2OqNvi">
+            <ref role="13MTZf" to="yb34:6ndA7L_L174" resolve="guard" />
+          </node>
+        </node>
+        <node concept="3GX2aA" id="74KaI_ImtNx" role="2OqNvi" />
       </node>
     </node>
     <node concept="2OrE70" id="I$iOOfII7y" role="02uzr" />

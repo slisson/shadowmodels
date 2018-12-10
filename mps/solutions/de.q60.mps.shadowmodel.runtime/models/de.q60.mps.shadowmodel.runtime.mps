@@ -3461,31 +3461,6 @@
   <node concept="3HP615" id="5gTrVpGiHGT">
     <property role="TrG5h" value="ITransformationRule" />
     <node concept="2tJIrI" id="5gTrVpGiXgd" role="jymVt" />
-    <node concept="3clFb_" id="5gTrVpGj2Eo" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="isApplicable" />
-      <node concept="37vLTG" id="5gTrVpGj2Ep" role="3clF46">
-        <property role="TrG5h" value="problem" />
-        <node concept="3uibUv" id="5gTrVpGmfRl" role="1tU5fm">
-          <ref role="3uigEE" node="5gTrVpGiXy3" resolve="TransformationProblem" />
-        </node>
-      </node>
-      <node concept="10P_77" id="5gTrVpGj2H4" role="3clF45" />
-      <node concept="3Tm1VV" id="5gTrVpGj2Eu" role="1B3o_S" />
-      <node concept="3clFbS" id="5gTrVpGj2Ev" role="3clF47" />
-      <node concept="P$JXv" id="5yVaV$3RFpp" role="lGtFl">
-        <node concept="TZ5HI" id="5yVaV$3RFpq" role="3nqlJM">
-          <node concept="TZ5HA" id="5yVaV$3RFpr" role="3HnX3l">
-            <node concept="1dT_AC" id="5yVaV$3RFqt" role="1dT_Ay">
-              <property role="1dT_AB" value=" Generate a condition for the polymorphic function" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="5yVaV$3RFps" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-      </node>
-    </node>
     <node concept="3clFb_" id="5gTrVpGiJ5a" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="apply" />
@@ -6719,29 +6694,6 @@
       <node concept="3cqZAl" id="5gTrVpGjpp0" role="3clF45" />
       <node concept="3Tm1VV" id="5gTrVpGjpp1" role="1B3o_S" />
       <node concept="3clFbS" id="5gTrVpGjpp3" role="3clF47" />
-    </node>
-    <node concept="2tJIrI" id="5gTrVpGjp9b" role="jymVt" />
-    <node concept="3clFb_" id="5gTrVpGjol0" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="isApplicable" />
-      <node concept="37vLTG" id="5gTrVpGmg5N" role="3clF46">
-        <property role="TrG5h" value="problem" />
-        <node concept="3uibUv" id="5gTrVpGmg5O" role="1tU5fm">
-          <ref role="3uigEE" node="5gTrVpGiXy3" resolve="TransformationProblem" />
-        </node>
-      </node>
-      <node concept="10P_77" id="5gTrVpGjol3" role="3clF45" />
-      <node concept="3Tm1VV" id="5gTrVpGjol4" role="1B3o_S" />
-      <node concept="3clFbS" id="5gTrVpGjol6" role="3clF47">
-        <node concept="3clFbF" id="5gTrVpGjoRw" role="3cqZAp">
-          <node concept="3clFbT" id="5gTrVpGjoRv" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="5gTrVpGjol7" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
     </node>
     <node concept="2tJIrI" id="5gTrVpGjoko" role="jymVt" />
     <node concept="3clFb_" id="Vl1zEEz0ju" role="jymVt">
