@@ -182,7 +182,7 @@
   </node>
   <node concept="1TIwiD" id="6ndA7L_Lbyl">
     <property role="EcuMT" value="7335687028107163797" />
-    <property role="TrG5h" value="ConceptType" />
+    <property role="TrG5h" value="TConceptType" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyj" id="6ndA7L_Lbyo" role="1TKVEi">
       <property role="IQ2ns" value="7335687028107163800" />
@@ -1035,6 +1035,15 @@
     </node>
     <node concept="PrWs8" id="7YhLqbpf7QI" role="PzmwI">
       <ref role="PrY4T" node="7X4ppfYlui3" resolve="IContextNodeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Ezg1fMOi1b">
+    <property role="EcuMT" value="4225291329826005067" />
+    <property role="TrG5h" value="TStringType" />
+    <property role="34LRSv" value="string" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <node concept="PrWs8" id="3Ezg1fMPmC8" role="PzmwI">
+      <ref role="PrY4T" node="6ndA7L_Lbyk" resolve="ITransformationParameterType" />
     </node>
   </node>
 </model>

@@ -484,7 +484,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6ndA7L_Lbyy">
-    <ref role="1XX52x" to="oyp0:6ndA7L_Lbyl" resolve="ConceptType" />
+    <ref role="1XX52x" to="oyp0:6ndA7L_Lbyl" resolve="TConceptType" />
     <node concept="1iCGBv" id="6ndA7L_Lby$" role="2wV5jI">
       <ref role="1NtTu8" to="oyp0:6ndA7L_Lbyo" resolve="concept" />
       <node concept="1sVBvm" id="6ndA7L_LbyA" role="1sWHZn">
@@ -1663,6 +1663,12 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Ezg1fMOi1G">
+    <ref role="1XX52x" to="oyp0:3Ezg1fMOi1b" resolve="TStringType" />
+    <node concept="PMmxH" id="3Ezg1fMOi26" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

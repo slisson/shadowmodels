@@ -614,7 +614,7 @@
             <node concept="1PxgMI" id="6QszampP91g" role="2Oq$k0">
               <property role="1BlNFB" value="true" />
               <node concept="chp4Y" id="6QszampP97j" role="3oSUPX">
-                <ref role="cht4Q" to="oyp0:6ndA7L_Lbyl" resolve="ConceptType" />
+                <ref role="cht4Q" to="oyp0:6ndA7L_Lbyl" resolve="TConceptType" />
               </node>
               <node concept="2OqwBi" id="6QszampP8d5" role="1m5AlR">
                 <node concept="2OqwBi" id="6QszampP40g" role="2Oq$k0">
