@@ -12,6 +12,7 @@
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.repository/de.q60.mps.shadowmodel.repository.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.runtimelang/de.q60.mps.shadowmodel.runtimelang.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.transformation/de.q60.mps.shadowmodel.transformation.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.util/de.q60.mps.shadowmodel.util.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/shadowmodels.usecase.expr/shadowmodels.usecase.expr.mpl" folder="usecases" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.polymorphicfunctions.runtime/de.q60.mps.polymorphicfunctions.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.polymorphicfunctions.sandbox/de.q60.mps.polymorphicfunctions.sandbox.msd" folder="sandbox" />
