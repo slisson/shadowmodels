@@ -630,12 +630,6 @@
       </node>
     </node>
   </node>
-  <node concept="13h7C7" id="6QszampN5oK">
-    <ref role="13h7C2" to="oyp0:6QszampKRn3" resolve="Contribution" />
-    <node concept="13hLZK" id="6QszampN5oL" role="13h7CW">
-      <node concept="3clFbS" id="6QszampN5oM" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="6QszampP0jh">
     <ref role="13h7C2" to="oyp0:6ndA7L_L6SA" resolve="TransformationImplementation" />
     <node concept="13hLZK" id="6QszampP0ji" role="13h7CW">

@@ -12,7 +12,6 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -97,13 +96,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4EhVFrYZDo3" resolve="TransformationInterface" />
     </node>
-    <node concept="1TJgyj" id="6ndA7L_La3d" role="1TKVEi">
-      <property role="IQ2ns" value="7335687028107157709" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="hint" />
-      <ref role="20lvS9" node="6ndA7L_L9$x" resolve="ContextFlagReference" />
-      <node concept="asaX9" id="Vl1zEEySjK" role="lGtFl" />
-    </node>
     <node concept="1TJgyj" id="6ndA7L_LbyN" role="1TKVEi">
       <property role="IQ2ns" value="7335687028107163827" />
       <property role="20lmBu" value="aggregation" />
@@ -134,32 +126,6 @@
     <node concept="PrWs8" id="6QszampP0jc" role="PzmwI">
       <ref role="PrY4T" node="7X4ppfYlui3" resolve="IContextNodeProvider" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="6ndA7L_L9od">
-    <property role="EcuMT" value="7335687028107154957" />
-    <property role="TrG5h" value="ContextFlagDeclaration" />
-    <property role="34LRSv" value="flag" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6ndA7L_L9oe" role="PzmwI">
-      <ref role="PrY4T" node="6ndA7L_L6S_" resolve="ITransformationsModuleContent" />
-    </node>
-    <node concept="PrWs8" id="6ndA7L_L9oj" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="asaX9" id="7WfC1hy_DZq" role="lGtFl" />
-  </node>
-  <node concept="1TIwiD" id="6ndA7L_L9$x">
-    <property role="EcuMT" value="7335687028107155745" />
-    <property role="TrG5h" value="ContextFlagReference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6ndA7L_L9$y" role="1TKVEi">
-      <property role="IQ2ns" value="7335687028107155746" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="declaration" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6ndA7L_L9od" resolve="ContextFlagDeclaration" />
-    </node>
-    <node concept="asaX9" id="7WfC1hy_DZr" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="6ndA7L_Lbyc">
     <property role="EcuMT" value="7335687028107163788" />
@@ -533,26 +499,6 @@
     <property role="TrG5h" value="AnonymousFragmentDefinition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-  <node concept="1TIwiD" id="1cIlazwMtnB">
-    <property role="EcuMT" value="1382135219951883751" />
-    <property role="3GE5qa" value="fragments" />
-    <property role="TrG5h" value="NamedFragmentDefinition" />
-    <property role="34LRSv" value="fragment" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1cIlazwMweA" role="1TKVEi">
-      <property role="IQ2ns" value="1382135219951895462" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="definition" />
-      <ref role="20lvS9" node="1cIlazwMtn_" resolve="FragmentDefinition" />
-    </node>
-    <node concept="PrWs8" id="1cIlazwMtnC" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="1cIlazwMtnH" role="PzmwI">
-      <ref role="PrY4T" node="6ndA7L_L6S_" resolve="ITransformationsModuleContent" />
-    </node>
-    <node concept="asaX9" id="7WfC1hy_DWJ" role="lGtFl" />
-  </node>
   <node concept="1TIwiD" id="1cIlazwMuAT">
     <property role="EcuMT" value="1382135219951888825" />
     <property role="3GE5qa" value="fragments" />
@@ -699,23 +645,6 @@
     <node concept="PrWs8" id="2ePp5XuNSQ$" role="PzmwI">
       <ref role="PrY4T" node="6ndA7L_LuUC" resolve="INodeSpec" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="6QszampKRn3">
-    <property role="EcuMT" value="7898342489378223555" />
-    <property role="TrG5h" value="Contribution" />
-    <property role="34LRSv" value="contribute" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2UwmfNv7rp9" role="1TKVEi">
-      <property role="IQ2ns" value="3359783165116659273" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="impl" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6ndA7L_L6SA" resolve="TransformationImplementation" />
-    </node>
-    <node concept="PrWs8" id="6QszampKRn4" role="PzmwI">
-      <ref role="PrY4T" node="6ndA7L_L6S_" resolve="ITransformationsModuleContent" />
-    </node>
-    <node concept="asaX9" id="Vl1zEEzaSC" role="lGtFl" />
   </node>
   <node concept="PlHQZ" id="6QszampN4lI">
     <property role="EcuMT" value="7898342489378801006" />
