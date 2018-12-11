@@ -6378,17 +6378,6 @@
       </node>
     </node>
   </node>
-  <node concept="bUwia" id="7WfC1hyK4n3">
-    <property role="TrG5h" value="mc_afterPolymorphicFunctions" />
-    <node concept="3aamgX" id="7WfC1hyKFPT" role="3acgRq">
-      <ref role="30HIoZ" to="oyp0:4FwMpYIttwr" resolve="ShadowmodelNodeType" />
-      <node concept="gft3U" id="7WfC1hyKFPV" role="1lVwrX">
-        <node concept="3uibUv" id="7WfC1hyRTeN" role="gfFT$">
-          <ref role="3uigEE" to="6tkd:5gTrVpGiHIH" resolve="INode" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="jVnub" id="3Ezg1fMPIJo">
     <property role="TrG5h" value="switch_ParameterReference_cast" />
     <node concept="3aamgX" id="3Ezg1fMPJTd" role="3aUrZf">

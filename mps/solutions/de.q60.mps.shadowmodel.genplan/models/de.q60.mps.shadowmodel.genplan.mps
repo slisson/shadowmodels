@@ -4,7 +4,6 @@
   <languages>
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.slisson.mps.hacks.xmodelgen" version="0" />
   </languages>
   <imports>
     <import index="tfxr" ref="r:86e5b406-daab-41a3-9a8d-885e22836214(main@generator)" />
@@ -22,15 +21,6 @@
       </concept>
       <concept id="3750601816081736033" name="jetbrains.mps.lang.generator.plan.structure.InPlaceCheckpointSpec" flags="ng" index="3ps74r" />
     </language>
-    <language id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.slisson.mps.hacks.xmodelgen">
-      <concept id="961590472824346305" name="de.slisson.mps.hacks.xmodelgen.structure.MappingConfigStep" flags="ng" index="2Pg1uL">
-        <child id="7786846688815598697" name="mappingConfigurations" index="3VlUeB" />
-      </concept>
-      <concept id="961590472824361214" name="de.slisson.mps.hacks.xmodelgen.structure.MCListLanguageIdentity" flags="ng" index="2Pgd6e" />
-      <concept id="7786846688815408482" name="de.slisson.mps.hacks.xmodelgen.structure.MappingConfigurationReference" flags="ng" index="3Vl8EG">
-        <reference id="7786846688815408483" name="mc" index="3Vl8EH" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
@@ -45,10 +35,10 @@
   </registry>
   <node concept="2VgMpV" id="q2F95_HSDf">
     <property role="TrG5h" value="ShadowmodelsGenplan" />
-    <node concept="2Pg1uL" id="1HyxlLhHuus" role="2VgMA7">
-      <node concept="2Pgd6e" id="1HyxlLhHuut" role="1t_9vn" />
-      <node concept="3Vl8EG" id="1HyxlLhHuuX" role="3VlUeB">
-        <ref role="3Vl8EH" to="tfxr:5gTrVpGiHHo" resolve="main" />
+    <node concept="2VgMA2" id="2WBbN6NEgss" role="2VgMA7">
+      <node concept="2V$Bhx" id="2WBbN6NEgsO" role="1t_9vn">
+        <property role="2V$B1T" value="94b64715-a263-4c36-a138-8da14705ffa7" />
+        <property role="2V$B1Q" value="de.q60.mps.shadowmodel.transformation" />
       </node>
     </node>
     <node concept="2VgMA1" id="1HyxlLhHrvr" role="2VgMA7">
@@ -62,10 +52,10 @@
         <property role="2V$B1Q" value="de.q60.mps.polymorphicfunctions" />
       </node>
     </node>
-    <node concept="2Pg1uL" id="1HyxlLhHu$t" role="2VgMA7">
-      <node concept="2Pgd6e" id="1HyxlLhHu$u" role="1t_9vn" />
-      <node concept="3Vl8EG" id="1HyxlLhHu$v" role="3VlUeB">
-        <ref role="3Vl8EH" to="tfxr:7WfC1hyK4n3" resolve="mc_afterPolymorphicFunctions" />
+    <node concept="2VgMA2" id="2WBbN6NEgtd" role="2VgMA7">
+      <node concept="2V$Bhx" id="2WBbN6NEgtB" role="1t_9vn">
+        <property role="2V$B1T" value="96089812-effe-4a96-bb2e-75f8162046af" />
+        <property role="2V$B1Q" value="de.q60.mps.shadowmodel.gen.afterPF" />
       </node>
     </node>
     <node concept="2VgMA2" id="q2F95_I4Xr" role="2VgMA7">
