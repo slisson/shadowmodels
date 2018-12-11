@@ -2,7 +2,7 @@
 <model ref="r:61d96d59-75af-4854-9d37-c81762926dfe(de.q60.mps.shadowmodel.transformation.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -27,7 +27,6 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -280,7 +279,6 @@
       </node>
     </node>
     <node concept="13i0hz" id="7X4ppfYk3ct" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -531,7 +529,6 @@
       </node>
     </node>
     <node concept="13i0hz" id="1cIlazwMqEO" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -772,7 +769,6 @@
       <node concept="3clFbS" id="TB2rf$dD1l" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="TB2rf$dD1u" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -806,7 +802,6 @@
       <node concept="3clFbS" id="35N923AuHKW" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="35N923AuHLq" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -836,7 +831,6 @@
       </node>
     </node>
     <node concept="13i0hz" id="35N923AvTM0" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getExpectedReturnType" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />

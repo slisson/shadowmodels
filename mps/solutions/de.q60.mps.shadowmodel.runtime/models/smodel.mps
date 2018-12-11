@@ -5,9 +5,9 @@
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="0bf7bc3b-b11d-42e4-b160-93d72af96397" name="de.q60.mps.shadowmodel.runtimelang" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14478,35 +14478,6 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="3clFb_" id="75046mlXNt6" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="setRole" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="75046mlXNt7" role="1B3o_S" />
-      <node concept="2AHcQZ" id="75046mlXNt9" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-      </node>
-      <node concept="3cqZAl" id="75046mlXNtg" role="3clF45" />
-      <node concept="37vLTG" id="75046mlXNth" role="3clF46">
-        <property role="TrG5h" value="newRole" />
-        <node concept="3uibUv" id="75046mlXNti" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="75046mlXNtj" role="3clF47">
-        <node concept="YS8fn" id="75046mlXV3p" role="3cqZAp">
-          <node concept="2ShNRf" id="75046mlXV3q" role="YScLw">
-            <node concept="1pGfFk" id="75046mlXV3r" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="75046mlXNtk" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
     <node concept="3clFb_" id="75046mlXNto" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getLink" />
@@ -14616,38 +14587,6 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="75046mlXNtQ" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="75046mlXNtT" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="setTargetSModelReference" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="75046mlXNtU" role="1B3o_S" />
-      <node concept="2AHcQZ" id="75046mlXNtW" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-      </node>
-      <node concept="3cqZAl" id="75046mlXNu0" role="3clF45" />
-      <node concept="37vLTG" id="75046mlXNu1" role="3clF46">
-        <property role="TrG5h" value="reference" />
-        <node concept="3uibUv" id="75046mlXNu2" role="1tU5fm">
-          <ref role="3uigEE" to="mhbf:~SModelReference" resolve="SModelReference" />
-        </node>
-        <node concept="2AHcQZ" id="75046mlXNu3" role="2AJF6D">
-          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="75046mlXNu4" role="3clF47">
-        <node concept="YS8fn" id="75046mlXTKL" role="3cqZAp">
-          <node concept="2ShNRf" id="75046mlXTKM" role="YScLw">
-            <node concept="1pGfFk" id="75046mlXTKN" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="75046mlXNu5" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
@@ -17884,7 +17823,6 @@
       <property role="TrG5h" value="IPropertyAccessor" />
       <node concept="3clFb_" id="qmkA5fPCdI" role="jymVt">
         <property role="TrG5h" value="get" />
-        <property role="1EzhhJ" value="true" />
         <node concept="37vLTG" id="qmkA5fQN9v" role="3clF46">
           <property role="TrG5h" value="element" />
           <node concept="16syzq" id="qmkA5fQN9w" role="1tU5fm">
@@ -17897,7 +17835,6 @@
       </node>
       <node concept="3clFb_" id="qmkA5fPCdM" role="jymVt">
         <property role="TrG5h" value="set" />
-        <property role="1EzhhJ" value="true" />
         <node concept="37vLTG" id="qmkA5fQNmV" role="3clF46">
           <property role="TrG5h" value="element" />
           <node concept="16syzq" id="qmkA5fQNmW" role="1tU5fm">
@@ -17922,7 +17859,6 @@
       <property role="TrG5h" value="IChildAccessor" />
       <node concept="3clFb_" id="qmkA5fPFjP" role="jymVt">
         <property role="TrG5h" value="get" />
-        <property role="1EzhhJ" value="true" />
         <node concept="37vLTG" id="qmkA5fQMxI" role="3clF46">
           <property role="TrG5h" value="element" />
           <node concept="16syzq" id="qmkA5fQMN1" role="1tU5fm">
@@ -17947,7 +17883,6 @@
       <property role="TrG5h" value="IReferenceAccessor" />
       <node concept="3clFb_" id="qmkA5fPGEp" role="jymVt">
         <property role="TrG5h" value="get" />
-        <property role="1EzhhJ" value="true" />
         <node concept="37vLTG" id="qmkA5fQNsb" role="3clF46">
           <property role="TrG5h" value="element" />
           <node concept="16syzq" id="qmkA5fQNsc" role="1tU5fm">
@@ -17962,7 +17897,6 @@
       </node>
       <node concept="3clFb_" id="qmkA5fPHNC" role="jymVt">
         <property role="TrG5h" value="set" />
-        <property role="1EzhhJ" value="true" />
         <node concept="37vLTG" id="qmkA5fQNBb" role="3clF46">
           <property role="TrG5h" value="element" />
           <node concept="16syzq" id="qmkA5fQNBc" role="1tU5fm">

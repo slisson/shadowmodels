@@ -2,9 +2,9 @@
 <model ref="r:ae5491dd-13f2-4540-8a18-9d4eafbb865f(de.q60.mps.shadowmodel.runtime.incremental)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -1040,7 +1040,6 @@
   <node concept="3HP615" id="B8a55UrI4C">
     <property role="TrG5h" value="IInvalidationListener" />
     <node concept="3clFb_" id="B8a55UrI5m" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="invalidated" />
       <node concept="37vLTG" id="B8a55UrI5Z" role="3clF46">
         <property role="TrG5h" value="key" />
@@ -1059,7 +1058,6 @@
       <node concept="3clFbS" id="B8a55UrI5q" role="3clF47" />
     </node>
     <node concept="3clFb_" id="4OBfrz$uaE9" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="invalidatedAll" />
       <node concept="3cqZAl" id="4OBfrz$uaEb" role="3clF45" />
       <node concept="3Tm1VV" id="4OBfrz$uaEc" role="1B3o_S" />
@@ -1330,7 +1328,6 @@
   <node concept="3HP615" id="3SvKIiMan$">
     <property role="TrG5h" value="IDependencyListener" />
     <node concept="3clFb_" id="3SvKIiMddP" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="dependencyAccessed" />
       <node concept="37vLTG" id="3SvKIiMgwJ" role="3clF46">
         <property role="TrG5h" value="dep" />
@@ -1343,7 +1340,6 @@
       <node concept="3clFbS" id="3SvKIiMddT" role="3clF47" />
     </node>
     <node concept="3clFb_" id="3SvKIiMdfD" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="dependencyChanged" />
       <node concept="37vLTG" id="3SvKIiMgMy" role="3clF46">
         <property role="TrG5h" value="dep" />
