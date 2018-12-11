@@ -21,6 +21,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.runtime/de.q60.mps.shadowmodel.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.sandbox/de.q60.mps.shadowmodel.sandbox.msd" folder="sandbox" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.tool/de.q60.mps.shadowmodel.tool.msd" folder="core" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.q60.shadowmodels.build/de.q60.shadowmodels.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/shadowmodels.usecase.expr.example/shadowmodels.usecase.expr.example.msd" folder="" />
     </projectModules>
   </component>

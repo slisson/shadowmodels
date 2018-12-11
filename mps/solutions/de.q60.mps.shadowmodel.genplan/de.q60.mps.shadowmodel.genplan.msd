@@ -6,11 +6,7 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">955dd3a2-1de0-4112-a787-7f8bf705c64d(de.q60.mps.shadowmodel.transformation#6069004802150030167)</dependency>
-  </dependencies>
   <languageVersions>
-    <language slang="l:c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1:de.slisson.mps.hacks.xmodelgen" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
@@ -22,7 +18,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="f5997610-4d27-40a3-872c-d06cf404755b(de.q60.mps.shadowmodel.genplan)" version="0" />
-    <module reference="955dd3a2-1de0-4112-a787-7f8bf705c64d(de.q60.mps.shadowmodel.transformation#6069004802150030167)" version="0" />
   </dependencyVersions>
 </solution>
 
