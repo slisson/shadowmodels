@@ -494,6 +494,36 @@
               </node>
             </node>
           </node>
+          <node concept="027rt" id="4iIKqJTYV2h" role="02LM9">
+            <ref role="027rv" to="tpee:4EqhHTp4Mw3" resolve="member" />
+            <node concept="027og" id="4iIKqJTYV2i" role="027rp">
+              <ref role="02LMe" to="tpee:fz12cDC" resolve="FieldDeclaration" />
+              <node concept="027oh" id="4iIKqJTYV2j" role="02LM9">
+                <ref role="027oj" to="tpck:h0TrG11" resolve="name" />
+                <node concept="Xl_RD" id="4iIKqJTYV2k" role="027of">
+                  <property role="Xl_RC" value="invalidType" />
+                </node>
+              </node>
+              <node concept="027rt" id="4iIKqJTYV2l" role="02LM9">
+                <ref role="027rv" to="tpee:4VkOLwjf83e" resolve="type" />
+                <node concept="027og" id="4iIKqJTYV2m" role="027rp">
+                  <ref role="02LMe" to="tpee:hP7QB7G" resolve="StringType" />
+                </node>
+              </node>
+              <node concept="027rt" id="4iIKqJTYV2n" role="02LM9">
+                <ref role="027rv" to="tpee:fz3vP1I" resolve="initializer" />
+                <node concept="027og" id="4iIKqJTYVgj" role="027rp">
+                  <ref role="02LMe" to="tpee:fzcmrck" resolve="IntegerConstant" />
+                  <node concept="027oh" id="4iIKqJTYVgu" role="02LM9">
+                    <ref role="027oj" to="tpee:fzcmrcl" resolve="value" />
+                    <node concept="Xl_RD" id="4iIKqJTYVgB" role="027of">
+                      <property role="Xl_RC" value="0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="02i3K" id="6ndA7L_LniS" role="02i3f">
