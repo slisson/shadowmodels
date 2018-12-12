@@ -32,8 +32,8 @@
     <echoxml file="${build.tmp}/default/de.q60.shadowmodels.zip/de.q60.shadowmodels/META-INF/plugin.xml">
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.q60.shadowmodels</id>
-        <name>de.q60.shadowmodels</name>
-        <version>1.0</version>
+        <name>Shadow Models</name>
+        <version>2018.1.0</version>
         <depends>jetbrains.mps.core</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -408,6 +408,85 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.target.editor-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.target.editor-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.target.text.jar" />
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.target.text.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.q60.mps.shadowmodels.target.text.jar/META-INF/module.xml">
+      <module namespace="de.q60.mps.shadowmodels.target.text" type="language" uuid="a7322769-ef64-4daa-a2f4-fd4228fb713e">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.q60.mps.shadowmodels.target.text-src.jar" descriptor="de.q60.mps.shadowmodels.target.text.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.zip/de.q60.shadowmodels/languages/de.q60.shadowmodels/de.q60.mps.shadowmodels.target.text.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.text" />
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.target.text/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.q60.mps.shadowmodels.target.text.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.target.text-generator.jar" />
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.target.text-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.q60.mps.shadowmodels.target.text-generator.jar/META-INF/module.xml">
+      <module namespace="de.q60.mps.shadowmodels.target.text#01" type="generator" uuid="ecc7bf4b-c8ec-4b14-87e5-e9f512860567">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.q60.mps.shadowmodels.target.text-src.jar" descriptor="de.q60.mps.shadowmodels.target.text.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.zip/de.q60.shadowmodels/languages/de.q60.shadowmodels/de.q60.mps.shadowmodels.target.text-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.text#01" />
+      <fileset dir="${build.tmp}/default/de.q60.mps.shadowmodels.target.text-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.target.text-generator-template">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.target.text/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.target.text-models">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.target.text/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.zip/de.q60.shadowmodels/languages/de.q60.shadowmodels/de.q60.mps.shadowmodels.target.text-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.target.text/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.target.text/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.q60.mps.shadowmodels.target.text/de.q60.mps.shadowmodels.target.text.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.target.text-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.target.text-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.util.jar" />
     <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.util.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.q60.mps.shadowmodels.util.jar/META-INF/module.xml">
@@ -748,6 +827,378 @@
     <zip destfile="${build.layout}/de.q60.shadowmodels.zip">
       <fileset dir="${build.tmp}/default/de.q60.shadowmodels.zip" />
     </zip>
+    <mkdir dir="${build.tmp}/default/de.q60.shadowmodels.examples.zip" />
+    <mkdir dir="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples" />
+    <mkdir dir="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/META-INF" />
+    <echoxml file="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/META-INF/plugin.xml">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>de.q60.shadowmodels.examples</id>
+        <name>Shadow Models (Examples)</name>
+        <version>2018.1.0</version>
+        <depends>de.q60.shadowmodels</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <mkdir dir="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages" />
+    <mkdir dir="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples" />
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.input.jar" />
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.input.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.q60.mps.shadowmodels.examples.input.jar/META-INF/module.xml">
+      <module namespace="de.q60.mps.shadowmodels.examples.input" type="solution" uuid="f65cad6f-55b3-4700-8f71-5f4c15c50e34">
+        <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.q60.mps.shadowmodels.examples.input-src.jar" descriptor="de.q60.mps.shadowmodels.examples.input.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.input.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.input" />
+      <fileset dir="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.input.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.q60.mps.shadowmodels.examples.input-models">
+      <fileset dir="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.input-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/de.q60.mps.shadowmodels.examples.input.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.q60.mps.shadowmodels.examples.input-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.blext.jar" />
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.blext.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.q60.mps.shadowmodels.examples.blext.jar/META-INF/module.xml">
+      <module namespace="de.q60.mps.shadowmodels.examples.blext" type="language" uuid="bbb5f4e2-794a-4b91-bd27-caf7d437ac9e">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="e52a4835-844d-46a1-99f8-c06129db796f(de.q60.mps.shadowmodels.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.q60.mps.shadowmodels.examples.blext-src.jar" descriptor="de.q60.mps.shadowmodels.examples.blext.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.blext.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.blext" />
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.blext.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.blext-generator.jar" />
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.blext-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.q60.mps.shadowmodels.examples.blext-generator.jar/META-INF/module.xml">
+      <module namespace="de.q60.mps.shadowmodels.examples.blext#01" type="generator" uuid="e89c1be2-df3a-444d-9766-b255bcee5e73">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.q60.mps.shadowmodels.examples.blext-src.jar" descriptor="de.q60.mps.shadowmodels.examples.blext.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.blext-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.blext#01" />
+      <fileset dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.blext-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.blext-generator-template">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.blext-models">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.blext-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/de.q60.mps.shadowmodels.examples.blext.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.blext-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.blext-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.entities.jar" />
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.entities.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.q60.mps.shadowmodels.examples.entities.jar/META-INF/module.xml">
+      <module namespace="de.q60.mps.shadowmodels.examples.entities" type="language" uuid="ca32b5fa-caea-4f97-9686-6f60d4d677d4">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="e52a4835-844d-46a1-99f8-c06129db796f(de.q60.mps.shadowmodels.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.q60.mps.shadowmodels.examples.entities-src.jar" descriptor="de.q60.mps.shadowmodels.examples.entities.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.entities.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.entities" />
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.entities.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.entities-generator.jar" />
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.entities-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.q60.mps.shadowmodels.examples.entities-generator.jar/META-INF/module.xml">
+      <module namespace="de.q60.mps.shadowmodels.examples.entities#01" type="generator" uuid="4b81b271-0a0f-4f4b-9d1b-c2c6711961a5">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.q60.mps.shadowmodels.examples.entities-src.jar" descriptor="de.q60.mps.shadowmodels.examples.entities.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.entities-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.entities#01" />
+      <fileset dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.entities-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.entities-generator-template">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.entities-models">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.entities-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/de.q60.mps.shadowmodels.examples.entities.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.entities-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.entities-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.expressions.jar" />
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.expressions.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.q60.mps.shadowmodels.examples.expressions.jar/META-INF/module.xml">
+      <module namespace="de.q60.mps.shadowmodels.examples.expressions" type="language" uuid="1ab7bfac-29d6-4772-a483-50110408ac43">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="e52a4835-844d-46a1-99f8-c06129db796f(de.q60.mps.shadowmodels.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.q60.mps.shadowmodels.examples.expressions-src.jar" descriptor="de.q60.mps.shadowmodels.examples.expressions.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.expressions.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.expressions" />
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.expressions.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.expressions-generator.jar" />
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.expressions-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.q60.mps.shadowmodels.examples.expressions-generator.jar/META-INF/module.xml">
+      <module namespace="de.q60.mps.shadowmodels.examples.expressions#01" type="generator" uuid="566097a6-68e9-42f5-b4c6-f11ea34090bf">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.q60.mps.shadowmodels.examples.expressions-src.jar" descriptor="de.q60.mps.shadowmodels.examples.expressions.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.expressions-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.expressions#01" />
+      <fileset dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.expressions-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.expressions-generator-template">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.expressions-models">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.expressions-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/de.q60.mps.shadowmodels.examples.expressions.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.expressions-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.expressions-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.statemachine.jar" />
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.statemachine.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.q60.mps.shadowmodels.examples.statemachine.jar/META-INF/module.xml">
+      <module namespace="de.q60.mps.shadowmodels.examples.statemachine" type="language" uuid="ebb56408-a287-44ca-ab2d-1b6ee6850446">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="e52a4835-844d-46a1-99f8-c06129db796f(de.q60.mps.shadowmodels.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.q60.mps.shadowmodels.examples.statemachine-src.jar" descriptor="de.q60.mps.shadowmodels.examples.statemachine.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.statemachine.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.statemachine" />
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.statemachine.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.statemachine-generator.jar" />
+    <mkdir dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.statemachine-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.q60.mps.shadowmodels.examples.statemachine-generator.jar/META-INF/module.xml">
+      <module namespace="de.q60.mps.shadowmodels.examples.statemachine#6069004802152564660" type="generator" uuid="f48d6c1a-9b4c-4196-ab78-21a90a729163">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.q60.mps.shadowmodels.examples.statemachine-src.jar" descriptor="de.q60.mps.shadowmodels.examples.statemachine.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.statemachine-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.statemachine#6069004802152564660" />
+      <fileset dir="${build.tmp}/default/de.q60.mps.shadowmodels.examples.statemachine-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.statemachine-generator-template">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.statemachine-models">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/de.q60.shadowmodels.examples.zip/de.q60.shadowmodels.examples/languages/de.q60.shadowmodels.examples/de.q60.mps.shadowmodels.examples.statemachine-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/de.q60.mps.shadowmodels.examples.statemachine.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.statemachine-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.q60.mps.shadowmodels.examples.statemachine-models" prefix="module/models" />
+    </jar>
+    <zip destfile="${build.layout}/de.q60.shadowmodels.examples.zip">
+      <fileset dir="${build.tmp}/default/de.q60.shadowmodels.examples.zip" />
+    </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
@@ -765,7 +1216,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.de.q60.mps.polymorphicfunctions.runtime, java.compile.de.q60.mps.shadowmodels.genplan, java.compile.de.q60.mps.shadowmodels.gen.afterPF, java.compile.de.q60.mps.shadowmodels.gen.afterPF#01, java.compile.de.q60.mps.shadowmodels.runtime, java.compile.de.q60.mps.polymorphicfunctions, java.compile.de.q60.mps.polymorphicfunctions#01, java.compile.de.q60.mps.shadowmodels.target.editor, java.compile.de.q60.mps.shadowmodels.target.editor#01, java.compile.de.q60.mps.shadowmodels.util, java.compile.de.q60.mps.shadowmodels.util#01, java.compile.de.q60.mps.shadowmodels.runtimelang, java.compile.de.q60.mps.shadowmodels.runtimelang#01, java.compile.de.q60.mps.shadowmodels.transformation, java.compile.de.q60.mps.shadowmodels.transformation#6069004802150030167, java.compile.de.q60.mps.shadowmodels.repository, java.compile.de.q60.mps.shadowmodels.repository#01" />
+  <target name="compileJava" depends="java.compile.de.q60.mps.polymorphicfunctions.runtime, java.compile.de.q60.mps.shadowmodels.genplan, java.compile.de.q60.mps.shadowmodels.gen.afterPF, java.compile.de.q60.mps.shadowmodels.gen.afterPF#01, java.compile.de.q60.mps.shadowmodels.runtime, java.compile.de.q60.mps.polymorphicfunctions, java.compile.de.q60.mps.polymorphicfunctions#01, java.compile.de.q60.mps.shadowmodels.target.editor, java.compile.de.q60.mps.shadowmodels.target.editor#01, java.compile.de.q60.mps.shadowmodels.target.text, java.compile.de.q60.mps.shadowmodels.target.text#01, java.compile.de.q60.mps.shadowmodels.util, java.compile.de.q60.mps.shadowmodels.util#01, java.compile.de.q60.mps.shadowmodels.runtimelang, java.compile.de.q60.mps.shadowmodels.runtimelang#01, java.compile.de.q60.mps.shadowmodels.transformation, java.compile.de.q60.mps.shadowmodels.transformation#6069004802150030167, java.compile.de.q60.mps.shadowmodels.repository, java.compile.de.q60.mps.shadowmodels.repository#01, java.compile.de.q60.mps.shadowmodels.examples.input, java.compile.de.q60.mps.shadowmodels.examples.blext, java.compile.de.q60.mps.shadowmodels.examples.blext#01, java.compile.de.q60.mps.shadowmodels.examples.entities, java.compile.de.q60.mps.shadowmodels.examples.entities#01, java.compile.de.q60.mps.shadowmodels.examples.expressions, java.compile.de.q60.mps.shadowmodels.examples.expressions#01, java.compile.de.q60.mps.shadowmodels.examples.statemachine, java.compile.de.q60.mps.shadowmodels.examples.statemachine#6069004802152564660" />
   
   <target name="processResources" />
   
@@ -777,7 +1228,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" targetJavaVersion="1.8" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
       <plugin path="${artifacts.mps}/plugins/jetpad" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
@@ -876,6 +1327,7 @@
         <module file="${basedir}/solutions/de.q60.mps.shadowmodels.genplan/de.q60.mps.shadowmodels.genplan.msd" />
         <module file="${basedir}/languages/de.q60.mps.shadowmodels.runtimelang/de.q60.mps.shadowmodels.runtimelang.mpl" />
         <module file="${basedir}/languages/de.q60.mps.shadowmodels.target.editor/de.q60.mps.shadowmodels.target.editor.mpl" />
+        <module file="${basedir}/languages/de.q60.mps.shadowmodels.target.text/de.q60.mps.shadowmodels.target.text.mpl" />
         <module file="${basedir}/languages/de.q60.mps.shadowmodels.util/de.q60.mps.shadowmodels.util.mpl" />
       </chunk>
       <chunk>
@@ -885,7 +1337,14 @@
         <module file="${basedir}/languages/de.q60.mps.shadowmodels.transformation/de.q60.mps.shadowmodels.transformation.mpl" />
       </chunk>
       <chunk>
+        <module file="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/de.q60.mps.shadowmodels.examples.blext.mpl" />
+        <module file="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/de.q60.mps.shadowmodels.examples.entities.mpl" />
+        <module file="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/de.q60.mps.shadowmodels.examples.expressions.mpl" />
+        <module file="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/de.q60.mps.shadowmodels.examples.statemachine.mpl" />
         <module file="${basedir}/languages/de.q60.mps.shadowmodels.repository/de.q60.mps.shadowmodels.repository.mpl" />
+      </chunk>
+      <chunk>
+        <module file="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/de.q60.mps.shadowmodels.examples.input.msd" />
       </chunk>
       <jvmargs>
         <arg value="-Xmx512m" />
@@ -903,7 +1362,7 @@
   <target name="java.compile.de.q60.mps.polymorphicfunctions.runtime" depends="fetchDependencies">
     <mkdir dir="${basedir}/solutions/de.q60.mps.polymorphicfunctions.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions.runtime" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions.runtime" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions.runtime" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/de.q60.mps.polymorphicfunctions.runtime/source_gen" />
@@ -939,12 +1398,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions.runtime">
+      <fileset dir="${basedir}/solutions/de.q60.mps.polymorphicfunctions.runtime/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.genplan" depends="fetchDependencies">
     <mkdir dir="${basedir}/solutions/de.q60.mps.shadowmodels.genplan/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.genplan" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.genplan" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.genplan" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/de.q60.mps.shadowmodels.genplan/source_gen" />
@@ -969,12 +1431,15 @@
         <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.genplan">
+      <fileset dir="${basedir}/solutions/de.q60.mps.shadowmodels.genplan/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.gen.afterPF" depends="java.compile.de.q60.mps.polymorphicfunctions.runtime, java.compile.de.q60.mps.shadowmodels.runtime, java.compile.de.q60.mps.shadowmodels.transformation, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.gen.afterPF/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.gen.afterPF" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.gen.afterPF" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.gen.afterPF" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.shadowmodels.gen.afterPF/source_gen" />
@@ -1016,12 +1481,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.gen.afterPF">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.gen.afterPF/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.gen.afterPF#01" depends="java.compile.de.q60.mps.polymorphicfunctions.runtime, java.compile.de.q60.mps.shadowmodels.gen.afterPF, java.compile.de.q60.mps.shadowmodels.runtime, java.compile.de.q60.mps.shadowmodels.transformation, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.gen.afterPF/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.gen.afterPF#01" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.gen.afterPF#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.gen.afterPF#01" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.shadowmodels.gen.afterPF/generator/source_gen" />
@@ -1063,12 +1531,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.gen.afterPF#01">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.gen.afterPF/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.runtime" depends="java.compile.de.q60.mps.polymorphicfunctions.runtime, java.compile.de.q60.mps.shadowmodels.runtimelang, fetchDependencies">
     <mkdir dir="${basedir}/solutions/de.q60.mps.shadowmodels.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtime" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtime" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtime" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/de.q60.mps.shadowmodels.runtime/source_gen" />
@@ -1111,12 +1582,15 @@
         <fileset file="${artifacts.mps}/plugins/mps-trove/languages/trove-2.1.0.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtime">
+      <fileset dir="${basedir}/solutions/de.q60.mps.shadowmodels.runtime/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.polymorphicfunctions" depends="java.compile.de.q60.mps.polymorphicfunctions.runtime, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.polymorphicfunctions/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.polymorphicfunctions/source_gen" />
@@ -1161,12 +1635,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions">
+      <fileset dir="${basedir}/languages/de.q60.mps.polymorphicfunctions/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.polymorphicfunctions#01" depends="java.compile.de.q60.mps.polymorphicfunctions, java.compile.de.q60.mps.polymorphicfunctions.runtime, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.polymorphicfunctions/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions#01" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions#01" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.polymorphicfunctions/generator/source_gen" />
@@ -1210,12 +1687,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions#01">
+      <fileset dir="${basedir}/languages/de.q60.mps.polymorphicfunctions/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.target.editor" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.target.editor/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.editor" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.editor" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.editor" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.shadowmodels.target.editor/source_gen" />
@@ -1249,12 +1729,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.editor">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.target.editor/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.target.editor#01" depends="java.compile.de.q60.mps.shadowmodels.target.editor, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.target.editor/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.editor#01" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.editor#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.editor#01" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.shadowmodels.target.editor/generator/source_gen" />
@@ -1288,12 +1771,99 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.editor#01">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.target.editor/generator/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.q60.mps.shadowmodels.target.text" depends="fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.target.text/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.text" />
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.text" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.q60.mps.shadowmodels.target.text/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.text">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.target.text/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.q60.mps.shadowmodels.target.text#01" depends="java.compile.de.q60.mps.shadowmodels.target.text, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.target.text/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.text#01" />
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.text#01" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.q60.mps.shadowmodels.target.text/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.text" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.text#01">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.target.text/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.util" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.util/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.util" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.util" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.util" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.shadowmodels.util/source_gen" />
@@ -1340,12 +1910,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.util">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.util/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.util#01" depends="java.compile.de.q60.mps.shadowmodels.util, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.util/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.util#01" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.util#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.util#01" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.shadowmodels.util/generator/source_gen" />
@@ -1391,12 +1964,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.util#01">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.util/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.runtimelang" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.runtimelang/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtimelang" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtimelang" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtimelang" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.shadowmodels.runtimelang/source_gen" />
@@ -1430,12 +2006,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtimelang">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.runtimelang/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.runtimelang#01" depends="java.compile.de.q60.mps.shadowmodels.runtimelang, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.runtimelang/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtimelang#01" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtimelang#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtimelang#01" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.shadowmodels.runtimelang/generator/source_gen" />
@@ -1469,12 +2048,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtimelang#01">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.runtimelang/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.transformation" depends="java.compile.de.q60.mps.polymorphicfunctions, java.compile.de.q60.mps.polymorphicfunctions.runtime, java.compile.de.q60.mps.shadowmodels.runtime, java.compile.de.q60.mps.shadowmodels.runtimelang, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.transformation/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.transformation" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.transformation" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.transformation" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.shadowmodels.transformation/source_gen" />
@@ -1523,12 +2105,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.transformation">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.transformation/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.transformation#6069004802150030167" depends="java.compile.de.q60.mps.polymorphicfunctions, java.compile.de.q60.mps.polymorphicfunctions.runtime, java.compile.de.q60.mps.shadowmodels.runtime, java.compile.de.q60.mps.shadowmodels.transformation, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.transformation/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.transformation#6069004802150030167" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.transformation#6069004802150030167" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.transformation#6069004802150030167" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.shadowmodels.transformation/generator/source_gen" />
@@ -1575,12 +2160,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.transformation#6069004802150030167">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.transformation/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.repository" depends="java.compile.de.q60.mps.polymorphicfunctions.runtime, java.compile.de.q60.mps.shadowmodels.genplan, java.compile.de.q60.mps.shadowmodels.runtime, java.compile.de.q60.mps.shadowmodels.runtimelang, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.repository/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.repository" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.repository" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.repository" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.shadowmodels.repository/source_gen" />
@@ -1620,12 +2208,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.repository">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.repository/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.q60.mps.shadowmodels.repository#01" depends="java.compile.de.q60.mps.shadowmodels.repository, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.repository/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.repository#01" />
-    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.repository#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.repository#01" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.q60.mps.shadowmodels.repository/generator/source_gen" />
@@ -1659,6 +2250,396 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.repository#01">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.repository/generator/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.q60.mps.shadowmodels.examples.input">
+    <mkdir dir="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.input" />
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.input" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/source_gen" />
+      </src>
+      <classpath />
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.input">
+      <fileset dir="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.q60.mps.shadowmodels.examples.blext" depends="java.compile.de.q60.mps.polymorphicfunctions.runtime, java.compile.de.q60.mps.shadowmodels.runtime, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.blext" />
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.blext" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions.runtime" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtime" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.blext">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.q60.mps.shadowmodels.examples.blext#01" depends="java.compile.de.q60.mps.shadowmodels.examples.blext, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.blext#01" />
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.blext#01" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.blext" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.blext#01">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/generator/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.q60.mps.shadowmodels.examples.entities" depends="java.compile.de.q60.mps.polymorphicfunctions.runtime, java.compile.de.q60.mps.shadowmodels.genplan, java.compile.de.q60.mps.shadowmodels.repository, java.compile.de.q60.mps.shadowmodels.runtime, java.compile.de.q60.mps.shadowmodels.runtimelang, java.compile.de.q60.mps.shadowmodels.target.text, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.entities" />
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.entities" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions.runtime" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.genplan" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.repository" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtime" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtimelang" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.target.text" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.entities">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.q60.mps.shadowmodels.examples.entities#01" depends="java.compile.de.q60.mps.shadowmodels.examples.entities, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.entities#01" />
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.entities#01" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.entities" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.entities#01">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/generator/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.q60.mps.shadowmodels.examples.expressions" depends="java.compile.de.q60.mps.polymorphicfunctions.runtime, java.compile.de.q60.mps.shadowmodels.genplan, java.compile.de.q60.mps.shadowmodels.runtime, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.expressions" />
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.expressions" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions.runtime" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.genplan" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtime" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.expressions">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.q60.mps.shadowmodels.examples.expressions#01" depends="java.compile.de.q60.mps.shadowmodels.examples.expressions, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.expressions#01" />
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.expressions#01" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.expressions" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.expressions#01">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/generator/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.q60.mps.shadowmodels.examples.statemachine" depends="java.compile.de.q60.mps.polymorphicfunctions.runtime, java.compile.de.q60.mps.shadowmodels.genplan, java.compile.de.q60.mps.shadowmodels.repository, java.compile.de.q60.mps.shadowmodels.runtime, java.compile.de.q60.mps.shadowmodels.runtimelang, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.statemachine" />
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.statemachine" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.polymorphicfunctions.runtime" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.genplan" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.repository" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtime" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.runtimelang" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.statemachine">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.q60.mps.shadowmodels.examples.statemachine#6069004802152564660" depends="java.compile.de.q60.mps.shadowmodels.examples.statemachine, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.statemachine#6069004802152564660" />
+    <javac destdir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.statemachine#6069004802152564660" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.statemachine" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.q60.mps.shadowmodels.examples.statemachine#6069004802152564660">
+      <fileset dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">
@@ -1670,6 +2651,8 @@
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.runtimelang/generator/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.target.editor/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.target.editor/generator/source_gen" />
+    <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.target.text/source_gen" />
+    <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.target.text/generator/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.util/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.util/generator/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.gen.afterPF/source_gen" />
@@ -1677,7 +2660,16 @@
     <delete dir="${basedir}/solutions/de.q60.mps.shadowmodels.runtime/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.transformation/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.transformation/generator/source_gen" />
+    <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/source_gen" />
+    <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.blext/generator/source_gen" />
+    <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/source_gen" />
+    <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.entities/generator/source_gen" />
+    <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/source_gen" />
+    <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/generator/source_gen" />
+    <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/source_gen" />
+    <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/generator/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.repository/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.repository/generator/source_gen" />
+    <delete dir="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/source_gen" />
   </target>
 </project>
