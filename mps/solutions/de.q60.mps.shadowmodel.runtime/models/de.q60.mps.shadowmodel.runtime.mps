@@ -268,12 +268,6 @@
       </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
@@ -3883,12 +3877,6 @@
       </node>
       <node concept="3Tm1VV" id="Vl1zEEmuTa" role="1B3o_S" />
       <node concept="3clFbS" id="Vl1zEEmuTb" role="3clF47">
-        <node concept="2xdQw9" id="Vl1zEEmuTc" role="3cqZAp">
-          <property role="2xdLsb" value="debug" />
-          <node concept="Xl_RD" id="Vl1zEEmuTd" role="9lYJi">
-            <property role="Xl_RC" value="Update" />
-          </node>
-        </node>
         <node concept="3cpWs8" id="Vl1zEEmuTm" role="3cqZAp">
           <node concept="3cpWsn" id="Vl1zEEmuTn" role="3cpWs9">
             <property role="TrG5h" value="transformationResults" />
@@ -4285,27 +4273,6 @@
         </node>
         <node concept="2GUZhq" id="6Zl5h8ProbS" role="3cqZAp">
           <node concept="3clFbS" id="6Zl5h8ProbT" role="2GV8ay">
-            <node concept="2xdQw9" id="6Zl5h8Procp" role="3cqZAp">
-              <property role="2xdLsb" value="debug" />
-              <node concept="3cpWs3" id="6Zl5h8Procq" role="9lYJi">
-                <node concept="37vLTw" id="6Zl5h8Procr" role="3uHU7w">
-                  <ref role="3cqZAo" node="6Zl5h8ProbE" resolve="rule" />
-                </node>
-                <node concept="3cpWs3" id="6Zl5h8Procs" role="3uHU7B">
-                  <node concept="Xl_RD" id="6Zl5h8Proct" role="3uHU7w">
-                    <property role="Xl_RC" value=": " />
-                  </node>
-                  <node concept="3cpWs3" id="6Zl5h8Procu" role="3uHU7B">
-                    <node concept="Xl_RD" id="6Zl5h8Procv" role="3uHU7B">
-                      <property role="Xl_RC" value="Executing transformation for " />
-                    </node>
-                    <node concept="37vLTw" id="6Zl5h8Procw" role="3uHU7w">
-                      <ref role="3cqZAo" node="6Zl5h8ProbG" resolve="problem" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="6Zl5h8Procx" role="3cqZAp">
               <node concept="2OqwBi" id="6Zl5h8Procy" role="3clFbG">
                 <node concept="37vLTw" id="6Zl5h8Procz" role="2Oq$k0">

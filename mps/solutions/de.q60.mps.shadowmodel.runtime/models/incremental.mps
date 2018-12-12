@@ -217,10 +217,6 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
         <property id="2034914114981261751" name="severity" index="RRSoG" />
         <child id="2034914114981261755" name="throwable" index="RRSow" />
@@ -594,17 +590,6 @@
             <ref role="3cqZAo" node="4OBfrz$xMqt" resolve="keys" />
           </node>
           <node concept="3clFbS" id="4OBfrz$xMqR" role="2LFqv$">
-            <node concept="2xdQw9" id="4OBfrz$xMqX" role="3cqZAp">
-              <property role="2xdLsb" value="debug" />
-              <node concept="3cpWs3" id="4OBfrz$xMqY" role="9lYJi">
-                <node concept="2GrUjf" id="4OBfrz$ABpT" role="3uHU7w">
-                  <ref role="2Gs0qQ" node="4OBfrz$xMqP" resolve="key" />
-                </node>
-                <node concept="Xl_RD" id="4OBfrz$xMr0" role="3uHU7B">
-                  <property role="Xl_RC" value="Invalidate " />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="4OBfrz$xMr1" role="3cqZAp">
               <node concept="3cpWsn" id="4OBfrz$xMr2" role="3cpWs9">
                 <property role="TrG5h" value="invalidatedValue" />
