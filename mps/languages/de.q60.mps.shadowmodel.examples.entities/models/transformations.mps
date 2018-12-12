@@ -90,7 +90,6 @@
       </concept>
       <concept id="7335687028107144742" name="de.q60.mps.shadowmodel.transformation.structure.TransformationImplementation" flags="ng" index="02vpq">
         <property id="1068767335609562597" name="contribution" index="2$mnfv" />
-        <property id="3359783165114209400" name="applicableToSubconcepts" index="3Km0M4" />
         <reference id="5373338300159359234" name="interface" index="2OrxuO" />
         <child id="7335687028107245068" name="output" index="026TK" />
         <child id="7335687028107163827" name="input" index="02i3f" />
@@ -1283,7 +1282,6 @@
       </node>
     </node>
     <node concept="02vpq" id="6uZS9ZnEuaT" role="02uzr">
-      <property role="3Km0M4" value="true" />
       <ref role="2OrxuO" node="TC$M5wUQ85" resolve="javaToText" />
       <node concept="02i3K" id="6uZS9ZnEuaU" role="02i3f">
         <node concept="02i3D" id="6uZS9ZnEuKa" role="02i2B">
@@ -1307,7 +1305,6 @@
       </node>
     </node>
     <node concept="02vpq" id="6uZS9ZnFZKB" role="02uzr">
-      <property role="3Km0M4" value="true" />
       <ref role="2OrxuO" node="TC$M5wUQ85" resolve="javaToText" />
       <node concept="02i3K" id="6uZS9ZnFZKC" role="02i3f">
         <node concept="02i3D" id="6uZS9ZnG0Ie" role="02i2B">
@@ -1331,7 +1328,6 @@
       </node>
     </node>
     <node concept="02vpq" id="6uZS9ZnEC$K" role="02uzr">
-      <property role="3Km0M4" value="true" />
       <ref role="2OrxuO" node="TC$M5wUQ85" resolve="javaToText" />
       <node concept="02i3K" id="6uZS9ZnEC$L" role="02i3f">
         <node concept="02i3D" id="6uZS9ZnED6y" role="02i2B">
@@ -1617,7 +1613,6 @@
     </node>
     <node concept="2OrE70" id="5KTOHw7bDlq" role="02uzr" />
     <node concept="02vpq" id="5KTOHw7bF_e" role="02uzr">
-      <property role="3Km0M4" value="true" />
       <ref role="2OrxuO" node="TC$M5wUQ85" resolve="javaToText" />
       <node concept="02i3K" id="5KTOHw7bG_V" role="02i3f">
         <node concept="02i3D" id="5KTOHw7bHym" role="02i2B">

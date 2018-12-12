@@ -368,18 +368,6 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
-      <node concept="3EZMnI" id="2UwmfNuY5hU" role="3EZMnx">
-        <node concept="2iRfu4" id="2UwmfNuY5hV" role="2iSdaV" />
-        <node concept="VPM3Z" id="2UwmfNuY5hW" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F0ifn" id="2UwmfNuY5hX" role="3EZMnx">
-          <property role="3F0ifm" value="applicable to subconcepts" />
-        </node>
-        <node concept="3F0A7n" id="2UwmfNuY5uI" role="3EZMnx">
-          <ref role="1NtTu8" to="oyp0:2UwmfNuY5hS" resolve="applicableToSubconcepts" />
-        </node>
-      </node>
       <node concept="3EZMnI" id="Vl1zEEzayD" role="3EZMnx">
         <node concept="2iRfu4" id="Vl1zEEzayE" role="2iSdaV" />
         <node concept="VPM3Z" id="Vl1zEEzayF" role="3F10Kt">

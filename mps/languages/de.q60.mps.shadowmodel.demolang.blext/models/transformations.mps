@@ -2,7 +2,7 @@
 <model ref="r:c375a18d-71ae-4a50-a794-bc6969ddf849(de.q60.mps.shadowmodel.demolang.blext.transformations)">
   <persistence version="9" />
   <languages>
-    <use id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel" version="0" />
+    <use id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel.transformation" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -45,72 +45,71 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel">
-      <concept id="7335687028107245072" name="de.q60.mps.shadowmodel.structure.TransformationOutput" flags="ng" index="026TG">
+    <language id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel.transformation">
+      <concept id="7335687028107245072" name="de.q60.mps.shadowmodel.transformation.structure.TransformationOutput" flags="ng" index="026TG">
         <child id="7335687028107245075" name="output" index="026TJ" />
       </concept>
-      <concept id="7335687028107243116" name="de.q60.mps.shadowmodel.structure.NodeBuilder" flags="ng" index="027og">
+      <concept id="7335687028107243116" name="de.q60.mps.shadowmodel.transformation.structure.NodeBuilder" flags="ng" index="027og">
         <reference id="7335687028107281650" name="concept" index="02LMe" />
         <child id="7335687028107281653" name="content" index="02LM9" />
       </concept>
-      <concept id="7335687028107243117" name="de.q60.mps.shadowmodel.structure.PropertyBuilder" flags="ng" index="027oh">
+      <concept id="7335687028107243117" name="de.q60.mps.shadowmodel.transformation.structure.PropertyBuilder" flags="ng" index="027oh">
         <reference id="7335687028107243119" name="property" index="027oj" />
         <child id="7335687028107243123" name="value" index="027of" />
       </concept>
-      <concept id="7335687028107243169" name="de.q60.mps.shadowmodel.structure.ChildBuilder" flags="ng" index="027rt">
+      <concept id="7335687028107243169" name="de.q60.mps.shadowmodel.transformation.structure.ChildBuilder" flags="ng" index="027rt">
         <reference id="7335687028107243171" name="link" index="027rv" />
         <child id="7335687028107243173" name="child" index="027rp" />
       </concept>
-      <concept id="7335687028107243170" name="de.q60.mps.shadowmodel.structure.ReferenceBuilder" flags="ng" index="027ru">
+      <concept id="7335687028107243170" name="de.q60.mps.shadowmodel.transformation.structure.ReferenceBuilder" flags="ng" index="027ru">
         <reference id="7335687028107243182" name="link" index="027ri" />
         <child id="7335687028107243185" name="target" index="027rd" />
       </concept>
-      <concept id="7335687028107163797" name="de.q60.mps.shadowmodel.structure.ConceptType" flags="ng" index="02i3D">
+      <concept id="7335687028107163797" name="de.q60.mps.shadowmodel.transformation.structure.TConceptType" flags="ig" index="02i3D">
         <reference id="7335687028107163800" name="concept" index="02i3$" />
       </concept>
-      <concept id="7335687028107163788" name="de.q60.mps.shadowmodel.structure.TransformationParameter" flags="ng" index="02i3K">
+      <concept id="7335687028107163788" name="de.q60.mps.shadowmodel.transformation.structure.TransformationParameter" flags="ng" index="02i3K">
         <child id="7335687028107163867" name="type" index="02i2B" />
       </concept>
-      <concept id="7335687028107144200" name="de.q60.mps.shadowmodel.structure.TransformationsModule" flags="ng" index="02vhO">
+      <concept id="7335687028107144200" name="de.q60.mps.shadowmodel.transformation.structure.TransformationsModule" flags="ng" index="02vhO">
         <child id="7335687028107145383" name="content" index="02uzr" />
       </concept>
-      <concept id="7335687028107144742" name="de.q60.mps.shadowmodel.structure.TransformationImplementation" flags="ng" index="02vpq">
+      <concept id="7335687028107144742" name="de.q60.mps.shadowmodel.transformation.structure.TransformationImplementation" flags="ng" index="02vpq">
         <property id="1068767335609562597" name="contribution" index="2$mnfv" />
-        <property id="3359783165114209400" name="applicableToSubconcepts" index="3Km0M4" />
         <reference id="5373338300159359234" name="interface" index="2OrxuO" />
         <child id="7335687028107245068" name="output" index="026TK" />
         <child id="7335687028107163827" name="input" index="02i3f" />
       </concept>
-      <concept id="9170566427534778463" name="de.q60.mps.shadowmodel.structure.TransformationCall" flags="ng" index="214gnc">
+      <concept id="9170566427534778463" name="de.q60.mps.shadowmodel.transformation.structure.TransformationCall" flags="ng" index="214gnc">
         <reference id="5373338300159402560" name="transformation" index="2P$kNQ" />
         <child id="9170566427534794950" name="parameterValues" index="214sll" />
       </concept>
-      <concept id="9170566427534812277" name="de.q60.mps.shadowmodel.structure.ContextNodeExpression" flags="ng" index="214o7A" />
-      <concept id="9170566427534439102" name="de.q60.mps.shadowmodel.structure.ParameterReference" flags="ng" index="2155sH">
+      <concept id="9170566427534812277" name="de.q60.mps.shadowmodel.transformation.structure.ContextNodeExpression" flags="ng" index="214o7A" />
+      <concept id="9170566427534439102" name="de.q60.mps.shadowmodel.transformation.structure.ParameterReference" flags="ng" index="2155sH">
         <reference id="9170566427534439103" name="decl" index="2155sG" />
       </concept>
-      <concept id="5373338300158985562" name="de.q60.mps.shadowmodel.structure.Label" flags="ng" index="2OqUJG">
+      <concept id="5373338300158985562" name="de.q60.mps.shadowmodel.transformation.structure.Label" flags="ng" index="2OqUJG">
         <child id="5373338300158985572" name="node" index="2OqUJi" />
       </concept>
-      <concept id="5373338300159158247" name="de.q60.mps.shadowmodel.structure.LabelReferenceExpression" flags="ng" index="2Org_h">
+      <concept id="5373338300159158247" name="de.q60.mps.shadowmodel.transformation.structure.LabelReferenceExpression" flags="ng" index="2Org_h">
         <reference id="5373338300159158248" name="label" index="2Org_u" />
       </concept>
-      <concept id="5373338300159315830" name="de.q60.mps.shadowmodel.structure.EmptyLine" flags="ng" index="2OrE70" />
-      <concept id="5373338300159268355" name="de.q60.mps.shadowmodel.structure.TransformationInterface" flags="ng" index="2OrRyP">
+      <concept id="5373338300159315830" name="de.q60.mps.shadowmodel.transformation.structure.EmptyLine" flags="ng" index="2OrE70" />
+      <concept id="5373338300159268355" name="de.q60.mps.shadowmodel.transformation.structure.TransformationInterface" flags="ng" index="2OrRyP">
         <child id="5373338300159268358" name="input" index="2OrRyK" />
         <child id="5373338300159268360" name="output" index="2OrRyY" />
       </concept>
-      <concept id="5373338300165862249" name="de.q60.mps.shadowmodel.structure.MapMacro" flags="ng" index="2PWHRv">
+      <concept id="5373338300165862249" name="de.q60.mps.shadowmodel.transformation.structure.MapMacro" flags="ng" index="2PWHRv">
         <child id="5373338300165862254" name="call" index="2PWHRo" />
         <child id="5373338300165862252" name="input" index="2PWHRq" />
       </concept>
-      <concept id="3359783165113055909" name="de.q60.mps.shadowmodel.structure.ApplyRecursively" flags="ng" index="3KhI9p">
+      <concept id="3359783165113055909" name="de.q60.mps.shadowmodel.transformation.structure.ApplyRecursively" flags="ng" index="3KhI9p">
         <reference id="3359783165113055912" name="transformation" index="3KhI9k" />
       </concept>
-      <concept id="3359783165116356100" name="de.q60.mps.shadowmodel.structure.CopyWithModifications" flags="ng" index="3LIkVS">
+      <concept id="3359783165116356100" name="de.q60.mps.shadowmodel.transformation.structure.CopyWithModifications" flags="ng" index="3LIkVS">
         <child id="3359783165116356103" name="modifications" index="3LIkVV" />
       </concept>
-      <concept id="2573073122887437731" name="de.q60.mps.shadowmodel.structure.CopyMacro" flags="ng" index="1XuIBW">
+      <concept id="2573073122887437731" name="de.q60.mps.shadowmodel.transformation.structure.CopyMacro" flags="ng" index="1XuIBW">
         <child id="2573073122887437734" name="sourceQuery" index="1XuIBT" />
       </concept>
     </language>
@@ -174,7 +173,6 @@
       </node>
     </node>
     <node concept="02vpq" id="6QszampOJQJ" role="02uzr">
-      <property role="3Km0M4" value="true" />
       <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
       <node concept="026TG" id="6QszampOJRq" role="026TK">
         <node concept="3KhI9p" id="2UwmfNuTYAG" role="026TJ">

@@ -79,11 +79,6 @@
     <property role="TrG5h" value="TransformationImplementation" />
     <property role="34LRSv" value="t" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="2UwmfNuY5hS" role="1TKVEl">
-      <property role="IQ2nx" value="3359783165114209400" />
-      <property role="TrG5h" value="applicableToSubconcepts" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyi" id="Vl1zEEz7n_" role="1TKVEl">
       <property role="IQ2nx" value="1068767335609562597" />
       <property role="TrG5h" value="contribution" />
