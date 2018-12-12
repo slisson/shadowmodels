@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:856330db-0c77-4408-8b12-f8dcc36a4605(de.q60.mps.shadowmodels.examples.input.altexpression)">
+<model ref="r:856330db-0c77-4408-8b12-f8dcc36a4605(de.q60.mps.shadowmodels.examples.input.altexpression)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
-    <use id="1ab7bfac-29d6-4772-a483-50110408ac43" name="de.q60.mps.shadowmodel.examples.expressions" version="0" />
+    <use id="1ab7bfac-29d6-4772-a483-50110408ac43" name="de.q60.mps.shadowmodels.examples.expressions" version="0" />
   </languages>
   <imports />
   <registry>
-    <language id="1ab7bfac-29d6-4772-a483-50110408ac43" name="de.q60.mps.shadowmodel.examples.expressions">
-      <concept id="2583804470398455019" name="de.q60.mps.shadowmodel.examples.expressions.structure.ElsePart" flags="ng" index="38Wgyi">
+    <language id="1ab7bfac-29d6-4772-a483-50110408ac43" name="de.q60.mps.shadowmodels.examples.expressions">
+      <concept id="2583804470398455019" name="de.q60.mps.shadowmodels.examples.expressions.structure.ElsePart" flags="ng" index="38Wgyi">
         <child id="2583804470398455047" name="expr" index="38Wg_Y" />
       </concept>
-      <concept id="2583804470398454605" name="de.q60.mps.shadowmodel.examples.expressions.structure.Function" flags="ng" index="38WgWO">
+      <concept id="2583804470398454605" name="de.q60.mps.shadowmodels.examples.expressions.structure.Function" flags="ng" index="38WgWO">
         <child id="2583804470398454661" name="body" index="38WgZW" />
       </concept>
-      <concept id="2583804470398454728" name="de.q60.mps.shadowmodel.examples.expressions.structure.PlaceHolderExpr" flags="ng" index="38WgYL" />
-      <concept id="2583804470398454700" name="de.q60.mps.shadowmodel.examples.expressions.structure.IfExpr" flags="ng" index="38WgZl">
+      <concept id="2583804470398454728" name="de.q60.mps.shadowmodels.examples.expressions.structure.PlaceHolderExpr" flags="ng" index="38WgYL" />
+      <concept id="2583804470398454700" name="de.q60.mps.shadowmodels.examples.expressions.structure.IfExpr" flags="ng" index="38WgZl">
         <child id="2583804470398454817" name="thenPart" index="38Wgxo" />
         <child id="2583804470398454822" name="elsePart" index="38Wgxv" />
         <child id="2583804470398454814" name="cond" index="38WgxB" />
       </concept>
-      <concept id="2583804470398707211" name="de.q60.mps.shadowmodel.examples.expressions.structure.AltCase" flags="ng" index="38Xu9M">
+      <concept id="2583804470398707211" name="de.q60.mps.shadowmodels.examples.expressions.structure.AltCase" flags="ng" index="38Xu9M">
         <child id="2583804470398707242" name="val" index="38Xu9j" />
         <child id="2583804470398707239" name="cond" index="38Xu9u" />
       </concept>
-      <concept id="2583804470398667700" name="de.q60.mps.shadowmodel.examples.expressions.structure.AltExpr" flags="ng" index="38X$Zd">
+      <concept id="2583804470398667700" name="de.q60.mps.shadowmodels.examples.expressions.structure.AltExpr" flags="ng" index="38X$Zd">
         <child id="2583804470398748129" name="cases" index="38X86o" />
       </concept>
     </language>
