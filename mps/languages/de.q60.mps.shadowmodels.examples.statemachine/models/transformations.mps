@@ -127,7 +127,6 @@
         <child id="5373338300165862254" name="call" index="2PWHRo" />
         <child id="5373338300165862252" name="input" index="2PWHRq" />
       </concept>
-      <concept id="3563231453904357666" name="de.q60.mps.shadowmodels.transformation.structure.NullNode" flags="ng" index="3n1eO2" />
       <concept id="1382135219955669992" name="de.q60.mps.shadowmodels.transformation.structure.IfMacro" flags="ng" index="3MbsX0">
         <child id="1382135219955669995" name="condition" index="3MbsX3" />
         <child id="1382135219955669997" name="then" index="3MbsX5" />
@@ -167,7 +166,6 @@
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
-      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -217,40 +215,6 @@
       <node concept="026TG" id="6ndA7L_LyuR" role="026TK">
         <node concept="027og" id="6ndA7L_LEzY" role="026TJ">
           <ref role="02LMe" to="tpee:fz12cDA" resolve="ClassConcept" />
-          <node concept="027rt" id="3jGmESsG9O7" role="02LM9">
-            <ref role="027rv" to="tpee:gXzkM_H" resolve="superclass" />
-            <node concept="3MbsX0" id="3jGmESsGaV1" role="027rp">
-              <node concept="2OqwBi" id="3jGmESsGc8p" role="3MbsX3">
-                <node concept="2OqwBi" id="3jGmESsGbbr" role="2Oq$k0">
-                  <node concept="2155sH" id="3jGmESsGb2U" role="2Oq$k0">
-                    <ref role="2155sG" node="6ndA7L_LniS" resolve="sm" />
-                  </node>
-                  <node concept="3TrEf2" id="3jGmESsGbHi" role="2OqNvi">
-                    <ref role="3Tt5mk" to="yb34:3jGmESsG9h4" resolve="extends" />
-                  </node>
-                </node>
-                <node concept="3x8VRR" id="3jGmESsGcH_" role="2OqNvi" />
-              </node>
-              <node concept="3n1eO2" id="3jGmESsGb2O" role="3MbsXo" />
-              <node concept="027og" id="3jGmESsG9Yb" role="3MbsX5">
-                <ref role="02LMe" to="tpee:g7uibYu" resolve="ClassifierType" />
-                <node concept="027ru" id="3jGmESsG9Ym" role="02LM9">
-                  <ref role="027ri" to="tpee:g7uigIF" resolve="classifier" />
-                  <node concept="214gnc" id="3jGmESsG9Yx" role="027rd">
-                    <ref role="2P$kNQ" node="4EhVFrYZOVI" resolve="sm2java" />
-                    <node concept="2OqwBi" id="3jGmESsGa79" role="214sll">
-                      <node concept="2155sH" id="3jGmESsG9YB" role="2Oq$k0">
-                        <ref role="2155sG" node="6ndA7L_LniS" resolve="sm" />
-                      </node>
-                      <node concept="3TrEf2" id="3jGmESsGaDd" role="2OqNvi">
-                        <ref role="3Tt5mk" to="yb34:3jGmESsG9h4" resolve="extends" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="027rt" id="1cIlazwZFok" role="02LM9">
             <ref role="027rv" to="tpee:h9B3oxE" resolve="visibility" />
             <node concept="027og" id="1cIlazwZFpC" role="027rp">

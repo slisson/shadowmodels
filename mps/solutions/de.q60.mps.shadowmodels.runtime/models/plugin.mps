@@ -36,9 +36,28 @@
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="pa15" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.persistence(MPS.Core/)" />
+    <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
+        <child id="1207145201301" name="reference" index="ftvYc" />
+      </concept>
+      <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
+        <property id="1205250923097" name="caption" index="2uzpH1" />
+        <child id="1203083461638" name="executeFunction" index="tncku" />
+      </concept>
+      <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
+      <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <child id="1204991552650" name="modifier" index="2f5YQi" />
+        <child id="1207145245948" name="contents" index="ftER_" />
+      </concept>
+      <concept id="1203088046679" name="jetbrains.mps.lang.plugin.structure.ActionInstance" flags="ng" index="tCFHf">
+        <reference id="1203088061055" name="action" index="tCJdB" />
+      </concept>
+      <concept id="1203092361741" name="jetbrains.mps.lang.plugin.structure.ModificationStatement" flags="lg" index="tT9cl">
+        <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
+      </concept>
       <concept id="1204478074808" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_MPSProject" flags="nn" index="1KvdUw" />
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -3278,6 +3297,36 @@
       <node concept="TZ5HA" id="TC$M5wTRyg" role="TZ5H$">
         <node concept="1dT_AC" id="TC$M5wTRyh" role="1dT_Ay">
           <property role="1dT_AB" value="Avoid warning &quot;Fast usages search is not supported for model .... Usages search may be slow&quot;" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="tC5Ba" id="43OnoQB0wqZ">
+    <property role="TrG5h" value="ShadowGroup" />
+    <node concept="ftmFs" id="43OnoQB0wr1" role="ftER_">
+      <node concept="tCFHf" id="43OnoQB2D2I" role="ftvYc">
+        <ref role="tCJdB" node="43OnoQB0wr4" resolve="ReexecuteAllTransformations" />
+      </node>
+    </node>
+    <node concept="tT9cl" id="43OnoQB2D3y" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:hyf4LYI" resolve="Tools" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="43OnoQB0wr4">
+    <property role="TrG5h" value="ReexecuteAllTransformations" />
+    <property role="2uzpH1" value="Re-Execute Shadow Model Transformations" />
+    <node concept="tnohg" id="43OnoQB0wr5" role="tncku">
+      <node concept="3clFbS" id="43OnoQB0wr6" role="2VODD2">
+        <node concept="3clFbF" id="43OnoQB0zFR" role="3cqZAp">
+          <node concept="2OqwBi" id="43OnoQB0zMF" role="3clFbG">
+            <node concept="2YIFZM" id="43OnoQB0zH7" role="2Oq$k0">
+              <ref role="37wK5l" to="l6bp:7YhLqbpg02T" resolve="getInstance" />
+              <ref role="1Pybhc" to="l6bp:7YhLqbpfZWY" resolve="RepositoryModulesManager" />
+            </node>
+            <node concept="liA8E" id="43OnoQB1Mre" role="2OqNvi">
+              <ref role="37wK5l" to="l6bp:43OnoQB0HHh" resolve="invalidateAll" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
