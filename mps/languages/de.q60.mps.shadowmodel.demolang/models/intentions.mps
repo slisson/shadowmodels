@@ -116,6 +116,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -133,6 +136,7 @@
   <node concept="2S6QgY" id="4ZkYAL4enxJ">
     <property role="TrG5h" value="add100States" />
     <property role="2ZfUl0" value="true" />
+    <property role="3GE5qa" value="statemachine" />
     <ref role="2ZfgGC" to="yb34:6ndA7L_L0uE" resolve="Statemachine" />
     <node concept="2S6ZIM" id="4ZkYAL4enxK" role="2ZfVej">
       <node concept="3clFbS" id="4ZkYAL4enxL" role="2VODD2">

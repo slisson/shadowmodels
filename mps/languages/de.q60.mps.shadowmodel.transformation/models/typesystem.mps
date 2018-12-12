@@ -1287,5 +1287,43 @@
       <ref role="1YaFvo" to="oyp0:6ndA7L_Lvog" resolve="TransformationOutput" />
     </node>
   </node>
+  <node concept="1YbPZF" id="TC$M5wVWXs">
+    <property role="TrG5h" value="typeof_TransformationCallExpression" />
+    <node concept="3clFbS" id="TC$M5wVWXt" role="18ibNy">
+      <node concept="1Z5TYs" id="TC$M5wW6ht" role="3cqZAp">
+        <node concept="mw_s8" id="TC$M5wW6M4" role="1ZfhKB">
+          <node concept="1Z2H0r" id="TC$M5wW6M0" role="mwGJk">
+            <node concept="2OqwBi" id="TC$M5wWc6r" role="1Z2MuG">
+              <node concept="2OqwBi" id="TC$M5wW88c" role="2Oq$k0">
+                <node concept="2OqwBi" id="TC$M5wW6V5" role="2Oq$k0">
+                  <node concept="1YBJjd" id="TC$M5wW6Ml" role="2Oq$k0">
+                    <ref role="1YBMHb" node="TC$M5wVWXv" resolve="n" />
+                  </node>
+                  <node concept="3TrEf2" id="TC$M5wW7Mv" role="2OqNvi">
+                    <ref role="3Tt5mk" to="oyp0:TC$M5wVudh" resolve="transformation" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="TC$M5wW9hk" role="2OqNvi">
+                  <ref role="3TtcxE" to="oyp0:4EhVFrYZDo8" resolve="output" />
+                </node>
+              </node>
+              <node concept="1uHKPH" id="TC$M5wWeBV" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="TC$M5wW6hw" role="1ZfhK$">
+          <node concept="1Z2H0r" id="TC$M5wVWXA" role="mwGJk">
+            <node concept="1YBJjd" id="TC$M5wVWZs" role="1Z2MuG">
+              <ref role="1YBMHb" node="TC$M5wVWXv" resolve="n" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="TC$M5wVWXv" role="1YuTPh">
+      <property role="TrG5h" value="n" />
+      <ref role="1YaFvo" to="oyp0:TC$M5wVude" resolve="TransformationCallExpression" />
+    </node>
+  </node>
 </model>
 

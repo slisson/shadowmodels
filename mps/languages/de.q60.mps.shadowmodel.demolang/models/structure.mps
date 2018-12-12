@@ -33,6 +33,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -42,6 +45,7 @@
     <property role="EcuMT" value="7335687028107118506" />
     <property role="TrG5h" value="Statemachine" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="statemachine" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3jGmESsG9h4" role="1TKVEi">
       <property role="IQ2ns" value="3813522688328111172" />
@@ -70,6 +74,7 @@
   <node concept="1TIwiD" id="6ndA7L_L0uH">
     <property role="EcuMT" value="7335687028107118509" />
     <property role="TrG5h" value="State" />
+    <property role="3GE5qa" value="statemachine" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6ndA7L_L0uR" role="1TKVEi">
       <property role="IQ2ns" value="7335687028107118519" />
@@ -85,6 +90,7 @@
   <node concept="1TIwiD" id="6ndA7L_L0uI">
     <property role="EcuMT" value="7335687028107118510" />
     <property role="TrG5h" value="Transition" />
+    <property role="3GE5qa" value="statemachine" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6ndA7L_L174" role="1TKVEi">
       <property role="IQ2ns" value="7335687028107121092" />
@@ -111,6 +117,7 @@
     <property role="EcuMT" value="7335687028107118511" />
     <property role="TrG5h" value="Event" />
     <property role="34LRSv" value="event" />
+    <property role="3GE5qa" value="statemachine" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6ndA7L_L0uT" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

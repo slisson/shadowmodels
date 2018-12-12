@@ -975,5 +975,33 @@
       <ref role="PrY4T" node="6ndA7L_Lbyk" resolve="ITransformationParameterType" />
     </node>
   </node>
+  <node concept="1TIwiD" id="TC$M5wVude">
+    <property role="EcuMT" value="1038241485678306126" />
+    <property role="TrG5h" value="TransformationCallExpression" />
+    <property role="34LRSv" value="call" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="TC$M5wVudh" role="1TKVEi">
+      <property role="IQ2ns" value="1038241485678306129" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="transformation" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4EhVFrYZDo3" resolve="TransformationInterface" />
+    </node>
+    <node concept="1TJgyj" id="TC$M5wVudf" role="1TKVEi">
+      <property role="IQ2ns" value="1038241485678306127" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameterValues" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6uZS9ZnCJQ9">
+    <property role="EcuMT" value="7475940883580517769" />
+    <property role="TrG5h" value="TNullType" />
+    <property role="34LRSv" value="null" />
+    <node concept="PrWs8" id="6uZS9ZnCJQa" role="PzmwI">
+      <ref role="PrY4T" node="6ndA7L_Lbyk" resolve="ITransformationParameterType" />
+    </node>
+  </node>
 </model>
 

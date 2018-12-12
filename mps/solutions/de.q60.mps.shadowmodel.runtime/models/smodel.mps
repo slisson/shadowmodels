@@ -23588,9 +23588,7 @@
                       <node concept="37vLTw" id="3vsFnFV8rWX" role="37wK5m">
                         <ref role="3cqZAo" node="3vsFnFUEia2" resolve="target" />
                       </node>
-                      <node concept="37vLTw" id="3vsFnFV8rWY" role="37wK5m">
-                        <ref role="3cqZAo" node="3vsFnFUDddA" resolve="forceSyncDescendants" />
-                      </node>
+                      <node concept="3clFbT" id="6uZS9ZnK4Fe" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -23806,39 +23804,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7kQU9sgxTS0" role="3cqZAp">
-          <node concept="3cpWsn" id="7kQU9sgxTS1" role="3cpWs9">
-            <property role="TrG5h" value="existingOutputChildren" />
-            <node concept="_YKpA" id="3vsFnFUGRh8" role="1tU5fm">
-              <node concept="3uibUv" id="3vsFnFUGRLo" role="_ZDj9">
-                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="3vsFnFUGQtA" role="33vP2m">
-              <node concept="1eOMI4" id="3vsFnFUGQ5X" role="2Oq$k0">
-                <node concept="10QFUN" id="3vsFnFUGP_t" role="1eOMHV">
-                  <node concept="2OqwBi" id="3vsFnFUGP_p" role="10QFUP">
-                    <node concept="37vLTw" id="3vsFnFUGP_q" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7kQU9sgtkx_" resolve="outputParent" />
-                    </node>
-                    <node concept="liA8E" id="3vsFnFUGP_r" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.getChildren(org.jetbrains.mps.openapi.language.SContainmentLink):java.lang.Iterable" resolve="getChildren" />
-                      <node concept="37vLTw" id="3vsFnFUGP_s" role="37wK5m">
-                        <ref role="3cqZAo" node="7kQU9sgtl1K" resolve="link" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="A3Dl8" id="3vsFnFUGP_m" role="10QFUM">
-                    <node concept="3uibUv" id="3vsFnFUGPVQ" role="A3Ik2">
-                      <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="ANE8D" id="3vsFnFUGQVT" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="3vsFnFUH97E" role="3cqZAp">
           <node concept="3cpWsn" id="3vsFnFUH97F" role="3cpWs9">
             <property role="TrG5h" value="expectedOutputChildren" />
@@ -23944,6 +23909,39 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="7kQU9sgxTS0" role="3cqZAp">
+          <node concept="3cpWsn" id="7kQU9sgxTS1" role="3cpWs9">
+            <property role="TrG5h" value="existingOutputChildren" />
+            <node concept="_YKpA" id="3vsFnFUGRh8" role="1tU5fm">
+              <node concept="3uibUv" id="3vsFnFUGRLo" role="_ZDj9">
+                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3vsFnFUGQtA" role="33vP2m">
+              <node concept="1eOMI4" id="3vsFnFUGQ5X" role="2Oq$k0">
+                <node concept="10QFUN" id="3vsFnFUGP_t" role="1eOMHV">
+                  <node concept="2OqwBi" id="3vsFnFUGP_p" role="10QFUP">
+                    <node concept="37vLTw" id="3vsFnFUGP_q" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7kQU9sgtkx_" resolve="outputParent" />
+                    </node>
+                    <node concept="liA8E" id="3vsFnFUGP_r" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.getChildren(org.jetbrains.mps.openapi.language.SContainmentLink):java.lang.Iterable" resolve="getChildren" />
+                      <node concept="37vLTw" id="3vsFnFUGP_s" role="37wK5m">
+                        <ref role="3cqZAo" node="7kQU9sgtl1K" resolve="link" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="A3Dl8" id="3vsFnFUGP_m" role="10QFUM">
+                    <node concept="3uibUv" id="3vsFnFUGPVQ" role="A3Ik2">
+                      <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="ANE8D" id="3vsFnFUGQVT" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="3vsFnFUHag1" role="3cqZAp" />
         <node concept="3clFbJ" id="3vsFnFUHb1j" role="3cqZAp">
           <node concept="3clFbS" id="3vsFnFUHb1l" role="3clFbx">
@@ -23957,14 +23955,14 @@
                     <node concept="3clFbS" id="3vsFnFUHhQg" role="1bW5cS">
                       <node concept="3clFbF" id="3vsFnFUHi1o" role="3cqZAp">
                         <node concept="2OqwBi" id="3vsFnFUHj19" role="3clFbG">
-                          <node concept="37vLTw" id="3vsFnFUHiK4" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7kQU9sgtkx_" resolve="outputParent" />
-                          </node>
                           <node concept="liA8E" id="3vsFnFUHjfM" role="2OqNvi">
                             <ref role="37wK5l" to="mhbf:~SNode.removeChild(org.jetbrains.mps.openapi.model.SNode):void" resolve="removeChild" />
                             <node concept="37vLTw" id="3vsFnFUHjoA" role="37wK5m">
                               <ref role="3cqZAo" node="3vsFnFUHhQh" resolve="it" />
                             </node>
+                          </node>
+                          <node concept="37vLTw" id="3vsFnFUHiK4" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7kQU9sgtkx_" resolve="outputParent" />
                           </node>
                         </node>
                       </node>
