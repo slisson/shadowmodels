@@ -14,7 +14,6 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="yb34" ref="r:530aea2f-dc0b-465c-91dd-a75239ac9e81(de.q60.mps.shadowmodels.examples.statemachine.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="deqm" ref="r:c00cefa5-db3b-41b6-8d40-9db4a0113979(de.q60.mps.shadowmodels.runtimelang.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -26,9 +25,6 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -1500,14 +1496,8 @@
               <ref role="02LMe" to="dj5d:qmkA5fOskf" resolve="Module" />
               <node concept="027oh" id="7YhLqbpfPcU" role="02LM9">
                 <ref role="027oj" to="tpck:h0TrG11" resolve="name" />
-                <node concept="3cpWs3" id="2QSWXiMCqyW" role="027of">
-                  <node concept="2YIFZM" id="2QSWXiMCqBy" role="3uHU7w">
-                    <ref role="37wK5l" to="wyt6:~System.nanoTime():long" resolve="nanoTime" />
-                    <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                  </node>
-                  <node concept="Xl_RD" id="7YhLqbpfPcV" role="3uHU7B">
-                    <property role="Xl_RC" value="de.q60.mps.shadowmodel.demolang.transformations.StatemachineToJava" />
-                  </node>
+                <node concept="Xl_RD" id="7YhLqbpfPcV" role="027of">
+                  <property role="Xl_RC" value="de.q60.mps.shadowmodel.demolang.transformations.StatemachineToJava" />
                 </node>
               </node>
               <node concept="027rt" id="7YhLqbpfPcW" role="02LM9">
