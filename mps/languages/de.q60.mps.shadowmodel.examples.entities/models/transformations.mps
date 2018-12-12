@@ -2,14 +2,14 @@
 <model ref="r:37e85211-427f-482e-b697-cf3275c6d596(de.q60.mps.shadowmodel.examples.entities.transformations)">
   <persistence version="9" />
   <languages>
-    <use id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel.transformation" version="0" />
+    <use id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodels.transformation" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <devkit ref="a2812d5e-a72e-4739-ab3f-d01ec647c5de(de.q60.mps.shadowmodel.devkit)" />
+    <devkit ref="a2812d5e-a72e-4739-ab3f-d01ec647c5de(de.q60.mps.shadowmodels.devkit)" />
   </languages>
   <imports>
-    <import index="aoe3" ref="r:2b841f9e-64f6-48c4-8c54-2ee495cb0445(de.q60.mps.shadowmodel.target.text.structure)" />
-    <import index="jwvb" ref="r:23ae1252-8737-4390-a684-2a013001dae4(de.q60.mps.shadowmodel.repository.transformations)" />
-    <import index="dj5d" ref="r:8bca245c-17c6-44f4-9367-ad6ce25cabf5(de.q60.mps.shadowmodel.runtimelang.structure)" />
+    <import index="aoe3" ref="r:2b841f9e-64f6-48c4-8c54-2ee495cb0445(de.q60.mps.shadowmodels.target.text.structure)" />
+    <import index="jwvb" ref="r:23ae1252-8737-4390-a684-2a013001dae4(de.q60.mps.shadowmodels.repository.transformations)" />
+    <import index="dj5d" ref="r:8bca245c-17c6-44f4-9367-ad6ce25cabf5(de.q60.mps.shadowmodels.runtimelang.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -59,7 +59,7 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel.transformation">
+    <language id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodels.transformation">
       <concept id="7335687028107245072" name="de.q60.mps.shadowmodel.transformation.structure.TransformationOutput" flags="ng" index="026TG">
         <child id="7335687028107245075" name="output" index="026TJ" />
       </concept>
@@ -79,7 +79,7 @@
         <reference id="7335687028107243182" name="link" index="027ri" />
         <child id="7335687028107243185" name="target" index="027rd" />
       </concept>
-      <concept id="7335687028107163797" name="de.q60.mps.shadowmodel.transformation.structure.TConceptType" flags="ig" index="02i3D">
+      <concept id="7335687028107163797" name="de.q60.mps.shadowmodel.transformation.structure.TConceptType" flags="ng" index="02i3D">
         <reference id="7335687028107163800" name="concept" index="02i3$" />
       </concept>
       <concept id="7335687028107163788" name="de.q60.mps.shadowmodel.transformation.structure.TransformationParameter" flags="ng" index="02i3K">
@@ -125,7 +125,7 @@
         <child id="5373338300165862254" name="call" index="2PWHRo" />
         <child id="5373338300165862252" name="input" index="2PWHRq" />
       </concept>
-      <concept id="4225291329826005067" name="de.q60.mps.shadowmodel.transformation.structure.TStringType" flags="ig" index="38sA1o" />
+      <concept id="4225291329826005067" name="de.q60.mps.shadowmodel.transformation.structure.TStringType" flags="ng" index="38sA1o" />
       <concept id="3563231453904357666" name="de.q60.mps.shadowmodel.transformation.structure.NullNode" flags="ng" index="3n1eO2" />
       <concept id="1038241485678306126" name="de.q60.mps.shadowmodel.transformation.structure.TransformationCallExpression" flags="ng" index="1Ixn1J">
         <reference id="1038241485678306129" name="transformation" index="1Ixn1K" />

@@ -2,28 +2,27 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/devkits/de.q60.mps.shadowmodel.devkit/de.q60.mps.shadowmodel.devkit.devkit" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.polymorphicfunctions.sandboxlang/de.q60.mps.polymorphicfunctions.sandboxlang.mpl" folder="demolang" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.polymorphicfunctions/de.q60.mps.polymorphicfunctions.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.demolang.blext/de.q60.mps.shadowmodel.demolang.blext.mpl" folder="demolang" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.demolang.editor/de.q60.mps.shadowmodel.demolang.editor.mpl" folder="demolang" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.demolang/de.q60.mps.shadowmodel.demolang.mpl" folder="demolang" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.editor/de.q60.mps.shadowmodel.editor.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.examples.entities/de.q60.mps.shadowmodel.examples.entities.mpl" folder="demolang" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.gen.afterPF/de.q60.mps.shadowmodel.gen.afterPF.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.repository/de.q60.mps.shadowmodel.repository.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.runtimelang/de.q60.mps.shadowmodel.runtimelang.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.target.text/de.q60.mps.shadowmodel.target.text.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.transformation/de.q60.mps.shadowmodel.transformation.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.util/de.q60.mps.shadowmodel.util.mpl" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/shadowmodels.usecase.expr/shadowmodels.usecase.expr.mpl" folder="usecases" />
-      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.polymorphicfunctions.runtime/de.q60.mps.polymorphicfunctions.runtime.msd" folder="core" />
-      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.polymorphicfunctions.sandbox/de.q60.mps.polymorphicfunctions.sandbox.msd" folder="sandbox" />
-      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.genplan/de.q60.mps.shadowmodel.genplan.msd" folder="core" />
-      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.runtime/de.q60.mps.shadowmodel.runtime.msd" folder="core" />
-      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.sandbox/de.q60.mps.shadowmodel.sandbox.msd" folder="sandbox" />
+      <modulePath path="$PROJECT_DIR$/devkits/de.q60.mps.shadowmodels.devkit/de.q60.mps.shadowmodels.devkit.devkit" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.polymorphicfunctions.sandboxlang/de.q60.mps.polymorphicfunctions.sandboxlang.mpl" folder="polymorhpicfunctions" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.polymorphicfunctions/de.q60.mps.polymorphicfunctions.mpl" folder="polymorhpicfunctions" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.examples.blext/de.q60.mps.shadowmodel.examples.blext.mpl" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.examples.editor/de.q60.mps.shadowmodel.examples.editor.mpl" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.examples.entities/de.q60.mps.shadowmodel.examples.entities.mpl" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.examples.expressions/de.q60.mps.shadowmodel.examples.expressions.mpl" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodel.examples.statemachine/de.q60.mps.shadowmodel.examples.statemachine.mpl" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodels.gen.afterPF/de.q60.mps.shadowmodels.gen.afterPF.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodels.repository/de.q60.mps.shadowmodels.repository.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodels.runtimelang/de.q60.mps.shadowmodels.runtimelang.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodels.target.editor/de.q60.mps.shadowmodels.target.editor.mpl" folder="target" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodels.target.text/de.q60.mps.shadowmodels.target.text.mpl" folder="target" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodels.transformation/de.q60.mps.shadowmodels.transformation.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.shadowmodels.util/de.q60.mps.shadowmodels.util.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.polymorphicfunctions.runtime/de.q60.mps.polymorphicfunctions.runtime.msd" folder="polymorhpicfunctions" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.polymorphicfunctions.sandbox/de.q60.mps.polymorphicfunctions.sandbox.msd" folder="polymorhpicfunctions" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodel.examples.input/de.q60.mps.shadowmodel.examples.input.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodels.genplan/de.q60.mps.shadowmodels.genplan.msd" folder="core" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.shadowmodels.runtime/de.q60.mps.shadowmodels.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/de.q60.shadowmodels.build/de.q60.shadowmodels.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/shadowmodels.usecase.expr.example/shadowmodels.usecase.expr.example.msd" folder="" />
     </projectModules>
   </component>
 </project>
