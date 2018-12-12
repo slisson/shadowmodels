@@ -1351,7 +1351,7 @@
     <node concept="2OrE70" id="7WfC1hy_DQU" role="02uzr" />
   </node>
   <node concept="02vhO" id="7YhLqbpfrfi">
-    <property role="TrG5h" value="RepositoryModule" />
+    <property role="TrG5h" value="Repository" />
     <node concept="02vpq" id="7YhLqbpfO9B" role="02uzr">
       <property role="2$mnfv" value="true" />
       <ref role="2OrxuO" to="jwvb:7YhLqbpfNze" resolve="$RepositoryModule" />
@@ -1365,7 +1365,7 @@
               <node concept="027oh" id="7YhLqbpfPcU" role="02LM9">
                 <ref role="027oj" to="tpck:h0TrG11" resolve="name" />
                 <node concept="Xl_RD" id="7YhLqbpfPcV" role="027of">
-                  <property role="Xl_RC" value="de.q60.mps.shadowmodel.demolang.transformations.StatemachineToJava" />
+                  <property role="Xl_RC" value="statemachines" />
                 </node>
               </node>
               <node concept="027rt" id="7YhLqbpfPcW" role="02LM9">
@@ -1481,11 +1481,11 @@
           <ref role="02LMe" to="dj5d:qmkA5fOskc" resolve="Model" />
           <node concept="027oh" id="7YhLqbpfDlZ" role="02LM9">
             <ref role="027oj" to="tpck:h0TrG11" resolve="name" />
-            <node concept="3cpWs3" id="7YhLqbpfF0O" role="027of">
-              <node concept="Xl_RD" id="7YhLqbpfF3i" role="3uHU7B">
-                <property role="Xl_RC" value="sm2java." />
+            <node concept="3cpWs3" id="1NFrfE_c7q4" role="027of">
+              <node concept="Xl_RD" id="1NFrfE_c7q7" role="3uHU7w">
+                <property role="Xl_RC" value=".java" />
               </node>
-              <node concept="2OqwBi" id="7YhLqbpfDu_" role="3uHU7w">
+              <node concept="2OqwBi" id="7YhLqbpfDu_" role="3uHU7B">
                 <node concept="214o7A" id="7YhLqbpfDm7" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7YhLqbpfDHp" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
