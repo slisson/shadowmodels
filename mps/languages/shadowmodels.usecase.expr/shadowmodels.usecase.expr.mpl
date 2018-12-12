@@ -75,6 +75,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="f5997610-4d27-40a3-872c-d06cf404755b(de.q60.mps.shadowmodel.genplan)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="1ab7bfac-29d6-4772-a483-50110408ac43(shadowmodels.usecase.expr)" version="0" />

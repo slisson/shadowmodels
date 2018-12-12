@@ -2,8 +2,9 @@
 <model ref="r:49e489bb-f00f-4c40-a675-08c681da1ac3(shadowmodels.usecase.expr.transformations)">
   <persistence version="9" />
   <languages>
-    <use id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel" version="0" />
+    <use id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel.transformation" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="a2812d5e-a72e-4739-ab3f-d01ec647c5de(de.q60.mps.shadowmodel.devkit)" />
   </languages>
   <imports>
     <import index="nup6" ref="r:1539980b-b231-4c7d-8cde-acae8ba318f2(shadowmodels.usecase.expr.structure)" implicit="true" />
@@ -19,7 +20,7 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
     </language>
-    <language id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel">
+    <language id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodel.transformation">
       <concept id="7335687028107245072" name="de.q60.mps.shadowmodel.structure.TransformationOutput" flags="ng" index="026TG">
         <child id="7335687028107245075" name="output" index="026TJ" />
       </concept>
@@ -35,7 +36,7 @@
         <reference id="7335687028107243171" name="link" index="027rv" />
         <child id="7335687028107243173" name="child" index="027rp" />
       </concept>
-      <concept id="7335687028107163797" name="de.q60.mps.shadowmodel.structure.ConceptType" flags="ig" index="02i3D">
+      <concept id="7335687028107163797" name="de.q60.mps.shadowmodel.structure.ConceptType" flags="ng" index="02i3D">
         <reference id="7335687028107163800" name="concept" index="02i3$" />
       </concept>
       <concept id="7335687028107163788" name="de.q60.mps.shadowmodel.structure.TransformationParameter" flags="ng" index="02i3K">

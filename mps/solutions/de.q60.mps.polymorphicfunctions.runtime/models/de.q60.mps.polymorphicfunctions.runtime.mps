@@ -34,6 +34,10 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
+        <child id="1224071154657" name="classifierType" index="0kSFW" />
+        <child id="1224071154656" name="expression" index="0kSFX" />
+      </concept>
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -85,6 +89,7 @@
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -119,6 +124,7 @@
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -1680,7 +1686,7 @@
             <node concept="YS8fn" id="5yVaV$3Q9wJ" role="3cqZAp">
               <node concept="2ShNRf" id="5yVaV$3Q9wK" role="YScLw">
                 <node concept="1pGfFk" id="5yVaV$3Q9wL" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <ref role="37wK5l" node="1qXv6Eg7oJS" resolve="NoApplicableImplementationException" />
                   <node concept="3cpWs3" id="5yVaV$3Q9wM" role="37wK5m">
                     <node concept="Xl_RD" id="5yVaV$3Q9wN" role="3uHU7w">
                       <property role="Xl_RC" value=")" />
@@ -1758,7 +1764,7 @@
             <node concept="YS8fn" id="5yVaV$3Q9xc" role="3cqZAp">
               <node concept="2ShNRf" id="5yVaV$3Q9xd" role="YScLw">
                 <node concept="1pGfFk" id="5yVaV$3Q9xe" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <ref role="37wK5l" node="1qXv6Eg7oJS" resolve="NoApplicableImplementationException" />
                   <node concept="3cpWs3" id="5yVaV$3Q9xf" role="37wK5m">
                     <node concept="Xl_RD" id="5yVaV$3Q9xg" role="3uHU7w">
                       <property role="Xl_RC" value=")" />
@@ -4586,8 +4592,11 @@
                 <node concept="3uibUv" id="6N6zH_i3f2J" role="1tU5fm">
                   <ref role="3uigEE" node="5yVaV$3AVQi" resolve="PFDescriptor" />
                 </node>
-                <node concept="10QFUN" id="6N6zH_i3f2K" role="33vP2m">
-                  <node concept="2OqwBi" id="6N6zH_i3f2L" role="10QFUP">
+                <node concept="0kSF2" id="1qXv6Eg7LpT" role="33vP2m">
+                  <node concept="3uibUv" id="1qXv6Eg7Mjm" role="0kSFW">
+                    <ref role="3uigEE" node="5yVaV$3AVQi" resolve="PFDescriptor" />
+                  </node>
+                  <node concept="2OqwBi" id="6N6zH_i3f2L" role="0kSFX">
                     <node concept="37vLTw" id="6N6zH_i3f2M" role="2Oq$k0">
                       <ref role="3cqZAo" node="6N6zH_i3f2B" resolve="instanceField" />
                     </node>
@@ -4595,9 +4604,6 @@
                       <ref role="37wK5l" to="t6h5:~Field.get(java.lang.Object):java.lang.Object" resolve="get" />
                       <node concept="10Nm6u" id="6N6zH_i3f2O" role="37wK5m" />
                     </node>
-                  </node>
-                  <node concept="3uibUv" id="6N6zH_i3f2P" role="10QFUM">
-                    <ref role="3uigEE" node="5yVaV$3AVQi" resolve="PFDescriptor" />
                   </node>
                 </node>
               </node>
@@ -4712,6 +4718,29 @@
     </node>
     <node concept="2tJIrI" id="6N6zH_i3euc" role="jymVt" />
     <node concept="3Tm1VV" id="4F4X830W9je" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="1qXv6Eg7nUN">
+    <property role="TrG5h" value="NoApplicableImplementationException" />
+    <node concept="3Tm1VV" id="1qXv6Eg7nUO" role="1B3o_S" />
+    <node concept="3uibUv" id="1qXv6Eg7nW0" role="1zkMxy">
+      <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+    </node>
+    <node concept="3clFbW" id="1qXv6Eg7oJS" role="jymVt">
+      <node concept="3cqZAl" id="1qXv6Eg7oJT" role="3clF45" />
+      <node concept="3Tm1VV" id="1qXv6Eg7oJU" role="1B3o_S" />
+      <node concept="3clFbS" id="1qXv6Eg7oJW" role="3clF47">
+        <node concept="XkiVB" id="1qXv6Eg7oJY" role="3cqZAp">
+          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+          <node concept="37vLTw" id="1qXv6Eg7oK2" role="37wK5m">
+            <ref role="3cqZAo" node="1qXv6Eg7oJZ" resolve="message" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1qXv6Eg7oJZ" role="3clF46">
+        <property role="TrG5h" value="message" />
+        <node concept="17QB3L" id="1qXv6Eg7oL2" role="1tU5fm" />
+      </node>
+    </node>
   </node>
 </model>
 
