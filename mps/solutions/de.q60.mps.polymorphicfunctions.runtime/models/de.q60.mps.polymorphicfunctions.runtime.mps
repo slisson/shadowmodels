@@ -222,6 +222,12 @@
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -4644,6 +4650,24 @@
               <property role="TrG5h" value="e" />
               <node concept="3uibUv" id="6N6zH_i3f35" role="1tU5fm">
                 <ref role="3uigEE" to="3qmy:~ModuleClassNotFoundException" resolve="ModuleClassNotFoundException" />
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="4O$txDMQ56$" role="TEbGg">
+            <node concept="3cpWsn" id="4O$txDMQ56_" role="TDEfY">
+              <property role="TrG5h" value="ex" />
+              <node concept="3uibUv" id="4O$txDMQlDO" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~IllegalStateException" resolve="IllegalStateException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="4O$txDMQ56B" role="TDEfX">
+              <node concept="3SKdUt" id="4O$txDMQnwf" role="3cqZAp">
+                <node concept="3SKdUq" id="4O$txDMQnwh" role="3SKWNk">
+                  <property role="3SKdUp" value="Module is not part of the repository anymore" />
+                </node>
+              </node>
+              <node concept="3cpWs6" id="4O$txDMQmwS" role="3cqZAp">
+                <node concept="10Nm6u" id="4O$txDMQmxM" role="3cqZAk" />
               </node>
             </node>
           </node>
