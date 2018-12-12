@@ -291,6 +291,10 @@
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
+      <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
+        <child id="1226511765987" name="elementType" index="2hN53Y" />
+      </concept>
+      <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
       <concept id="1207233427108" name="jetbrains.mps.baseLanguage.collections.structure.MapRemoveOperation" flags="nn" index="kI3uX">
         <child id="1207233489861" name="key" index="kIiFs" />
       </concept>
@@ -316,12 +320,12 @@
       <concept id="1205679737078" name="jetbrains.mps.baseLanguage.collections.structure.SortOperation" flags="nn" index="2S7cBI">
         <child id="1205679832066" name="ascending" index="2S7zOq" />
       </concept>
-      <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
         <child id="4611582986551314344" name="requestedType" index="UnYnz" />
       </concept>
+      <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
       <concept id="1178286324487" name="jetbrains.mps.baseLanguage.collections.structure.SortDirection" flags="nn" index="1nlBCl" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
@@ -1788,6 +1792,23 @@
                   </node>
                 </node>
               </node>
+              <node concept="3cpWs8" id="U8fLbAo41B" role="3cqZAp">
+                <node concept="3cpWsn" id="U8fLbAo41E" role="3cpWs9">
+                  <property role="TrG5h" value="treeNodesToRemove" />
+                  <node concept="2hMVRd" id="U8fLbAo41z" role="1tU5fm">
+                    <node concept="3uibUv" id="U8fLbAo5ee" role="2hN53Y">
+                      <ref role="3uigEE" node="7YhLqbpW_Qz" resolve="ProjectViewExtension.ShadowModuleTreeNode" />
+                    </node>
+                  </node>
+                  <node concept="2ShNRf" id="U8fLbAocLm" role="33vP2m">
+                    <node concept="2i4dXS" id="U8fLbAocGe" role="2ShVmc">
+                      <node concept="3uibUv" id="U8fLbAocGf" role="HW$YZ">
+                        <ref role="3uigEE" node="7YhLqbpW_Qz" resolve="ProjectViewExtension.ShadowModuleTreeNode" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="115Xaa453NW" role="3cqZAp">
                 <node concept="2OqwBi" id="115Xaa454I9" role="3clFbG">
                   <node concept="2OqwBi" id="115Xaa453NY" role="2Oq$k0">
@@ -1806,6 +1827,18 @@
                   <node concept="2es0OD" id="115Xaa455MZ" role="2OqNvi">
                     <node concept="1bVj0M" id="115Xaa455N1" role="23t8la">
                       <node concept="3clFbS" id="115Xaa455N2" role="1bW5cS">
+                        <node concept="3clFbF" id="U8fLbAofum" role="3cqZAp">
+                          <node concept="2OqwBi" id="U8fLbAoheJ" role="3clFbG">
+                            <node concept="37vLTw" id="U8fLbAofuk" role="2Oq$k0">
+                              <ref role="3cqZAo" node="U8fLbAo41E" resolve="treeNodesToRemove" />
+                            </node>
+                            <node concept="TSZUe" id="U8fLbAolf6" role="2OqNvi">
+                              <node concept="37vLTw" id="U8fLbAomsQ" role="25WWJ7">
+                                <ref role="3cqZAo" node="115Xaa455N3" resolve="it" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3clFbF" id="115Xaa4566X" role="3cqZAp">
                           <node concept="37vLTI" id="115Xaa45brg" role="3clFbG">
                             <node concept="37vLTw" id="115Xaa45bCN" role="37vLTx">
@@ -1947,6 +1980,18 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbF" id="U8fLbAopct" role="3cqZAp">
+                          <node concept="2OqwBi" id="U8fLbAoqV4" role="3clFbG">
+                            <node concept="37vLTw" id="U8fLbAopcr" role="2Oq$k0">
+                              <ref role="3cqZAo" node="U8fLbAo41E" resolve="treeNodesToRemove" />
+                            </node>
+                            <node concept="3dhRuq" id="U8fLbAouX7" role="2OqNvi">
+                              <node concept="37vLTw" id="U8fLbAowLf" role="25WWJ7">
+                                <ref role="3cqZAo" node="115Xaa45h81" resolve="moduleTreeNode" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1989,11 +2034,8 @@
               </node>
               <node concept="3clFbF" id="5_qLwQsyBqE" role="3cqZAp">
                 <node concept="2OqwBi" id="5_qLwQsyEMP" role="3clFbG">
-                  <node concept="2OqwBi" id="5_qLwQsyCp0" role="2Oq$k0">
-                    <node concept="37vLTw" id="5_qLwQsyBqC" role="2Oq$k0">
-                      <ref role="3cqZAo" node="115Xaa452o8" resolve="module2treeNode" />
-                    </node>
-                    <node concept="T8wYR" id="5_qLwQsyLQs" role="2OqNvi" />
+                  <node concept="37vLTw" id="U8fLbAoyBX" role="2Oq$k0">
+                    <ref role="3cqZAo" node="U8fLbAo41E" resolve="treeNodesToRemove" />
                   </node>
                   <node concept="2es0OD" id="5_qLwQsyGH_" role="2OqNvi">
                     <node concept="1bVj0M" id="5_qLwQsyGHB" role="23t8la">
