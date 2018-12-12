@@ -178,6 +178,7 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
+      <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -605,6 +606,22 @@
                       <ref role="2Gs0qQ" node="4OBfrz$xMqP" resolve="key" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="1NFrfE_bHXc" role="3cqZAp">
+              <node concept="3clFbS" id="1NFrfE_bHXe" role="3clFbx">
+                <node concept="3SKdUt" id="1NFrfE_bI$C" role="3cqZAp">
+                  <node concept="3SKdUq" id="1NFrfE_bI$E" role="3SKWNk">
+                    <property role="3SKdUp" value="Cyclic dependency?" />
+                  </node>
+                </node>
+                <node concept="3N13vt" id="1NFrfE_bIyX" role="3cqZAp" />
+              </node>
+              <node concept="3clFbC" id="1NFrfE_bItn" role="3clFbw">
+                <node concept="10Nm6u" id="1NFrfE_bIvF" role="3uHU7w" />
+                <node concept="37vLTw" id="1NFrfE_bInP" role="3uHU7B">
+                  <ref role="3cqZAo" node="4OBfrz$xMr2" resolve="invalidatedValue" />
                 </node>
               </node>
             </node>
