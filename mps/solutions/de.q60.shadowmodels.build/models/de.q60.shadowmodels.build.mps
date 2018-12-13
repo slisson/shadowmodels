@@ -572,11 +572,6 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
             </node>
           </node>
-          <node concept="1SiIV0" id="4iIKqJTZ5Jq" role="3bR37C">
-            <node concept="3bR9La" id="4iIKqJTZ5Jr" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:1L8vb48VX1b" resolve="jetbrains.mps.lang.editor.diagram#1094405431463447766" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="4iIKqJTZ5Jt" role="3bR37C">
             <node concept="3bR9La" id="4iIKqJTZ5Js" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:7YI57w6K0iE" resolve="jetbrains.mps.lang.editor#1129914002149" />

@@ -11,8 +11,8 @@
   <imports>
     <import index="dj5d" ref="r:8bca245c-17c6-44f4-9367-ad6ce25cabf5(de.q60.mps.shadowmodels.runtimelang.structure)" />
     <import index="jwvb" ref="r:23ae1252-8737-4390-a684-2a013001dae4(de.q60.mps.shadowmodels.repository.transformations)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="yb34" ref="r:530aea2f-dc0b-465c-91dd-a75239ac9e81(de.q60.mps.shadowmodels.examples.statemachine.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="deqm" ref="r:c00cefa5-db3b-41b6-8d40-9db4a0113979(de.q60.mps.shadowmodels.runtimelang.behavior)" implicit="true" />
   </imports>
@@ -83,18 +83,19 @@
       <concept id="7335687028107163788" name="de.q60.mps.shadowmodels.transformation.structure.TransformationParameter" flags="ng" index="02i3K">
         <child id="7335687028107163867" name="type" index="02i2B" />
       </concept>
-      <concept id="7335687028107144200" name="de.q60.mps.shadowmodels.transformation.structure.TransformationsModule" flags="ng" index="02vhO">
+      <concept id="7335687028107144200" name="de.q60.mps.shadowmodels.transformation.structure.TransformationsNamespace" flags="ng" index="02vhO">
         <child id="7335687028107145383" name="content" index="02uzr" />
       </concept>
-      <concept id="7335687028107144742" name="de.q60.mps.shadowmodels.transformation.structure.TransformationImplementation" flags="ng" index="02vpq">
+      <concept id="7335687028107144742" name="de.q60.mps.shadowmodels.transformation.structure.Transformation" flags="ng" index="02vpq">
         <property id="1068767335609562597" name="contribution" index="2$mnfv" />
-        <reference id="5373338300159359234" name="interface" index="2OrxuO" />
+        <property id="6198477943066858774" name="isAbstract" index="1YBnZf" />
+        <reference id="6198477943066252929" name="base" index="1YyVLo" />
         <child id="7335687028107245068" name="output" index="026TK" />
         <child id="7335687028107163827" name="input" index="02i3f" />
         <child id="8156066107234763314" name="condition" index="vpezr" />
       </concept>
       <concept id="9170566427534778463" name="de.q60.mps.shadowmodels.transformation.structure.TransformationCall" flags="ng" index="214gnc">
-        <reference id="5373338300159402560" name="transformation" index="2P$kNQ" />
+        <reference id="6198477943068350028" name="transformation" index="1YEVMl" />
         <child id="9170566427534794950" name="parameterValues" index="214sll" />
       </concept>
       <concept id="9170566427534812277" name="de.q60.mps.shadowmodels.transformation.structure.ContextNodeExpression" flags="ng" index="214o7A" />
@@ -119,10 +120,6 @@
         <reference id="5373338300159158248" name="label" index="2Org_u" />
       </concept>
       <concept id="5373338300159315830" name="de.q60.mps.shadowmodels.transformation.structure.EmptyLine" flags="ng" index="2OrE70" />
-      <concept id="5373338300159268355" name="de.q60.mps.shadowmodels.transformation.structure.TransformationInterface" flags="ng" index="2OrRyP">
-        <child id="5373338300159268358" name="input" index="2OrRyK" />
-        <child id="5373338300159268360" name="output" index="2OrRyY" />
-      </concept>
       <concept id="5373338300165862249" name="de.q60.mps.shadowmodels.transformation.structure.MapMacro" flags="ng" index="2PWHRv">
         <child id="5373338300165862254" name="call" index="2PWHRo" />
         <child id="5373338300165862252" name="input" index="2PWHRq" />
@@ -197,21 +194,23 @@
   </registry>
   <node concept="02vhO" id="6ndA7L_L6RD">
     <property role="TrG5h" value="StatemachineToJava" />
-    <node concept="2OrRyP" id="4EhVFrYZOVI" role="02uzr">
+    <node concept="02vpq" id="5o5qH$CQKck" role="02uzr">
       <property role="TrG5h" value="sm2java" />
-      <node concept="02i3K" id="4EhVFrYZOXA" role="2OrRyY">
-        <node concept="02i3D" id="1cIlazwO6QA" role="02i2B">
-          <ref role="02i3$" to="tpee:fz12cDA" resolve="ClassConcept" />
-        </node>
-      </node>
-      <node concept="02i3K" id="4EhVFrYZOXm" role="2OrRyK">
-        <node concept="02i3D" id="1cIlazwO6Qu" role="02i2B">
+      <property role="1YBnZf" value="true" />
+      <node concept="02i3K" id="5o5qH$CQKcl" role="02i3f">
+        <node concept="02i3D" id="5o5qH$CQKcm" role="02i2B">
           <ref role="02i3$" to="yb34:6ndA7L_L0uE" resolve="Statemachine" />
         </node>
       </node>
+      <node concept="026TG" id="5o5qH$CQKcn" role="026TK">
+        <node concept="027og" id="5o5qH$CQKco" role="026TJ">
+          <ref role="02LMe" to="tpee:fz12cDA" resolve="ClassConcept" />
+        </node>
+      </node>
     </node>
+    <node concept="2OrE70" id="2Dmy1k6OjOW" role="02uzr" />
     <node concept="02vpq" id="6ndA7L_LniO" role="02uzr">
-      <ref role="2OrxuO" node="4EhVFrYZOVI" resolve="sm2java" />
+      <ref role="1YyVLo" node="5o5qH$CQKck" resolve="sm2java" />
       <node concept="026TG" id="6ndA7L_LyuR" role="026TK">
         <node concept="027og" id="6ndA7L_LEzY" role="026TJ">
           <ref role="02LMe" to="tpee:fz12cDA" resolve="ClassConcept" />
@@ -257,7 +256,7 @@
                     <node concept="027ru" id="1cIlazwZ$gO" role="02LM9">
                       <ref role="027ri" to="tpee:g7uigIF" resolve="classifier" />
                       <node concept="214gnc" id="1cIlazwZ$gS" role="027rd">
-                        <ref role="2P$kNQ" node="1cIlazwNMr7" resolve="stateEnumClass" />
+                        <ref role="1YEVMl" node="1cIlazwNMvD" resolve="stateEnumClass" />
                         <node concept="214o7A" id="1cIlazwZ$gV" role="214sll" />
                       </node>
                     </node>
@@ -270,14 +269,14 @@
                     <node concept="027ru" id="1cIlazwZ$h5" role="02LM9">
                       <ref role="027ri" to="tpee:gDPx2zY" resolve="enumClass" />
                       <node concept="214gnc" id="1cIlazwZ$h9" role="027rd">
-                        <ref role="2P$kNQ" node="1cIlazwNMr7" resolve="stateEnumClass" />
+                        <ref role="1YEVMl" node="1cIlazwNMvD" resolve="stateEnumClass" />
                         <node concept="214o7A" id="1cIlazwZ$hc" role="214sll" />
                       </node>
                     </node>
                     <node concept="027ru" id="1cIlazwZ$hp" role="02LM9">
                       <ref role="027ri" to="tpee:fKRm8Ja" resolve="enumConstantDeclaration" />
                       <node concept="214gnc" id="1cIlazwZ$h$" role="027rd">
-                        <ref role="2P$kNQ" node="4EhVFrZ0a6M" resolve="enumConst" />
+                        <ref role="1YEVMl" node="5o5qH$CQKcR" resolve="enumConst" />
                         <node concept="2OqwBi" id="1cIlazwZAIT" role="214sll">
                           <node concept="2OqwBi" id="1cIlazwZ$Kq" role="2Oq$k0">
                             <node concept="2155sH" id="1cIlazwZ$CE" role="2Oq$k0">
@@ -337,7 +336,7 @@
                         <node concept="027ru" id="4EhVFrYY$lm" role="02LM9">
                           <ref role="027ri" to="tpee:g7uigIF" resolve="classifier" />
                           <node concept="214gnc" id="1cIlazwNNov" role="027rd">
-                            <ref role="2P$kNQ" node="1cIlazwNMC_" resolve="eventsEnumClass" />
+                            <ref role="1YEVMl" node="1cIlazwNMCl" resolve="eventsEnumClass" />
                             <node concept="214o7A" id="1cIlazwNNoy" role="214sll" />
                           </node>
                         </node>
@@ -378,7 +377,7 @@
                             </node>
                           </node>
                           <node concept="214gnc" id="1cIlazwNK1o" role="2PWHRo">
-                            <ref role="2P$kNQ" node="w3aulkbdDh" resolve="stateSwitchCase" />
+                            <ref role="1YEVMl" node="w3aulkbdHF" resolve="stateSwitchCase" />
                             <node concept="214o7A" id="1cIlazwNK_K" role="214sll" />
                           </node>
                         </node>
@@ -392,14 +391,14 @@
           <node concept="027rt" id="1cIlazwNN9D" role="02LM9">
             <ref role="027rv" to="tpee:4EqhHTp4Mw3" resolve="member" />
             <node concept="214gnc" id="1cIlazwNNaX" role="027rp">
-              <ref role="2P$kNQ" node="1cIlazwNMr7" resolve="stateEnumClass" />
+              <ref role="1YEVMl" node="1cIlazwNMvD" resolve="stateEnumClass" />
               <node concept="214o7A" id="1cIlazwNNb0" role="214sll" />
             </node>
           </node>
           <node concept="027rt" id="1cIlazwNNcs" role="02LM9">
             <ref role="027rv" to="tpee:4EqhHTp4Mw3" resolve="member" />
             <node concept="214gnc" id="1cIlazwNNdQ" role="027rp">
-              <ref role="2P$kNQ" node="1cIlazwNMC_" resolve="eventsEnumClass" />
+              <ref role="1YEVMl" node="1cIlazwNMCl" resolve="eventsEnumClass" />
               <node concept="214o7A" id="1cIlazwNNdT" role="214sll" />
             </node>
           </node>
@@ -413,22 +412,8 @@
       </node>
     </node>
     <node concept="2OrE70" id="1cIlazwNNj6" role="02uzr" />
-    <node concept="2OrRyP" id="w3aulkbdDh" role="02uzr">
-      <property role="TrG5h" value="stateSwitchCase" />
-      <node concept="02i3K" id="w3aulkbdFm" role="2OrRyY">
-        <node concept="02i3D" id="1cIlazwNKCs" role="02i2B">
-          <ref role="02i3$" to="tpee:gVKbdOr" resolve="SwitchCase" />
-        </node>
-      </node>
-      <node concept="02i3K" id="1cIlazwO6L0" role="2OrRyK">
-        <property role="TrG5h" value="s" />
-        <node concept="02i3D" id="1cIlazwO6L1" role="02i2B">
-          <ref role="02i3$" to="yb34:6ndA7L_L0uH" resolve="State" />
-        </node>
-      </node>
-    </node>
     <node concept="02vpq" id="w3aulkbdHF" role="02uzr">
-      <ref role="2OrxuO" node="w3aulkbdDh" resolve="stateSwitchCase" />
+      <property role="TrG5h" value="stateSwitchCase" />
       <node concept="026TG" id="w3aulkbdJV" role="026TK">
         <node concept="027og" id="w3aulkbdKc" role="026TJ">
           <ref role="02LMe" to="tpee:gVKbdOr" resolve="SwitchCase" />
@@ -439,7 +424,7 @@
               <node concept="027ru" id="w3aulkbdKf" role="02LM9">
                 <ref role="027ri" to="tpee:gDPx2zY" resolve="enumClass" />
                 <node concept="214gnc" id="1cIlazwNMh3" role="027rd">
-                  <ref role="2P$kNQ" node="1cIlazwNMr7" resolve="stateEnumClass" />
+                  <ref role="1YEVMl" node="1cIlazwNMvD" resolve="stateEnumClass" />
                   <node concept="2OqwBi" id="1cIlazwPa$N" role="214sll">
                     <node concept="2155sH" id="1cIlazwPat5" role="2Oq$k0">
                       <ref role="2155sG" node="w3aulkbdJF" resolve="s" />
@@ -457,7 +442,7 @@
               <node concept="027ru" id="w3aulkbdKh" role="02LM9">
                 <ref role="027ri" to="tpee:fKRm8Ja" resolve="enumConstantDeclaration" />
                 <node concept="214gnc" id="1cIlazwNMhb" role="027rd">
-                  <ref role="2P$kNQ" node="4EhVFrZ0a6M" resolve="enumConst" />
+                  <ref role="1YEVMl" node="5o5qH$CQKcR" resolve="enumConst" />
                   <node concept="2155sH" id="1cIlazwNOwy" role="214sll">
                     <ref role="2155sG" node="w3aulkbdJF" resolve="s" />
                   </node>
@@ -472,7 +457,7 @@
               <node concept="027rt" id="1cIlazwNNCQ" role="02LM9">
                 <ref role="027rv" to="tpee:fzcqZ_x" resolve="statement" />
                 <node concept="214gnc" id="I$iOOfIHSL" role="027rp">
-                  <ref role="2P$kNQ" node="I$iOOfI$dw" resolve="transitions" />
+                  <ref role="1YEVMl" node="5o5qH$CQKcu" resolve="transitions" />
                   <node concept="2155sH" id="I$iOOfIHSO" role="214sll">
                     <ref role="2155sG" node="w3aulkbdJF" resolve="s" />
                   </node>
@@ -496,22 +481,23 @@
       </node>
     </node>
     <node concept="2OrE70" id="1cIlazwNNlL" role="02uzr" />
-    <node concept="2OrRyP" id="I$iOOfI$dw" role="02uzr">
+    <node concept="02vpq" id="5o5qH$CQKcu" role="02uzr">
       <property role="TrG5h" value="transitions" />
-      <node concept="02i3K" id="I$iOOfI$ia" role="2OrRyY">
-        <node concept="02i3D" id="I$iOOfI$in" role="02i2B">
-          <ref role="02i3$" to="tpee:fzclF8l" resolve="Statement" />
+      <property role="1YBnZf" value="true" />
+      <node concept="02i3K" id="5o5qH$CQKcv" role="02i3f">
+        <property role="TrG5h" value="s" />
+        <node concept="02i3D" id="5o5qH$CQKcw" role="02i2B">
+          <ref role="02i3$" to="yb34:6ndA7L_L0uH" resolve="State" />
         </node>
       </node>
-      <node concept="02i3K" id="I$iOOfI$hU" role="2OrRyK">
-        <property role="TrG5h" value="s" />
-        <node concept="02i3D" id="I$iOOfI$i2" role="02i2B">
-          <ref role="02i3$" to="yb34:6ndA7L_L0uH" resolve="State" />
+      <node concept="026TG" id="5o5qH$CQKcx" role="026TK">
+        <node concept="027og" id="5o5qH$CQKcy" role="026TJ">
+          <ref role="02LMe" to="tpee:fzclF8l" resolve="Statement" />
         </node>
       </node>
     </node>
     <node concept="02vpq" id="I$iOOfI$n9" role="02uzr">
-      <ref role="2OrxuO" node="I$iOOfI$dw" resolve="transitions" />
+      <ref role="1YyVLo" node="5o5qH$CQKcu" resolve="transitions" />
       <node concept="026TG" id="I$iOOfI$so" role="026TK">
         <node concept="027og" id="I$iOOfI$ss" role="026TJ">
           <ref role="02LMe" to="tpee:gVKaCLE" resolve="SwitchStatement" />
@@ -524,7 +510,7 @@
                 <node concept="3NZdqj" id="I$iOOfI$sw" role="027rd">
                   <ref role="3NZdqm" node="4EhVFrYZwT9" resolve="eventParam" />
                   <node concept="214gnc" id="I$iOOfI$sx" role="3NZdqk">
-                    <ref role="2P$kNQ" node="4EhVFrYZOVI" resolve="sm2java" />
+                    <ref role="1YEVMl" node="5o5qH$CQKck" resolve="sm2java" />
                     <node concept="2OqwBi" id="I$iOOfI$sy" role="214sll">
                       <node concept="2155sH" id="I$iOOfI$sz" role="2Oq$k0">
                         <ref role="2155sG" node="I$iOOfI$s3" resolve="s" />
@@ -554,7 +540,7 @@
                 </node>
               </node>
               <node concept="214gnc" id="I$iOOfI$sG" role="2PWHRo">
-                <ref role="2P$kNQ" node="1cIlazwNNtM" resolve="transitionSwitchCase" />
+                <ref role="1YEVMl" node="1cIlazwNN$g" resolve="transitionSwitchCase" />
                 <node concept="214o7A" id="I$iOOfI$sH" role="214sll" />
               </node>
             </node>
@@ -584,7 +570,7 @@
     </node>
     <node concept="2OrE70" id="I$iOOfI$iF" role="02uzr" />
     <node concept="02vpq" id="I$iOOfIIcl" role="02uzr">
-      <ref role="2OrxuO" node="I$iOOfI$dw" resolve="transitions" />
+      <ref role="1YyVLo" node="5o5qH$CQKcu" resolve="transitions" />
       <node concept="026TG" id="I$iOOfIIhT" role="026TK">
         <node concept="027og" id="I$iOOfIIhX" role="026TJ">
           <ref role="02LMe" to="tpee:fzclF8n" resolve="IfStatement" />
@@ -618,7 +604,7 @@
                 </node>
               </node>
               <node concept="214gnc" id="I$iOOfIIVw" role="2PWHRo">
-                <ref role="2P$kNQ" node="I$iOOfIJCd" resolve="transitionsAsIf_elseIf" />
+                <ref role="1YEVMl" node="I$iOOfIJNZ" resolve="transitionsAsIf_elseIf" />
                 <node concept="214o7A" id="I$iOOfILal" role="214sll" />
               </node>
             </node>
@@ -649,21 +635,8 @@
       </node>
     </node>
     <node concept="2OrE70" id="I$iOOfII7y" role="02uzr" />
-    <node concept="2OrRyP" id="I$iOOfIJCd" role="02uzr">
-      <property role="TrG5h" value="transitionsAsIf_elseIf" />
-      <node concept="02i3K" id="I$iOOfIJI4" role="2OrRyY">
-        <node concept="02i3D" id="I$iOOfIJIc" role="02i2B">
-          <ref role="02i3$" to="tpee:hzeNFgq" resolve="ElsifClause" />
-        </node>
-      </node>
-      <node concept="02i3K" id="I$iOOfIJHO" role="2OrRyK">
-        <node concept="02i3D" id="I$iOOfIJHW" role="02i2B">
-          <ref role="02i3$" to="yb34:6ndA7L_L0uI" resolve="Transition" />
-        </node>
-      </node>
-    </node>
     <node concept="02vpq" id="I$iOOfIJNZ" role="02uzr">
-      <ref role="2OrxuO" node="I$iOOfIJCd" resolve="transitionsAsIf_elseIf" />
+      <property role="TrG5h" value="transitionsAsIf_elseIf" />
       <node concept="026TG" id="I$iOOfIJUq" role="026TK">
         <node concept="027og" id="I$iOOfIJUu" role="026TJ">
           <ref role="02LMe" to="tpee:hzeNFgq" resolve="ElsifClause" />
@@ -682,7 +655,7 @@
                 <node concept="3w_OXm" id="I$iOOfIL7q" role="2OqNvi" />
               </node>
               <node concept="214gnc" id="I$iOOfIL9l" role="3MbsX5">
-                <ref role="2P$kNQ" node="I$iOOfIIrE" resolve="eventCondition" />
+                <ref role="1YEVMl" node="I$iOOfIIA2" resolve="eventCondition" />
                 <node concept="2155sH" id="I$iOOfIL9w" role="214sll">
                   <ref role="2155sG" node="I$iOOfIJU6" resolve="t" />
                 </node>
@@ -692,7 +665,7 @@
                 <node concept="027rt" id="I$iOOfIL9B" role="02LM9">
                   <ref role="027rv" to="tpee:fJuHU4s" resolve="leftExpression" />
                   <node concept="214gnc" id="I$iOOfIL9F" role="027rp">
-                    <ref role="2P$kNQ" node="I$iOOfIIrE" resolve="eventCondition" />
+                    <ref role="1YEVMl" node="I$iOOfIIA2" resolve="eventCondition" />
                     <node concept="2155sH" id="I$iOOfIL9I" role="214sll">
                       <ref role="2155sG" node="I$iOOfIJU6" resolve="t" />
                     </node>
@@ -727,7 +700,7 @@
               <node concept="027rt" id="I$iOOfJ07p" role="02LM9">
                 <ref role="027rv" to="tpee:fzcqZ_x" resolve="statement" />
                 <node concept="214gnc" id="I$iOOfJ07t" role="027rp">
-                  <ref role="2P$kNQ" node="I$iOOfIZGi" resolve="transitionBody" />
+                  <ref role="1YEVMl" node="I$iOOfIZTr" resolve="transitionBody" />
                   <node concept="2155sH" id="I$iOOfJ07w" role="214sll">
                     <ref role="2155sG" node="I$iOOfIJU6" resolve="t" />
                   </node>
@@ -745,21 +718,8 @@
       </node>
     </node>
     <node concept="2OrE70" id="I$iOOfIJIk" role="02uzr" />
-    <node concept="2OrRyP" id="I$iOOfIIrE" role="02uzr">
-      <property role="TrG5h" value="eventCondition" />
-      <node concept="02i3K" id="I$iOOfIIwO" role="2OrRyY">
-        <node concept="02i3D" id="I$iOOfIIwW" role="02i2B">
-          <ref role="02i3$" to="tpee:fz3vP1J" resolve="Expression" />
-        </node>
-      </node>
-      <node concept="02i3K" id="I$iOOfIIw$" role="2OrRyK">
-        <node concept="02i3D" id="I$iOOfIL9o" role="02i2B">
-          <ref role="02i3$" to="yb34:6ndA7L_L0uI" resolve="Transition" />
-        </node>
-      </node>
-    </node>
     <node concept="02vpq" id="I$iOOfIIA2" role="02uzr">
-      <ref role="2OrxuO" node="I$iOOfIIrE" resolve="eventCondition" />
+      <property role="TrG5h" value="eventCondition" />
       <node concept="026TG" id="I$iOOfIIFL" role="026TK">
         <node concept="027og" id="I$iOOfIIFP" role="026TJ">
           <ref role="02LMe" to="tpee:fzclF8g" resolve="EqualsExpression" />
@@ -772,7 +732,7 @@
                 <node concept="3NZdqj" id="I$iOOfIIFY" role="027rd">
                   <ref role="3NZdqm" node="4EhVFrYZwT9" resolve="eventParam" />
                   <node concept="214gnc" id="I$iOOfIIFZ" role="3NZdqk">
-                    <ref role="2P$kNQ" node="4EhVFrYZOVI" resolve="sm2java" />
+                    <ref role="1YEVMl" node="5o5qH$CQKck" resolve="sm2java" />
                     <node concept="2OqwBi" id="I$iOOfIIG0" role="214sll">
                       <node concept="2155sH" id="I$iOOfIIG1" role="2Oq$k0">
                         <ref role="2155sG" node="I$iOOfIIFs" resolve="t" />
@@ -797,7 +757,7 @@
               <node concept="027ru" id="I$iOOfIIHx" role="02LM9">
                 <ref role="027ri" to="tpee:gDPx2zY" resolve="enumClass" />
                 <node concept="214gnc" id="I$iOOfIIHy" role="027rd">
-                  <ref role="2P$kNQ" node="1cIlazwNMC_" resolve="eventsEnumClass" />
+                  <ref role="1YEVMl" node="1cIlazwNMCl" resolve="eventsEnumClass" />
                   <node concept="2OqwBi" id="I$iOOfIIHz" role="214sll">
                     <node concept="2155sH" id="I$iOOfIINf" role="2Oq$k0">
                       <ref role="2155sG" node="I$iOOfIIFs" resolve="t" />
@@ -815,7 +775,7 @@
               <node concept="027ru" id="I$iOOfIIHC" role="02LM9">
                 <ref role="027ri" to="tpee:fKRm8Ja" resolve="enumConstantDeclaration" />
                 <node concept="214gnc" id="I$iOOfIIHD" role="027rd">
-                  <ref role="2P$kNQ" node="4EhVFrZ0a6M" resolve="enumConst" />
+                  <ref role="1YEVMl" node="5o5qH$CQKcR" resolve="enumConst" />
                   <node concept="2OqwBi" id="I$iOOfIIHE" role="214sll">
                     <node concept="2155sH" id="I$iOOfIIPI" role="2Oq$k0">
                       <ref role="2155sG" node="I$iOOfIIFs" resolve="t" />
@@ -838,22 +798,8 @@
       </node>
     </node>
     <node concept="2OrE70" id="I$iOOfIIx4" role="02uzr" />
-    <node concept="2OrRyP" id="1cIlazwNNtM" role="02uzr">
-      <property role="TrG5h" value="transitionSwitchCase" />
-      <node concept="02i3K" id="1cIlazwNNx7" role="2OrRyY">
-        <node concept="02i3D" id="1cIlazwNNDs" role="02i2B">
-          <ref role="02i3$" to="tpee:gVKbdOr" resolve="SwitchCase" />
-        </node>
-      </node>
-      <node concept="02i3K" id="1cIlazwO6Cj" role="2OrRyK">
-        <property role="TrG5h" value="t" />
-        <node concept="02i3D" id="1cIlazwO6Ck" role="02i2B">
-          <ref role="02i3$" to="yb34:6ndA7L_L0uI" resolve="Transition" />
-        </node>
-      </node>
-    </node>
     <node concept="02vpq" id="1cIlazwNN$g" role="02uzr">
-      <ref role="2OrxuO" node="1cIlazwNNtM" resolve="transitionSwitchCase" />
+      <property role="TrG5h" value="transitionSwitchCase" />
       <node concept="026TG" id="1cIlazwNNC4" role="026TK">
         <node concept="027og" id="1cIlazwNND$" role="026TJ">
           <ref role="02LMe" to="tpee:gVKbdOr" resolve="SwitchCase" />
@@ -864,7 +810,7 @@
               <node concept="027ru" id="1cIlazwNOw4" role="02LM9">
                 <ref role="027ri" to="tpee:gDPx2zY" resolve="enumClass" />
                 <node concept="214gnc" id="1cIlazwNOw5" role="027rd">
-                  <ref role="2P$kNQ" node="1cIlazwNMC_" resolve="eventsEnumClass" />
+                  <ref role="1YEVMl" node="1cIlazwNMCl" resolve="eventsEnumClass" />
                   <node concept="2OqwBi" id="1cIlazwOBLD" role="214sll">
                     <node concept="2155sH" id="1cIlazwOBE_" role="2Oq$k0">
                       <ref role="2155sG" node="1cIlazwNNBM" resolve="t" />
@@ -882,7 +828,7 @@
               <node concept="027ru" id="1cIlazwNOw7" role="02LM9">
                 <ref role="027ri" to="tpee:fKRm8Ja" resolve="enumConstantDeclaration" />
                 <node concept="214gnc" id="1cIlazwNOw8" role="027rd">
-                  <ref role="2P$kNQ" node="4EhVFrZ0a6M" resolve="enumConst" />
+                  <ref role="1YEVMl" node="5o5qH$CQKcR" resolve="enumConst" />
                   <node concept="2OqwBi" id="1cIlazwNOEx" role="214sll">
                     <node concept="2155sH" id="1cIlazwNOzt" role="2Oq$k0">
                       <ref role="2155sG" node="1cIlazwNNBM" resolve="t" />
@@ -902,7 +848,7 @@
               <node concept="027rt" id="1cIlazwNORW" role="02LM9">
                 <ref role="027rv" to="tpee:fzcqZ_x" resolve="statement" />
                 <node concept="214gnc" id="I$iOOfJ04h" role="027rp">
-                  <ref role="2P$kNQ" node="I$iOOfIZGi" resolve="transitionBody" />
+                  <ref role="1YEVMl" node="I$iOOfIZTr" resolve="transitionBody" />
                   <node concept="2155sH" id="I$iOOfJ06_" role="214sll">
                     <ref role="2155sG" node="1cIlazwNNBM" resolve="t" />
                   </node>
@@ -926,22 +872,8 @@
       </node>
     </node>
     <node concept="2OrE70" id="1cIlazwNNxn" role="02uzr" />
-    <node concept="2OrRyP" id="I$iOOfIZGi" role="02uzr">
-      <property role="TrG5h" value="transitionBody" />
-      <node concept="02i3K" id="I$iOOfIZML" role="2OrRyY">
-        <node concept="02i3D" id="I$iOOfIZMT" role="02i2B">
-          <ref role="02i3$" to="tpee:fzclF8j" resolve="ExpressionStatement" />
-        </node>
-      </node>
-      <node concept="02i3K" id="I$iOOfIZMs" role="2OrRyK">
-        <property role="TrG5h" value="t" />
-        <node concept="02i3D" id="I$iOOfIZM$" role="02i2B">
-          <ref role="02i3$" to="yb34:6ndA7L_L0uI" resolve="Transition" />
-        </node>
-      </node>
-    </node>
     <node concept="02vpq" id="I$iOOfIZTr" role="02uzr">
-      <ref role="2OrxuO" node="I$iOOfIZGi" resolve="transitionBody" />
+      <property role="TrG5h" value="transitionBody" />
       <node concept="026TG" id="I$iOOfJ00t" role="026TK">
         <node concept="027og" id="I$iOOfJ00x" role="026TJ">
           <ref role="02LMe" to="tpee:fzclF8j" resolve="ExpressionStatement" />
@@ -958,7 +890,7 @@
                     <node concept="3NZdqj" id="I$iOOfJ00B" role="027rd">
                       <ref role="3NZdqm" node="1cIlazwNOv0" resolve="currentStateField" />
                       <node concept="214gnc" id="I$iOOfJ00C" role="3NZdqk">
-                        <ref role="2P$kNQ" node="4EhVFrYZOVI" resolve="sm2java" />
+                        <ref role="1YEVMl" node="5o5qH$CQKck" resolve="sm2java" />
                         <node concept="2OqwBi" id="I$iOOfJ00D" role="214sll">
                           <node concept="2155sH" id="I$iOOfJ00E" role="2Oq$k0">
                             <ref role="2155sG" node="I$iOOfJ008" resolve="t" />
@@ -983,7 +915,7 @@
                   <node concept="027ru" id="I$iOOfJ00K" role="02LM9">
                     <ref role="027ri" to="tpee:gDPx2zY" resolve="enumClass" />
                     <node concept="214gnc" id="I$iOOfJ00L" role="027rd">
-                      <ref role="2P$kNQ" node="1cIlazwNMr7" resolve="stateEnumClass" />
+                      <ref role="1YEVMl" node="1cIlazwNMvD" resolve="stateEnumClass" />
                       <node concept="2OqwBi" id="I$iOOfJ00M" role="214sll">
                         <node concept="2155sH" id="I$iOOfJ00N" role="2Oq$k0">
                           <ref role="2155sG" node="I$iOOfJ008" resolve="t" />
@@ -1001,7 +933,7 @@
                   <node concept="027ru" id="I$iOOfJ00R" role="02LM9">
                     <ref role="027ri" to="tpee:fKRm8Ja" resolve="enumConstantDeclaration" />
                     <node concept="214gnc" id="I$iOOfJ00S" role="027rd">
-                      <ref role="2P$kNQ" node="4EhVFrZ0a6M" resolve="enumConst" />
+                      <ref role="1YEVMl" node="5o5qH$CQKcR" resolve="enumConst" />
                       <node concept="2OqwBi" id="I$iOOfJ00T" role="214sll">
                         <node concept="2155sH" id="I$iOOfJ00U" role="2Oq$k0">
                           <ref role="2155sG" node="I$iOOfJ008" resolve="t" />
@@ -1026,21 +958,22 @@
       </node>
     </node>
     <node concept="2OrE70" id="I$iOOfIZNd" role="02uzr" />
-    <node concept="2OrRyP" id="4EhVFrZ0a6M" role="02uzr">
+    <node concept="02vpq" id="5o5qH$CQKcR" role="02uzr">
       <property role="TrG5h" value="enumConst" />
-      <node concept="02i3K" id="4EhVFrZ0a8K" role="2OrRyK">
-        <node concept="02i3D" id="4EhVFrZ0a8S" role="02i2B">
+      <property role="1YBnZf" value="true" />
+      <node concept="02i3K" id="5o5qH$CQKcS" role="02i3f">
+        <node concept="02i3D" id="5o5qH$CQKcT" role="02i2B">
           <ref role="02i3$" to="tpck:gw2VY9q" resolve="BaseConcept" />
         </node>
       </node>
-      <node concept="02i3K" id="4EhVFrZ0a8w" role="2OrRyY">
-        <node concept="02i3D" id="4EhVFrZ0a8C" role="02i2B">
-          <ref role="02i3$" to="tpee:fKQsSyN" resolve="EnumConstantDeclaration" />
+      <node concept="026TG" id="5o5qH$CQKcU" role="026TK">
+        <node concept="027og" id="5o5qH$CQKcV" role="026TJ">
+          <ref role="02LMe" to="tpee:fKQsSyN" resolve="EnumConstantDeclaration" />
         </node>
       </node>
     </node>
     <node concept="02vpq" id="7X4ppfYlfKR" role="02uzr">
-      <ref role="2OrxuO" node="4EhVFrZ0a6M" resolve="enumConst" />
+      <ref role="1YyVLo" node="5o5qH$CQKcR" resolve="enumConst" />
       <node concept="02i3K" id="7X4ppfYlfLx" role="02i3f">
         <node concept="02i3D" id="7X4ppfYlfLD" role="02i2B">
           <ref role="02i3$" to="yb34:6ndA7L_L0uJ" resolve="Event" />
@@ -1064,7 +997,7 @@
       </node>
     </node>
     <node concept="02vpq" id="7X4ppfYl3sU" role="02uzr">
-      <ref role="2OrxuO" node="4EhVFrZ0a6M" resolve="enumConst" />
+      <ref role="1YyVLo" node="5o5qH$CQKcR" resolve="enumConst" />
       <node concept="026TG" id="7X4ppfYlpWI" role="026TK">
         <node concept="027og" id="7X4ppfYlpWJ" role="026TJ">
           <ref role="02LMe" to="tpee:fKQsSyN" resolve="EnumConstantDeclaration" />
@@ -1088,21 +1021,8 @@
       </node>
     </node>
     <node concept="2OrE70" id="1cIlazwNMis" role="02uzr" />
-    <node concept="2OrRyP" id="1cIlazwNMr7" role="02uzr">
-      <property role="TrG5h" value="stateEnumClass" />
-      <node concept="02i3K" id="1cIlazwNMya" role="2OrRyK">
-        <node concept="02i3D" id="1cIlazwNMyi" role="02i2B">
-          <ref role="02i3$" to="yb34:6ndA7L_L0uE" resolve="Statemachine" />
-        </node>
-      </node>
-      <node concept="02i3K" id="1cIlazwNMyq" role="2OrRyY">
-        <node concept="02i3D" id="1cIlazwNMyy" role="02i2B">
-          <ref role="02i3$" to="tpee:fKQs72_" resolve="EnumClass" />
-        </node>
-      </node>
-    </node>
     <node concept="02vpq" id="1cIlazwNMvD" role="02uzr">
-      <ref role="2OrxuO" node="1cIlazwNMr7" resolve="stateEnumClass" />
+      <property role="TrG5h" value="stateEnumClass" />
       <node concept="02i3K" id="1cIlazwNM_t" role="02i3f">
         <node concept="02i3D" id="1cIlazwNM_C" role="02i2B">
           <ref role="02i3$" to="yb34:6ndA7L_L0uE" resolve="Statemachine" />
@@ -1135,7 +1055,7 @@
                 </node>
               </node>
               <node concept="214gnc" id="1cIlazwNMyS" role="2PWHRo">
-                <ref role="2P$kNQ" node="4EhVFrZ0a6M" resolve="enumConst" />
+                <ref role="1YEVMl" node="5o5qH$CQKcR" resolve="enumConst" />
                 <node concept="214o7A" id="1cIlazwNMyT" role="214sll" />
               </node>
             </node>
@@ -1144,21 +1064,8 @@
       </node>
     </node>
     <node concept="2OrE70" id="1cIlazwNMto" role="02uzr" />
-    <node concept="2OrRyP" id="1cIlazwNMC_" role="02uzr">
-      <property role="TrG5h" value="eventsEnumClass" />
-      <node concept="02i3K" id="1cIlazwNMCA" role="2OrRyK">
-        <node concept="02i3D" id="1cIlazwNMCB" role="02i2B">
-          <ref role="02i3$" to="yb34:6ndA7L_L0uE" resolve="Statemachine" />
-        </node>
-      </node>
-      <node concept="02i3K" id="1cIlazwNMCC" role="2OrRyY">
-        <node concept="02i3D" id="1cIlazwNMCD" role="02i2B">
-          <ref role="02i3$" to="tpee:fKQs72_" resolve="EnumClass" />
-        </node>
-      </node>
-    </node>
     <node concept="02vpq" id="1cIlazwNMCl" role="02uzr">
-      <ref role="2OrxuO" node="1cIlazwNMC_" resolve="eventsEnumClass" />
+      <property role="TrG5h" value="eventsEnumClass" />
       <node concept="02i3K" id="1cIlazwNMCm" role="02i3f">
         <node concept="02i3D" id="1cIlazwNMCn" role="02i2B">
           <ref role="02i3$" to="yb34:6ndA7L_L0uE" resolve="Statemachine" />
@@ -1191,7 +1098,7 @@
                 </node>
               </node>
               <node concept="214gnc" id="1cIlazwNMCz" role="2PWHRo">
-                <ref role="2P$kNQ" node="4EhVFrZ0a6M" resolve="enumConst" />
+                <ref role="1YEVMl" node="5o5qH$CQKcR" resolve="enumConst" />
                 <node concept="214o7A" id="1cIlazwNMC$" role="214sll" />
               </node>
             </node>
@@ -1208,13 +1115,13 @@
         </node>
       </node>
       <node concept="214gnc" id="7WfC1hyC83o" role="t$Kt7">
-        <ref role="2P$kNQ" node="1cIlazwNMr7" resolve="stateEnumClass" />
+        <ref role="1YEVMl" node="1cIlazwNMvD" resolve="stateEnumClass" />
         <node concept="tF$1r" id="7WfC1hyDgL2" role="214sll">
           <ref role="tF$1e" node="7WfC1hyCVCD" resolve="sm" />
         </node>
       </node>
       <node concept="214gnc" id="7WfC1hyC83q" role="t$Kt0">
-        <ref role="2P$kNQ" node="4EhVFrYZOVI" resolve="sm2java" />
+        <ref role="1YEVMl" node="5o5qH$CQKck" resolve="sm2java" />
         <node concept="tF$1r" id="7WfC1hyDgL6" role="214sll">
           <ref role="tF$1e" node="7WfC1hyCVCD" resolve="sm" />
         </node>
@@ -1228,13 +1135,13 @@
         </node>
       </node>
       <node concept="214gnc" id="7WfC1hyDIfp" role="t$Kt7">
-        <ref role="2P$kNQ" node="1cIlazwNMC_" resolve="eventsEnumClass" />
+        <ref role="1YEVMl" node="1cIlazwNMCl" resolve="eventsEnumClass" />
         <node concept="tF$1r" id="7WfC1hyDIfq" role="214sll">
           <ref role="tF$1e" node="7WfC1hyDIfo" resolve="sm" />
         </node>
       </node>
       <node concept="214gnc" id="7WfC1hyDIfr" role="t$Kt0">
-        <ref role="2P$kNQ" node="4EhVFrYZOVI" resolve="sm2java" />
+        <ref role="1YEVMl" node="5o5qH$CQKck" resolve="sm2java" />
         <node concept="tF$1r" id="7WfC1hyDIfs" role="214sll">
           <ref role="tF$1e" node="7WfC1hyDIfo" resolve="sm" />
         </node>
@@ -1248,7 +1155,7 @@
         </node>
       </node>
       <node concept="214gnc" id="7WfC1hyXDNE" role="t$Kt7">
-        <ref role="2P$kNQ" node="4EhVFrYZOVI" resolve="sm2java" />
+        <ref role="1YEVMl" node="5o5qH$CQKck" resolve="sm2java" />
         <node concept="tF$1r" id="7WfC1hyXDUF" role="214sll">
           <ref role="tF$1e" node="7WfC1hyXDUu" resolve="sm" />
         </node>
@@ -1262,13 +1169,13 @@
         </node>
       </node>
       <node concept="214gnc" id="7WfC1hyXHSf" role="t$Kt7">
-        <ref role="2P$kNQ" node="4EhVFrZ0a6M" resolve="enumConst" />
+        <ref role="1YEVMl" node="5o5qH$CQKcR" resolve="enumConst" />
         <node concept="tF$1r" id="7WfC1hyXHSg" role="214sll">
           <ref role="tF$1e" node="7WfC1hyXHSd" resolve="state" />
         </node>
       </node>
       <node concept="214gnc" id="7WfC1hyXI0C" role="t$Kt0">
-        <ref role="2P$kNQ" node="1cIlazwNMr7" resolve="stateEnumClass" />
+        <ref role="1YEVMl" node="1cIlazwNMvD" resolve="stateEnumClass" />
         <node concept="2OqwBi" id="7WfC1hyXIb5" role="214sll">
           <node concept="tF$1r" id="7WfC1hyXI0D" role="2Oq$k0">
             <ref role="tF$1e" node="7WfC1hyXHSd" resolve="state" />
@@ -1291,13 +1198,13 @@
         </node>
       </node>
       <node concept="214gnc" id="7WfC1hyY83f" role="t$Kt7">
-        <ref role="2P$kNQ" node="4EhVFrZ0a6M" resolve="enumConst" />
+        <ref role="1YEVMl" node="5o5qH$CQKcR" resolve="enumConst" />
         <node concept="tF$1r" id="7WfC1hyY83g" role="214sll">
           <ref role="tF$1e" node="7WfC1hyY83d" resolve="event" />
         </node>
       </node>
       <node concept="214gnc" id="7WfC1hyY83h" role="t$Kt0">
-        <ref role="2P$kNQ" node="1cIlazwNMC_" resolve="eventsEnumClass" />
+        <ref role="1YEVMl" node="1cIlazwNMCl" resolve="eventsEnumClass" />
         <node concept="2OqwBi" id="7WfC1hyY83i" role="214sll">
           <node concept="tF$1r" id="7WfC1hyY83j" role="2Oq$k0">
             <ref role="tF$1e" node="7WfC1hyY83d" resolve="event" />
@@ -1318,7 +1225,7 @@
     <property role="TrG5h" value="Repository" />
     <node concept="02vpq" id="7YhLqbpfO9B" role="02uzr">
       <property role="2$mnfv" value="true" />
-      <ref role="2OrxuO" to="jwvb:7YhLqbpfNze" resolve="$RepositoryModule" />
+      <ref role="1YyVLo" to="jwvb:7YhLqbpfNME" resolve="$Repository" />
       <node concept="026TG" id="7YhLqbpfOYD" role="026TK">
         <node concept="027og" id="7YhLqbpfOYJ" role="026TJ">
           <ref role="02LMe" to="dj5d:qmkA5fOskm" resolve="Repository" />
@@ -1409,7 +1316,7 @@
                     </node>
                   </node>
                   <node concept="214gnc" id="7YhLqbpfPdi" role="2PWHRo">
-                    <ref role="2P$kNQ" node="7YhLqbpfsI1" resolve="smOutputModel" />
+                    <ref role="1YEVMl" node="7YhLqbpfsMH" resolve="smOutputModel" />
                     <node concept="214o7A" id="7YhLqbpfPdj" role="214sll" />
                   </node>
                 </node>
@@ -1425,21 +1332,8 @@
       </node>
     </node>
     <node concept="2OrE70" id="7YhLqbpfNV3" role="02uzr" />
-    <node concept="2OrRyP" id="7YhLqbpfsI1" role="02uzr">
-      <property role="TrG5h" value="smOutputModel" />
-      <node concept="02i3K" id="7YhLqbpfsRG" role="2OrRyY">
-        <node concept="02i3D" id="7YhLqbpfsRQ" role="02i2B">
-          <ref role="02i3$" to="dj5d:qmkA5fOskc" resolve="Model" />
-        </node>
-      </node>
-      <node concept="02i3K" id="7YhLqbpfsRp" role="2OrRyK">
-        <node concept="02i3D" id="7YhLqbpfsRz" role="02i2B">
-          <ref role="02i3$" to="dj5d:qmkA5fOskc" resolve="Model" />
-        </node>
-      </node>
-    </node>
     <node concept="02vpq" id="7YhLqbpfsMH" role="02uzr">
-      <ref role="2OrxuO" node="7YhLqbpfsI1" resolve="smOutputModel" />
+      <property role="TrG5h" value="smOutputModel" />
       <node concept="026TG" id="7YhLqbpfsWs" role="026TK">
         <node concept="027og" id="7YhLqbpfsWy" role="026TJ">
           <ref role="02LMe" to="dj5d:qmkA5fOskc" resolve="Model" />
@@ -1474,7 +1368,7 @@
                 </node>
               </node>
               <node concept="214gnc" id="7YhLqbpfGar" role="2PWHRo">
-                <ref role="2P$kNQ" node="4EhVFrYZOVI" resolve="sm2java" />
+                <ref role="1YEVMl" node="5o5qH$CQKck" resolve="sm2java" />
                 <node concept="214o7A" id="7YhLqbpfKWy" role="214sll" />
               </node>
             </node>

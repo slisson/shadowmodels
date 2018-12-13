@@ -20922,7 +20922,7 @@
                   </node>
                 </node>
                 <node concept="Xl_RD" id="3vsFnFUNT4o" role="37wK5m">
-                  <property role="Xl_RC" value="de.q60.mps.shadowmodels.repository.transformations.Repository.$RepositoryModule" />
+                  <property role="Xl_RC" value="de.q60.mps.shadowmodels.repository.transformations.Repository.$Repository" />
                 </node>
               </node>
             </node>

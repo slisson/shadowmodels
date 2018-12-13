@@ -14,11 +14,17 @@
       <concept id="7335687028107118510" name="de.q60.mps.shadowmodels.examples.statemachine.structure.Transition" flags="ng" index="02pZi">
         <reference id="7335687028107121068" name="target" index="02oBg" />
         <reference id="7335687028107121064" name="event" index="02oBk" />
+        <child id="7335687028107121092" name="guard" index="02oAS" />
       </concept>
       <concept id="7335687028107118511" name="de.q60.mps.shadowmodels.examples.statemachine.structure.Event" flags="ng" index="02pZj" />
       <concept id="7335687028107118506" name="de.q60.mps.shadowmodels.examples.statemachine.structure.Statemachine" flags="ng" index="02pZm">
         <child id="7335687028107119098" name="states" index="02p66" />
         <child id="7335687028107118517" name="events" index="02pZ9" />
+      </concept>
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -47,6 +53,9 @@
       <node concept="02pZi" id="6ndA7L_L2GB" role="02pZb">
         <ref role="02oBk" node="6ndA7L_L0QC" resolve="backward" />
         <ref role="02oBg" node="6ndA7L_L0QO" resolve="s3" />
+        <node concept="3clFbT" id="5o5qH$CzHpR" role="02oAS">
+          <property role="3clFbU" value="true" />
+        </node>
       </node>
       <node concept="02pZi" id="6ndA7L_L2GG" role="02pZb">
         <ref role="02oBg" node="6ndA7L_L0QJ" resolve="s1" />

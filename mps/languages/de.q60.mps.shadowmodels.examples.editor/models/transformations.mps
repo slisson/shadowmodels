@@ -6,8 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="6ysr" ref="r:a73fc1f5-45e8-4482-83d8-21741e260fa8(de.q60.mps.shadowmodels.target.editor.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="6ysr" ref="r:a73fc1f5-45e8-4482-83d8-21741e260fa8(de.q60.mps.shadowmodels.target.editor.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -52,24 +52,21 @@
       <concept id="7335687028107163788" name="de.q60.mps.shadowmodels.transformation.structure.TransformationParameter" flags="ng" index="02i3K">
         <child id="7335687028107163867" name="type" index="02i2B" />
       </concept>
-      <concept id="7335687028107144200" name="de.q60.mps.shadowmodels.transformation.structure.TransformationsModule" flags="ng" index="02vhO">
+      <concept id="7335687028107144200" name="de.q60.mps.shadowmodels.transformation.structure.TransformationsNamespace" flags="ng" index="02vhO">
         <child id="7335687028107145383" name="content" index="02uzr" />
       </concept>
       <concept id="7335687028107144742" name="de.q60.mps.shadowmodels.transformation.structure.TransformationImplementation" flags="ng" index="02vpq">
-        <reference id="5373338300159359234" name="interface" index="2OrxuO" />
+        <property id="6198477943066858774" name="isAbstract" index="1YBnZf" />
+        <reference id="6198477943066252929" name="overrides" index="1YyVLo" />
         <child id="7335687028107245068" name="output" index="026TK" />
         <child id="7335687028107163827" name="input" index="02i3f" />
       </concept>
       <concept id="9170566427534778463" name="de.q60.mps.shadowmodels.transformation.structure.TransformationCall" flags="ng" index="214gnc">
-        <reference id="5373338300159402560" name="transformation" index="2P$kNQ" />
+        <reference id="6198477943068350028" name="transformation" index="1YEVMl" />
         <child id="9170566427534794950" name="parameterValues" index="214sll" />
       </concept>
       <concept id="9170566427534812277" name="de.q60.mps.shadowmodels.transformation.structure.ContextNodeExpression" flags="ng" index="214o7A" />
       <concept id="5373338300159315830" name="de.q60.mps.shadowmodels.transformation.structure.EmptyLine" flags="ng" index="2OrE70" />
-      <concept id="5373338300159268355" name="de.q60.mps.shadowmodels.transformation.structure.TransformationInterface" flags="ng" index="2OrRyP">
-        <child id="5373338300159268358" name="input" index="2OrRyK" />
-        <child id="5373338300159268360" name="output" index="2OrRyY" />
-      </concept>
       <concept id="5373338300165862249" name="de.q60.mps.shadowmodels.transformation.structure.MapMacro" flags="ng" index="2PWHRv">
         <child id="5373338300165862254" name="call" index="2PWHRo" />
         <child id="5373338300165862252" name="input" index="2PWHRq" />
@@ -96,22 +93,23 @@
   <node concept="02vhO" id="3CYlK6yhOu6">
     <property role="TrG5h" value="renderClass" />
     <node concept="2OrE70" id="3CYlK6yhOu7" role="02uzr" />
-    <node concept="2OrRyP" id="3CYlK6yhOug" role="02uzr">
+    <node concept="02vpq" id="5o5qH$CQKdJ" role="02uzr">
       <property role="TrG5h" value="render" />
-      <node concept="02i3K" id="3CYlK6yhOu_" role="2OrRyY">
-        <node concept="02i3D" id="3CYlK6yhOuH" role="02i2B">
-          <ref role="02i3$" to="6ysr:3CYlK6ygFvR" resolve="ICell" />
+      <property role="1YBnZf" value="true" />
+      <node concept="02i3K" id="5o5qH$CQKdK" role="02i3f">
+        <node concept="02i3D" id="5o5qH$CQKdL" role="02i2B">
+          <ref role="02i3$" to="tpck:gw2VY9q" resolve="BaseConcept" />
         </node>
       </node>
-      <node concept="02i3K" id="3CYlK6yhOul" role="2OrRyK">
-        <node concept="02i3D" id="3CYlK6yhOut" role="02i2B">
-          <ref role="02i3$" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      <node concept="026TG" id="5o5qH$CQKdM" role="026TK">
+        <node concept="027og" id="5o5qH$CQKdN" role="026TJ">
+          <ref role="02LMe" to="6ysr:3CYlK6ygFvR" resolve="ICell" />
         </node>
       </node>
     </node>
     <node concept="2OrE70" id="3CYlK6yhOuc" role="02uzr" />
     <node concept="02vpq" id="3CYlK6yhOvk" role="02uzr">
-      <ref role="2OrxuO" node="3CYlK6yhOug" resolve="render" />
+      <ref role="1YyVLo" node="5o5qH$CQKdJ" resolve="render" />
       <node concept="02i3K" id="3CYlK6yhOvz" role="02i3f">
         <node concept="02i3D" id="3CYlK6yhOvF" role="02i2B">
           <ref role="02i3$" to="tpee:fz12cDA" resolve="ClassConcept" />
@@ -169,7 +167,7 @@
                 </node>
               </node>
               <node concept="214gnc" id="3CYlK6yhPKl" role="2PWHRo">
-                <ref role="2P$kNQ" node="3CYlK6yhOug" resolve="render" />
+                <ref role="1YEVMl" node="5o5qH$CQKdJ" resolve="render" />
                 <node concept="214o7A" id="3CYlK6yhRiU" role="214sll" />
               </node>
             </node>
@@ -191,7 +189,7 @@
     </node>
     <node concept="2OrE70" id="3CYlK6yicOu" role="02uzr" />
     <node concept="02vpq" id="3CYlK6yicyY" role="02uzr">
-      <ref role="2OrxuO" node="3CYlK6yhOug" resolve="render" />
+      <ref role="1YyVLo" node="5o5qH$CQKdJ" resolve="render" />
       <node concept="02i3K" id="3CYlK6yicyZ" role="02i3f">
         <node concept="02i3D" id="3CYlK6yicIU" role="02i2B">
           <ref role="02i3$" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
@@ -254,7 +252,7 @@
           <node concept="027rt" id="3CYlK6yiczh" role="02LM9">
             <ref role="027rv" to="6ysr:3CYlK6yhHqM" resolve="childCells" />
             <node concept="214gnc" id="3CYlK6yidRY" role="027rp">
-              <ref role="2P$kNQ" node="3CYlK6yhOug" resolve="render" />
+              <ref role="1YEVMl" node="5o5qH$CQKdJ" resolve="render" />
               <node concept="2OqwBi" id="3CYlK6yief7" role="214sll">
                 <node concept="214o7A" id="3CYlK6yidS1" role="2Oq$k0" />
                 <node concept="3TrEf2" id="3CYlK6yieUN" role="2OqNvi">
@@ -281,7 +279,7 @@
     <node concept="2OrE70" id="3CYlK6yhOva" role="02uzr" />
     <node concept="2OrE70" id="3CYlK6yictb" role="02uzr" />
     <node concept="02vpq" id="3CYlK6yhRul" role="02uzr">
-      <ref role="2OrxuO" node="3CYlK6yhOug" resolve="render" />
+      <ref role="1YyVLo" node="5o5qH$CQKdJ" resolve="render" />
       <node concept="026TG" id="3CYlK6yhRve" role="026TK">
         <node concept="027og" id="3CYlK6yhRvn" role="026TJ">
           <ref role="02LMe" to="6ysr:3CYlK6yi7i5" resolve="ErrorCell" />

@@ -49,7 +49,7 @@
     <dependency reexport="false">0bf7bc3b-b11d-42e4-b160-93d72af96397(de.q60.mps.shadowmodels.runtimelang)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:94b64715-a263-4c36-a138-8da14705ffa7:de.q60.mps.shadowmodel.transformation" version="0" />
+    <language slang="l:94b64715-a263-4c36-a138-8da14705ffa7:de.q60.mps.shadowmodels.transformation" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />

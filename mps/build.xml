@@ -1229,7 +1229,6 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" targetJavaVersion="1.8" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
-      <plugin path="${artifacts.mps}/plugins/jetpad" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <plugin path="${artifacts.mps}/plugins/mps-trove" />
@@ -1243,7 +1242,6 @@
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.javadoc.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk8.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
@@ -1310,20 +1308,16 @@
       <library file="${artifacts.mps}/lib/mps-collections.jar" />
       <library file="${artifacts.mps}/lib/mps-core.jar" />
       <library file="${artifacts.mps}/lib/mps-editor.jar" />
-      <library file="${artifacts.mps}/lib/mps-environment.jar" />
       <library file="${artifacts.mps}/lib/mps-openapi.jar" />
       <library file="${artifacts.mps}/lib/mps-platform.jar" />
       <library file="${artifacts.mps}/lib/mps-references.jar" />
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
-      <library file="${artifacts.mps}/plugins/diagramEditor/languages/jetbrains.mps.lang.editor.diagram.jar" />
-      <library file="${artifacts.mps}/plugins/diagramEditor/languages/jetbrains.mps.lang.editor.diagram.runtime.jar" />
-      <library file="${artifacts.mps}/plugins/diagramEditor/languages/jetbrains.mps.lang.editor.figures.jar" />
-      <library file="${artifacts.mps}/plugins/jetpad/languages/jetpad/jetbrains.jetpad.jar" />
       <library file="${artifacts.mps}/plugins/mps-trove/languages/collections_trove.runtime.jar" />
       <chunk>
         <module file="${basedir}/languages/de.q60.mps.polymorphicfunctions/de.q60.mps.polymorphicfunctions.mpl" />
         <module file="${basedir}/solutions/de.q60.mps.polymorphicfunctions.runtime/de.q60.mps.polymorphicfunctions.runtime.msd" />
+        <module file="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/de.q60.mps.shadowmodels.examples.input.msd" />
         <module file="${basedir}/solutions/de.q60.mps.shadowmodels.genplan/de.q60.mps.shadowmodels.genplan.msd" />
         <module file="${basedir}/languages/de.q60.mps.shadowmodels.runtimelang/de.q60.mps.shadowmodels.runtimelang.mpl" />
         <module file="${basedir}/languages/de.q60.mps.shadowmodels.target.editor/de.q60.mps.shadowmodels.target.editor.mpl" />
@@ -1342,9 +1336,6 @@
         <module file="${basedir}/languages/de.q60.mps.shadowmodels.examples.expressions/de.q60.mps.shadowmodels.examples.expressions.mpl" />
         <module file="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/de.q60.mps.shadowmodels.examples.statemachine.mpl" />
         <module file="${basedir}/languages/de.q60.mps.shadowmodels.repository/de.q60.mps.shadowmodels.repository.mpl" />
-      </chunk>
-      <chunk>
-        <module file="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/de.q60.mps.shadowmodels.examples.input.msd" />
       </chunk>
       <jvmargs>
         <arg value="-Xmx512m" />
@@ -1898,12 +1889,9 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-        <fileset file="${artifacts.mps}/plugins/diagramEditor/languages/jetbrains.mps.lang.editor.diagram.jar" />
-        <fileset file="${artifacts.mps}/plugins/diagramEditor/languages/jetbrains.mps.lang.editor.figures.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
@@ -1957,7 +1945,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor-generator.jar" />
-        <fileset file="${artifacts.mps}/plugins/diagramEditor/languages/jetbrains.mps.lang.editor.diagram-generator.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
@@ -2646,6 +2633,7 @@
     <delete dir="${basedir}/languages/de.q60.mps.polymorphicfunctions/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.polymorphicfunctions/generator/source_gen" />
     <delete dir="${basedir}/solutions/de.q60.mps.polymorphicfunctions.runtime/source_gen" />
+    <delete dir="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/source_gen" />
     <delete dir="${basedir}/solutions/de.q60.mps.shadowmodels.genplan/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.runtimelang/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.runtimelang/generator/source_gen" />
@@ -2670,6 +2658,5 @@
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.examples.statemachine/generator/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.repository/source_gen" />
     <delete dir="${basedir}/languages/de.q60.mps.shadowmodels.repository/generator/source_gen" />
-    <delete dir="${basedir}/solutions/de.q60.mps.shadowmodels.examples.input/source_gen" />
   </target>
 </project>

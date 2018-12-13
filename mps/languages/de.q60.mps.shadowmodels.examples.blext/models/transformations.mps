@@ -71,17 +71,18 @@
       <concept id="7335687028107163788" name="de.q60.mps.shadowmodels.transformation.structure.TransformationParameter" flags="ng" index="02i3K">
         <child id="7335687028107163867" name="type" index="02i2B" />
       </concept>
-      <concept id="7335687028107144200" name="de.q60.mps.shadowmodels.transformation.structure.TransformationsModule" flags="ng" index="02vhO">
+      <concept id="7335687028107144200" name="de.q60.mps.shadowmodels.transformation.structure.TransformationsNamespace" flags="ng" index="02vhO">
         <child id="7335687028107145383" name="content" index="02uzr" />
       </concept>
       <concept id="7335687028107144742" name="de.q60.mps.shadowmodels.transformation.structure.TransformationImplementation" flags="ng" index="02vpq">
         <property id="1068767335609562597" name="contribution" index="2$mnfv" />
-        <reference id="5373338300159359234" name="interface" index="2OrxuO" />
+        <property id="6198477943066858774" name="isAbstract" index="1YBnZf" />
+        <reference id="6198477943066252929" name="overrides" index="1YyVLo" />
         <child id="7335687028107245068" name="output" index="026TK" />
         <child id="7335687028107163827" name="input" index="02i3f" />
       </concept>
       <concept id="9170566427534778463" name="de.q60.mps.shadowmodels.transformation.structure.TransformationCall" flags="ng" index="214gnc">
-        <reference id="5373338300159402560" name="transformation" index="2P$kNQ" />
+        <reference id="6198477943068350028" name="transformation" index="1YEVMl" />
         <child id="9170566427534794950" name="parameterValues" index="214sll" />
       </concept>
       <concept id="9170566427534812277" name="de.q60.mps.shadowmodels.transformation.structure.ContextNodeExpression" flags="ng" index="214o7A" />
@@ -95,16 +96,12 @@
         <reference id="5373338300159158248" name="label" index="2Org_u" />
       </concept>
       <concept id="5373338300159315830" name="de.q60.mps.shadowmodels.transformation.structure.EmptyLine" flags="ng" index="2OrE70" />
-      <concept id="5373338300159268355" name="de.q60.mps.shadowmodels.transformation.structure.TransformationInterface" flags="ng" index="2OrRyP">
-        <child id="5373338300159268358" name="input" index="2OrRyK" />
-        <child id="5373338300159268360" name="output" index="2OrRyY" />
-      </concept>
       <concept id="5373338300165862249" name="de.q60.mps.shadowmodels.transformation.structure.MapMacro" flags="ng" index="2PWHRv">
         <child id="5373338300165862254" name="call" index="2PWHRo" />
         <child id="5373338300165862252" name="input" index="2PWHRq" />
       </concept>
       <concept id="3359783165113055909" name="de.q60.mps.shadowmodels.transformation.structure.ApplyRecursively" flags="ng" index="3KhI9p">
-        <reference id="3359783165113055912" name="transformation" index="3KhI9k" />
+        <reference id="6198477943069923464" name="transformation" index="1YKV9h" />
       </concept>
       <concept id="3359783165116356100" name="de.q60.mps.shadowmodels.transformation.structure.CopyWithModifications" flags="ng" index="3LIkVS">
         <child id="3359783165116356103" name="modifications" index="3LIkVV" />
@@ -159,24 +156,25 @@
   <node concept="02vhO" id="6QszampKRkd">
     <property role="TrG5h" value="desugar" />
     <node concept="2OrE70" id="6QszampKRke" role="02uzr" />
-    <node concept="2OrRyP" id="6QszampKRkn" role="02uzr">
+    <node concept="02vpq" id="5o5qH$CQKca" role="02uzr">
       <property role="TrG5h" value="desugar" />
-      <node concept="02i3K" id="6QszampKRks" role="2OrRyK">
-        <node concept="02i3D" id="6QszampMGis" role="02i2B">
+      <property role="1YBnZf" value="true" />
+      <node concept="02i3K" id="5o5qH$CQKcb" role="02i3f">
+        <node concept="02i3D" id="5o5qH$CQKcc" role="02i2B">
           <ref role="02i3$" to="tpck:gw2VY9q" resolve="BaseConcept" />
         </node>
       </node>
-      <node concept="02i3K" id="6QszampKRkG" role="2OrRyY">
-        <node concept="02i3D" id="6QszampMGi$" role="02i2B">
-          <ref role="02i3$" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      <node concept="026TG" id="5o5qH$CQKcd" role="026TK">
+        <node concept="027og" id="5o5qH$CQKce" role="026TJ">
+          <ref role="02LMe" to="tpck:gw2VY9q" resolve="BaseConcept" />
         </node>
       </node>
     </node>
     <node concept="02vpq" id="6QszampOJQJ" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
+      <ref role="1YyVLo" node="5o5qH$CQKca" resolve="desugar" />
       <node concept="026TG" id="6QszampOJRq" role="026TK">
         <node concept="3KhI9p" id="2UwmfNuTYAG" role="026TJ">
-          <ref role="3KhI9k" node="6QszampKRkn" resolve="desugar" />
+          <ref role="1YKV9h" node="5o5qH$CQKca" resolve="desugar" />
         </node>
       </node>
       <node concept="02i3K" id="6QszampOJRa" role="02i3f">
@@ -188,7 +186,7 @@
     <node concept="2OrE70" id="6QszampKRkj" role="02uzr" />
     <node concept="2OrE70" id="2UwmfNv65M0" role="02uzr" />
     <node concept="02vpq" id="6QszampKRlh" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
+      <ref role="1YyVLo" node="5o5qH$CQKca" resolve="desugar" />
       <node concept="02i3K" id="6QszampKRlr" role="02i3f">
         <node concept="02i3D" id="6QszampOItc" role="02i2B">
           <ref role="02i3$" to="prps:6QszampOHpW" resolve="UntilStatement" />
@@ -208,7 +206,7 @@
                   <node concept="027rt" id="2UwmfNuSBT6" role="02LM9">
                     <ref role="027rv" to="tpee:fHeOMI0" resolve="expression" />
                     <node concept="214gnc" id="2UwmfNuXq5N" role="027rp">
-                      <ref role="2P$kNQ" node="6QszampKRkn" resolve="desugar" />
+                      <ref role="1YEVMl" node="5o5qH$CQKca" resolve="desugar" />
                       <node concept="2OqwBi" id="6QszampOIZ8" role="214sll">
                         <node concept="214o7A" id="6QszampOJRE" role="2Oq$k0" />
                         <node concept="3TrEf2" id="6QszampOJc6" role="2OqNvi">
@@ -224,7 +222,7 @@
           <node concept="027rt" id="6QszampOJe$" role="02LM9">
             <ref role="027rv" to="tpee:gMLFqrC" resolve="body" />
             <node concept="214gnc" id="2UwmfNuXq8$" role="027rp">
-              <ref role="2P$kNQ" node="6QszampKRkn" resolve="desugar" />
+              <ref role="1YEVMl" node="5o5qH$CQKca" resolve="desugar" />
               <node concept="2OqwBi" id="6QszampOJow" role="214sll">
                 <node concept="214o7A" id="6QszampOJVA" role="2Oq$k0" />
                 <node concept="3TrEf2" id="2UwmfNuXqnQ" role="2OqNvi">
@@ -238,7 +236,7 @@
     </node>
     <node concept="2OrE70" id="6QszampOJXG" role="02uzr" />
     <node concept="02vpq" id="Vl1zEEonTr" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
+      <ref role="1YyVLo" node="5o5qH$CQKca" resolve="desugar" />
       <node concept="026TG" id="Vl1zEEonTs" role="026TK">
         <node concept="3LIkVS" id="Vl1zEEonTt" role="026TJ">
           <node concept="2155sH" id="Vl1zEEonTu" role="1XuIBT">
@@ -271,7 +269,7 @@
     <node concept="2OrE70" id="Vl1zEEonOl" role="02uzr" />
     <node concept="02vpq" id="Vl1zEEzaCV" role="02uzr">
       <property role="2$mnfv" value="true" />
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
+      <ref role="1YyVLo" node="5o5qH$CQKca" resolve="desugar" />
       <node concept="02i3K" id="Vl1zEEzaCW" role="02i3f">
         <node concept="02i3D" id="Vl1zEEzaCX" role="02i2B">
           <ref role="02i3$" to="tpee:fz12cDA" resolve="ClassConcept" />
@@ -296,7 +294,7 @@
                 </node>
               </node>
               <node concept="214gnc" id="Vl1zEEzaD7" role="2PWHRo">
-                <ref role="2P$kNQ" node="Vl1zEEo_Uw" resolve="naMethod" />
+                <ref role="1YEVMl" node="5o5qH$CQKcf" resolve="naMethod" />
                 <node concept="214o7A" id="Vl1zEEzaD8" role="214sll" />
               </node>
             </node>
@@ -306,7 +304,7 @@
     </node>
     <node concept="2OrE70" id="Vl1zEExLJf" role="02uzr" />
     <node concept="02vpq" id="Vl1zEErofD" role="02uzr">
-      <ref role="2OrxuO" node="6QszampKRkn" resolve="desugar" />
+      <ref role="1YyVLo" node="5o5qH$CQKca" resolve="desugar" />
       <node concept="02i3K" id="Vl1zEEroCj" role="02i3f">
         <node concept="02i3D" id="Vl1zEEroCr" role="02i2B">
           <ref role="02i3$" to="prps:6QszampKeIY" resolve="NullAlternativeExpression" />
@@ -318,7 +316,7 @@
           <node concept="027ru" id="Vl1zEEsD5F" role="02LM9">
             <ref role="027ri" to="tpee:gDPybl6" resolve="classConcept" />
             <node concept="214gnc" id="Vl1zEEsD5X" role="027rd">
-              <ref role="2P$kNQ" node="6QszampKRkn" resolve="desugar" />
+              <ref role="1YEVMl" node="5o5qH$CQKca" resolve="desugar" />
               <node concept="2OqwBi" id="Vl1zEEsDdH" role="214sll">
                 <node concept="2155sH" id="Vl1zEEsD60" role="2Oq$k0">
                   <ref role="2155sG" node="Vl1zEEroCj" />
@@ -336,7 +334,7 @@
           <node concept="027ru" id="Vl1zEErp2v" role="02LM9">
             <ref role="027ri" to="tpee:fIYIWN3" resolve="staticMethodDeclaration" />
             <node concept="214gnc" id="Vl1zEErp2F" role="027rd">
-              <ref role="2P$kNQ" node="Vl1zEEo_Uw" resolve="naMethod" />
+              <ref role="1YEVMl" node="5o5qH$CQKcf" resolve="naMethod" />
               <node concept="2155sH" id="Vl1zEErp2I" role="214sll">
                 <ref role="2155sG" node="Vl1zEEroCj" />
               </node>
@@ -345,7 +343,7 @@
           <node concept="027rt" id="Vl1zEErp2Y" role="02LM9">
             <ref role="027rv" to="tpee:fz7wK6I" resolve="actualArgument" />
             <node concept="214gnc" id="Vl1zEErpGF" role="027rp">
-              <ref role="2P$kNQ" node="6QszampKRkn" resolve="desugar" />
+              <ref role="1YEVMl" node="5o5qH$CQKca" resolve="desugar" />
               <node concept="2OqwBi" id="Vl1zEErpOu" role="214sll">
                 <node concept="2155sH" id="Vl1zEErpGL" role="2Oq$k0">
                   <ref role="2155sG" node="Vl1zEEroCj" />
@@ -359,7 +357,7 @@
           <node concept="027rt" id="Vl1zEErplM" role="02LM9">
             <ref role="027rv" to="tpee:fz7wK6I" resolve="actualArgument" />
             <node concept="214gnc" id="Vl1zEErqbp" role="027rp">
-              <ref role="2P$kNQ" node="6QszampKRkn" resolve="desugar" />
+              <ref role="1YEVMl" node="5o5qH$CQKca" resolve="desugar" />
               <node concept="2OqwBi" id="Vl1zEErqjc" role="214sll">
                 <node concept="2155sH" id="Vl1zEErqbv" role="2Oq$k0">
                   <ref role="2155sG" node="Vl1zEEroCj" />
@@ -373,21 +371,22 @@
         </node>
       </node>
     </node>
-    <node concept="2OrRyP" id="Vl1zEEo_Uw" role="02uzr">
+    <node concept="02vpq" id="5o5qH$CQKcf" role="02uzr">
       <property role="TrG5h" value="naMethod" />
-      <node concept="02i3K" id="Vl1zEEoA04" role="2OrRyY">
-        <node concept="02i3D" id="Vl1zEEoA0k" role="02i2B">
-          <ref role="02i3$" to="tpee:fIYIFWa" resolve="StaticMethodDeclaration" />
+      <property role="1YBnZf" value="true" />
+      <node concept="02i3K" id="5o5qH$CQKcg" role="02i3f">
+        <node concept="02i3D" id="5o5qH$CQKch" role="02i2B">
+          <ref role="02i3$" to="prps:6QszampKeIY" resolve="NullAlternativeExpression" />
         </node>
       </node>
-      <node concept="02i3K" id="Vl1zEEo_ZM" role="2OrRyK">
-        <node concept="02i3D" id="Vl1zEEo_ZW" role="02i2B">
-          <ref role="02i3$" to="prps:6QszampKeIY" resolve="NullAlternativeExpression" />
+      <node concept="026TG" id="5o5qH$CQKci" role="026TK">
+        <node concept="027og" id="5o5qH$CQKcj" role="026TJ">
+          <ref role="02LMe" to="tpee:fIYIFWa" resolve="StaticMethodDeclaration" />
         </node>
       </node>
     </node>
     <node concept="02vpq" id="Vl1zEEo_Km" role="02uzr">
-      <ref role="2OrxuO" node="Vl1zEEo_Uw" resolve="naMethod" />
+      <ref role="1YyVLo" node="5o5qH$CQKcf" resolve="naMethod" />
       <node concept="026TG" id="Vl1zEEoA57" role="026TK">
         <node concept="027og" id="Vl1zEEoA5b" role="026TJ">
           <ref role="02LMe" to="tpee:fIYIFWa" resolve="StaticMethodDeclaration" />

@@ -42,11 +42,12 @@
       <concept id="7335687028107163788" name="de.q60.mps.shadowmodels.transformation.structure.TransformationParameter" flags="ng" index="02i3K">
         <child id="7335687028107163867" name="type" index="02i2B" />
       </concept>
-      <concept id="7335687028107144200" name="de.q60.mps.shadowmodels.transformation.structure.TransformationsModule" flags="ng" index="02vhO">
+      <concept id="7335687028107144200" name="de.q60.mps.shadowmodels.transformation.structure.TransformationsNamespace" flags="ng" index="02vhO">
         <child id="7335687028107145383" name="content" index="02uzr" />
       </concept>
       <concept id="7335687028107144742" name="de.q60.mps.shadowmodels.transformation.structure.TransformationImplementation" flags="ng" index="02vpq">
-        <reference id="5373338300159359234" name="interface" index="2OrxuO" />
+        <property id="6198477943066858774" name="isAbstract" index="1YBnZf" />
+        <reference id="6198477943066252929" name="overrides" index="1YyVLo" />
         <child id="7335687028107245068" name="output" index="026TK" />
         <child id="7335687028107163827" name="input" index="02i3f" />
       </concept>
@@ -54,10 +55,6 @@
         <reference id="9170566427534439103" name="decl" index="2155sG" />
       </concept>
       <concept id="5373338300159315830" name="de.q60.mps.shadowmodels.transformation.structure.EmptyLine" flags="ng" index="2OrE70" />
-      <concept id="5373338300159268355" name="de.q60.mps.shadowmodels.transformation.structure.TransformationInterface" flags="ng" index="2OrRyP">
-        <child id="5373338300159268358" name="input" index="2OrRyK" />
-        <child id="5373338300159268360" name="output" index="2OrRyY" />
-      </concept>
       <concept id="683004656445438900" name="de.q60.mps.shadowmodels.transformation.structure.UnfoldR" flags="ng" index="3e9bUD" />
       <concept id="683004656444879975" name="de.q60.mps.shadowmodels.transformation.structure.UnfoldElementVariable" flags="ng" index="3ebN5U" />
       <concept id="683004656443065966" name="de.q60.mps.shadowmodels.transformation.structure.FoldAccumulator" flags="ng" index="3eg8dN" />
@@ -103,23 +100,23 @@
   </registry>
   <node concept="02vhO" id="2frx7BFbW5R">
     <property role="TrG5h" value="Desugar" />
-    <node concept="2OrRyP" id="2frx7BFchf$" role="02uzr">
+    <node concept="02vpq" id="5o5qH$CQKdO" role="02uzr">
       <property role="TrG5h" value="altToIf" />
-      <node concept="02i3K" id="2frx7BFchfV" role="2OrRyK">
+      <property role="1YBnZf" value="true" />
+      <node concept="02i3K" id="5o5qH$CQKdP" role="02i3f">
         <property role="TrG5h" value="alt" />
-        <node concept="02i3D" id="2frx7BFchg5" role="02i2B">
+        <node concept="02i3D" id="5o5qH$CQKdQ" role="02i2B">
           <ref role="02i3$" to="nup6:2frx7BFbsIO" resolve="AltExpr" />
         </node>
       </node>
-      <node concept="02i3K" id="2frx7BFchgo" role="2OrRyY">
-        <property role="TrG5h" value="o0" />
-        <node concept="02i3D" id="2frx7BFchE1" role="02i2B">
-          <ref role="02i3$" to="nup6:2frx7BFaCIG" resolve="IfExpr" />
+      <node concept="026TG" id="5o5qH$CQKdR" role="026TK">
+        <node concept="027og" id="5o5qH$CQKdS" role="026TJ">
+          <ref role="02LMe" to="nup6:2frx7BFaCIG" resolve="IfExpr" />
         </node>
       </node>
     </node>
     <node concept="02vpq" id="_UxhR7dlNV" role="02uzr">
-      <ref role="2OrxuO" node="2frx7BFchf$" resolve="altToIf" />
+      <ref role="1YyVLo" node="5o5qH$CQKdO" resolve="altToIf" />
       <node concept="02i3K" id="_UxhR7dlNW" role="02i3f">
         <property role="TrG5h" value="alt" />
         <node concept="02i3D" id="_UxhR7dlNX" role="02i2B">
@@ -184,22 +181,23 @@
       </node>
     </node>
     <node concept="2OrE70" id="_UxhR7lqFx" role="02uzr" />
-    <node concept="2OrRyP" id="_UxhR7lqGw" role="02uzr">
+    <node concept="02vpq" id="5o5qH$CQKdT" role="02uzr">
       <property role="TrG5h" value="ifToAlt" />
-      <node concept="02i3K" id="_UxhR7lqH1" role="2OrRyK">
+      <property role="1YBnZf" value="true" />
+      <node concept="02i3K" id="5o5qH$CQKdU" role="02i3f">
         <property role="TrG5h" value="ifExpr" />
-        <node concept="02i3D" id="_UxhR7lqHl" role="02i2B">
+        <node concept="02i3D" id="5o5qH$CQKdV" role="02i2B">
           <ref role="02i3$" to="nup6:2frx7BFaCIG" resolve="IfExpr" />
         </node>
       </node>
-      <node concept="02i3K" id="_UxhR7lqJ_" role="2OrRyY">
-        <node concept="02i3D" id="_UxhR7lqJH" role="02i2B">
-          <ref role="02i3$" to="nup6:2frx7BFbsIO" resolve="AltExpr" />
+      <node concept="026TG" id="5o5qH$CQKdW" role="026TK">
+        <node concept="027og" id="5o5qH$CQKdX" role="026TJ">
+          <ref role="02LMe" to="nup6:2frx7BFbsIO" resolve="AltExpr" />
         </node>
       </node>
     </node>
     <node concept="02vpq" id="_UxhR7lqKq" role="02uzr">
-      <ref role="2OrxuO" node="_UxhR7lqGw" resolve="ifToAlt" />
+      <ref role="1YyVLo" node="5o5qH$CQKdT" resolve="ifToAlt" />
       <node concept="02i3K" id="_UxhR7lqL0" role="02i3f">
         <property role="TrG5h" value="ifExpr" />
         <node concept="02i3D" id="_UxhR7lqLk" role="02i2B">
