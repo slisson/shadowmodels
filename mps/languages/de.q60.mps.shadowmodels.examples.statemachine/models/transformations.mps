@@ -4,6 +4,7 @@
   <languages>
     <use id="94b64715-a263-4c36-a138-8da14705ffa7" name="de.q60.mps.shadowmodels.transformation" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="a2812d5e-a72e-4739-ab3f-d01ec647c5de(de.q60.mps.shadowmodels.devkit)" />
@@ -177,8 +178,29 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="3717301156197626279" name="jetbrains.mps.lang.core.structure.BasePlaceholder" flags="ng" index="3DQ70j">
+        <child id="3717301156197626301" name="content" index="3DQ709" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="ng" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1223,6 +1245,57 @@
   </node>
   <node concept="02vhO" id="7YhLqbpfrfi">
     <property role="TrG5h" value="Repository" />
+    <node concept="3DQ70j" id="2Dmy1k6YVvv" role="lGtFl">
+      <property role="3V$3am" value="content" />
+      <property role="3V$3ak" value="94b64715-a263-4c36-a138-8da14705ffa7/7335687028107144200/7335687028107145383" />
+    </node>
+    <node concept="2OrE70" id="2Dmy1k6YWDp" role="02uzr" />
+    <node concept="3DQ70j" id="2Dmy1k6YY6R" role="lGtFl">
+      <property role="3V$3am" value="content" />
+      <property role="3V$3ak" value="94b64715-a263-4c36-a138-8da14705ffa7/7335687028107144200/7335687028107145383" />
+      <node concept="1Pa9Pv" id="2Dmy1k6YYpl" role="3DQ709">
+        <node concept="1PaTwC" id="2Dmy1k6YYpA" role="1PaQFQ">
+          <node concept="3oM_SD" id="2Dmy1k6YYyq" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="2Dmy1k6YYys" role="1PaTwD">
+            <property role="3oM_SC" value="adds" />
+          </node>
+          <node concept="3oM_SD" id="2Dmy1k6YYyv" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2Dmy1k6YYyz" role="1PaTwD">
+            <property role="3oM_SC" value="transformation" />
+          </node>
+          <node concept="3oM_SD" id="2Dmy1k6YYzS" role="1PaTwD">
+            <property role="3oM_SC" value="output" />
+          </node>
+          <node concept="3oM_SD" id="2Dmy1k6Z4ts" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2Dmy1k6YY$5" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="2Dmy1k6Z4tV" role="1PaTwD">
+            <property role="3oM_SC" value="statemachines" />
+          </node>
+          <node concept="3oM_SD" id="2Dmy1k6Z4u9" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2Dmy1k6YYzn" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2Dmy1k6YYzx" role="1PaTwD">
+            <property role="3oM_SC" value="project" />
+          </node>
+          <node concept="3oM_SD" id="2Dmy1k6YYzG" role="1PaTwD">
+            <property role="3oM_SC" value="view." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2OrE70" id="2Dmy1k6YWEz" role="02uzr" />
+    <node concept="2OrE70" id="2Dmy1k6YY$y" role="02uzr" />
     <node concept="02vpq" id="7YhLqbpfO9B" role="02uzr">
       <property role="2$mnfv" value="true" />
       <ref role="1YyVLo" to="jwvb:7YhLqbpfNME" resolve="$Repository" />
@@ -1316,7 +1389,7 @@
                     </node>
                   </node>
                   <node concept="214gnc" id="7YhLqbpfPdi" role="2PWHRo">
-                    <ref role="1YEVMl" node="7YhLqbpfsMH" resolve="smOutputModel" />
+                    <ref role="1YEVMl" node="7YhLqbpfsMH" resolve="outputModel" />
                     <node concept="214o7A" id="7YhLqbpfPdj" role="214sll" />
                   </node>
                 </node>
@@ -1333,7 +1406,7 @@
     </node>
     <node concept="2OrE70" id="7YhLqbpfNV3" role="02uzr" />
     <node concept="02vpq" id="7YhLqbpfsMH" role="02uzr">
-      <property role="TrG5h" value="smOutputModel" />
+      <property role="TrG5h" value="outputModel" />
       <node concept="026TG" id="7YhLqbpfsWs" role="026TK">
         <node concept="027og" id="7YhLqbpfsWy" role="026TJ">
           <ref role="02LMe" to="dj5d:qmkA5fOskc" resolve="Model" />
