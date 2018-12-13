@@ -88,10 +88,10 @@
       <concept id="7335687028107144200" name="de.q60.mps.shadowmodels.transformation.structure.TransformationsNamespace" flags="ng" index="02vhO">
         <child id="7335687028107145383" name="content" index="02uzr" />
       </concept>
-      <concept id="7335687028107144742" name="de.q60.mps.shadowmodels.transformation.structure.TransformationImplementation" flags="ng" index="02vpq">
+      <concept id="7335687028107144742" name="de.q60.mps.shadowmodels.transformation.structure.Transformation" flags="ng" index="02vpq">
         <property id="1068767335609562597" name="contribution" index="2$mnfv" />
         <property id="6198477943066858774" name="isAbstract" index="1YBnZf" />
-        <reference id="6198477943066252929" name="overrides" index="1YyVLo" />
+        <reference id="6198477943066252929" name="base" index="1YyVLo" />
         <child id="7335687028107245068" name="output" index="026TK" />
         <child id="7335687028107163827" name="input" index="02i3f" />
       </concept>
@@ -1646,7 +1646,7 @@
     <node concept="2OrE70" id="TC$M5wV9Y9" role="02uzr" />
     <node concept="02vpq" id="TC$M5wSEGY" role="02uzr">
       <property role="2$mnfv" value="true" />
-      <ref role="1YyVLo" to="jwvb:7YhLqbpfNME" resolve="$RepositoryModule" />
+      <ref role="1YyVLo" to="jwvb:7YhLqbpfNME" resolve="$Repository" />
       <node concept="02i3K" id="TC$M5wSEZL" role="02i3f">
         <node concept="02i3D" id="TC$M5wSEZM" role="02i2B">
           <ref role="02i3$" to="dj5d:qmkA5fOskm" resolve="Repository" />

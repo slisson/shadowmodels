@@ -1701,5 +1701,29 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
+  <node concept="24kQdi" id="2Dmy1k6WpsP">
+    <ref role="1XX52x" to="oyp0:2Dmy1k6Wp5D" resolve="TransformationPriority" />
+    <node concept="3EZMnI" id="1sd2boLs61U" role="2wV5jI">
+      <node concept="3F0ifn" id="1sd2boLs621" role="3EZMnx">
+        <property role="3F0ifm" value="priority:" />
+      </node>
+      <node concept="1iCGBv" id="1sd2boLs62C" role="3EZMnx">
+        <ref role="1NtTu8" to="oyp0:2Dmy1k6WpsE" resolve="high" />
+        <node concept="1sVBvm" id="1sd2boLs62E" role="1sWHZn">
+          <node concept="3SHvHV" id="1sd2boLs62Q" role="2wV5jI" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4FwMpYIo7Ar" role="3EZMnx">
+        <property role="3F0ifm" value="shadows" />
+      </node>
+      <node concept="1iCGBv" id="1sd2boLs627" role="3EZMnx">
+        <ref role="1NtTu8" to="oyp0:2Dmy1k6WpsC" resolve="low" />
+        <node concept="1sVBvm" id="1sd2boLs629" role="1sWHZn">
+          <node concept="3SHvHV" id="1sd2boLs62h" role="2wV5jI" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1sd2boLs61X" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
